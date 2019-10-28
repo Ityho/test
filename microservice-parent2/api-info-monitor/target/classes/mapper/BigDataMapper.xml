@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.bigdatareport.BigDataMapper">
+	
+	<select id="findAll" resultType="com.miduchina.wrd.po.bigdata.OperationAdminWb">
+		<![CDATA[
+			SELECT
+				id,title,abstract abstracts,
+				number_periods numberPeriods,link,
+				imageurl imageurl,type,status,
+				paixu_time paixuTime,
+				create_time createTime,
+				update_time updateTime,
+				package_price packagePrice,
+				subTitle,content,topImage,event_label
+			FROM operation_admin_wb
+			WHERE
+				STATUS = 1
+			AND (
+				platform LIKE '%wyq%'
+				OR platform = ''
+				OR platform IS NULL
+			)
+			]]>
+			<if test="type!=0">
+				<![CDATA[
+					and event_label = #{type}
+				]]>
+			</if>
+		<if test="isPackagePrice!=null and isPackagePrice==0">
+			<![CDATA[
+					and package_price =0
+				]]>
+		</if>
+			ORDER BY
+				paixu_time DESC
+
+	</select>
+	<select id="findHotEventByNameTypePage" resultType="com.miduchina.wrd.po.bigdata.OperationAdminWb">
+		<![CDATA[
+			SELECT
+				id,title,abstract abstracts,
+				number_periods numberPeriods,link,
+				imageurl imageurl,type,status,
+				paixu_time paixuTime,
+				create_time createTime,
+				update_time updateTime,
+				package_price packagePrice,
+				subTitle,content,topImage,event_label
+			FROM operation_admin_wb
+			WHERE
+				STATUS = 1
+			AND (
+				platform LIKE '%wyq%'
+				OR platform = ''
+				OR platform IS NULL
+			)
+		]]>
+		<if test="likeName!=null and likeName!=''">
+			<![CDATA[
+				and title LIKE '%${likeName}%'
+			]]>
+		</if>
+		<if test="type!=0">
+			<![CDATA[
+				and event_label = #{type}
+			]]>
+		</if>
+		<if test="id!=0">
+			<![CDATA[
+				and id = #{id}
+			]]>
+		</if>
+		ORDER BY
+		paixu_time DESC
+	</select>
+	<select id="selectOne" resultType="com.miduchina.wrd.po.bigdata.OperationAdminWb">
+		<![CDATA[
+			SELECT
+				id,title,abstract abstracts,
+				number_periods numberPeriods,link,
+				imageurl imageurl,type,status,
+				paixu_time paixuTime,
+				create_time createTime,
+				update_time updateTime,
+				package_price packagePrice,
+				subTitle,content,topImage,event_label
+			FROM operation_admin_wb
+			WHERE
+				STATUS = 1
+		]]>
+		<if test="likeName!=null and likeName!=''">
+			<![CDATA[
+				and title LIKE '%${likeName}%'
+			]]>
+		</if>
+		<if test="type!=0 and type!=null" >
+			<![CDATA[
+				and event_label = #{type}
+			]]>
+		</if>
+		<if test="id!=0">
+			<![CDATA[
+				and id = #{id}
+			]]>
+		</if>
+		ORDER BY
+		paixu_time DESC
+	</select>
+
+	<select id="queryBuyedBigData" resultType="com.miduchina.wrd.dto.bigdata.BigReportVo">
+		<![CDATA[
+			SELECT
+				id,title,summary,
+				user_id userId,
+				big_report_id bigReportId,
+				event_label eventLabel,
+				start_time startTime,
+				end_time endTime,
+				create_time createTime,
+				update_time updateTime,
+				file_path filePath,
+				report_price reportPrice,
+				pdf_path pdfPath,
+				read_number readNumber,
+				status
+			FROM big_report
+			WHERE
+				STATUS = 1
+		]]>
+		<if test="userId!=null and userId!=''">
+			<![CDATA[
+				and user_id = #{userId}
+			]]>
+		</if>
+	</select>
+
+	<select id="queryBuyedBigDataByUserId" resultType="com.miduchina.wrd.dto.bigdata.BigReportVo">
+		<![CDATA[
+			SELECT
+				id,title,summary,
+				user_id userId,
+				big_report_id bigReportId,
+				event_label eventLabel,
+				start_time startTime,
+				end_time endTime,
+				create_time createTime,
+				update_time updateTime,
+				file_path filePath,
+				report_price reportPrice,
+				pdf_path pdfPath,
+				read_number readNumber,
+				status
+			FROM big_report
+			WHERE
+				STATUS = 1
+		]]>
+		<if test="userId!=null and userId!=''">
+			<![CDATA[
+				and user_id = #{userId}
+			]]>
+		</if>
+		ORDER BY
+		create_time DESC
+	</select>
+	<update id="deletReport" >
+		UPDATE big_report
+		SET
+			status = 0,
+			update_time=now()
+		WHERE
+		user_id = #{userId}
+		AND
+		id=#{id}
+	</update>
+</mapper>

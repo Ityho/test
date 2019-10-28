@@ -1,0 +1,11 @@
+/*tabs*/
+.tabs{}
+.tab_menu{height:42px;display: block; background-color:#fff; border-bottom: solid 1px #CECECE; margin-bottom: 10px;}
+.tab_menu li{display: block;line-height: 36px;height: 36px; margin: 0 5%; float: left; margin-top:4px;font-size: 16px;text-decoration: none;color: #3e3e3e;text-align: center;cursor: pointer;}
+.tab_menu  .current,.tab_menu  .current:hover,.tab_menu li:hover,.tab_menu .li_r:hover{color: #F35047; background-color:#fff; border-bottom: solid 2px #F35047;}
+.tab_menu li:hover{ background-color:#fff;color: #F35047;}
+.tab_box{ font-size:16px; margin-top:0px;}
+.tab_box .hide{display:none;}
+
+.tabs2 .tab_menu li{width: 40%;}
+ 

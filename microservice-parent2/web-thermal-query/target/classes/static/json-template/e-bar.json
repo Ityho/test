@@ -1,0 +1,56 @@
+{
+		 tooltip : {         // Option config. Can be overwrited by series or data
+		        trigger: 'axis',
+		    },
+	    xAxis:[{
+             type : 'category',
+             data : {datetime},
+             axisLabel : {
+            	 formatter: function(value){
+            		 	if(value.length>4){
+            		 		value = value.substring(0,6);
+            		 	}
+            		 	return value;
+            		 },
+            		 rotate:45,
+            		 textStyle : {
+         	                 decoration: 'none',
+         	                 fontFamily: 'Microsoft YaHei',
+         	                 fontSize: 12,
+         	             }
+	    		
+            	 },
+            	splitArea: {
+            		show: false
+            		}  
+	    }],
+	    grid:{
+     		y2:80
+     	},
+     yAxis : [{
+             type : 'value',
+           	axisLabel:{
+	               	  textStyle : {
+     	                 decoration: 'none',
+     	                 fontFamily: 'Microsoft YaHei',
+     	                 fontSize: 12,
+     	             },
+     	             formatter:function(v){
+     	            	 if(v>=1000){
+     	            		 return (v/1000)+"k";
+     	            	 }else{
+     	            		 return v;
+     	            	 }
+     	             }
+           	 }
+     	}],
+     
+     	color:['#87cefa','#ff7f50'],
+	    calculable : false,
+	    animation:false,
+	    series : [{
+    	    	name:'ÊýÁ¿',
+    	    	type:'bar',
+    	    	data:{data}
+	    }]
+}

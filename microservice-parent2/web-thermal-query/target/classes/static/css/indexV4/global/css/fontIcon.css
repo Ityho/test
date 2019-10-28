@@ -1,0 +1,10 @@
+@font-face {
+    font-family: aiDeep;
+    src: url('../fonts/LCDN.TTF');
+    /* IE9+ */
+    font-weight: bold;
+}
+
+.iconFamily{
+    font-family: aiDeep;
+}

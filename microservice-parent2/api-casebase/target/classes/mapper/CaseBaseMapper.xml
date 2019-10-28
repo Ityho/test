@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.casebase.mapper.CaseBaseMapper">
+
+    <select id="findAll" resultType="com.miduchina.wrd.po.casebase.WyqCase">
+        <![CDATA[
+			select * from wyq_case where status = 1
+		]]>
+        <if test="label != null">
+            <![CDATA[
+				and event_label = #{label}
+			]]>
+        </if>
+        <if test="title != null">
+            <![CDATA[
+				and title LIKE '%${title}%'
+			]]>
+        </if>
+        <if test="startTime!=null and startTime!=''">
+            <![CDATA[
+				and start_time >= #{startTime}
+			]]>
+        </if>
+        <if test="endTime!=null and endTime!=''">
+            <![CDATA[
+				and end_time <= #{endTime}
+			]]>
+        </if>
+        order by
+        <choose>
+            <when test="order == 1">hot_value</when>
+            <when test="order == 2">start_time</when>
+            <otherwise>hot_value</otherwise>
+        </choose>
+        <choose>
+            <when test="sort != null and sort == 2">asc</when>
+            <otherwise>desc</otherwise>
+        </choose>
+    </select>
+
+    <select id="findById" parameterType="java.lang.Integer" resultType="com.miduchina.wrd.po.casebase.WyqCase">
+		<![CDATA[
+
+
+			select * from wyq_case where status = 1 and id = #{id}
+
+
+        ]]>
+	</select>
+
+    <select id="findByTopLabel" parameterType="java.lang.Integer" resultType="com.miduchina.wrd.po.casebase.WyqCase">
+		<![CDATA[
+
+
+			select title,hot_value,id from wyq_case where status = 1 and event_label = #{label} order by hot_value desc
+
+
+        ]]>
+	</select>
+    <select id="selectHotEventsIntervalChart" resultType="java.lang.Double">
+        <![CDATA[
+
+	        select c.max_hot_value FROM wyq_case c WHERE c.hot_value > 0 and c.status=1 and c.status=1
+
+
+        ]]>
+        <if test="eventLabel gt 0">
+
+            AND c.event_label=#{eventLabel}
+
+        </if>
+
+
+    </select>
+    <select id="select30HotWorths" resultType="com.miduchina.wrd.po.casebase.WyqCase">
+        <![CDATA[
+
+            SELECT c.title as title, c.max_hot_value_time as maxHotValueTime, c.max_hot_value as maxHotValue, c.event_label as byteEventLabel
+            FROM wyq_case c
+            WHERE c.hot_value > 0 and c.status=1 and c.status=1
+
+        ]]>
+        <if test="eventLabel gt 0">
+
+            AND c.event_label=#{eventLabel}
+
+        </if>
+    </select>
+    <select id="checkCaseAnalysis" resultType="com.miduchina.wrd.po.casebase.WyqCase">
+          SELECT c.operation_admin_wb_id as operationAdminWbId, c.pdf_path as pdfPath, c.initial_website as initialWebsite, c.file_path as filePath, c.id as id, c.report_price as reportPrice, c.read_number as readNumber, c.keyword as keyword,c.filter_keyword as filterKeyword, c.title as title, c.hot_value as hotValue, c.summary as summary, c.event_label as byteEventLabel, c.start_time as startTime, c.end_time as endTime ,c.create_time as createTime
+          FROM wyq_case c
+          WHERE c.hot_value > 0
+          and c.id=#{caseID}
+          and c.status=1
+    </select>
+
+</mapper>

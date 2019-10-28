@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.monitor.report.mapper.ReportSampleMapper">
+
+
+    <select id="findKeywordReportByCode" resultType="com.miduchina.wrd.po.report.KeywordReportRecord">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				keyword_report_record
+			where status = 1
+			and share_code = #{shareCode}
+			]]>
+    </select>
+
+
+    <update id="updateIsRead">
+        UPDATE keyword_report_record
+        SET
+        is_read = 1,
+        update_time=now()
+        WHERE
+        user_id=#{userId}
+    </update>
+
+
+    <select id="findUserById" resultType="com.miduchina.wrd.po.user.UserOperateLog">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				`user`
+			where
+			  user_id = #{userId}
+			]]>
+    </select>
+
+
+</mapper>

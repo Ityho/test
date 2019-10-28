@@ -1,0 +1,91 @@
+@charset "GBK";
+/* CSS Document */
+* {margin: 0px; padding: 0px; list-style-type: none;}
+body{ padding:0; margin:0;font-family: "Î¢ÈíÑÅºÚ";}
+.clear {clear: both;}
+.rel{position: relative;}
+.abs{position: absolute;}
+.questions{
+	padding: 280px 50px 20px 50px;
+	color: #3e3e3e;
+	background-color: #FFF;
+	overflow: hidden;
+	 
+	background-image: url(../images/questionsBg.jpg);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+}
+
+.questions h1{ font-size:30px; margin-bottom:20px; color:#fff;}
+.questions .huifu{  clear:both;  background-color:#fff;}
+.questions .open{  clear:both;  background-color:#f8f8f8;border-left: solid 1px #e3e3e3;border-right: solid 1px #e3e3e3; border-bottom: solid 1px #e3e3e3;}
+.questions .huifu .questBox{border-top: solid 1px #e3e3e3;}
+.questionskey{ height:60px; color:#5e5e5e; line-height:60px; padding:0px 10px; background-color:#fff; border:solid 1px #bebebe; font-size:16px; width:83%;-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;}
+.q_btn{ text-decoration:none; float:right; width:14%; height:60px; line-height:60px; display:block; background-color:#ff8500; color:#fff; font-size:16px; text-align:center;-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(pie.htc);}
+.q_btn:hover{ text-decoration:none; background-color:#e46100;}
+.questBox{ font-size:14px;  border-top: dashed 1px #848484; margin-top:5px; padding:15px 10px; overflow:hidden;}
+.questBox .q_left{ display:block;-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+	behavior: url(pie.htc); float:left;}
+.questBox .q_right{ margin-left:70px; display:block;}
+.questBox .q_right .problem{ display:block; padding: 8px 20px; background-color:#ffd797; color:#333; line-height:25px; min-height: 30px; float:left; margin:10px 0px;-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(pie.htc);}
+
+.questBox .q_right .problem .arrow-left { top:10px; left:-9px;
+width: 0; 
+height: 0; 
+border-bottom: 9px solid transparent; /* left arrow slant */
+border-top: 9px solid transparent; /* right arrow slant */
+border-right: 9px solid #ffd797; /* bottom, add background color here */
+font-size: 0;
+line-height: 0;
+}
+.questBox .q_right .kf{background-color:#bfe3ff;}
+.questBox .q_right .kf .arrow-left{border-bottom: 9px solid transparent; /* left arrow slant */
+border-top: 9px solid transparent; /* right arrow slant */
+border-right: 9px solid #bfe3ff; /* bottom, add background color here */}
+.questBox .more{top:-27px; right:-1px; display:block; padding:4px 10px; background-color:#fff; z-index:2; text-decoration:none;}
+.questBox .more:hover,.questBox .moreOpen:hover{text-decoration:underline;color:#0891ff;}
+.questBox .moreOpen{top:-27px; right:-1px; display:block; padding:4px 10px; background-color:#f8f8f8; border:solid 1px #e3e3e3; border-bottom:solid 1px #f8f8f8; z-index:2;text-decoration:none;}
+.q_r_buttom{ display:block; float:left; clear:both;}
+.q_r_buttom a{ margin-right:30px; color:#0891ff; text-decoration:none;}
+.q_r_buttom a:hover{ text-decoration:underline;}
+.reply{ padding-top:20px;margin-bottom: 10px;margin-left: -20px; float:left; clear:both }
+.replyBox{ width:662px; height:150px; background-color:#f1f1f1; border:solid 1px #a7a7a7; padding:10px;-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(pie.htc);}
+.replyBox .textBox{ width:640px; height:95px; background-color:#fff; border:solid 1px #b3b3b3; line-height:20px; padding:10px; overflow: auto;}
+.replyBox .replyBoxJT{
+	background-image: url(../images/replyBox_jt.png);
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 33px;
+	top:-20px;
+	left:20px;
+}
+.r_button{ margin-top:2px; display:block; text-decoration:none;line-height:20px;height:30px;background-color:#1c82d2;border: 1px solid #0690ff;-moz-border-radius: 3px;-webkit-border-radius: 3px;border-radius: 3px;behavior: url(pie.htc);padding: 5px 15px;color: #FFFFFF;cursor: pointer; font-size:14px; text-decoration:none;}
+.r_button:hover{
+	background-color: #0064B5; text-decoration:none;
+}
+.up_pic{  display:block; width:120px; height:120px; line-height:120px; text-align:center; margin-bottom:10px; font-size:14px; background-color:#fff; border: dashed 1px #CCC; float:left; text-decoration:none;}
+.up_pic:hover{ background-color:#edf8ff; border:solid 1px #CCC;}
+.pic_close{ display:block; top:0px; right:0px; font-size:16px; width:20px; height:20px; line-height:20px; background-color:#fff; text-align:center; text-decoration:none;}
+.pic_close:hover{ text-decoration:none;}
+ 
+
+@media only screen and (max-width:1280px ) {
+
+}
+@media only screen and (max-width:1024px ) {
+	 
+}

@@ -1,0 +1,12 @@
+.heard_userInfor{position: absolute; top: 0.845rem; left: 0.845rem; z-index: 1;}
+/*排行榜单前三*/
+.rankings-group>li .head-icon{position: relative ;}
+.rankings-group>li .head-icon .icon_rank{position: absolute; bottom:-0.4rem; left: 0; z-index: 1; width: 100%; text-align: center;}
+.rankings-group>li .head-icon .icon_rank>img{ width: 2.2rem;}
+.rankings-group>li:nth-child(2) .head-icon .icon_rank{bottom:-0.5rem;}
+.rankings-group>li:nth-child(2) .head-icon .icon_rank>img{ width: 2.8rem;}
+.rankings-group>li:nth-child(2) .head-icon .icon_crown{position: absolute; top: -0.8rem; right: -0.1rem; z-index: 1; width: 2.2rem;}
+
+.wyui-nav{background-color: #fff; border-bottom: solid 1px #f2f2f2;}
+.wyui-nav.ui-navigator .ui-navigator-list li a.cur, .wyui-nav.ui-navigator .ui-navigator-fix.cur{color: #444;}
+.wyui-nav.ui-navigator .ui-navigator-list li a.cur, .wyui-nav.ui-navigator .ui-navigator-fix.cur{border-bottom: solid 2px #f5773b;}

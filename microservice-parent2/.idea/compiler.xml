@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="api-casebase" />
+        <module name="api-config-center" />
+        <module name="api-gateway" />
+        <module name="api-hot-all" />
+        <module name="api-hytag" />
+        <module name="api-info-monitor" />
+        <module name="api-open" />
+        <module name="api-ranking-list" />
+        <module name="api-research" />
+        <module name="api-server-center" />
+        <module name="commons" />
+        <module name="commons-db" />
+        <module name="commons-redis" />
+        <module name="entity" />
+        <module name="other" />
+        <module name="web-big-screen" />
+        <module name="web-event-analysis" />
+        <module name="web-monitor-report" />
+        <module name="web-monitor-warning" />
+        <module name="web-thermal-query" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="api-casebase" target="1.8" />
+      <module name="api-config-center" target="1.8" />
+      <module name="api-gateway" target="1.8" />
+      <module name="api-hot-all" target="1.8" />
+      <module name="api-hy-tag" target="1.8" />
+      <module name="api-hytag" target="1.8" />
+      <module name="api-info-monitor" target="1.8" />
+      <module name="api-open" target="1.8" />
+      <module name="api-ranking-list" target="1.8" />
+      <module name="api-research" target="1.8" />
+      <module name="api-server-center" target="1.8" />
+      <module name="commons" target="1.8" />
+      <module name="commons (1)" target="1.8" />
+      <module name="commons (2)" target="1.5" />
+      <module name="commons-db" target="1.8" />
+      <module name="commons-redis" target="1.8" />
+      <module name="entity" target="1.8" />
+      <module name="microservice-parent" target="1.8" />
+      <module name="other" target="1.8" />
+      <module name="web-big-screen" target="1.8" />
+      <module name="web-event-analysis" target="1.8" />
+      <module name="web-monitor-report" target="1.8" />
+      <module name="web-monitor-warning" target="1.8" />
+      <module name="web-thermal-query" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

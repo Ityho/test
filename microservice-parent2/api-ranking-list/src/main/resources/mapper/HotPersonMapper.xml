@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.rankinglist.mapper.HotPersonMapper">
+
+	<select id="findAll" resultType="com.miduchina.wrd.po.ranking.HotPerson">
+		SELECT
+			hp.id,
+			hp.`name`,
+			hp.summary,
+			hp.keyword,
+			hp.keyword1,
+			hp.keyword2,
+			hp.keyword3,
+			hp.keyword4,
+			hp.filter_keyword,
+			hp.show_tag,
+			hp.create_time,
+			hp.update_time,
+			hp.ratio_hot_day,
+			hp.number_day
+		FROM
+			hot_person hp
+		WHERE hp.status = 1
+		<if test="name != null and name != ''">
+			<![CDATA[
+				and hp.name LIKE '%${name}%'
+			]]>
+		</if>
+		<if test="startTime != null and startTime != ''">
+			<![CDATA[
+				and hp.create_time >= #{startTime}
+			]]>
+		</if>
+		<if test="endTime != null and endTime != ''">
+			<![CDATA[
+				and hp.create_time <= #{endTime}
+			]]>
+		</if>
+		<if test="showTag != null and showTag != ''">
+			<![CDATA[
+				AND hp.show_tag = #{showTag}
+			]]>
+		</if>
+		<if test="labels != null">
+			AND -1 in
+			<foreach collection="labels" item="label" index="index" open="(" close=")" separator=",">
+				#{label}
+			</foreach>
+		</if>
+		GROUP BY
+			hp.id
+		order by
+		<choose>
+			<when test="sort == 1">hp.create_time</when>
+			<when test="sort == 2">hp.number_day</when>
+			<otherwise>hp.create_time</otherwise>
+		</choose>
+		<choose>
+			<when test="order != null and order == 2">asc</when>
+			<otherwise>desc</otherwise>
+		</choose>
+	</select>
+
+	<select id="findHotIncidentByIds" resultType="com.miduchina.wrd.po.ranking.HotIncident">
+		SELECT
+			hi.hot_incident_id,
+			hi.hot_news_person_ids,
+			hi.hot_event_person_ids
+		FROM
+			hot_incident hi
+		WHERE hi.status = 1
+		<if test="hotIncidentIds != null and hotIncidentIds.size() > 0">
+			and hi.hot_incident_id in
+			<foreach collection="hotIncidentIds" item="hotIncidentId" open="(" separator="," close=")">
+				#{hotIncidentId}
+			</foreach>
+		</if>
+	</select>
+
+	<select id="findAllUnionHotIncident" resultType="com.miduchina.wrd.po.ranking.HotPerson">
+		select * from
+		(SELECT
+			hp.id,
+			hp. NAME,
+			hp.summary,
+			hp.keyword,
+			hp.filter_keyword,
+			'事件人物' AS labelName,
+			hp.create_time,
+			hp.number_day,
+			hp.difference_day,
+			hp.ratio_day,
+			hp.ratio_hot_day,
+			hp.ratio_hot_last_day,
+			hp.line_data,
+			hp.mg_line_data,
+			hp.fmg_line_data,
+			'' as logoUrl,
+			GROUP_CONCAT(hi.incident_title) incidentTitles,
+			count(hi.hot_incident_id) eventNum
+		FROM
+		hot_person hp
+		left join hot_incident hi on FIND_IN_SET(hp.id, hi.hot_event_person_ids)
+		where hp.status = 1 and hi.hot_event_person_ids is not null and hi.status = 1
+		<if test="name != null and name != ''">
+			and hp.name LIKE '%${name}%'
+		</if>
+		<if test="webShow == 1">
+			<if test="startTime!=null and startTime!=''">
+				<![CDATA[
+				and hi.create_time >= #{startTime}
+				]]>
+			</if>
+			<if test="endTime!=null and endTime!=''">
+				<![CDATA[
+				and hi.create_time <= #{endTime}
+				]]>
+			</if>
+		</if>
+		<if test="webShow == null">
+			<if test="startTime != null and startTime != ''">
+				<![CDATA[
+					and hp.create_time >= #{startTime}
+				]]>
+			</if>
+			<if test="endTime != null and endTime != ''">
+				<![CDATA[
+					and hp.create_time <= #{endTime}
+				]]>
+			</if>
+		</if>
+		<if test="showTag != null and showTag != ''">
+			AND hp.show_tag = #{showTag}
+		</if>
+		<if test="labels != null">
+			AND -1 in
+			<foreach collection="labels" item="label" index="index" open="(" close=")" separator=",">
+				#{label}
+			</foreach>
+		</if>
+		GROUP BY hp.id
+		UNION
+		SELECT
+		ca.category_id id,
+		ca.title NAME,
+		'' as summary,
+		ca.keyword as keyword,
+		ca.filter_keyword as filter_keyword,
+		(
+		CASE ca.rank_type_id1
+		WHEN 2 THEN
+		ce.profession
+		WHEN 12 THEN
+		me.profession
+		END
+		) labelName,
+		ca.create_time create_time,
+		ca.number_day number_day,
+		ca.difference_day,
+		ca.ratio_day,
+		ca.ratio_hot_day,
+		ca.ratio_hot_last_day,
+		ca.line_data,
+		ca.mg_line_data,
+		ca.fmg_line_data,
+		(
+		CASE ca.rank_type_id1
+		WHEN 2 THEN
+		ce.logo_url
+		WHEN 12 THEN
+		me.logo_url
+		END
+		) logoUrl,
+		GROUP_CONCAT(hi.incident_title) incidentTitles,
+		count(hi.hot_incident_id) eventNum
+		FROM
+		category_type_keywords ca
+		LEFT JOIN celebrity_type_keywords ce ON ca.reference_id = ce.celebrity_id
+		LEFT JOIN men_type_keywords me ON ca.reference_id = me.celebrity_Id
+		LEFT JOIN hot_incident hi ON FIND_IN_SET(
+			ca.category_id,
+			hi.hot_news_person_ids
+		)
+		WHERE
+		ca.rank_type_id1 IN (2, 12)
+		AND ca.`status` = 1 and hi.hot_news_person_ids is not null and hi.status = 1
+		<if test="name != null and name != ''">
+			<![CDATA[
+				AND ca.title = '%${name}%'
+			]]>
+		</if>
+		<if test="webShow == 1">
+			<if test="startTime!=null and startTime!=''">
+				<![CDATA[
+					and hi.create_time >= #{startTime}
+				]]>
+			</if>
+			<if test="endTime!=null and endTime!=''">
+				<![CDATA[
+					and hi.create_time <= #{endTime}
+				]]>
+			</if>
+		</if>
+		<if test="webShow == null">
+			<if test="startTime != null and startTime != ''">
+				<![CDATA[
+					and ca.create_time >= #{startTime}
+				 ]]>
+			</if>
+			<if test="endTime != null and endTime != ''">
+				<![CDATA[
+					and ca.create_time <= #{endTime}
+				]]>
+			</if>
+		</if>
+		<if test="showTag != null and showTag != ''">
+			AND ca.show_tag = #{showTag}
+		</if>
+		<if test="labels != null">
+			AND ca.rank_type_id2 in
+			<foreach collection="labels" item="label" index="index" open="(" close=")" separator=",">
+				#{label}
+			</foreach>
+		</if>
+		GROUP BY ca.category_id) tmp
+		order by
+		<choose>
+			<when test="sort == 1">tmp.create_time</when>
+			<when test="sort == 2">tmp.ratio_hot_day</when>
+			<when test="sort == 3">tmp.number_day</when>
+			<when test="sort == 4">tmp.ratio_day</when>
+			<when test="sort == 5">abs(tmp.difference_day)</when>
+			<otherwise>tmp.create_time</otherwise>
+		</choose>
+		<choose>
+			<when test="order != null and order == 2">asc</when>
+			<otherwise>desc</otherwise>
+		</choose>
+	</select>
+
+	<select id="findAllUnion" resultType="com.miduchina.wrd.po.ranking.HotPerson">
+		<if test="type == null || type == 2">
+			SELECT
+			hp.id id,
+			hp. NAME NAME,
+			hp.summary as summary,
+			hp.keyword AS keyword,
+			'事件人物' AS labelName,
+			hp.create_time create_time,
+			hp.number_day number_day,
+			hp.ratio_hot_day ratio_hot_day
+			FROM
+			hot_person hp
+			where hp.status = 1
+			<if test="name != null and name != ''">
+				and hp.name LIKE '%${name}%'
+			</if>
+			<if test="startTime != null and startTime != ''">
+				<![CDATA[
+				and hp.create_time >= #{startTime}
+			]]>
+			</if>
+			<if test="endTime != null and endTime != ''">
+				<![CDATA[
+				and hp.create_time <= #{endTime}
+			]]>
+			</if>
+			<if test="showTag != null and showTag != ''">
+				AND hp.show_tag = #{showTag}
+			</if>
+			<if test="labels != null">
+				AND -1 in
+				<foreach collection="labels" item="label" index="index" open="(" close=")" separator=",">
+					#{label}
+				</foreach>
+			</if>
+		</if>
+		<if test="type == null">
+			UNION
+		</if>
+		<if test="type == null || type == 1">
+			SELECT
+			ca.category_id id,
+			ca.title NAME,
+			'' as summary,
+			ca.keyword as keyword,
+			(
+			CASE ca.rank_type_id1
+			WHEN 2 THEN
+			ce.profession
+			WHEN 12 THEN
+			me.profession
+			END
+			) labelName,
+			ca.create_time create_time,
+			ca.number_day number_day,
+			ca.ratio_hot_day ratio_hot_day
+			FROM
+			category_type_keywords ca
+			LEFT JOIN celebrity_type_keywords ce ON ca.reference_id = ce.celebrity_id
+			LEFT JOIN men_type_keywords me ON ca.reference_id = me.celebrity_Id
+			WHERE
+			ca.rank_type_id1 IN (2, 12)
+			AND ca.`status` = 1
+			<if test="name != null and name != ''">
+				<![CDATA[
+					AND ca.title = '%${name}%'
+				]]>
+			</if>
+			<if test="startTime != null and startTime != ''">
+				<![CDATA[
+					and ca.create_time >= #{startTime}
+				 ]]>
+			</if>
+			<if test="endTime != null and endTime != ''">
+				<![CDATA[
+					and ca.create_time <= #{endTime}
+				]]>
+			</if>
+			<if test="showTag != null and showTag != ''">
+				AND ca.show_tag = #{showTag}
+			</if>
+			<if test="labels != null">
+				AND ca.rank_type_id2 in
+				<foreach collection="labels" item="label" index="index" open="(" close=")" separator=",">
+					#{label}
+				</foreach>
+			</if>
+		</if>
+	</select>
+
+	<select id="findOne" resultType="com.miduchina.wrd.po.ranking.HotPerson">
+		SELECT
+			hp.id,
+			hp.`name`,
+			hp.keyword,
+			hp.keyword1,
+			hp.keyword2,
+			hp.keyword3,
+			hp.keyword4,
+			hp.filter_keyword,
+			hp.summary,
+			hp.show_tag,
+			hp.create_time,
+			hp.update_time
+		FROM
+			hot_person hp
+	  	WHERE hp.id = #{id}
+	</select>
+	
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO 
+				hot_person(
+					`name`,
+					summary,
+					keyword,
+					keyword1,
+					keyword2,
+					keyword3,
+					keyword4,
+					filter_keyword,
+					show_tag,
+					status,
+					create_time
+				) 
+			VALUES 
+				(
+				#{name},
+				#{summary},
+				#{keyword},
+				#{keyword1},
+				#{keyword2},
+				#{keyword3},
+				#{keyword4},
+				#{filterKeyword},
+				#{showTag},
+				#{status},
+				now());
+		]]>
+	</insert>
+
+	<update id="update">
+		<![CDATA[
+			update hot_person
+			set 
+				`name`=#{name},
+				keyword=#{keyword},
+				keyword1=#{keyword1},
+				keyword2=#{keyword2},
+				keyword3=#{keyword3},
+				keyword4=#{keyword4},
+				filter_keyword=#{filterKeyword},
+				summary=#{summary},
+				show_tag=#{showTag},
+				update_time=now()
+			where id=#{id}
+		]]>
+	</update>
+
+	<update id="delete" parameterType="java.lang.Integer">
+		<![CDATA[
+			update hot_person
+			set
+				status=0,
+				update_time=now()
+			where id=#{id}
+		]]>
+	</update>
+
+	<select id="findAllHotIncidentRelationId" resultType="java.lang.Integer">
+		select
+			count(*)
+		from hot_person_relation hpi
+		WHERE hpi.hot_person_id = #{id} and type = 2 and status = 1
+	</select>
+
+	<update id="updateHotIncidentRelation">
+		update hot_incident
+		<trim prefix="set" suffixOverrides=",">
+			<trim prefix="hot_event_person_ids =case" suffix="end,">
+				<foreach collection="hotIncidentList" item="h">
+					<if test="h.hotIncidentId != null">
+						when hot_incident_id=#{h.hotIncidentId} then #{h.hotEventPersonIds}
+					</if>
+				</foreach>
+			</trim>
+		</trim>
+		where hot_incident_id in
+		<foreach collection="hotIncidentList" item="h" open="(" separator="," close=")">
+			#{h.hotIncidentId}
+		</foreach>
+	</update>
+
+	<insert id="insertHotIncidentRelation" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO
+				hot_person_relation(
+					hot_person_id,
+					hot_incident_id,
+					status,
+					`type`,
+					create_time
+				)
+			VALUES
+				(
+				#{hotPersonId},
+				#{hotIncidentId},
+				#{status},
+				#{type},
+				now());
+		]]>
+	</insert>
+
+	<update id="deleteHotIncidentRelation">
+		update hot_incident
+		set
+			<if test="type == 1">
+				hot_news_person_ids = #{personIds},
+			</if>
+			<if test="type == 2">
+				hot_event_person_ids = #{personIds},
+			</if>
+			update_time = now()
+		where
+		<if test="hotIncidentId != null">
+			hot_incident_id = #{hotIncidentId}
+		</if>
+	</update>
+
+	<insert id="insertBatchHotIncidentRelation" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO
+			hot_person_relation(
+				hot_person_id,
+				hot_incident_id,
+				status,
+				`type`,
+				create_time
+			)
+		VALUES
+		<if test="hotPersonIds != null">
+			<foreach collection="hotPersonIds" item="hotPersonId" index="index" separator=",">
+				(#{hotPersonId}, #{hotIncidentId}, #{status}, #{type}, now())
+			</foreach>
+		</if>
+		<if test="hotIncidentIds != null">
+			<foreach collection="hotIncidentIds" item="hotIncidentId" index="index" separator=",">
+				(#{hotPersonId}, #{hotIncidentId}, #{status}, #{type}, now())
+			</foreach>
+		</if>
+	</insert>
+
+	<select id="findAllByShowTag" parameterType="java.lang.Integer" resultType="com.miduchina.wrd.po.ranking.RankingListWeb">
+		select
+			id,
+			type_name
+		from ranking_list_web
+		where `status` = 1 and parent_id in(2,12) and type_name != '全部'
+		<if test="showTag!=null and showTag!=''">
+			and is_show = #{showTag}
+		</if>
+	</select>
+
+</mapper>

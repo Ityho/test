@@ -1,0 +1,145 @@
+/* 全局样式 */
+*, *:before, *:after {-webkit-box-sizing: border-box;-moz-box-sizing: border-box; box-sizing: border-box;}
+* {margin: 0px; padding: 0px; list-style-type: none;}
+/*强制firefox出现滑动条*/
+html { font-size:1em;-webkit-tap-highlight-color:rgba(0,0,0,0); -webkit-tap-highlight:rgba(0,0,0,0);-webkit-text-size-adjust:none;overflow:-moz-scrollbars-vertical;}
+html, body {margin: 0;padding: 0;}
+
+body h1,body h2,body h3,body h4,body h5,body h6,body em {font-weight:normal; } /*微软雅体 将原有的bold属性去掉*/
+input:focus { outline: none; }
+input,button,select,textarea{outline:none;/*-webkit-appearance:none;*//*强制去除表单自带的样式*/ }
+textarea{resize:none;/*-webkit-appearance:none;*//*强制去除textarea自带的样式*/ }
+input{text-indent: 2px;}
+input:-webkit-autofill { -webkit-box-shadow: 0 0 0px 1000px white inset; } /*利用阴影来填充掉input自动填充色*/
+h1, h2, h3, h4, h5, h6, th, td, table, input, button, select, textarea, sub{ font-size:1em;}
+
+em, cite, address, optgroup { font-style:normal;}
+kbd, samp, code { font-family:monospace;}
+a, abbr, acronym, address, applet, article, aside, audio, b, blockquote, big, body, center, canvas, caption, cite, code, command, datalist, dd, del, details, dfn, dl, div, dt, em, embed, fieldset, figcaption, figure, font, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, keygen, label, legend, li, meter, nav, menu, object, ol, output, p, pre, progress, q, s, samp, section, small, span, source, strike, strong, sub, sup, table, tbody, tfoot, thead, th, tr, tdvideo, tt,
+u, ul, var { margin:0; padding:0;}
+a{text-decoration: none;}
+a:hover{text-decoration: none;}
+textarea:focus,input[type="text"]:focus,input[type="password"]:focus { border: 1px solid #ff8500; background-color:#fff3e6; }
+img, input, button, select, textarea {  vertical-align: middle;outline: none;font-family: "microsoft yahei",Arial, sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+ul, ol { list-style:none;}
+img, fieldset { border:0;}
+abbr, acronym { cursor:help; border-bottom:1px dotted black;}
+table {	width:100%; border-spacing:0; border:0;}
+table th, table td { border:0;word-break:break-all;}
+legend, hr { overflow:hidden; position:absolute; top:0; left:0;}
+legend, hr, caption { visibility:hidden; font-size:0; width:0; height:0; line-height:0;}
+body{font-family: "microsoft yahei","PingFangSC-Regular",Arial, sans-serif;-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;	font-size: 0.75em; line-height: 1.42857143; position: relative;background-color: #eee;color:#2d2d2d;}
+.clearfix::after {height: 0px; clear: both; display: block; visibility: hidden; content: ".";}
+ .clearfix:before, .clearfix:after { content: ""; display: table;}
+ .clearfix:after {clear: both;}
+
+/* 颜色 */
+.color_0{color: #ffffff !important;}
+.color_1{color: #7A9ECB !important;}
+.color_2{color: #E83B7F !important;}
+.color_3{color: #6BC98D !important;}
+.color_4{color: #1AC0FF !important;}
+.color_5{color: #D6F6FF !important;}
+.font-size-12{font-size: 12px !important;}
+.font-size-14{font-size: 14px !important;}
+.font-size-16{font-size: 16px !important;}
+.font-size-18{font-size: 18px !important;}
+.font-size-20{font-size: 20px !important;}
+.font-size-22{font-size: 22px !important;}
+.font-size-24{font-size: 24px !important;}
+.font-size-26{font-size: 26px !important;}
+.font-size-30{font-size: 30px !important;}
+.font-size-40{font-size: 40px !important;}
+.font-size-44{font-size: 44px !important;}
+.float_l{float: left;}
+.float_r{float: right;}
+.text-center{text-align: center;}
+.v-a-m{vertical-align: middle;}
+.w50{width: 50%;}
+.mr0{margin-right: 0 !important;}
+.margin-top-20{margin-top: 20px;}
+.nowrap {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.badge {
+    display: inline-block;
+    padding: 5px;
+    font-size: 80%;
+    font-weight: 300;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    -moz-border-radius: .215rem;
+         border-radius: .215rem;
+  }
+  .badge-default {
+    color: #999999;
+  }
+  .badge-default[href]:focus,
+  .badge-default[href]:hover {
+    background-color: #f3f7f9;
+    color: #a3afb7;
+  }
+  .badge-default.badge-outline {
+    color: #999999;
+    background-color: transparent;
+    border-color: #999999;
+  }
+  .badge-outline {
+    border: 1px solid transparent;
+  }
+  .badge-circular {
+    border-radius: 50% !important;
+  }
+  .badge-primary[href]:focus,
+  .badge-primary[href]:hover {
+    background-color: #FF6666;
+  }
+  .badge-primary.badge-outline {
+    color: #FF6666;
+    background-color: transparent;
+    border-color: #FF6666;
+  }
+  .badge-primary {
+    color: #fff;
+    background-color: #FF6666;
+  }
+  .badge-primary[href]:focus,
+  .badge-primary[href]:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #FF6666;
+  }
+  .badge-success {
+    color: #fff;
+    background-color: #71E8E3;
+  }
+  .badge-success[href]:focus,
+  .badge-success[href]:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #71E8E3;
+  }
+  .badge-success.badge-outline {
+    color: #71E8E3;
+    background-color: transparent;
+    border-color: #71E8E3;
+  }
+  .badge-warning {
+    color: #ffffff;
+    background-color: #FFB209;
+  }
+  .badge-warning[href]:focus,
+  .badge-warning[href]:hover {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #FFB209;
+  }
+  .badge-warning.badge-outline {
+    color: #FFB209;
+    background-color: transparent;
+    border-color: #FFB209;
+  }

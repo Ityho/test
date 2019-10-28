@@ -1,0 +1,24 @@
+/************suiÀ©Õ¹ÑùÊ½***********/
+.page, .page-group{background-color:#f6f6f6;}
+.page, .page-group header{margin: 0;padding: 0 .5rem;}
+.mp-none{margin: 0; padding: 0;}
+.m-none{margin: 0;}
+.p-none{padding: 0;}
+.bar{background-color: #fff;}
+.bar .button-link{color: #3d4145;}
+.button{border-radius: .15rem;}
+.block-tab~.content-block .list-block ul:before{background-color: transparent;}
+.block-tab .button{background-color: #eee;}
+.block-tab .button.active{ color: #2f2f2f; border-color: #ffffff; background-color: #fff;}
+.item-media .iconfont{font-size: 1rem; margin-bottom: -2px;}
+.item-after .button.button-fill{line-height: 1.7rem; height: 1.7rem; margin-top: -3px;}
+.button-warning.button-fill {color: #fff;background-color: #fd8c24;}
+.bar-tab .tab-item.active, .bar-tab .tab-item:active {color: #fd8c24;}
+.bar-tab .tab-item .icon~.tab-label,
+.bar-tab .tab-item .iconfont~.tab-label {display: block;font-size: .55rem; position: relative;top: .15rem;}
+.bar-tab .tab-item .icon,
+.bar-tab .tab-item .iconfont {top: .05rem; height: 1.2rem; font-size: 1.2rem; line-height: 1.2rem; padding-top: 0; padding-bottom: 0;}
+.bar .icon,
+.bar .iconfont {position: relative;z-index: 20;padding: .5rem .1rem; font-size: 1rem;line-height: 1.2rem;}
+
+

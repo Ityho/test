@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.rankinglist.mapper.HotIncidentMapper">
+	
+	<select id="findAllV2" resultType="com.miduchina.wrd.po.ranking.HotIncident">
+		<![CDATA[
+			SELECT
+				hi.hot_incident_id,
+				hi.incident_title,
+				hi.long_title,
+				hi.create_time,
+				hi.origin,
+				hi.original_url,
+				hi.province,
+				hi.city,
+				hi.area_type,
+				hi.labels,
+				hi.keyword,
+				hi.filter_keyword,
+				hi.ratio_day,
+				hi.ratio_hot_day,
+				hi.ratio_hot_last_day,
+				hi.ratio_hot_top_custom,
+				hi.difference_day,
+				hi.number_day,
+				hi.media_number_day,
+				hi.client_number_day,
+				hi.wb_number_day,
+				hi.wx_number_day,
+				hi.zw_number_day,
+				hi.bk_number_day,
+				hi.mg_number_day,
+				hi.fmg_number_day,
+				hi.rank,
+				hi.rank_difference,
+				hi.rank_last,
+				hi.important_event_id,
+				hi.hot_phenomenone_id,
+				hi.hot_word_id,
+				hi.hot_news_person_ids,
+				hi.hot_event_person_ids,
+				hi.line_data,
+				hi.mg_line_data,
+				hi.fmg_line_data,
+				hi.ratio_hot_day_hour,
+				hi.ratio_hot_difference_day_hour,
+				hi.last_line_data
+			FROM
+				`hot_incident` hi
+			where hi.status = 1
+			]]>
+		<if test="incidentTitle!=null and incidentTitle!=''">
+			<![CDATA[
+				and incident_title LIKE '%${incidentTitle}%'
+			]]>
+		</if>
+		<if test="origin!=null and origin!=''">
+			<![CDATA[
+				and origin = #{origin}
+			]]>
+		</if>
+		<if test="labels!=null">
+			  and
+			<foreach collection="labels" index="index" item="label" open="(" separator="or" close=")">
+				FIND_IN_SET(#{label} ,hi.labels)
+			</foreach>
+		</if>
+		<if test="areaType!=null and areaType!=''">
+			<![CDATA[
+				and area_type = #{areaType}
+			]]>
+		</if>
+		<if test="province!=null and province!=''">
+			<![CDATA[
+				and province = #{province}
+			]]>
+		</if>
+		<if test="city!=null and city!=''">
+			<![CDATA[
+				and city = #{city}
+			]]>
+		</if>
+		<if test="labelShowTag == 0">
+			<![CDATA[
+				and not FIND_IN_SET('101301',hi.labels)
+			]]>
+		</if>
+		<if test="showTag!=null and showTag!=''">
+			<![CDATA[
+				and (hi.show_tag is null or hi.show_tag = #{showTag})
+			]]>
+		</if>
+		<if test="startTime!=null and startTime!=''">
+			<![CDATA[
+				and hi.create_time >= #{startTime}
+			]]>
+		</if>
+		<if test="endTime!=null and endTime!=''">
+			<![CDATA[
+				and hi.create_time <= #{endTime}
+			]]>
+		</if>
+		<if test="hotPhenomenoneId != null">
+			<![CDATA[
+				and hi.hot_phenomenone_id = #{hotPhenomenoneId}
+			]]>
+		</if>
+		<if test="hotPhenomenoneIdNot != null">
+			<![CDATA[
+				and (hi.hot_phenomenone_id is null or hi.hot_phenomenone_id <> #{hotPhenomenoneIdNot})
+			]]>
+		</if>
+		<if test="hotPhenomenoneIds != null">
+			and hi.hot_phenomenone_id in
+			<foreach collection="hotPhenomenoneIds" index="index" item="hotPhenomenoneId" open="(" separator="," close=")">
+				#{hotPhenomenoneId}
+			</foreach>
+		</if>
+		<if test="importantEventId != null">
+			<![CDATA[
+				and hi.important_event_id = #{importantEventId}
+			]]>
+		</if>
+		<if test="importantEventIdNot != null">
+			<![CDATA[
+				and (hi.important_event_id is null or hi.important_event_id <> #{importantEventIdNot})
+			]]>
+		</if>
+		<if test="importantEventIds != null">
+			and hi.important_event_id in
+			<foreach collection="importantEventIds" index="index" item="importantEventId" open="(" separator="," close=")">
+				#{importantEventId}
+			</foreach>
+		</if>
+		<if test="hotWordId != null">
+			<![CDATA[
+				and hi.hot_word_id = #{hotWordId}
+			]]>
+		</if>
+		<if test="hotWordIds != null">
+			and hi.hot_word_id in
+			<foreach collection="hotWordIds" index="index" item="hotWordId" open="(" separator="," close=")">
+				#{hotWordId}
+			</foreach>
+		</if>
+		<if test="hotEventPersonId != null">
+			and FIND_IN_SET(#{hotEventPersonId} ,hi.hot_event_person_ids)
+		</if>
+		<if test="hotEventPersonIdNot != null">
+			and (hi.hot_event_person_ids is null or (not FIND_IN_SET(#{hotEventPersonIdNot} ,hi.hot_event_person_ids)))
+		</if>
+		<if test="hotNewsPersonId != null">
+			and FIND_IN_SET(#{hotNewsPersonId} ,hi.hot_news_person_ids)
+		</if>
+		<if test="hotNewsPersonIdNot != null">
+			and (hi.hot_news_person_ids is null or (not FIND_IN_SET(#{hotNewsPersonIdNot} ,hi.hot_news_person_ids)))
+		</if>
+		<choose>
+			<when test="hotNewsPersonIds != null and hotNewsPersonIds.size() > 0 and hotEventPersonIds != null and hotEventPersonIds.size() > 0">
+				and
+				(<foreach collection="hotNewsPersonIds" item="hotNewsPersonId" index="index" separator="or">
+				FIND_IN_SET(#{hotNewsPersonId} ,hi.hot_news_person_ids)
+				</foreach>
+				or
+				<foreach collection="hotEventPersonIds" item="hotEventPersonId" index="index" separator="or">
+					FIND_IN_SET(#{hotEventPersonId} ,hi.hot_event_person_ids)
+				</foreach>)
+			</when>
+			<otherwise>
+				<if test="hotEventPersonIds != null and hotEventPersonIds.size() > 0">
+					and
+					<foreach collection="hotEventPersonIds" item="hotEventPersonId" index="index" open="(" separator="or" close=")">
+						FIND_IN_SET(#{hotEventPersonId} ,hi.hot_event_person_ids)
+					</foreach>
+				</if>
+				<if test="hotNewsPersonIds != null and hotNewsPersonIds.size() > 0">
+					and
+					<foreach collection="hotNewsPersonIds" item="hotNewsPersonId" index="index" open="(" separator="or" close=")">
+						FIND_IN_SET(#{hotNewsPersonId} ,hi.hot_news_person_ids)
+					</foreach>
+				</if>
+			</otherwise>
+		</choose>
+		<if test="personCountLt != null">
+			<![CDATA[
+				and LENGTH(concat_ws(',',
+				hi.hot_event_person_ids,
+				hi.hot_news_person_ids
+				)) - LENGTH(REPLACE(concat_ws(',',
+				hi.hot_event_person_ids,
+				hi.hot_news_person_ids
+				),',','')) < ${personCountLt}
+			]]>
+		</if>
+		order by
+		<choose>
+			<when test="sort == 1">hi.create_time</when>
+			<when test="sort == 2">hi.ratio_hot_day</when>
+			<when test="sort == 3">hi.number_day</when>
+			<when test="sort == 4">hi.ratio_day</when>
+			<when test="sort == 5">abs(hi.difference_day)</when>
+			<when test="sort == 6">abs(hi.rank_difference)</when>
+            <when test="sort == 7">hi.ratio_hot_day_hour</when>
+            <when test="sort == 8">abs(hi.ratio_hot_difference_day_hour)</when>
+			<otherwise>hi.incident_seq desc,hi.create_time</otherwise>
+		</choose>
+		<choose>
+			<when test="order != null and order == 2">asc</when>
+			<otherwise>desc</otherwise>
+		</choose>
+	</select>
+	
+	<select id="findOneV2" resultType="com.miduchina.wrd.po.ranking.HotIncident">
+		<![CDATA[
+			SELECT
+				hi.hot_incident_id,
+				hi.incident_title,
+				hi.long_title,
+				hi.origin,
+				hi.original_url,
+				hi.label,
+				hi.label1,
+				hi.labels,
+				hi.province,
+				hi.city,
+				hi.area_type,
+				hi.keyword,
+				hi.keyword1,
+				hi.keyword2,
+				hi.keyword3,
+				hi.keyword4,
+				hi.filter_keyword,
+				hi.hot_phenomenone_id,
+				hi.important_event_id,
+				hw.`name` hotWordName,
+				hi.hot_news_person_ids,
+				hi.hot_event_person_ids,
+				hi.show_tag
+			FROM
+				`hot_incident` hi
+			left JOIN hot_word hw ON hi.hot_word_id = hw.id
+			WHERE
+				hi. STATUS = 1
+			AND hi.hot_incident_id = #{id}
+		]]>
+	</select>
+	
+	<update id="updateTop" parameterType="java.lang.Integer">
+			UPDATE hot_incident
+			SET incident_seq = 
+				<if test="whether == 1">
+					<![CDATA[
+					(select * from(
+						SELECT
+							max(incident_seq + 1)
+						FROM
+						hot_incident) a)
+					]]>
+				</if>
+				<if test="whether != 1">
+					0
+				</if>
+			WHERE
+				hot_incident_id = #{id}
+	</update>
+	
+	<insert id="insertV2" useGeneratedKeys="true" keyProperty="hotIncidentId">
+			INSERT INTO
+				hot_incident(
+					incident_title,
+					long_title,
+					origin,
+					original_url,
+					label,label1,labels,
+					hot_phenomenone_id,important_event_id,hot_word_id,
+					hot_news_person_ids,hot_event_person_ids,
+					province,city,area_type,
+					keyword,keyword1,keyword2,keyword3,keyword4,
+					filter_keyword,create_time,show_tag
+				) 
+			VALUES 
+				(
+				#{incidentTitle},
+				#{longTitle},
+				#{origin},
+				#{originalUrl},
+				#{label},#{label1},#{labels},
+				#{hotPhenomenoneId},#{importantEventId},#{hotWordId},
+				#{hotNewsPersonIds},#{hotEventPersonIds},
+				#{province},#{city},#{areaType},
+				#{keyword},#{keyword1},#{keyword2},#{keyword3},#{keyword4},
+				#{filterKeyword},now(),#{showTag});
+	</insert>
+	
+	<update id="updateV2">
+		<![CDATA[
+			update hot_incident 
+			set 
+			incident_title=#{incidentTitle},
+			long_title=#{longTitle},
+			origin=#{origin},
+			original_url=#{originalUrl},
+			label=#{label},
+			label1=#{label1},
+			labels=#{labels},
+			hot_phenomenone_id=#{hotPhenomenoneId},
+			important_event_id=#{importantEventId},
+			hot_word_id=#{hotWordId},
+			hot_news_person_ids=#{hotNewsPersonIds},
+			hot_event_person_ids=#{hotEventPersonIds},
+			province=#{province},
+			city=#{city},
+			area_type=#{areaType},
+			keyword=#{keyword},keyword1=#{keyword1},keyword2=#{keyword2},keyword3=#{keyword3},keyword4=#{keyword4},
+			filter_keyword=#{filterKeyword},
+			update_time=now(),
+			show_tag=#{showTag}
+			where hot_incident_id=#{hotIncidentId}
+		]]>
+	</update>
+	
+	<update id="delete" parameterType="java.lang.Integer">
+		<![CDATA[
+			update hot_incident 
+			set 
+			status=0,
+			update_time=now()
+			where hot_incident_id=#{id}
+		]]>
+	</update>
+	
+	<update id="updateHotIncidentRelationId" parameterType="java.lang.Integer">
+			update hot_incident 
+			set 
+			<if test="type == 2">
+				hot_phenomenone_id = #{relationId},
+			</if>
+			<if test="type == 3">
+				important_event_id = #{relationId},
+			</if>
+			<if test="type == 6">
+				hot_word_id = #{relationId},
+			</if>
+			<if test="type == 7">
+				hot_news_person_ids = concat_ws(',',hot_news_person_ids,#{relationId}),
+			</if>
+			<if test="type == 8">
+				hot_event_person_ids = concat_ws(',',hot_event_person_ids,#{relationId}),
+			</if>
+			update_time=now()
+			where hot_incident_id in
+			<foreach collection="ids" index="index" item="id" open="(" separator="," close=")"> 
+				#{id}
+			</foreach>
+	</update>
+
+	<update id="deleteHotIncidentRelationId" parameterType="java.lang.Integer">
+		update hot_incident
+		set
+		<if test="type == 2">
+			hot_phenomenone_id = null,
+		</if>
+		<if test="type == 3">
+			important_event_id = null,
+		</if>
+		<if test="type == 6">
+			hot_word_id = null,
+		</if>
+		update_time=now()
+		where hot_incident_id in
+		<foreach collection="ids" index="index" item="id" open="(" separator="," close=")">
+			#{id}
+		</foreach>
+		<if test="type == 2">
+			and hot_phenomenone_id = #{relationId}
+		</if>
+		<if test="type == 3">
+			and important_event_id = #{relationId}
+		</if>
+		<if test="type == 6">
+			and hot_word_id = #{relationId}
+		</if>
+	</update>
+
+	<select id="findCount" resultType="java.util.HashMap">
+		<![CDATA[
+			SELECT
+				count(*) hotCount,
+				case when avg(hi.ratio_hot_day) is null then 0 else avg(hi.ratio_hot_day) end hotAvg,
+				case when avg(hi.difference_day) is null then 0 else avg(hi.difference_day) end hotDifferenceAvg,
+				count(hi.difference_day > 0 or null) hotAsc,
+				count(hi.difference_day > 0 or null) hotAsc,
+				count(hi.difference_day < 0 or null) hotDesc
+			FROM
+				hot_incident hi
+			WHERE
+			((hi.stat_status = 1 and hi.ratio_hot_day > 0) or hi.stat_status = 2)
+			and hi.labels is not null
+			and hi.area_type = 1
+			and hi.show_tag = 1
+			and not FIND_IN_SET('101301',hi.labels)
+		]]>
+        <if test="startTime!=null and startTime!=''">
+            <![CDATA[
+				and hi.create_time >= #{startTime}
+			]]>
+        </if>
+        <if test="endTime!=null and endTime!=''">
+            <![CDATA[
+				and hi.create_time <= #{endTime}
+			]]>
+        </if>
+        <if test="province!=null and province!=''">
+            <![CDATA[
+				and province = #{province}
+			]]>
+        </if>
+		<if test="city!=null and city!=''">
+			<![CDATA[
+				and city = #{city}
+			]]>
+		</if>
+        <if test="labels!=null">
+            and
+            <foreach collection="labels" index="index" item="label" open="(" separator="or" close=")">
+                FIND_IN_SET(#{label} ,hi.labels)
+            </foreach>
+        </if>
+	</select>
+
+    <select id="findTypeCount" resultType="java.lang.String">
+        <![CDATA[
+			SELECT
+				hi.labels
+			FROM
+				hot_incident hi
+			WHERE
+			((hi.stat_status = 1 and hi.ratio_hot_day > 0) or hi.stat_status = 2)
+			and hi.labels is not null
+			and hi.area_type = 1
+			and hi.show_tag = 1
+			and not FIND_IN_SET('101301',hi.labels)
+		]]>
+        <if test="startTime!=null and startTime!=''">
+            <![CDATA[
+				and hi.create_time >= #{startTime}
+			]]>
+        </if>
+        <if test="endTime!=null and endTime!=''">
+            <![CDATA[
+				and hi.create_time <= #{endTime}
+			]]>
+        </if>
+        <if test="province!=null and province!=''">
+            <![CDATA[
+				and province = #{province}
+			]]>
+        </if>
+		<if test="city!=null and city!=''">
+			<![CDATA[
+				and city = #{city}
+			]]>
+		</if>
+    </select>
+
+	<select id="findProvinceGroupBy" resultType="com.miduchina.wrd.po.ranking.HotIncident">
+			SELECT
+				hi.*
+			FROM
+				hot_incident hi
+			WHERE
+				hi.status = 1
+			AND hi.show_tag = 1
+			<if test="startTime!=null and startTime!=''">
+				<![CDATA[
+					and hi.create_time >= #{startTime}
+				]]>
+        	</if>
+			<if test="endTime!=null and endTime!=''">
+				<![CDATA[
+					and hi.create_time <= #{endTime}
+				]]>
+			</if>
+			AND hi.area_type = 1
+			AND hi.province != '全国'
+			AND not FIND_IN_SET('101301',hi.labels)
+			AND hi.ratio_hot_day = (
+				SELECT
+					max(h.ratio_hot_day)
+				FROM
+					hot_incident h
+				WHERE
+					h.status = 1
+				AND h.show_tag = 1
+				<if test="startTime!=null and startTime!=''">
+					<![CDATA[
+							and h.create_time >= #{startTime}
+						]]>
+				</if>
+				<if test="endTime!=null and endTime!=''">
+					<![CDATA[
+							and h.create_time <= #{endTime}
+						]]>
+				</if>
+				AND h.province != '全国'
+				AND h.area_type = 1
+				AND not FIND_IN_SET('101301',h.labels)
+				AND	h.province = hi.province
+			)
+			ORDER BY
+				hi.province
+	</select>
+	
+</mapper>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.casebase.CaseBaseMapper">
+
+	<select id="findAll" resultType="com.miduchina.wrd.po.casebase.WyqCase">
+		<![CDATA[
+			select * from wyq_case where status = 1
+		]]>
+		<if test="label != null">
+			<![CDATA[
+				and event_label = #{label}
+			]]>
+		</if>
+		<if test="title != null">
+			<![CDATA[
+				and title LIKE '%${title}%'
+			]]>
+		</if>
+		order by
+		<choose>
+			<when test="order == 1">hot_value</when>
+			<when test="order == 2">start_time</when>
+			<otherwise>hot_value</otherwise>
+		</choose>
+		<choose>
+			<when test="sort != null and sort == 2">asc</when>
+			<otherwise>desc</otherwise>
+		</choose>
+	</select>
+
+	<select id="findById" parameterType="java.lang.Integer" resultType="com.miduchina.wrd.po.casebase.WyqCase">
+		<![CDATA[
+			select * from wyq_case where status = 1 and id = #{id}
+		]]>
+	</select>
+
+	<select id="findByTopLabel" parameterType="java.lang.Integer" resultType="com.miduchina.wrd.po.casebase.WyqCase">
+		<![CDATA[
+			select title,hot_value from wyq_case where status = 1 and event_label = #{label} order by hot_value desc
+		]]>
+	</select>
+
+</mapper>

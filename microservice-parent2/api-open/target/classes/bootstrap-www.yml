@@ -1,0 +1,26 @@
+#服务注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:22000/eureka/,http://${eureka.instance.replicas}:22000/eureka/
+
+#服务名称
+spring:
+  application:
+    name: api-open
+  zipkin:
+    discovery-client-enabled: true
+    base-url: http://192.168.20.127:9411/
+  sleuth:
+    enabled: true
+    feign:
+      enabled: true
+    sampler:
+      probability: 1.0
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh

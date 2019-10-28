@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="673px" height="190px" viewBox="0 0 673 190" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>current@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0.000511461385%" y1="50.0007499%" x2="53.3502386%" y2="50.0007499%" id="linearGradient-1">
+            <stop stop-color="#1AC0FF" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0.00049462297%" x2="50%" y2="53.3499243%" id="linearGradient-2">
+            <stop stop-color="#1AC0FF" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="49.9995348%" x2="53.35%" y2="49.9995348%" id="linearGradient-3">
+            <stop stop-color="#1AC0FF" stop-opacity="0.2" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="99.9994575%" y1="49.9999521%" x2="46.6497304%" y2="49.9999521%" id="linearGradient-4">
+            <stop stop-color="#1AC0FF" stop-opacity="0.2" offset="2.10214957%"></stop>
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="热点发现-重大事件" transform="translate(-329.000000, -163.000000)">
+            <g id="事件tab" transform="translate(331.000000, 164.000000)">
+                <g id="1">
+                    <g id="current">
+                        <polyline id="路径" stroke="#1AC0FF" points="666.017831 58.5549272 666.017831 153.707562 379.296306 153.707562 333.008915 188 287.58235 153.707562 0 153.707562 0 3 149.371533 3"></polyline>
+                        <polyline id="路径" stroke="#1AC0FF" stroke-width="2" points="223.001486 4 665.022288 4 665.022288 31"></polyline>
+                        <polygon id="路径" stroke="#1AC0FF" stroke-width="2" points="657.057949 146.415179 373.724045 145.415179 333.506686 176 293.257126 145.415179 9.95542348 145.415179 9.95542348 12 657.057949 12"></polygon>
+                        <polyline id="路径" stroke="#1AC0FF" stroke-width="4" points="0 97 0 3 121.456166 3"></polyline>
+                        <polyline id="路径" stroke="#1AC0FF" stroke-width="4" points="236.939079 153 0 153 0 125"></polyline>
+                        <polyline id="路径" stroke="#1AC0FF" stroke-width="4" points="666.017831 83 666.017831 153 574.427935 153"></polyline>
+                        <polyline id="路径" stroke="#1AC0FF" stroke-width="4" points="258.84101 4 666.017831 4 666.017831 48"></polyline>
+                        <path d="M437.421445,153 L531.29728,153" id="路径" stroke="#1AC0FF" stroke-width="4"></path>
+                        <path d="M192.745066,3 L148.803186,3" id="路径" stroke="#1AC0FF" stroke-width="4"></path>
+                        <rect id="矩形" fill="url(#linearGradient-1)" opacity="0.28" x="7.96433878" y="10" width="332.511144" height="136"></rect>
+                        <polygon id="路径" fill="url(#linearGradient-2)" opacity="0.28" points="9.95542348 145 9.95542348 12 657.057949 12 657.057949 145"></polygon>
+                        <path d="M9.95542348,12 L9.95542348,144.829827 L288.279414,144.829827 L333.506686,176 L375.71513,144.829827 L657.057949,144.829827 L657.057949,12 L9.95542348,12 Z M333.506686,165.261905 L305.177313,144.761905 L361.83606,144.761905 L333.506686,165.261905 Z" id="形状" fill="url(#linearGradient-3)" fill-rule="nonzero" opacity="0.28"></path>
+                        <polygon id="路径" fill="url(#linearGradient-4)" opacity="0.28" points="333.506686 10 652.080238 10 652.080238 146 333.506686 146"></polygon>
+                        <polyline id="路径" stroke="#1AC0FF" stroke-width="2" points="305.631501 146 333.506686 167 333.506686 167 361.381872 146"></polyline>
+                        <ellipse id="椭圆形" stroke="#1AC0FF" stroke-width="2" cx="197.117385" cy="4" rx="3.98216939" ry="4"></ellipse>
+                        <ellipse id="椭圆形" stroke="#1AC0FF" stroke-width="2" cx="666.017831" cy="52" rx="3.98216939" ry="4"></ellipse>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,6 @@
+@charset "GBK";
+/* CSS Document */
+
+.menu1{position: fixed; z-index:2;  display: none;font-size:12px;}
+.menu1 a{display: block;float: left;background-color: #EEE;border: 1px solid #B9B9B9;padding: 3px 10px;text-align: center;color: #666;text-decoration: none;}
+.menu1 a:hover{ background-color:#666; color:#fff;}

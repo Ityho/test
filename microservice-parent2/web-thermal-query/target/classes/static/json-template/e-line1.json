@@ -1,0 +1,57 @@
+{
+    title : {
+        text: '',
+        subtext: ''
+    },
+    tooltip : {
+        trigger: 'axis'
+    },
+    calculable : true,
+    xAxis : [
+        {
+            type : 'category',//category|time
+          	 boundaryGap: false ,
+             data : {datetime},
+             axisLine: {
+            	 onZero: false
+            },
+            axisLabel : {
+            		 textStyle : {
+     	                 decoration: 'none',
+     	                 fontFamily: 'Microsoft YaHei',
+     	                 fontSize: 12,
+     	             },
+     	             formatter:function(v){
+						 var now = new Date();
+						 now.setTime(v);
+     	            	 var s = now.format({dateFormat});
+     	            	 return s;
+     	             }
+            	 },
+        }
+    ],
+    yAxis : [
+        {
+            type : 'value',
+           	 axisLabel:{
+	               	  /* textStyle : {
+     	                 decoration: 'none',
+     	                 fontFamily: 'Microsoft YaHei',
+     	                 fontSize: 12,
+     	             }, */
+     	             formatter:function(v){
+     	            	 if(v>=1000){
+     	            		 return (v/1000)+"k";
+     	            	 }else{
+     	            		 return v;
+     	            	 }
+     	             }
+           	 },
+        }
+    ],
+    series : [{
+    	type:'line',
+    	name:'',
+    	data:{data}
+    }]
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.user.UserCenterMapper">
+
+    <select id="showNewNotice" resultType="com.miduchina.wrd.po.ranking.Notice">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				notice
+			WHERE
+
+			status=1 and notice_send_time> #{str};
+
+		]]>
+
+    </select>
+    <select id="queryGiftCardByUserId" resultType="com.miduchina.wrd.po.hotspot.GiftCard">
+        <![CDATA[
+			SELECT
+				id as id,
+				card_num as cardNum,
+				credit_count as count,
+				valid_end_date as validEndDate
+			FROM
+				gift_card
+			WHERE
+              user_id=#{userId}
+            AND status=1 and valid_end_date > now();
+
+		]]>
+
+    </select>
+    <select id="findTodayLoginCountByUserId" resultType="java.lang.Integer">
+        <![CDATA[
+			SELECT
+			  count(DISTINCT(DATE_FORMAT(login_log_time, '%Y%m%d%H'))) as num
+			FROM
+				login_log
+			WHERE
+			  login_log_platform=1
+			AND login_log_user_id =#{userId}
+            AND login_log_time >=#{format}
+            AND login_log_time <= #{format1};
+
+		]]>
+
+    </select>
+    <insert id="saveOrUpdateNotLoginOperateRecord" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[
+           INSERT INTO
+				not_login_operate_record(
+                    ip,
+                    user_agent,
+                    operate_type,
+                    name,
+                    keyword,
+                    filter_keyword,
+                    json_data,
+                    create_time,
+                    update_time,
+                    status,
+                    category_id,
+                    category_type,
+                    num,
+                    match_type,
+                    options,
+                    origin
+				)
+			VALUES
+				(
+				#{ip},
+				#{userAgent},
+				#{operateType},
+				#{name},
+				#{keyword},
+				#{filterKeyword},
+				#{jsonData},
+				now() ,
+				#{updateTime},
+				#{status},
+				#{categoryId},
+				#{categoryType},
+				#{num},
+				#{matchType},
+				#{options},
+				#{origin}
+				)
+        ]]>
+    </insert>
+
+    <select id="findUserByMobile" resultType="com.miduchina.wrd.dto.user.UserDto">
+        <![CDATA[
+			SELECT
+			  *
+			FROM
+				user
+			WHERE
+			  status=1
+			AND mobile =#{mobile}
+            ;
+
+		]]>
+
+    </select>
+
+    <select id="findNotLoginOperateRecordByIpAndUA" resultType="com.miduchina.wrd.po.hotspot.NotLoginOperateRecord">
+        <![CDATA[
+			SELECT
+			  *
+			FROM
+				not_login_operate_record
+			WHERE
+			  status=1
+			AND ip =#{ip}
+			AND user_agent=#{ua}
+		]]>
+
+    </select>
+    <update id="updateNotLoginOperateRecord" parameterType="com.miduchina.wrd.po.h5.AuthJumpRelation">
+        <![CDATA[
+                UPDATE not_login_operate_record
+                SET
+                status=0,
+                update_time=now()
+                WHERE
+                status=1
+                AND ip = #{ip}
+                AND user_agent=#{ua}
+                ]]>
+    </update>
+
+</mapper>

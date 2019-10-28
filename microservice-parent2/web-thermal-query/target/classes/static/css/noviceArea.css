@@ -1,0 +1,41 @@
+@charset "GBK";
+/* CSS Document */
+
+.noviceArea{ width:100%; background-color:#d8e2ea; overflow:hidden;font-family: "Î¢ÈíÑÅºÚ";}
+.main1,.main2,.main3,.main4,.main5,.main6{
+	width:1200px;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	overflow:hidden;
+}
+.main1{
+	background-image: url(../images/noviceArea/noviceArea01.png);
+	height: 631px;
+}
+.text1{ display:block; line-height:25px; color:#444444; left:94px; bottom:158px; width:255px; overflow:hidden; font-size:14px;}
+.main2{
+	background-image: url(../images/noviceArea/noviceArea02.png);
+	height: 705px;
+}
+.text2{ display:block; line-height:25px; color:#444444; left:94px; bottom:52px; width:392px; overflow:hidden; font-size:14px;}
+.main3{
+	background-image: url(../images/noviceArea/noviceArea03.png);
+	height: 598px;
+}
+.text3{ display:block; line-height:25px; color:#444444; left:94px; bottom:55px; width:392px; overflow:hidden; font-size:14px;}
+.main4{
+	background-image: url(../images/noviceArea/noviceArea04.png);
+	height: 706px;
+}
+.text4{ display:block; line-height:25px; color:#444444; left:94px; bottom:118px; width:350px; overflow:hidden; font-size:14px;}
+.main5{
+	background-image: url(../images/noviceArea/noviceArea05.png);
+	height: 652px;
+}
+.text5{ display:block; line-height:25px; color:#444444; left:94px; bottom:68px; width:350px; overflow:hidden; font-size:14px;}
+.main6{
+	background-image: url(../images/noviceArea/noviceArea06.png);
+	height: 724px;
+}
+.text6{ display:block; line-height:25px; color:#444444; left:94px; bottom:28px; width:350px; overflow:hidden; font-size:14px;}

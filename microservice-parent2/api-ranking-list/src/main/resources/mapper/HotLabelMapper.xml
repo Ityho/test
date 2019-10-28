@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.rankinglist.mapper.HotLabelMapper">
+
+	<select id="findAllByShowTag" parameterType="java.lang.Integer" resultType="com.miduchina.wrd.po.ranking.HotLabel">
+		select
+			hl.id,
+			hl.name,
+			hl.parent_id
+		from hot_label hl where `status` = 1
+		<if test="showTag == null">
+			and show_tag = 1
+		</if>
+	</select>
+
+</mapper>

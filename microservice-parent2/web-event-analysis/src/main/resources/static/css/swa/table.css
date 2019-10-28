@@ -1,0 +1,18 @@
+@CHARSET "UTF-8";
+/*表格样式*/
+table {border-collapse:collapse;font-size:12px;font-weight: normal;margin-top: -1px;margin-right: -1px;margin-bottom: -1px;margin-left: -1px;}
+.table{border: 0px solid #dbdee1;}
+.table th,td{ text-align:center;}
+.table th{ font-size:12px; line-height:16px; padding:10px 0px; background-color:#f87434;color:#fff; font-weight:normal; border-bottom:solid 0px #dbdee1;}
+.table th,.table td{border:none !important;}
+.table td{ line-height:16px; padding:10px 0px; }
+.table td a{text-decoration: none;color: #333;}
+.table td a:hover{ text-decoration:underline;}
+.table tr{border-bottom: dashed 0px #dbdee1;}
+.table tr:last-child{border: none;}
+.table tr:hover{ background-color: #eeeeee;}
+.table tbody tr:nth-child(even) {
+    background: #f7f7f7 !important;
+}
+.table2 th{  background-color:#a9a9a9;}
+ 

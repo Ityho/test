@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.user.UserChannelMapper">
+
+    <select id="selectOneChannel" resultType="com.miduchina.wrd.po.user.UserExclusiveChannel">
+        <![CDATA[
+			SELECT
+				id,
+				user_id as userId,
+				uec_code as uecCode,
+				uec_desc as uecDesc,
+				uec_qrcode_logo_path as uecQrcodeLogoPath,
+				uec_personal as uecPersonal,
+				uec_channel as uecChannel,
+                status,
+                create_time as createTime,
+                update_time as updateTime
+			FROM
+				user_exclusive_channel
+			WHERE
+
+			uec_code = #{uec_code} AND status=1
+
+		]]>
+
+    </select>
+
+
+    <insert id="saveUserExclusiveChannelRelation" useGeneratedKeys="true" keyProperty="uecr_id">
+        <![CDATA[
+           INSERT INTO
+				user_exclusive_channel_relation(
+                    uecr_id,
+                    user_id,
+                    uec_id,
+                    status,
+                    create_time,
+                    update_time
+				)
+			VALUES
+				(
+				#{uecrId},
+				#{userId},
+				#{uecId},
+				#{status},
+				 now(),
+				 now()
+				)
+        ]]>
+    </insert>
+
+
+
+
+</mapper>

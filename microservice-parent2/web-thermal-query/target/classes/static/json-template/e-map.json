@@ -1,0 +1,112 @@
+{
+		title : {
+			text : '',
+			subtext : '',
+			x : 'center',
+			y : 'top',
+		},
+		tooltip : {
+			trigger : 'item',
+			enterable:true,
+			textStyle : {
+				fontSize : 12
+			}
+		},
+		 legend: {
+       		x:'right',
+    		data:{legend}
+    	},
+		series : [ {
+			name : '数量',
+			type : 'map',
+			mapType : 'china',
+			mapLocation: {
+                x: 'left'
+            },
+			selectedMode : 'single',//single|multiple
+			roam:false,
+			itemStyle : {
+				normal : {
+					label : {
+						show : false,
+						textStyle : {
+							fontSize : 10
+						},
+					},
+					
+				},
+				emphasis : {
+					label : {
+						show : true
+					}
+				}
+			},
+			
+		   data :{data},
+		  geoCoord: {
+				 "北京":[116.46,39.92],  
+				 "辽宁":[123.14,41.66],
+				 "安徽":[116.98,32.62],
+				 "山东":[117.52,36.23],
+				 "上海":[121.42,31.12],
+				 "江苏":[119.72,33.66],
+				 "湖北":[111.99,31.54],
+				 "浙江":[119.87,29.24],
+				 "广东":[112.73,24.02],
+				 "福建":[117.73,26.17],
+				 "湖南":[111.33,27.75],
+				 "澳门":[113.57,22.51],
+				 "河南":[113.57,33.86],
+				 "海南":[109.53,19.15],
+				 "新疆":[85.90,40.98],
+				 "内蒙古":[113.87,43.49],
+				 "西藏":[87.01,32.53],
+				 "青海":[95.03,36.19],
+				 "云南":[101.25,24.48],
+				 "四川":[102.20,30.77],
+				 "贵州":[106.62,26.94],
+				 "甘肃":[96.46,40.19],
+				 "广西":[108.31,23.60],
+				 "江西":[115.52,27.60],
+				 "黑龙江":[127.37,47.73],
+				 "吉林":[126.49,43.49],
+				 "山西":[111.99,37.20],
+				 "河北":[115.01,38.31],
+				 "陕西":[108.75,34.09],
+				 "重庆":[106.56,29.64],
+				 "宁夏":[105.98,37.25],
+				 "天津":[117.14,39.29],
+				 "台湾":[120.90,23.81]
+			},
+		    markPoint : {
+	                symbol:'circle',
+	                symbolSize:2,
+	                large:true,
+	                effect : {
+	                    show: true,
+	                    type: 'scale',
+	                    loop: true,
+	                    period: 5,
+	                    scaleSize : 1,
+	                    bounceDistance: 10,
+	                    color : '#FF0000',
+	                    shadowColor : '#FF0000',
+	                    shadowBlur : 0
+					},
+			data:[]
+		 }
+		},
+        {
+            name:'',
+            type:'pie',
+            roseType : 'area',
+            tooltip: {
+                trigger: 'item',
+                formatter: "{a} <br/>{b} : {c} ({d}%)"
+            },
+            center: [$("#container").width()+450, $("#container").height()+180],
+            radius: [40, 80],
+            data:{topData}
+        }
+	]
+}

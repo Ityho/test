@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.analysis.AnalysisSampleMapper">
+
+    <select id="getListSample" resultType="com.miduchina.wrd.po.analysis.AnalysisSample">
+        <![CDATA[
+			SELECT
+				id as reportId,
+				title,
+				url as reportURL,
+				shareUrl,
+				sample_type,
+				create_time,
+				update_time,
+				status
+			FROM
+				client_analysis_sample
+			where status = 1
+			]]>
+        <if test="sampleType!=null and sampleType!=0">
+            <![CDATA[
+				and sample_type = #{sampleType}
+			]]>
+        </if>
+    </select>
+
+</mapper>

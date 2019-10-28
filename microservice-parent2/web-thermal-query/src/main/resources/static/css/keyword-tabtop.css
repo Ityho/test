@@ -1,0 +1,47 @@
+.infoSolt-tab{
+	
+}
+.infoSolt-tab .infoSolt-tit{
+	    height: 48px;
+	    line-height: 48px;
+	    text-align: center;
+	    font-size: 16px;
+	    background: #F18D00;
+	    color: #fff;
+	    font-weight: bold;
+}
+.infoSolt-item{
+	padding: 16px 8px;
+	border-bottom: 1px solid #f3f5f9;
+	border-left: 1px solid #f3f5f9;
+	border-right: 1px solid #f3f5f9;
+	
+}
+.infoSolt-item ul li{
+	font-size: 16px;
+    color: #585858;
+    height: 40px;
+    background: #f3f5f9;
+    margin-bottom: 6px;
+    padding: 10px 35px;
+    width: 100%;
+}
+.infoSolt-item ul li:last-child{
+	margin-bottom: 0;
+	
+}
+.infoSolt-item ul li p:first-child{
+	float: left;
+	width: 80%;
+}
+.infoSolt-item ul li p:last-child{
+	float: right;
+	    width: 20%;
+    text-align: left;
+}
+.infoSolt-item .infoSolt-fs{
+	background: #FFFFFF;
+	padding-top: 0;
+    padding-bottom: 0;
+    margin: 0;
+}

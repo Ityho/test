@@ -1,0 +1,40 @@
+body{
+	font-family: 'Microsoft YaHei';
+	font-size: 12px;
+	}
+.label_B{
+	line-height: 28px;
+	height: 28px;
+	display: block;
+	width: 107px;
+	border-radius: 5px;
+	border: 1px solid #E1E1E1;
+	float: left;
+	background-image:url("images/brief/btn01_blue.png");
+	margin-right: 5px;
+	text-align: center;
+	}
+	
+	
+ul{
+	float: right;
+	}
+	li{
+	float:left;
+	list-style-type: none;
+	margin-left: -20px;
+	}
+	li img{
+	margin-left: -1px;
+	}
+	li p{
+	margin-top: -27px;
+	margin-left:35px;
+	}
+	
+	.bz_font{
+	color:#FFF;
+		}
+	input[type=checkbox]{
+	border:0px;
+	}

@@ -1,0 +1,633 @@
+2019-10-11 11:52:49.055 [eureka-registry,,,] [main] INFO com.miduchina.wrd.ApiServerCenterApplication - No active profile set, falling back to default profiles: default
+2019-10-11 11:52:49.341 [eureka-registry,,,] [main] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d2a6eac: startup date [Fri Oct 11 11:52:49 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5a709816
+2019-10-11 11:52:55.123 [eureka-registry,,,] [main] INFO o.springframework.cloud.context.scope.GenericScope - BeanFactory id=f04bb12c-c561-345a-b67b-5ac78022a8fe
+2019-10-11 11:52:55.209 [eureka-registry,,,] [main] INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-10-11 11:52:55.732 [eureka-registry,,,] [main] INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$59ad7eb4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-11 11:52:57.495 [eureka-registry,,,] [main] INFO o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1127 (http)
+2019-10-11 11:52:57.704 [eureka-registry,,,] [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-11 11:52:57.705 [eureka-registry,,,] [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.35
+2019-10-11 11:52:57.714 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
+2019-10-11 11:52:57.716 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2019-10-11 11:52:57.716 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-11 11:52:57.717 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-11 11:52:58.801 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2019-10-11 11:52:59.240 [eureka-registry,,,] [localhost-startStop-1] INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-11 11:52:59.241 [eureka-registry,,,] [localhost-startStop-1] INFO org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 9900 ms
+2019-10-11 11:53:00.079 [eureka-registry,,,] [localhost-startStop-1] WARN com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-10-11 11:53:00.079 [eureka-registry,,,] [localhost-startStop-1] INFO com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-10-11 11:53:00.133 [eureka-registry,,,] [localhost-startStop-1] INFO com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4fc7ee7c
+2019-10-11 11:53:03.334 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-11 11:53:03.335 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-10-11 11:53:03.336 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-11 11:53:03.336 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-11 11:53:03.336 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-11 11:53:03.336 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2019-10-11 11:53:03.336 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2019-10-11 11:53:03.337 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-10-11 11:53:03.540 [eureka-registry,,,] [localhost-startStop-1] INFO c.s.j.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-10-11 11:53:03.807 [eureka-registry,,,] [localhost-startStop-1] INFO c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-10-11 11:53:03.828 [eureka-registry,,,] [localhost-startStop-1] INFO c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-10-11 11:53:04.381 [eureka-registry,,,] [localhost-startStop-1] INFO c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-10-11 11:53:04.382 [eureka-registry,,,] [localhost-startStop-1] INFO c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-10-11 11:53:05.586 [eureka-registry,,,] [main] WARN com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-10-11 11:53:05.587 [eureka-registry,,,] [main] INFO com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-10-11 11:53:05.847 [eureka-registry,,,] [main] INFO o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-11 11:53:06.356 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d2a6eac: startup date [Fri Oct 11 11:52:49 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5a709816
+2019-10-11 11:53:06.480 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-11 11:53:06.483 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-11 11:53:06.495 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-10-11 11:53:06.495 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-10-11 11:53:06.541 [eureka-registry,,,] [main] INFO o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-11 11:53:06.541 [eureka-registry,,,] [main] INFO o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-11 11:53:07.474 [eureka-registry,,,] [main] INFO o.s.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@7d2a6eac: startup date [Fri Oct 11 11:52:49 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@5a709816] and template loader path [classpath:/templates/]
+2019-10-11 11:53:07.475 [eureka-registry,,,] [main] INFO o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-10-11 11:53:07.882 [eureka-registry,,,] [main] INFO o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-10-11 11:53:07.980 [eureka-registry,,,] [main] INFO com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-10-11 11:53:07.980 [eureka-registry,,,] [main] INFO com.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2019-10-11 11:53:08.025 [eureka-registry,,,] [main] INFO com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1570765987997 with initial instances count: 0
+2019-10-11 11:53:08.124 [eureka-registry,,,] [main] INFO com.netflix.eureka.DefaultEurekaServerContext - Initializing ...
+2019-10-11 11:53:08.126 [eureka-registry,,,] [main] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 11:53:08.156 [eureka-registry,,,] [main] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2019-10-11 11:53:08.158 [eureka-registry,,,] [main] INFO com.netflix.eureka.DefaultEurekaServerContext - Initialized
+2019-10-11 11:53:08.205 [eureka-registry,,,] [main] INFO o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-11 11:53:08.229 [eureka-registry,,,] [main] INFO o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-11 11:53:08.231 [eureka-registry,,,] [main] INFO o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-11 11:53:08.232 [eureka-registry,,,] [main] INFO o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-11 11:53:08.349 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-11 11:53:08.368 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-10-11 11:53:08.371 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-10-11 11:53:08.375 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-10-11 11:53:08.382 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-10-11 11:53:08.395 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-10-11 11:53:08.416 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=7d2a6eac,type=ConfigurationPropertiesRebinder]
+2019-10-11 11:53:08.433 [eureka-registry,,,] [main] INFO o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-10-11 11:53:08.442 [eureka-registry,,,] [main] INFO o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application EUREKA-REGISTRY with eureka with status UP
+2019-10-11 11:53:08.447 [eureka-registry,,,] [Thread-58] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - Setting the eureka configuration..
+2019-10-11 11:53:08.448 [eureka-registry,,,] [Thread-58] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-10-11 11:53:08.450 [eureka-registry,,,] [Thread-58] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+2019-10-11 11:53:08.471 [eureka-registry,,,] [Thread-58] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - isAws returned false
+2019-10-11 11:53:08.472 [eureka-registry,,,] [Thread-58] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - Initialized server context
+2019-10-11 11:53:08.473 [eureka-registry,,,] [Thread-58] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2019-10-11 11:53:08.473 [eureka-registry,,,] [Thread-58] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2019-10-11 11:53:08.473 [eureka-registry,,,] [Thread-58] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Changing status to UP
+2019-10-11 11:53:08.493 [eureka-registry,,,] [Thread-58] INFO o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2019-10-11 11:53:08.567 [eureka-registry,,,] [main] INFO o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 1127 (http) with context path ''
+2019-10-11 11:53:08.568 [eureka-registry,,,] [main] INFO o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1127
+2019-10-11 11:53:08.591 [eureka-registry,,,] [main] INFO com.miduchina.wrd.ApiServerCenterApplication - Started ApiServerCenterApplication in 28.101 seconds (JVM running for 36.964)
+2019-10-11 11:53:09.585 [eureka-registry,,,] [RMI TCP Connection(23)-127.0.0.1] INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-11 11:53:09.586 [eureka-registry,,,] [RMI TCP Connection(23)-127.0.0.1] INFO org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-11 11:53:09.669 [eureka-registry,,,] [RMI TCP Connection(23)-127.0.0.1] INFO org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 83 ms
+2019-10-11 11:54:08.477 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 11:55:08.481 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2019-10-11 11:55:25.178 [eureka-registry,,,] [http-nio-1127-exec-2] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance API-CONFIG-CENTER/10.1.0.191:api-config-center:1148 with status UP (replication=false)
+2019-10-11 11:56:08.481 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 11:57:08.640 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 157ms
+2019-10-11 11:57:09.463 [eureka-registry,,,] [http-nio-1127-exec-4] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance API-INFO-MONITOR/10.1.0.191:api-info-monitor:1168 with status UP (replication=false)
+2019-10-11 11:58:08.640 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 11:59:08.641 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 11:59:29.495 [eureka-registry,,,] [http-nio-1127-exec-10] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 12:00:08.643 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2019-10-11 12:01:08.643 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:02:08.644 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:03:08.647 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2019-10-11 12:03:08.651 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 12:04:08.648 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:05:08.648 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:06:08.649 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:07:08.649 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:08:08.169 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 12:08:08.649 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:09:08.650 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:10:08.652 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:11:08.653 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:12:08.653 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:13:08.654 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:13:08.673 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 12:14:08.654 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:15:08.665 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 8ms
+2019-10-11 12:16:08.665 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:17:08.665 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:18:08.666 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:19:08.666 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:19:38.250 [eureka-registry,,,] [http-nio-1127-exec-6] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 12:20:08.667 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:21:08.667 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:22:08.668 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:23:08.169 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 12:23:08.668 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:23:08.692 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 12:24:08.668 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:25:08.669 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:26:08.669 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:27:08.670 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:28:08.670 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:29:08.673 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2019-10-11 12:30:08.673 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:31:08.673 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:32:08.674 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:33:08.674 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:33:08.712 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 12:34:08.675 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:35:08.675 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:36:08.676 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:37:08.676 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:38:08.172 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 12:38:08.676 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:39:08.677 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:40:08.677 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:41:08.678 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:42:08.678 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:43:08.679 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:43:08.732 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 12:44:08.679 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:45:08.679 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:46:08.680 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:47:08.680 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:48:08.681 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:49:08.681 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:50:08.682 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:51:08.682 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:52:08.682 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:53:08.170 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 12:53:08.683 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:53:08.751 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 12:54:08.683 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:55:08.684 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:56:08.684 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:57:08.685 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:58:08.685 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 12:59:08.686 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:00:08.686 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:01:08.686 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:02:08.687 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:03:08.687 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:03:08.771 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 13:04:08.688 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:05:08.688 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:06:08.689 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:07:08.689 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:08:08.170 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 13:08:08.689 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:09:08.690 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:10:08.690 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:11:08.691 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:12:08.691 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:13:08.692 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:13:08.791 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 13:14:08.692 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:15:08.692 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:16:08.693 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:17:08.693 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:18:08.694 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:19:08.694 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:20:08.695 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:21:08.698 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2019-10-11 13:22:08.698 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:23:08.171 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 13:23:08.699 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:23:08.810 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 13:24:08.699 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:25:08.700 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:26:08.700 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:27:08.702 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:28:08.702 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:29:08.702 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:30:08.703 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:31:08.705 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2019-10-11 13:32:08.706 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:33:08.706 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:33:08.829 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 13:34:08.707 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:35:08.707 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:36:08.707 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:37:08.708 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:38:08.174 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 13:38:08.708 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:39:08.709 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:40:08.709 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:41:08.710 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:42:08.710 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:43:08.711 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:43:08.849 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 13:44:08.711 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:45:08.711 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:46:08.712 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:47:08.713 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:48:08.714 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:49:08.714 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:50:08.715 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:51:08.715 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:52:08.715 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:53:08.172 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 13:53:08.716 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:53:08.868 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 13:54:08.746 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 28ms
+2019-10-11 13:55:08.747 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:56:08.747 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:57:08.748 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:58:08.748 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 13:59:08.748 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:00:08.749 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:01:08.749 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:02:08.814 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 62ms
+2019-10-11 14:03:08.814 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:03:08.887 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 14:04:08.815 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:04:49.694 [eureka-registry,,,] [http-nio-1127-exec-2] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance API-CONFIG-CENTER/10.1.0.191:api-config-center:1148 with status UP (replication=false)
+2019-10-11 14:05:08.815 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:06:08.820 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 3ms
+2019-10-11 14:06:32.352 [eureka-registry,,,] [http-nio-1127-exec-7] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance API-INFO-MONITOR/10.1.0.191:api-info-monitor:1168 with status UP (replication=false)
+2019-10-11 14:07:00.639 [eureka-registry,,,] [http-nio-1127-exec-3] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 14:07:08.821 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:08:08.172 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 14:08:08.821 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:09:08.822 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:10:08.822 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:11:08.823 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:12:08.823 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:13:08.823 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:13:08.906 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 14:14:08.824 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:14:37.482 [eureka-registry,,,] [http-nio-1127-exec-1] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 14:15:08.824 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:16:08.825 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:17:08.888 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 62ms
+2019-10-11 14:18:08.914 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 23ms
+2019-10-11 14:18:59.298 [eureka-registry,,,] [http-nio-1127-exec-4] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 14:19:08.914 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:20:08.916 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2019-10-11 14:21:08.916 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:22:08.916 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:23:08.218 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 14:23:08.917 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:23:08.990 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 14:24:08.917 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:25:08.918 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:25:26.512 [eureka-registry,,,] [http-nio-1127-exec-9] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 14:26:08.918 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:27:08.919 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:28:08.919 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:29:08.919 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:30:08.920 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:31:08.966 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:32:08.931 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 7ms
+2019-10-11 14:33:08.931 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:33:09.027 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 14:34:08.932 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:35:08.932 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:36:05.343 [eureka-registry,,,] [http-nio-1127-exec-1] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 14:36:08.932 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:37:08.958 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 23ms
+2019-10-11 14:38:00.972 [eureka-registry,,,] [http-nio-1127-exec-4] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 14:38:08.247 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 14:38:08.958 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:39:08.959 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:40:08.959 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:41:08.960 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:42:08.960 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:43:08.960 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:43:09.046 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 14:44:08.961 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:45:08.961 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:46:08.962 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:47:08.962 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:47:54.887 [eureka-registry,,,] [http-nio-1127-exec-6] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance API-INFO-MONITOR/10.1.0.191:api-info-monitor:1168 with status UP (replication=false)
+2019-10-11 14:48:09.026 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 61ms
+2019-10-11 14:49:00.126 [eureka-registry,,,] [http-nio-1127-exec-3] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 14:49:09.026 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:50:09.026 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:51:09.027 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:52:09.030 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2019-10-11 14:53:08.174 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 14:53:09.031 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:53:09.106 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 14:54:09.031 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:55:09.032 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:56:09.032 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:57:09.032 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:58:09.033 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 14:59:09.033 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:00:09.034 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:01:09.061 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 26ms
+2019-10-11 15:02:09.152 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 88ms
+2019-10-11 15:03:09.152 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:03:09.146 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 15:03:27.019 [eureka-registry,,,] [http-nio-1127-exec-4] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-EVENT-ANALYSIS/10.1.0.191:web-event-analysis:1178 with status UP (replication=false)
+2019-10-11 15:04:09.153 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:05:09.153 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:06:09.153 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:07:09.154 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:08:08.265 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 15:08:09.154 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:09:09.155 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:10:09.155 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:11:09.156 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:12:09.186 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 28ms
+2019-10-11 15:13:09.186 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:13:09.205 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 15:14:09.187 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:15:09.187 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:16:09.188 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:17:09.188 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:18:09.189 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:19:09.189 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:20:09.189 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:21:09.190 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:22:09.190 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:23:08.325 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 15:23:09.191 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:23:09.265 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 15:24:09.191 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:25:09.192 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:26:09.192 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:27:09.195 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 1ms
+2019-10-11 15:28:09.196 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:29:09.196 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 15:30:09.197 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:26:14.123 [eureka-registry,,,] [main] INFO com.miduchina.wrd.ApiServerCenterApplication - No active profile set, falling back to default profiles: default
+2019-10-11 18:26:14.176 [eureka-registry,,,] [main] INFO o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4905c46b: startup date [Fri Oct 11 18:26:14 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1fcb4808
+2019-10-11 18:26:15.804 [eureka-registry,,,] [main] INFO o.springframework.cloud.context.scope.GenericScope - BeanFactory id=f04bb12c-c561-345a-b67b-5ac78022a8fe
+2019-10-11 18:26:15.842 [eureka-registry,,,] [main] INFO o.s.b.f.a.AutowiredAnnotationBeanPostProcessor - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2019-10-11 18:26:16.006 [eureka-registry,,,] [main] INFO o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$788dac73] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-10-11 18:26:16.587 [eureka-registry,,,] [main] INFO o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 1127 (http)
+2019-10-11 18:26:16.630 [eureka-registry,,,] [main] INFO org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2019-10-11 18:26:16.630 [eureka-registry,,,] [main] INFO org.apache.catalina.core.StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.35
+2019-10-11 18:26:16.638 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - An older version [1.2.16] of the APR based Apache Tomcat Native library is installed, while Tomcat recommends a minimum version of [1.2.18]
+2019-10-11 18:26:16.638 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - Loaded APR based Apache Tomcat Native library [1.2.16] using APR version [1.6.3].
+2019-10-11 18:26:16.638 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true].
+2019-10-11 18:26:16.639 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2019-10-11 18:26:17.730 [eureka-registry,,,] [localhost-startStop-1] INFO org.apache.catalina.core.AprLifecycleListener - OpenSSL successfully initialized [OpenSSL 1.0.2m  2 Nov 2017]
+2019-10-11 18:26:17.923 [eureka-registry,,,] [localhost-startStop-1] INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2019-10-11 18:26:17.924 [eureka-registry,,,] [localhost-startStop-1] INFO org.springframework.web.context.ContextLoader - Root WebApplicationContext: initialization completed in 3747 ms
+2019-10-11 18:26:18.412 [eureka-registry,,,] [localhost-startStop-1] WARN com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-10-11 18:26:18.413 [eureka-registry,,,] [localhost-startStop-1] INFO com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-10-11 18:26:18.428 [eureka-registry,,,] [localhost-startStop-1] INFO com.netflix.config.DynamicPropertyFactory - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@c1a197a
+2019-10-11 18:26:20.404 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-10-11 18:26:20.405 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'webMvcMetricsFilter' to: [/*]
+2019-10-11 18:26:20.405 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-10-11 18:26:20.406 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-10-11 18:26:20.406 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+2019-10-11 18:26:20.406 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'httpTraceFilter' to: [/*]
+2019-10-11 18:26:20.406 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.FilterRegistrationBean - Mapping filter: 'servletContainer' to urls: [/eureka/*]
+2019-10-11 18:26:20.406 [eureka-registry,,,] [localhost-startStop-1] INFO o.s.boot.web.servlet.ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+2019-10-11 18:26:20.540 [eureka-registry,,,] [localhost-startStop-1] INFO c.s.j.server.impl.application.WebApplicationImpl - Initiating Jersey application, version 'Jersey: 1.19.1 03/11/2016 02:08 PM'
+2019-10-11 18:26:20.683 [eureka-registry,,,] [localhost-startStop-1] INFO c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON encoding codec LegacyJacksonJson
+2019-10-11 18:26:20.685 [eureka-registry,,,] [localhost-startStop-1] INFO c.n.discovery.provider.DiscoveryJerseyProvider - Using JSON decoding codec LegacyJacksonJson
+2019-10-11 18:26:20.946 [eureka-registry,,,] [localhost-startStop-1] INFO c.n.discovery.provider.DiscoveryJerseyProvider - Using XML encoding codec XStreamXml
+2019-10-11 18:26:20.946 [eureka-registry,,,] [localhost-startStop-1] INFO c.n.discovery.provider.DiscoveryJerseyProvider - Using XML decoding codec XStreamXml
+2019-10-11 18:26:21.839 [eureka-registry,,,] [main] WARN com.netflix.config.sources.URLConfigurationSource - No URLs will be polled as dynamic configuration sources.
+2019-10-11 18:26:21.839 [eureka-registry,,,] [main] INFO com.netflix.config.sources.URLConfigurationSource - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2019-10-11 18:26:22.106 [eureka-registry,,,] [main] INFO o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-11 18:26:22.528 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4905c46b: startup date [Fri Oct 11 18:26:14 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1fcb4808
+2019-10-11 18:26:22.628 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-10-11 18:26:22.629 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-11 18:26:22.638 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.status(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-10-11 18:26:22.639 [eureka-registry,,,] [main] INFO o.s.w.s.m.m.a.RequestMappingHandlerMapping - Mapped "{[/lastn],methods=[GET]}" onto public java.lang.String org.springframework.cloud.netflix.eureka.server.EurekaController.lastn(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.Object>)
+2019-10-11 18:26:22.683 [eureka-registry,,,] [main] INFO o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-11 18:26:22.684 [eureka-registry,,,] [main] INFO o.s.web.servlet.handler.SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-10-11 18:26:23.423 [eureka-registry,,,] [main] INFO o.s.ui.freemarker.SpringTemplateLoader - SpringTemplateLoader for FreeMarker: using resource loader [org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4905c46b: startup date [Fri Oct 11 18:26:14 CST 2019]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@1fcb4808] and template loader path [classpath:/templates/]
+2019-10-11 18:26:23.425 [eureka-registry,,,] [main] INFO o.s.w.servlet.view.freemarker.FreeMarkerConfigurer - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-10-11 18:26:23.719 [eureka-registry,,,] [main] INFO o.s.cloud.netflix.eureka.InstanceInfoFactory - Setting initial instance status as: STARTING
+2019-10-11 18:26:23.794 [eureka-registry,,,] [main] INFO com.netflix.discovery.DiscoveryClient - Initializing Eureka in region us-east-1
+2019-10-11 18:26:23.794 [eureka-registry,,,] [main] INFO com.netflix.discovery.DiscoveryClient - Client configured to neither register nor query for data.
+2019-10-11 18:26:23.841 [eureka-registry,,,] [main] INFO com.netflix.discovery.DiscoveryClient - Discovery Client initialized at timestamp 1570789583804 with initial instances count: 0
+2019-10-11 18:26:23.958 [eureka-registry,,,] [main] INFO com.netflix.eureka.DefaultEurekaServerContext - Initializing ...
+2019-10-11 18:26:23.961 [eureka-registry,,,] [main] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 18:26:23.993 [eureka-registry,,,] [main] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Finished initializing remote region registries. All known remote regions: []
+2019-10-11 18:26:23.995 [eureka-registry,,,] [main] INFO com.netflix.eureka.DefaultEurekaServerContext - Initialized
+2019-10-11 18:26:24.023 [eureka-registry,,,] [main] INFO o.s.b.actuate.endpoint.web.EndpointLinksResolver - Exposing 2 endpoint(s) beneath base path '/actuator'
+2019-10-11 18:26:24.044 [eureka-registry,,,] [main] INFO o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-11 18:26:24.046 [eureka-registry,,,] [main] INFO o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2019-10-11 18:26:24.047 [eureka-registry,,,] [main] INFO o.s.b.a.e.web.servlet.WebMvcEndpointHandlerMapping - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-10-11 18:26:24.156 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Registering beans for JMX exposure on startup
+2019-10-11 18:26:24.177 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'environmentManager' has been autodetected for JMX exposure
+2019-10-11 18:26:24.179 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'refreshScope' has been autodetected for JMX exposure
+2019-10-11 18:26:24.181 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2019-10-11 18:26:24.187 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2019-10-11 18:26:24.201 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2019-10-11 18:26:24.219 [eureka-registry,,,] [main] INFO o.s.jmx.export.annotation.AnnotationMBeanExporter - Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4905c46b,type=ConfigurationPropertiesRebinder]
+2019-10-11 18:26:24.239 [eureka-registry,,,] [main] INFO o.s.context.support.DefaultLifecycleProcessor - Starting beans in phase 0
+2019-10-11 18:26:24.248 [eureka-registry,,,] [main] INFO o.s.c.n.e.serviceregistry.EurekaServiceRegistry - Registering application EUREKA-REGISTRY with eureka with status UP
+2019-10-11 18:26:24.254 [eureka-registry,,,] [Thread-40] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - Setting the eureka configuration..
+2019-10-11 18:26:24.254 [eureka-registry,,,] [Thread-40] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - Eureka data center value eureka.datacenter is not set, defaulting to default
+2019-10-11 18:26:24.255 [eureka-registry,,,] [Thread-40] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - Eureka environment value eureka.environment is not set, defaulting to test
+2019-10-11 18:26:24.318 [eureka-registry,,,] [Thread-40] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - isAws returned false
+2019-10-11 18:26:24.319 [eureka-registry,,,] [Thread-40] INFO o.s.c.netflix.eureka.server.EurekaServerBootstrap - Initialized server context
+2019-10-11 18:26:24.320 [eureka-registry,,,] [Thread-40] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Got 1 instances from neighboring DS node
+2019-10-11 18:26:24.320 [eureka-registry,,,] [Thread-40] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Renew threshold is: 1
+2019-10-11 18:26:24.320 [eureka-registry,,,] [Thread-40] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Changing status to UP
+2019-10-11 18:26:24.332 [eureka-registry,,,] [Thread-40] INFO o.s.c.n.e.s.EurekaServerInitializerConfiguration - Started Eureka Server
+2019-10-11 18:26:24.337 [eureka-registry,,,] [main] INFO o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 1127 (http) with context path ''
+2019-10-11 18:26:24.339 [eureka-registry,,,] [main] INFO o.s.c.n.e.s.EurekaAutoServiceRegistration - Updating port to 1127
+2019-10-11 18:26:24.362 [eureka-registry,,,] [main] INFO com.miduchina.wrd.ApiServerCenterApplication - Started ApiServerCenterApplication in 13.395 seconds (JVM running for 16.395)
+2019-10-11 18:26:25.200 [eureka-registry,,,] [RMI TCP Connection(5)-127.0.0.1] INFO o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-10-11 18:26:25.200 [eureka-registry,,,] [RMI TCP Connection(5)-127.0.0.1] INFO org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization started
+2019-10-11 18:26:25.231 [eureka-registry,,,] [RMI TCP Connection(5)-127.0.0.1] INFO org.springframework.web.servlet.DispatcherServlet - FrameworkServlet 'dispatcherServlet': initialization completed in 30 ms
+2019-10-11 18:27:24.321 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:28:24.321 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:29:24.322 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:30:24.322 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:31:24.323 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:32:24.323 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:33:24.324 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:34:24.324 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:35:24.324 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:36:23.981 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 18:36:24.325 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:37:24.326 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:38:24.326 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:39:24.326 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:40:24.327 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:41:23.993 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 1
+2019-10-11 18:41:24.327 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:42:24.328 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:43:24.328 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:44:24.328 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:45:24.329 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:46:24.000 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 18:46:24.329 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:47:24.330 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:47:58.392 [eureka-registry,,,] [http-nio-1127-exec-3] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance API-CONFIG-CENTER/10.1.0.191:api-config-center:1148 with status UP (replication=false)
+2019-10-11 18:48:24.330 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:49:12.612 [eureka-registry,,,] [http-nio-1127-exec-1] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance API-INFO-MONITOR/10.1.0.191:api-info-monitor:1168 with status UP (replication=false)
+2019-10-11 18:49:24.331 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:50:24.331 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:50:43.341 [eureka-registry,,,] [http-nio-1127-exec-4] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-BIG-SCREEN/10.1.0.191:web-big-screen:1128 with status UP (replication=false)
+2019-10-11 18:51:24.331 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:52:24.332 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:53:24.332 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:54:24.333 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:55:24.333 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:56:23.994 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 18:56:24.021 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 18:56:24.334 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:57:24.334 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:58:24.334 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 18:59:24.335 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:00:24.335 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:01:24.336 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:02:24.336 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:03:24.337 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:04:24.337 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:05:24.337 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:06:24.040 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 19:06:24.338 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:07:24.338 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:08:24.339 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:09:24.339 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:10:24.340 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:11:23.994 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 19:11:24.340 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:12:24.340 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:13:24.341 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:14:24.341 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:15:24.342 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:16:24.060 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 19:16:24.342 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:17:24.343 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:18:24.343 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:19:24.343 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:20:24.344 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:21:24.347 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 2ms
+2019-10-11 19:22:24.348 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:23:24.348 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:24:24.349 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:25:24.349 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:26:23.994 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 19:26:24.079 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 19:26:24.350 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:27:24.350 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:28:24.350 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:29:24.351 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:30:24.351 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:31:24.352 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:32:24.410 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 56ms
+2019-10-11 19:33:24.411 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:34:24.411 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:35:24.411 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:36:24.099 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 19:36:24.412 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:37:24.412 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:38:24.413 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:39:24.413 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:40:24.414 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:41:23.995 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 19:41:24.414 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:42:24.414 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:43:24.415 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:44:24.415 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:45:24.416 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:46:24.118 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 19:46:24.416 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:47:24.417 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:48:24.417 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:49:24.417 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:50:24.418 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:51:24.418 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:52:24.419 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:53:24.419 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:54:24.420 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:55:24.420 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:56:23.995 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 19:56:24.137 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 19:56:24.420 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:57:24.421 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:58:24.421 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 19:59:24.422 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:00:24.422 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:01:24.423 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:02:24.423 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:03:24.423 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:04:24.424 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:05:24.425 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:06:24.194 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 20:06:24.426 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:07:24.426 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:08:24.427 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:09:24.427 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:10:24.428 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:11:24.030 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 20:11:24.428 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:12:24.428 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:13:24.429 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:14:24.429 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:15:24.430 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:16:24.236 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 20:16:24.448 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:17:24.431 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:18:24.431 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:19:24.431 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:20:24.432 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:21:24.432 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:22:24.433 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:23:24.433 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:24:24.434 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:25:24.434 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:26:24.062 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 20:26:24.255 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 20:26:24.434 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:27:24.435 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:28:24.435 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:29:24.436 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:30:24.436 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:31:24.437 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:32:24.437 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:33:24.437 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:34:24.438 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:35:24.438 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:36:24.294 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 20:36:24.439 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:37:24.439 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:38:24.440 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:39:24.440 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:40:24.440 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:41:24.048 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 20:41:24.441 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:42:24.441 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:43:24.442 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:44:24.442 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:45:24.443 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:46:24.397 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 20:46:24.443 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:47:24.443 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:48:24.444 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:49:24.444 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:50:24.445 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:51:24.445 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:52:24.446 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:53:24.446 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:54:24.447 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:55:24.447 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:56:24.383 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 20:56:24.447 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:56:24.488 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 20:57:24.448 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:58:24.448 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 20:59:24.449 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:00:24.449 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:00:26.468 [eureka-registry,,,] [http-nio-1127-exec-7] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Registered instance WEB-BIG-SCREEN/10.1.0.191:web-big-screen:1128 with status UP (replication=false)
+2019-10-11 21:01:24.450 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:02:24.451 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:03:24.451 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:04:24.452 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:05:24.453 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:06:24.454 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:06:24.511 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 21:07:24.454 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:08:24.455 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:09:24.456 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:10:24.456 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:11:24.049 [eureka-registry,,,] [ReplicaAwareInstanceRegistry - RenewalThresholdUpdater] INFO c.n.eureka.registry.PeerAwareInstanceRegistryImpl - Current renewal threshold is : 6
+2019-10-11 21:11:24.457 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:12:24.457 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:13:24.458 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:14:24.458 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:15:24.595 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 134ms
+2019-10-11 21:16:24.530 [eureka-registry,,,] [Eureka-PeerNodesUpdater] WARN com.netflix.eureka.cluster.PeerEurekaNodes - The replica size seems to be empty. Check the route 53 DNS Registry
+2019-10-11 21:16:24.595 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:17:24.595 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:18:24.596 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:19:24.596 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:20:24.597 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:21:24.597 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms
+2019-10-11 21:22:24.598 [eureka-registry,,,] [Eureka-EvictionTimer] INFO c.netflix.eureka.registry.AbstractInstanceRegistry - Running the evict task with compensationTime 0ms

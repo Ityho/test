@@ -1,0 +1,8 @@
+
+.W_ficon{display: inline-block;margin:0 4px;font-family: "wbficonregular" !important;font-style: normal;}
+@font-face {
+	font-family: "wbficonregular";
+	font-style: normal;
+	font-weight: normal;
+	src: url("../images/font/wbficon.eot") format("embedded-opentype"), url("../images/font/wbficon.svg") format("svg"), url("../images/font/wbficon.woff") format("woff"), url("../images/font/wbficon.ttf") format("truetype");
+}/*微博引入链接图标的设置end*/

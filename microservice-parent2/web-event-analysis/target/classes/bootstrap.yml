@@ -1,0 +1,86 @@
+#服务端口
+server:
+  port: 1178
+  tomcat:
+    accesslog:
+      directory: /Users/shitao/work/logs/applogs/wyq
+
+#服务注册中心
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:1127/eureka/
+
+#服务名称
+spring:
+  application:
+    name: web-event-analysis
+    #热部署
+    devtools:
+      restart:
+        additional-paths: src/main/java
+        enabled: true
+        trigger-file: devtools.tg
+  zipkin:
+    discovery-client-enabled: true
+    base-url: http://localhost:9411/
+  sleuth:
+    enabled: true
+    sampler:
+      probability: 1.0
+    feign:
+      enabled: true
+      hystrix:
+        enabled: true
+        command:
+          default:
+           execution:
+            isolation:
+             thread:
+              timeoutInMilliseconds: 10000
+  cloud:
+    config: # spring cloud config 配置
+      discovery:
+        enabled: true #从配置中心读取文件
+        service-id: api-config-center #配置中心的servieId，通过服务名称去Eureka注册中心找
+      name: common-redis-wrd
+      label: master #指明远程仓库的分支
+      profile: dev #开发环境配置文件
+  freemarker:
+    template-loader-path: classpath:/templates
+    cache: false
+    charset: UTF-8
+    check-template-location: true
+    content-type: text/html
+    expose-request-attributes: true
+    expose-session-attributes: true
+    request-context-attribute: request
+    settings:
+          number_format: '0.##'   #数字格式化，无小数点
+
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#    virtual-host: /
+#spring 2.X actuator
+#http://ip:port/actuator/refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh
+
+ribbon:
+  eureka:
+    enabled: true
+  ReadTimeout: 60000
+  ConnectTimeout: 60000
+
+
+local_flag: true
+filePath: /Users/shitao/st/other/logs/webfiles/files1.wyq.cn/
+

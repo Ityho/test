@@ -1,0 +1,432 @@
+@media only screen and (min-width: 800px){
+     html,body{
+       max-width: 667px;
+    }
+}
+.bg {
+  width: 100%;
+  height: 17.5625rem;
+  background: url(../../../images/app/invitation/act_banner.png) no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  background-position: center;
+}
+.icon-act_douzi {
+  display: inline-block;
+  background-image: url(../../../images/app/invitation/act_douzi.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  width: 2.0625rem;
+  height: 1.8125rem;
+}
+.icon-act_down {
+  display: inline-block;
+  background-image: url(../../../images/app/invitation/act_down.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  width: 0.625rem;
+  height: 1.5rem;
+}
+.icon-act_duihao {
+  display: inline-block;
+  background-image: url(../../../images/app/invitation/act_duihao.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  width: 0.9375rem;
+  height: 0.9375rem;
+}
+.icon-act_jewel {
+  display: inline-block;
+  background-image: url(../../../images/app/invitation/act_jewel.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  width: 1.375rem;
+  height: 1.25rem;
+}
+.icon-act_jiance {
+  display: inline-block;
+  background-image: url(../../../images/app/invitation/act_jiance.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  width: 1.5625rem;
+  height: 1.875rem;
+}
+.icon-act_lingxing {
+  display: inline-block;
+  background-image: url(../../../images/app/invitation/act_lingxing.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  width: 0.625rem;
+  height: 0.625rem;
+}
+.icon-act_user {
+  display: inline-block;
+  background-image: url(../../../images/app/invitation/act_user.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  width: 1.0625rem;
+  height: 1.1875rem;
+}
+.activity .act-btn {
+  display: inline-block;
+  width: 6.75rem;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  font-size: 0.875rem;
+  background: #fc6621;
+  text-align: center;
+  color: #ffffff;
+  -moz-border-radius: 0.1875rem;
+       border-radius: 0.1875rem;
+  margin-top: 0.625rem;
+}
+.activity .act-p {
+  font-size: 0.75rem;
+  color: #aeaeae;
+  padding: 1.25rem 0;
+}
+.activity .act-copy label {
+  border: 1px dashed #f18d00;
+  display: inline-block;
+  width: 90%;
+  -moz-border-radius: 0.625rem;
+       border-radius: 0.625rem;
+  padding: 0.625rem;
+}
+.activity .act-copy label input {
+  font-size: 0.6875rem;
+  color: #fc6621;
+  width: 100%;
+  border: 0;
+  vertical-align: baseline;
+  padding: 0 0.625rem;
+  overflow: hidden;
+}
+.activity .act-copy .btn-copy {
+  display: inline-block;
+  height: 1.875rem;
+  line-height: 1.875rem;
+  font-size: 0.875rem;
+  background: #fc6621;
+  text-align: center;
+  color: #ffffff;
+  -moz-border-radius: 0.1875rem;
+       border-radius: 0.1875rem;
+  padding: 0 0.9375rem;
+  margin: 0.625rem 0;
+}
+.activity .act-share1 {
+  text-align: center;
+  font-size: 0.875rem;
+  color: #686868;
+}
+.activity .act-share1 .icon-share1 {
+  display: inline-block;
+  width: 35px;
+  height: 30px;
+  background-image: url(../../../images/app/invitation/act_share.png);
+  background-repeat: no-repeat;
+  vertical-align: middle;
+}
+.activity .act-share1 .share1 {
+  background-position: 0px;
+}
+.activity .act-share1 .share2 {
+  background-position: -45px;
+}
+.activity .act-share1 .share3 {
+  background-position: -85px;
+}
+.activity .act-share1 .share4 {
+  background-position: -128px;
+}
+.activity .act-title {
+  text-align: center;
+  overflow: hidden;
+}
+.activity .act-title h3 {
+  position: relative;
+  font-size: 0.9375rem;
+  font-weight: bold;
+  display: inline-block;
+}
+.activity .act-title h3:before {
+  content: '';
+  display: inline-block;
+  width: 8.8125rem;
+  height: 0.5rem;
+  background-image: url(../../../images/app/invitation/act_line04.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+       background-size: 100% 100%;
+  position: absolute;
+  right: 110%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.activity .act-title h3:after {
+  content: '';
+  display: inline-block;
+  width: 8.8125rem;
+  height: 0.5rem;
+  background-image: url(../../../images/app/invitation/act_line03.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+       background-size: 100% 100%;
+  position: absolute;
+  left: 110%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.activity .award {
+  position: relative;
+  height: 7.75rem;
+}
+.activity .award .award-left,
+.activity .award .award-right {
+  padding: 1.125rem 0;
+  display: inline-block;
+  height: 5.5rem;
+  width: 10.75rem;
+  text-align: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+     -moz-box-orient: vertical;
+     -moz-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+}
+.activity .award .award-left img,
+.activity .award .award-right img {
+  height: 1.875rem;
+}
+.activity .award .award-left {
+  left: 1.25rem;
+  top: 0;
+  background-image: url(../../../images/app/invitation/act_line01.png);
+  -moz-background-size: cover;
+       background-size: cover;
+}
+.activity .award .award-right {
+  right: 1.25rem;
+  top: 2.25rem;
+  background-image: url(../../../images/app/invitation/act_line02.png);
+  -moz-background-size: cover;
+       background-size: cover;
+}
+.activity .step-wrap {
+  text-align: center;
+}
+.activity .step-wrap ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  padding: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.activity .step-wrap li {
+  width: 6.5rem;
+  text-align: center;
+  background-image: url(../../../images/app/invitation/act_tuoyuan.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+       background-size: 100% 100%;
+  position: relative;
+  height: 3.125rem;
+  padding: 0 0.8125rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-right: 0.375rem;
+}
+.activity .step-wrap li em {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  display: inline-block;
+  width: 1.25rem;
+  height: 1.25rem;
+  background: #fc6621;
+  -moz-border-radius: 50%;
+       border-radius: 50%;
+  text-align: center;
+  line-height: 1.25rem;
+  color: #ffffff;
+  font-size: 0.75rem;
+  left: -0.625rem;
+  font-style: normal;
+}
+.activity .step-wrap li:nth-child(3n+3) {
+  margin-right: 0;
+}
+.activity .step-wrap .actdown img {
+  width: 0.625rem;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  margin-top: 0.9375rem;
+  margin-bottom: 0.9375rem;
+}
+.activity .step-wrap h3 {
+  font-size: 0.8125rem;
+  font-weight: bold;
+  margin-bottom: 0.625rem;
+}
+.activity .step-wrap h3 .icon-right {
+  display: inline-block;
+  width: 0.9375rem;
+  height: 0.9375rem;
+  background-image: url(../../../images/app/invitation/act_duihao.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+       background-size: 100% 100%;
+  margin-right: 0.3125rem;
+  vertical-align: bottom;
+}
+.activity .act-txt {
+  width: 100%;
+  padding: 0 1.25rem;
+}
+.activity .act-txt dl {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+     -moz-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 0.9375rem;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+     -moz-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+.activity .act-txt dl dt {
+  margin-right: 0.3125rem;
+}
+.activity .act-txt dl dd {
+  font-size: 0.75rem;
+}
+.activity .act-txt .icon-txt {
+  display: inline-block;
+  width: 0.625rem;
+  height: 0.625rem;
+  background-image: url(../../../images/app/invitation/act_lingxing.png);
+  background-repeat: no-repeat;
+  -moz-background-size: 100% 100%;
+       background-size: 100% 100%;
+}
+.actfooter {
+  width: 100%;
+  background-image: url(../../../images/app/invitation/act_footer.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  -moz-background-size: cover;
+       background-size: cover;
+  height: 10.625rem;
+  margin-top: -6.875rem;
+}
+.modal-sucess {
+  position: fixed;
+  background: #ffffff;
+  width: 16.75rem;
+  height: 11.625rem;
+  -moz-border-radius: 0.625rem;
+       border-radius: 0.625rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  z-index: 1502;
+  display: none;
+}
+.modal-sucess .modal-footer a {
+  display: inline-block;
+  width: 5.875rem;
+  height: 1.5625rem;
+  font-size: 0.75rem;
+  border: 1px solid #f18d00;
+  -moz-border-radius: 1.875rem;
+       border-radius: 1.875rem;
+  text-align: center;
+  line-height: 1.5625rem;
+  color: #f18d00;
+}
+.modal-sucess .btn-close {
+  position: absolute;
+  bottom: -3.75rem;
+  width: 2.625rem;
+  height: 2.625rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.modal-sucess .btn-close img {
+  width: 100%;
+  height: 100%;
+}
+.modal-mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  z-index: 1500;
+  display: none;
+}

@@ -1,0 +1,17 @@
+/*表单样式*/
+.form-horizontal .control-group1{margin-bottom: 2px; padding-bottom: 0;}
+.form-horizontal .control-group1 .control-label {width: 100px;line-height: 22px;}
+.form-horizontal .control-group1 .controls{  margin-left: 120px;}
+.form-horizontal .control-group1 .controls2{  margin-left: 0px;}
+.controls2 label{display: inline-block; margin-right: 5px; margin-left: 0px;}
+.form-horizontal .control-group2 .control-group{margin-bottom: 5px;}
+.form-horizontal .control-group2 i{color: #000;}
+.form-horizontal .control-group2 .control-label{width: 80px;}
+.form-horizontal .control-group2 .controls{  margin-left: 90px;}
+.form-horizontal .form-actions2{padding: 0; padding-left: 80px; margin: 0px;margin-top: 5px;background-color: #fff;border-top:none;}
+.form-horizontal2 .control-label {width: 80px;}
+.form-horizontal2 .controls{margin-left: 100px;}
+.control-label .required, .controls .required {color: #e02222;font-size: 12px; padding-left: 2px;}
+.control-group> .controls2> label.checker{display: inline-block; margin-right: 30px;}
+.control-group> .controls2> label.checker input[type="checkbox"]{margin-top: -2px;}
+.help-inline >i{font-size: 18px;}

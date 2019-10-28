@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.monitor.warning.mapper.WarningTimerSearchMapper">
+
+    <select id="findWTSRByCode" resultType="com.miduchina.wrd.po.keyword.WarningTimerSearchResult">
+        SELECT
+          *
+        FROM
+          warning_timer_search_result
+        where warning_review_code = #{reviewCode}
+    </select>
+
+    <update id="updateWarningTimerSearchResult">
+        UPDATE warning_timer_search_result
+          SET is_read = 1
+        where warning_review_code = #{reviewCode}
+    </update>
+
+</mapper>

@@ -1,0 +1,31 @@
+#dh1-1,#dh1-2,#dh1-3,#dh1-4,#dh2-2,#dh3-2,#dh4-2,
+ #dh5-1,#dh5-2,#dh5-3,#dh5-4,#dh5-5{transform:scale(0,0); opacity: 0;}
+ #title1,#title2,#title3,#title4,#title5{transform:translate(0px,-150px);opacity: 0;}
+ #dh2-1,#dh3-1,#dh4-1{transform:translate(-200px,-150px);opacity: 0;}
+.xz{animation:roate 1s forwards alternate;}  
+@keyframes roate{  
+    from { transform:rotate(0deg);}  
+    to{transform:rotate(360deg);}
+ } 
+ 
+ .xz-left{animation:roateLeft 1s forwards alternate;}  
+@keyframes roateLeft{  
+    from {transform:translate(-200px,-150px);opacity: 0;}  
+    to{transform:translate(0px,0px);opacity: 1;}
+ } 
+ /*下浮动画*/ 
+ .xf{animation:translateDown 1s forwards alternate;}
+ @keyframes translateDown{  
+    from { transform:translate(0px,-150px);opacity: 0;}  
+    to{transform:translate(0px,0px);opacity: 1;}
+ } 
+ /*上浮动画*/   
+ .fd, .fd2, .fd3, .fd4,.fd5{animation:scale 1s forwards alternate;}
+.fd2{animation-delay:0.4s;}
+.fd3{animation-delay:0.8s;}
+.fd4{animation-delay:1.2s;}
+.fd5{animation-delay:1.6s;}
+@keyframes scale{  
+    from { transform:scale(0,0);opacity: 0;}  
+    to{transform:scale(1,1);opacity: 1;}
+ }  

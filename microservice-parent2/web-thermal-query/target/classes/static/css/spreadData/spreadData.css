@@ -1,0 +1,112 @@
+.megagame-bg {
+  width: 100%;
+  height: 485px;
+  background: url(../../images/spreadData/gamebanner.jpg) no-repeat;
+  background-size: cover;
+      background-position: center;
+}
+.megagameNav {
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0px 2px 15px 0px rgba(213, 213, 213, 0.8);
+  transition: all .2s;
+    -webkit-transition: all .2s;
+}
+.megagameNav li {
+  display: inline-block;
+}
+.megagameNav li span {
+  font-size: 18px;
+  height: 75px;
+  line-height: 75px;
+  padding: 0 45px;
+  cursor: pointer;
+}
+.megagameNav li.active span{
+	    color: #fd8524;
+}
+.page-megagame {
+  background: #f9f8f8;
+}
+.page-megagame p,{
+	letter-spacing: 0.03em;
+    line-height: 1.5;
+}
+.page-megagame dt,.page-megagame dd{
+	letter-spacing: 0.03em;
+    line-height: 1.8;
+}
+.page-megagame .megagame-con {
+  max-width: 1020px;
+  margin: 0 auto;
+  min-width: 855px;
+}
+.page-megagame .megagame-con .gameImg li {
+  width: 33.333%;
+  padding-left: 15px;
+  padding-right: 15px;
+  float: left;
+  text-align: center;
+}
+.page-megagame .megagame-con .gameImg img {
+  width: 100%;
+  object-fit: cover;
+}
+.page-megagame .megagame-title {
+  position: relative;
+  font-size: 24px;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.page-megagame .megagame-title:after {
+  content: "";
+  display: inline-block;
+  height: 6px;
+  width: 50px;
+  background: #fd8524;
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.page-megagame .megagame-item {
+  font-size: 16px;
+  color: #333333;
+  background: #ffffff;
+  box-shadow: 0px 0px 25px 5px #ededed;
+  padding: 60px 110px;
+  border-radius: 5px;
+}
+.page-megagame .megagame-item .pl dd {
+  padding-left: 30px;
+  color: #666666;
+}
+.fixed-megagame{
+	position: fixed !important;
+    width: 100%;
+    padding: 0 180px;
+    left: 0;
+    top: 57px;
+    z-index: 6;
+}
+.megagame-code{
+	position: absolute;
+	top: -3px;
+	right: 0;
+}
+.megagame-code img{
+		width: 114px;
+		height: 114px;
+	}
+@media only screen and (max-width: 1280px) {
+	.megagame-bg {
+    height: 420px;
+  }
+}
+@media only screen and (min-width: 780px) {
+	body{
+		min-width: 1100px;
+	}
+}

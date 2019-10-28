@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/api-casebase/api-casebase.iml" filepath="$PROJECT_DIR$/api-casebase/api-casebase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-config-center/api-config-center.iml" filepath="$PROJECT_DIR$/api-config-center/api-config-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-gateway/api-gateway.iml" filepath="$PROJECT_DIR$/api-gateway/api-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-hot-all/api-hot-all.iml" filepath="$PROJECT_DIR$/api-hot-all/api-hot-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-info-monitor/api-info-monitor.iml" filepath="$PROJECT_DIR$/api-info-monitor/api-info-monitor.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-open/api-open.iml" filepath="$PROJECT_DIR$/api-open/api-open.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-ranking-list/api-ranking-list.iml" filepath="$PROJECT_DIR$/api-ranking-list/api-ranking-list.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-research/api-research.iml" filepath="$PROJECT_DIR$/api-research/api-research.iml" />
+      <module fileurl="file://$PROJECT_DIR$/api-server-center/api-server-center.iml" filepath="$PROJECT_DIR$/api-server-center/api-server-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../commons/commons.iml" filepath="$PROJECT_DIR$/../commons/commons.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-db/commons-db.iml" filepath="$PROJECT_DIR$/commons-db/commons-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/commons-redis/commons-redis.iml" filepath="$PROJECT_DIR$/commons-redis/commons-redis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../config-center/config-center.iml" filepath="$PROJECT_DIR$/../config-center/config-center.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entity/entity.iml" filepath="$PROJECT_DIR$/entity/entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/microservice-parent.iml" filepath="$PROJECT_DIR$/microservice-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/other/other.iml" filepath="$PROJECT_DIR$/other/other.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-big-screen/web-big-screen.iml" filepath="$PROJECT_DIR$/web-big-screen/web-big-screen.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-event-analysis/web-event-analysis.iml" filepath="$PROJECT_DIR$/web-event-analysis/web-event-analysis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-monitor-report/web-monitor-report.iml" filepath="$PROJECT_DIR$/web-monitor-report/web-monitor-report.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-monitor-warning/web-monitor-warning.iml" filepath="$PROJECT_DIR$/web-monitor-warning/web-monitor-warning.iml" />
+      <module fileurl="file://$PROJECT_DIR$/web-thermal-query/web-thermal-query.iml" filepath="$PROJECT_DIR$/web-thermal-query/web-thermal-query.iml" />
+    </modules>
+  </component>
+</project>

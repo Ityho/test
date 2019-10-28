@@ -1,0 +1,96 @@
+@charset "GBK";
+/* CSS Document */
+
+
+/*Register×¢²áÑéÖ¤1*/
+.reg_01{margin-left:13px;margin-top: 10px;margin-right: auto;margin-bottom: 25px;}
+.regBoxTit{ height:54px; line-height:54px; font-size:18px; color:#0b5ec5; padding-left:20px; background-color:#c7dcf6;}
+.regBox{width:720px;margin-top: 30px;margin-right: 100px;margin-bottom: 40px;margin-left: 260px;height: 330px;}
+.regBoxLeft{ width:580px; float:left; margin-left:10px; margin-right:10px;font-size:14px;}
+.regBoxLeft li .r1{ font-size:14px; width:120px;}
+.regBoxLeft li .r2{ width:190px;}
+.regBoxLeft li .r3{ width:230px;}
+.regBoxLeft li .new_mobilha{ width:190px;}
+.regBoxLeft .hq_btn{ width:50px;}
+.regBox li{display: block;width: 100%;line-height: 35px;float: left;margin-bottom: 18px;}
+.regBoxLeft li{margin-bottom: 8px;}
+.regBox .r1,.regBox .r2,.regBox .r3{display: block;height: 35px;line-height: 35px;}
+.regBox .r1{width: 140px;font-size: 16px;text-align: right;}
+.regBox .r2{width: 210px;font-size: 14px;}
+.regBox .r3{width: 340px;font-size: 12px;color:#E51312;}
+.regBox .red{color:#E51312;}
+.new_mobilha{width:210px;height:34px;line-height:35px;border:1px solid #dbdbdb;padding-left:10px;color: #666;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;behavior: url(pie.htc);position: relative;}
+.regBox .hq_btn{width:80px;display:block;height:35px;font-size:16px;color: #FFF;line-height:35px;padding-left:8px;padding-right:8px;border-radius:4px;background:#66aaf1;cursor: pointer;top: 0px;right: 0px;}
+.regBox .hq_btn:hover{ background:#008be7;}
+.new_mobilhy{width:90px;height:34px;line-height:35px;border:1px solid #dbdbdb;padding-left:10px;display: block;
+float: left;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;behavior: url(pie.htc);position: relative;}
+.ty_zc{ padding:0px 30px;  height:40px; line-height:40px; background:#83c221; text-align:center; color:#FFF; font-size:16px;-moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; border:none;}
+.ty_zc:hover{background:#2f8903;}
+.regBox .faust{ background:url(images/foaust.png) no-repeat left; padding-left:15px;}
+.ty_hs{ background:#e5e5e7; color:#404a58;width:150px; height:40px; line-height:40px;text-align:center;font-size:16px;moz-border-radius:4px;-khtml-border-radius:4px;-webkit-border-radius:4px;border-radius:4px; border:1px solid #CCC;}
+.tl{color: #06C;text-decoration: none;vertical-align: middle;}
+.tl:hover{text-decoration: underline;}
+.xm{ color:#e15500;}
+
+/*×¢²á³É¹¦-Ãâ·ÑÊÔÓÃºÍ¹ºÂòÒ³*/
+.st_sg{ margin:40px 110px; text-align:center;}
+.st_sg a{text-decoration: none;}
+.st_sg .user{font-size:16px; margin:20px auto; padding-left:220px; padding-bottom:20px; color:#2e2e2e; height:60px; line-height:60px;  border-bottom:solid 1px #d6d6d6;}
+.st_sg .user a{ color:#06C;font-size:16px; }
+.st_sg .user a:hover{text-decoration: underline;}
+.st_sg .sty{text-align:left;font-size:18px; color:#6ba101;}
+.st_sg .sty dd{text-align:left;font-size:16px; color:#707070; line-height:30px;} 
+.cu_t{
+	height: 60px;
+	width:60px;
+	float:left;
+	background-image: url(../images/tu_03.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+.cg_butt{margin-top:30px;text-align: center;overflow: hidden;margin-left: 280px;}
+.but_paysubmit,.but_insertcar{height:40px;width:220px;color:#FFF;font-size:16px;text-align:center;line-height:40px;cursor: pointer;float: left;margin-right: 25px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;behavior: url(pie.htc);position: relative;}
+.but_paysubmit{background-color: #83b61d;}
+.but_insertcar{background-color: #fbb804;}
+.but_paysubmit:hover{background-color: #98cf29;}
+.but_insertcar:hover{ background-color: #e6a803;}
+
+
+/*ÓÒ²à°ó¶¨*/
+/*µÇÂ¼¿òÑùÊ½*/
+.regBoxRight{min-height: 400px;width: 340px; padding-left:20px; float:right; border-left:solid 1px #d7d7d7;
+	font-size: 14px;}
+.regBoxRight  textarea:focus,.regBoxRight  input[type="text"]:focus,.regBoxRight  input[type="password"]:focus { border: 0px solid #0970ee; background-color:#FFF; }
+.regBoxRight > h2{font-size: 18px;display: block;line-height: 35px;height: 35px;color: #1161c1;text-indent: 25px;margin-top: 10px;}
+.regBoxRight  .inputText{width: 232px;border-style: none;background-color:#fff;}
+.regBoxRight  .inputText{height: 42px; padding:0px 0px;line-height: 18px;margin-top: 0px;}
+*html .regBoxRight  .inputText { height: 35px;line-height: 35px;margin-top: 6px;} /* ie6 fixed */
+*+html .login  .inputText{ height: 35px;line-height: 35px;margin-top: 6px;} /* ie7 fixed, ×¢ÒâË³Ðò */
+.regBoxRight  .inputYZM{width: 100px;border-style: none;}
+.regBoxRight  .inputYZM{height: 42px; padding:0px;line-height: 18px; margin-top:0px;}
+*html .regBoxRight  .inputYZM{height: 35px;	line-height: 35px;}/* ie6 fixed */
+*+html .regBoxRight  .inputYZM{height: 35px;	line-height: 35px;}/* ie7 fixed, ×¢ÒâË³Ðò */
+.regBoxRight  .input{width: 232px;height: 45px;font-size: 14px;color: #666;line-height: 45px;border: 1px solid #dbdbdb;padding-left: 10px;margin: 20px 20px 10px 20px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;behavior: url(pie.htc);position: relative;}
+.regBoxRight  .phone { background: url(../images/new_ren_03.png) no-repeat 8px 10px;}
+.regBoxRight  .phone{ margin-bottom:0px;}
+*html .regBoxRight  .phone{ margin-bottom:5px;}/* ie6 fixed */
+*+html .regBoxRight  .phone{ margin-bottom:5px;}/* ie7 fixed, ×¢ÒâË³Ðò */
+.regBoxRight .password { background: url(../images/new_sou_07.png) no-repeat 8px 14px;}
+.regBoxRight .code{width:122px;margin-top: 10px;}
+.regBoxRight .imgVcode{margin-top:10px;}
+.regBoxRight  .login_forg {width: 260px;height: 38px;color: #555555;line-height: 38px; margin: 10px 20px 10px 20px; }
+.regBoxRight .login_forg a {margin-left: 100px;}
+.regBoxRight .login_btn { width: 254px;height: 45px;color: #fff; line-height: 45px; margin: 10px 20px 10px 20px; background: #1c82d2; color: #FFF; text-align: center; border-radius: 4px; cursor: pointer;behavior: url(pie.htc);}
+.regBoxRight  .login_btn:hover { background: #1367aa; }
+.forgetpassword{text-decoration: none;}
+.forgetpassword:hover{
+	text-decoration: underline;
+	color: #1367aa;
+}
+.regBoxRight .login_mfzc { width: 260px; height: 30px; color: #555555; line-height: 30px; margin: 10px 20px 10px 20px; text-align: left;}
+.regBoxRight .login_mfzc a {color: #1c82d2;text-decoration: none;}
+.regBoxRight .login_mfzc a:hover{text-decoration: underline;}
+.regBoxRight .wy_dl {width: 251px;height: 45px;padding-left: 10px;margin: 5px 20px 20px 20px;line-height: 45px;}
+.regBoxRight .wy_pass { width: 251px;height: 45px; padding-left: 10px; margin: 10px 20px 10px 20px;}
+.regBoxRight .wy_forget {width: 260px; height: 20px; line-height: 20px; margin: 8px 20px 8px 20px;}
+.login_other,.login_other a{ font-size:12px; margin-left:20px;}

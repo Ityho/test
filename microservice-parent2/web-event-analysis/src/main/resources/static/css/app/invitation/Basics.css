@@ -1,0 +1,217 @@
+* {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body,html{
+	margin: 0 auto;
+	padding: 0;
+	color: #333333;
+	font-family: "Î¢ÈíÑÅºÚ";
+	background:white;
+}
+.dis-b {
+    display: block !important;
+}
+
+.dis-n {
+    display: none !important;
+}
+.fz10 {
+    font-size: 0.625rem !important;
+}
+.fz11 {
+    font-size: 0.6875rem !important;
+}
+.fz12 {
+    font-size: 0.75rem !important;
+}
+
+.fz13 {
+    font-size: 0.8125rem !important;
+}
+
+.fz14 {
+    font-size: 0.875rem !important;
+}
+
+.fz15 {
+    font-size: 0.9375rem !important;
+}
+
+.fz17 {
+    font-size: 1.0625rem !important;
+}
+
+.fz18 {
+    font-size: 1.125rem !important;
+}
+
+.fz23 {
+    font-size: 1.4375rem !important;
+}
+
+.fw500 {
+    font-weight: 500 !important;
+}
+
+.fw600 {
+    font-weight: 600 !important;
+}
+
+
+/*ÑÕÉ«color*/
+
+.fc-black {
+    color: #000000 !important;
+}
+
+.fc-gray9 {
+    color: #999999 !important;
+}
+.fc-gray3 {
+    color: #333333 !important;
+}
+.fc-gray6 {
+    color: #666666 !important;
+}
+
+.fc-p-red {
+    color: #fd6f3b !important;
+}
+
+.fc-red5 {
+    color: #ff829d !important;
+}
+
+.fc-p-blue {
+    color: #697dc4 !important;
+}
+
+.fc-p-orange {
+    color: #f98400 !important;
+}
+.fc-p-blue5{
+    color: #117590 !important;
+}
+.fc-bg-red {
+    background-color: #fd6f3b !important;
+}
+.bg-grey700{
+	background-color: #2E3339 !important;
+}
+.ml5 {
+    margin-left: 0.3125rem !important;
+}
+.ml10 {
+    margin-left: 0.625rem !important;
+}
+.mt5{
+    margin-top: 0.3125rem !important;
+}
+.mt10{
+    margin-top: 0.625rem !important;
+}
+.mb5{
+	margin-bottom: 0.3125rem !important;
+}
+.mb10 {
+    margin-bottom: 0.625rem !important;
+}
+
+.mb20 {
+    margin-bottom: 1.25rem !important;
+}
+
+.mr15 {
+    margin-right: 0.9375rem !important;
+}
+
+:focus {outline: 0px;}
+label {	cursor: pointer;}
+h1 {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+h2 {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+h3 {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;font-weight:bold !important;}
+h4 {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+h5 {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+h6 {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+ul {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+li {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+dl {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+dt {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+dd {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+form {margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+img {margin: 0px;padding: 0px;list-style-type: none;border-style: none;}
+p {	margin: 0px; padding: 0px; border: currentColor; list-style-type: none;}
+ul,li{border-style: none;margin: 0px;padding: 0px;list-style-image: none;list-style-type: none;}
+a {color: #666;cursor: pointer;text-decoration: none;}
+a:hover { text-decoration: none; }
+.clearfix::after {height: 0px; clear: both; display: block; visibility: hidden; content: ".";}
+* + html .clearfix {height: 1%;}
+
+/*ÐÂÔö*/
+.orange400{
+	color: #fc6621 !important;
+}
+.bg-grey400{
+	background: #aeaeae !important;
+}
+.fz30{
+	font-size: 1.875rem !important;
+}
+.mt20{
+	margin-top: 1.25rem !important;
+}
+.padding-h-3{
+	padding-left:0.1875rem;
+	padding-right: 0.1875rem;
+}
+.padding-h-5{
+	padding-left:0.3125rem;
+	padding-right: 0.3125rem;
+}
+.padding-v-10{
+	padding-top:0.625rem;
+	padding-bottom: 0.625rem;
+}
+.padding-v-25{
+	padding-top:1.5625rem;
+	padding-bottom: 1.5625rem;
+}
+.margin-v-25{
+	margin-top: 1.5625rem;
+	margin-bottom: 1.5625rem;
+}
+.text-center{
+	text-align: center;
+}
+.v-a-sub{
+	vertical-align: sub;
+}
+.v-a-middle{
+	vertical-align: middle;
+}
+
+.btn-orange{
+	background:#fc6621 !important;
+	color: #FFFFFF !important;
+}
+.noscroll{
+	overflow: hidden !important;
+}
+.clearfix::after {
+    height: 0;
+    clear: both;
+    display: block;
+    visibility: hidden;
+    content: "."
+}
+
+.clearfix:after,.clearfix:before {
+    content: "";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}

@@ -1,0 +1,134 @@
+div .img_shuzi{
+	width: 20px;
+	width: 20px;
+	vertical-align: -25%;
+	}
+#searchKeyword{
+	line-height: 28px;
+	border: 1px solid #e1e1e1;
+	padding-left: 5px;
+	width: 200px;
+	height: 25px;
+}
+body{
+	font-family: Î¢ÈíÑÅºÚ;
+	}
+#jiance{
+	margin-top:-5px;
+	}
+#keyword{
+	margin-left: 80px;
+	}
+
+.tabSelected {
+	background: #238BDB;
+}
+
+.tabSelect {
+	background: #AAAAAA;
+}
+
+hr {
+	border: 1px solid #e1e1e1;
+}
+
+.leftTd {
+	width: 130px;
+	height: 40px;
+	text-align: center;
+	font-family: 'Microsoft YaHei';
+	font-size: 13px;
+}
+
+.centerTd {
+	width: 50px;
+	text-align: center;
+}
+
+.centerTdLine {
+	width: 50px;
+	text-align: center;
+	font-size: 25px;
+	color: #e1e1e1;
+}
+
+.rightTd {
+	padding-left:5px;
+	text-align: left;
+	padding-left: 15px;
+}
+
+.kwsParent {
+	display: block;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.kwsParent div {
+	height: 30px;
+	vertical-align: middle;
+	line-height: 30px;
+	margin-right: 5px;
+	/**margin-top: 5px;*/
+	margin-bottom: 5px;
+}
+
+.kwcname {
+	display: block;
+	width: 100px;
+	float: left;
+	
+	font-size: 12px;
+	color:#e63837;
+	font-family: 'Microsoft YaHei';
+}
+
+.kws {
+	display: block;
+	width: 720px;
+	float: left;
+	vertical-align: middle;
+}
+
+.kws div {
+	display: block;
+	float: left;
+	border: 1px solid #e1e1e1;
+	cursor: pointer;
+	text-align: center;
+	background-image: url("");
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.le4 {
+	width: 80px;
+}
+
+.gt4 {
+	width: 130px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+
+.gt8 {
+	width: 150px;
+}
+
+.gt10 {
+	width: 180px;
+}
+.label_A{
+	line-height: 24px;
+	height: 24px;
+	display: block;
+	width: 60px;
+	color: #ffffff;
+	background-color: #2a91e5;
+	border: 1px solid #c1c1c1;
+	float: left;
+	margin-right: 0px;
+	text-align: center;
+}

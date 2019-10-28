@@ -1,0 +1,67 @@
+@CHARSET "UTF-8";
+.close {opacity: 1;}
+button.close-sm:hover {
+	background-image: url("../images/icon-close-on-sm.png");
+	background-position: none;
+	opacity: 1;
+}
+
+button.close-sm {
+	width: 20px;
+	height: 20px;
+	margin-top: 3px;
+	background-image: url("../../images/icon-close-sm.png");
+	background-position: none;
+}
+.popover-title{height: 40px; line-height: 40px;}
+.popover-title h4{font-size: 18px;}
+.popover-title{ background-color: #f97534; color: #fff;}
+.popover-title .small{color: #fff;}
+.popover-title button.close-sm{background-image: url("../../images/icon-close-sm.png");}
+.form-list{ height: 200px; overflow: hidden;padding: 10px;}
+.form-list2{height: 400px;}
+.modal-body{ font-size: 14px;}
+.modal-footer{ text-align: center;}
+
+.zhezhao {
+  width: 100%;
+  height: 100%;
+  visibility: visible;
+  filter: alpha(opacity=60);
+  -moz-opacity: 0.6;
+  -khtml-opacity: 0.6;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: #000;
+  display: none;
+  z-index: 51;
+  overflow: hidden;
+}
+.downShow{-webkit-animation: downIn 0.3s both; animation:downIn 0.3s both;}
+.downOut{-webkit-animation: downOut 0.3s both; animation:downIn 0.3s both;}
+/*底部弹出菜单*/
+.footPOP{background-color: #fff; position: fixed;bottom: 0px; width: 100%;z-index: 52;box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.2);}
+.footPOP a{display: block;height: 51px;line-height: 51px;text-align: center;border-bottom: solid 1px #D1D1D1;}
+.footPOP a:hover{background-color: #dddddd;}
+.footPOP .cancel{border: none;border-top: solid 4px #D1D1D1;}
+#fromPOP{}
+.footList{ padding: 15px 0px; background-color: #fff;}
+.footList2{padding: 0;}
+
+.footList li{width: 58px;display: inline-block; margin-left: 7%; font-size: 12px; text-align: center; margin-bottom: 15px;}
+.footList2 li{ width: 19.1%; margin: 0; text-align: center;}
+.footPOP .footList2 li a{background-color: transparent; text-decoration: none; border: none;}
+.footList li i{ display: inline-block; width: 48px; height: 48px; border-radius: 50%; background-color: #fff;margin-bottom: 5px;}
+ 
+.footList li .icon{width: 48px;height: 48px; display: inline-block; margin: auto; background-repeat: no-repeat;background-position: center center; background-size: 38px;}
+.footList2 li .icon{width: 38px;height: 38px; margin: 5px; margin-bottom: 0; background-repeat: no-repeat;background-position: center center; background-size: 28px;}
+.footList li .icon_1{background-image: url(../images/fenxiang/icon1.png); background-color: #3eb135;}
+.footList li .icon_2{background-image: url(../images/fenxiang/icon2.png);background-color: #df4d69;}
+.footList li .icon_3{background-image: url(../images/fenxiang/icon3.png);background-color: #3eb135;}
+.footList li .icon_4{background-image: url(../images/fenxiang/icon4.png);background-color: #4dafea;}
+.footList li .icon_5{background-image: url(../images/fenxiang/icon5.png);background-color: #eecf3d;}
+.footList li .icon_6{background-image: url(../images/fenxiang/icon6.png);background-color: #0fa07f;}
+.footList li .icon_7{background-image: url(../images/fenxiang/icon7.png);background-color: #178cd7;}
+.footList li .icon_8{background-image: url(../images/fenxiang/icon8.png);background-color: #bfbfbf;}

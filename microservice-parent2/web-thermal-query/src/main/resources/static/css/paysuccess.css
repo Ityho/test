@@ -1,0 +1,61 @@
+.infoSolt-tab .infoSolt-tit {
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 16px;
+                background: #F18D00;
+                color: #fff;
+                font-weight: bold;
+            }
+/*支付成功按钮样式*/
+
+.modal.paysuccess.in {
+	top: 25%;
+	border: 0;
+}
+
+.paysuccess .modal-header {
+	padding: 0;
+	border: 0;
+	height: 40px;
+}
+
+.paysuccess .modal-header .close {
+	margin-right: 15px;
+	margin-top: 10px;
+	font-size: 40px;
+	font-weight: 200;
+}
+
+.paysuccess .modal-header .close:hover {
+	background: #FFFFFF;
+	color: #888;
+}
+
+.paysuccess .modal-body {
+	padding: 0;
+	margin-bottom: 40px;
+	overflow-y: inherit;
+}
+
+.paysuccess .modal-body .pro-info p {
+	line-height: 1.7;
+	color: #444444;
+}
+
+.paysuccess .modal-body .pro-info .btn {
+	width: 142px;
+	height: 36px;
+	color: #FFFFFF;
+	background: transparent;
+	color: #f87d01;
+	border: 1px solid #f87d01;
+	border-radius: 40px;
+}
+
+.paysuccess .modal-body .pro-info .btn-bg {
+	background: url(../images/pay-icon-btn.png) no-repeat;
+	background-size: cover;
+	color: #ffffff;
+	border: 0;
+}

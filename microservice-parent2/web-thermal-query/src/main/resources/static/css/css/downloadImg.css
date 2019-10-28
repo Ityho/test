@@ -1,0 +1,195 @@
+body {
+  margin: 0 auto;
+  padding: 0 0;
+}
+p {
+  margin: 0;
+}
+div {
+  margin: 0 auto;
+}
+.downloadImg {
+  width: 1000px;
+  margin: 0 auto;
+}
+.downloadHead {
+  width: 100%;
+  height: 274px;
+  background: url(../downLoadPigimage/group-bg.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 2;
+}
+.downloadHead .downTitle {
+  padding-top: 50px;
+  position: relative;
+}
+.downloadHead .downTitle .downlogo {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  left: 20px;
+  top: 60px;
+}
+.downloadHead .downTitle .downlogo img {
+  width: 100%;
+  height: 100%;
+}
+.downloadHead .downTitle .pot {
+  position: absolute;
+  right: 35px;
+  top: 100px;
+}
+.downloadHead .downTitle .t_1 {
+  font-size: 65px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.34;
+}
+.downloadHead .downTitle .t_2 {
+  font-size: 45px;
+  color: #FFFFFF;
+  text-align: center;
+  line-height: 1.34;
+}
+.downloadHead .downTitle .t_2 span {
+  color: #333333;
+}
+.downloadHead .potTop {
+  width: 925px;
+  height: 240px;
+  background: url(../downLoadPigimage/down-group.png) no-repeat;
+  background-size: cover;
+  position: relative;
+  margin-top: 100px;
+}
+.downloadHead .potTop p {
+  line-height: 1.3;
+}
+.downloadHead .potTop .group_1 {
+  position: absolute;
+  left: 420px;
+  top: -52px;
+}
+.downloadHead .potTop .group_2 {
+  position: absolute;
+  left: 102px;
+  top: 12px;
+}
+.downloadHead .potTop .group_3 {
+  position: absolute;
+  right: 110px;
+  top: 13px;
+}
+.downloadHead .potTop .group_1txt {
+  position: absolute;
+  width: 315px;
+  left: 300px;
+  top: 80px;
+  text-align: center;
+}
+.downloadHead .potTop .group_2txt {
+  position: absolute;
+  left: 14px;
+  width: 264px;
+  top: 120px;
+  text-align: center;
+}
+.downloadHead .potTop .group_3txt {
+  position: absolute;
+  right: 12px;
+  width: 272px;
+  top: 120px;
+  text-align: center;
+}
+.downloadHead .potTop .fz26 {
+  font-size: 26px;
+  color: #333333;
+}
+.downloadHead .potTop .fz24 {
+  font-size: 24px;
+}
+.downList {
+  padding-top: 55px;
+  background: #FFFFFF;
+  position: relative;
+}
+.time {
+  font-size: 16px;
+  color: #888888;
+  text-align: right;
+  padding: 15px 20px;
+}
+.downTable {
+  width: 100%;
+  z-index: 1;
+}
+.downTable tr th {
+  text-align: center;
+  font-size: 24px;
+  color: #333333;
+  padding: 6px 10px;
+}
+.downTable tr td {
+  text-align: center;
+  font-size: 22px;
+  color: #666666;
+  padding: 15px 20px;
+}
+.downTable tr td:last-child {
+  text-align: right;
+  padding-right: 50px;
+  color: #FE5C16;
+}
+.downTable tr th:last-child {
+  text-align: right;
+  padding-right: 50px;
+}
+.downTable tr:nth-child(even) {
+  background: #F6F6F6;
+}
+.downFooter {
+  width: 100%;
+  height: 170px;
+  background: url(../downLoadPigimage/groupfooter.png) no-repeat;
+  background-size: cover;
+  padding: 40px 55px;
+  position: relative;
+}
+.downFooter h3 {
+  font-size: 40px;
+  color: #FFFFFF;
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: -20px;
+}
+.downFooter p {
+  font-size: 16px;
+  color: #feefb5;
+}
+.downFooter .erweima {
+  position: absolute;
+  right: 35px;
+  top: 25px;
+}
+.fc-red {
+  color: #FE5C16;
+}
+.watermark {
+  z-index: 3;
+}
+.watermark img {
+  filter: alpha(opacity=70);
+  moz-opacity: .70;
+  opacity: .70;
+}
+.watermark.w1 {
+  position: absolute;
+  top: 20px;
+  right: 235px;
+}
+.watermark.w2 {
+  position: absolute;
+  top: 100px;
+  left: 170px;
+}

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.weiboanalysis.WeiboAnalysisMapper">
+    <select id="getLatestWeibo" resultType="com.miduchina.wrd.po.analysis.weiboanalysis.WeiBoAnalysisTask">
+        <![CDATA[
+			SELECT
+				fenxi_weibo_id as taskId,
+				fenxi_user_id as  userId,
+				fenxi_weibo_url as weiboUrl,
+				fenxi_weibo_task_ticket as taskTicket,
+				fenxi_weibo_content as weiboContent,
+                fenxi_weibo_forward_number as forwardCount,
+                fenxi_weibo_comments_number as commentCount,
+                fenxi_weibo_praise_number as praiseCount,
+                fenxi_weibo_published_time as publishedTime,
+                fenxi_weibo_uid as weiboUid,
+                fenxi_weibo_nickname as weiboNickname,
+                fenxi_weibo_userhead as weiboUserhead,
+                fenxi_weibo_verified_type as  verifiedType,
+                fenxi_weibo_payment as payment,
+                fenxi_weibo_share_code as shareCode,
+                fenxi_weibo_share_platform as sharePlatform,
+                fenxi_weibo_share_read_count as shareRedCount,
+                analysis_status as  analysisStatus,
+                status,
+                create_time as createTime,
+                update_time as updateTime,
+                mark_type as markType
+			FROM
+				fenxi_weibo
+			where status = 1 AND fenxi_weibo_forward_number > 0 and fenxi_weibo_payment = 1
+			]]>
+        <if test="taskId != null and taskId != 0">
+            <![CDATA[
+				and fenxi_weibo_id = #{taskId}
+			]]>
+        </if>
+        <if test="userId != null and userId != '' ">
+            <![CDATA[
+				and fenxi_user_id = #{userId}
+			]]>
+        </if>
+        <if test="taskTicket != null and taskTicket != '' ">
+            <![CDATA[
+				and fenxi_weibo_task_ticket = #{taskTicket}
+			]]>
+        </if>
+        <if test="analysisStatus != null and analysisStatus != '' ">
+            <![CDATA[
+				and analysis_status = #{analysisStatus}
+			]]>
+        </if>
+        <if test="payment != null and payment != '' ">
+            <![CDATA[
+				and fenxi_weibo_payment = #{payment}
+			]]>
+        </if>
+        ORDER BY update_time DESC LIMIT 1
+    </select>
+    <select id="getListTask" resultType="com.miduchina.wrd.po.analysis.weiboanalysis.WeiBoAnalysisTask">
+    <![CDATA[
+			SELECT
+				fenxi_weibo_id as taskId,
+				fenxi_user_id as  userId,
+				fenxi_weibo_url as weiboUrl,
+				fenxi_weibo_task_ticket as taskTicket,
+				fenxi_weibo_content as weiboContent,
+                fenxi_weibo_forward_number as forwardCount,
+                fenxi_weibo_comments_number as commentCount,
+                fenxi_weibo_praise_number as praiseCount,
+                fenxi_weibo_published_time as publishedTime,
+                fenxi_weibo_uid as weiboUid,
+                fenxi_weibo_nickname as weiboNickname,
+                fenxi_weibo_userhead as weiboUserhead,
+                fenxi_weibo_verified_type as  verifiedType,
+                fenxi_weibo_payment as payment,
+                fenxi_weibo_share_code as shareCode,
+                fenxi_weibo_share_platform as sharePlatform,
+                fenxi_weibo_share_read_count as shareRedCount,
+                analysis_status as  analysisStatus,
+                status,
+                create_time as createTime,
+                update_time as updateTime,
+                mark_type as markType
+			FROM
+				fenxi_weibo
+			where status = 1
+			]]>
+    <if test="taskId != null and taskId != 0">
+        <![CDATA[
+				and fenxi_weibo_id = #{taskId}
+			]]>
+    </if>
+    <if test="userId != null and userId != '' ">
+        <![CDATA[
+				and fenxi_user_id = #{userId}
+			]]>
+    </if>
+    <if test="taskTicket != null and taskTicket != '' ">
+        <![CDATA[
+				and fenxi_weibo_task_ticket = #{taskTicket}
+			]]>
+    </if>
+    <if test="weiboUrl != null and weiboUrl != '' ">
+        <![CDATA[
+            and fenxi_weibo_url = #{weiboUrl}
+        ]]>
+    </if>
+    <if test="analysisStatus != null and analysisStatus != '' ">
+        <![CDATA[
+				and analysis_status = #{analysisStatus}
+			]]>
+    </if>
+    <if test="payment != null ">
+        <![CDATA[
+				and fenxi_weibo_payment = #{payment}
+			]]>
+    </if>
+    ORDER BY
+    <choose>
+        <when test="sort == 1">create_time</when>
+        <otherwise>create_time</otherwise>
+    </choose>
+    <choose>
+        <when test="order != null and order == 2">asc</when>
+        <otherwise>desc</otherwise>
+    </choose>
+</select>
+    <select id="queryWeiboExistsByUrl" resultType="com.miduchina.wrd.po.analysis.weiboanalysis.WeiBoAnalysisTask">
+        <![CDATA[
+			SELECT
+				fenxi_weibo_id as taskId,
+				fenxi_user_id as  userId,
+				fenxi_weibo_url as weiboUrl,
+				fenxi_weibo_task_ticket as taskTicket,
+				fenxi_weibo_content as weiboContent,
+                fenxi_weibo_forward_number as forwardCount,
+                fenxi_weibo_comments_number as commentCount,
+                fenxi_weibo_praise_number as praiseCount,
+                fenxi_weibo_published_time as publishedTime,
+                fenxi_weibo_uid as weiboUid,
+                fenxi_weibo_nickname as weiboNickname,
+                fenxi_weibo_userhead as weiboUserhead,
+                fenxi_weibo_verified_type as  verifiedType,
+                fenxi_weibo_payment as payment,
+                fenxi_weibo_share_code as shareCode,
+                fenxi_weibo_share_platform as sharePlatform,
+                fenxi_weibo_share_read_count as shareRedCount,
+                analysis_status as  analysisStatus,
+                status,
+                create_time as createTime,
+                update_time as updateTime,
+                mark_type as markType
+			FROM
+				fenxi_weibo
+			where status = 1
+			]]>
+        <if test="taskId != null and taskId != 0">
+            <![CDATA[
+				and fenxi_weibo_id = #{taskId}
+			]]>
+        </if>
+        <if test="userId != null and userId != '' ">
+            <![CDATA[
+				and fenxi_user_id = #{userId}
+			]]>
+        </if>
+        <if test="taskTicket != null and taskTicket != '' ">
+            <![CDATA[
+				and fenxi_weibo_task_ticket = #{taskTicket}
+			]]>
+        </if>
+        <if test="analysisStatus != null and analysisStatus != '' ">
+            <![CDATA[
+				and analysis_status = #{analysisStatus}
+			]]>
+        </if>
+        <if test="weiboUrl != null and weiboUrl != '' ">
+            <![CDATA[
+                and fenxi_weibo_url = #{weiboUrl}
+            ]]>
+        </if>
+        <if test="payment != null ">
+            <![CDATA[
+				and fenxi_weibo_payment = #{payment}
+			]]>
+        </if>
+        <if test="status != null ">
+            <![CDATA[
+				and status = #{status}
+			]]>
+        </if>
+        ORDER BY create_time desc
+    </select>
+
+    <update id="updateTask">
+        UPDATE fenxi_weibo
+        SET
+        <if test="userId != null and userId!='' ">
+            fenxi_user_id = #{userId},
+        </if>
+        <if test="analysisStatus != null  ">
+            analysis_status = #{analysisStatus},
+        </if>
+        <if test="weiboUrl != null and  weiboUrl != '' ">
+            fenxi_weibo_url = #{weiboUrl},
+        </if>
+        <if test="taskTicket != null and  taskTicket != '' ">
+            fenxi_weibo_task_ticket = #{taskTicket},
+        </if>
+        <if test="weiboContent != null and  weiboContent != '' ">
+            fenxi_weibo_content = #{weiboContent},
+        </if>
+        <if test="forwardCount != null  ">
+            fenxi_weibo_forward_number = #{forwardCount},
+        </if>
+        <if test="commentCount != null  ">
+            fenxi_weibo_comments_number = #{commentCount},
+        </if>
+        <if test="praiseCount != null  ">
+            fenxi_weibo_praise_number = #{praiseCount},
+        </if>
+        <if test="publishedTime != null  ">
+            fenxi_weibo_published_time = #{publishedTime,jdbcType=DATE},
+        </if>
+        <if test="weiboUid != null and  weiboUid != '' ">
+            fenxi_weibo_uid = #{weiboUid},
+        </if>
+        <if test="weiboNickname != null and  weiboNickname != '' ">
+            fenxi_weibo_nickname = #{weiboNickname},
+        </if>
+        <if test="weiboUserhead != null and  weiboUserhead != '' ">
+            fenxi_weibo_userhead = #{weiboUserhead},
+        </if>
+        <if test="verifiedType != null ">
+            fenxi_weibo_verified_type = #{verifiedType},
+        </if>
+        <if test="payment != null">
+            fenxi_weibo_payment = #{payment},
+        </if>
+        <if test="shareCode != null and  shareCode != '' ">
+            fenxi_weibo_share_code = #{shareCode},
+        </if>
+        <if test="sharePlatform != null and  sharePlatform != '' ">
+            fenxi_weibo_share_platform = #{sharePlatform},
+        </if>
+        <if test="shareRedCount != null and  shareRedCount != 0 ">
+            fenxi_weibo_share_read_count = #{shareRedCount},
+        </if>
+        <if test="markType != null ">
+            mark_type = #{markType},
+        </if>
+        <if test="status != null ">
+            status = #{status},
+        </if>
+        update_time=now()
+        WHERE
+        STATUS = 1
+        <if test="taskId != null and taskId != 0 ">
+            AND fenxi_weibo_id = #{taskId}
+        </if>
+        <if test="taskTicket != null and taskTicket != '' ">
+            AND fenxi_weibo_task_ticket = #{taskTicket}
+        </if>
+        <if test="userId != null and userId != 0 ">
+            AND fenxi_user_id = #{userId}
+        </if>
+    </update>
+
+    <insert id="insertTask" useGeneratedKeys="true" keyProperty="incident_analysis_task_id">
+
+        <![CDATA[
+           INSERT INTO
+				fenxi_weibo(
+				fenxi_user_id,
+                fenxi_weibo_url,
+                fenxi_weibo_task_ticket,
+                fenxi_weibo_content,
+                fenxi_weibo_forward_number,
+                fenxi_weibo_comments_number,
+                fenxi_weibo_praise_number,
+                fenxi_weibo_published_time,
+                fenxi_weibo_uid,
+                fenxi_weibo_nickname,
+                fenxi_weibo_userhead,
+                fenxi_weibo_verified_type,
+                fenxi_weibo_payment,
+                fenxi_weibo_share_code,
+                fenxi_weibo_share_platform,
+                fenxi_weibo_share_read_count,
+                analysis_status,
+                status,
+                create_time,
+                update_time,
+                mark_type
+				)
+			VALUES(
+			#{userId},
+			#{weiboUrl},
+			#{taskTicket},
+			#{weiboContent},
+			#{forwardCount},
+			#{commentCount},
+			#{praiseCount},
+			#{publishedTime},
+			#{weiboUid},
+			#{weiboNickname},
+			#{weiboUserhead},
+			#{verifiedType},
+			#{payment},
+			#{shareCode},
+			#{sharePlatform},
+			#{shareReadCount},
+			#{analysisStatus},
+			1,
+			now(),
+			now(),
+			#{markType}
+			)
+        ]]>
+    </insert>
+
+</mapper>

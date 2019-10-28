@@ -1,0 +1,105 @@
+.topFloat_r{position: fixed; top: 0px; height: 100%; right: -400px;z-index: 100;}
+.notice{font-family: "微软雅黑",arial; width: 400px; height: 100%;  position: relative; background-color: #2f2f2f;
+    -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);}
+.notice >a.close{position: absolute; top: 0; right: 0;z-index: 1;width: 25px; height: 25px; color: #fff; text-align: center; line-height: 25px; font-size: 25px;}
+.notice >a.close:hover{text-decoration: none;}
+.notice .fotmore{text-align: center;color: #fff; display: block; line-height: 30px;}
+.notice .fotmore:hover{background-color:rgba(0,0,0,.1);}
+.rightIn{-webkit-animation: rightIn 0.6s both;animation: rightIn 0.6s both;}
+@-webkit-keyframes rightIn {
+    0% {opacity: 0;transform: translateX(0px);-webkit-transform: translateX(0px);}
+    90% {opacity: 1;transform: translateX(-410px);-webkit-transform: translateX(-410px);}
+    100% {opacity: 1;transform: translateX(-400px);-webkit-transform: translateX(-400px);}
+}
+@keyframes rightIn {
+     0% {opacity: 0;transform: translateX(0px);-webkit-transform: translateX(0px);}
+     90% {opacity: 1;transform: translateX(-410px);-webkit-transform: translateX(-410px);}
+   100% {opacity: 1;transform: translateX(-400px);-webkit-transform: translateX(-400px);}
+
+}
+
+.rightOut{-webkit-animation: rightOut 0.6s both;animation: rightOut 0.6s both;}
+@-webkit-keyframes rightOut {
+     0% {opacity: 1;transform: translateX(-400px);-webkit-transform: translateX(-400px);}
+     30% {opacity: 1;transform: translateX(-410px);-webkit-transform: translateX(-410px);}
+    100% {opacity: 0;transform: translateX(0px);-webkit-transform: translateX(0px);}
+}
+@keyframes rightOut {
+     0% {opacity: 1;transform: translateX(-400px);-webkit-transform: translateX(-400px);}
+     30% {opacity: 1;transform: translateX(-410px);-webkit-transform: translateX(-410px);}
+    100% {opacity: 0;transform: translateX(0px);-webkit-transform: translateX(0px);}
+}
+
+
+
+
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {border: none;background: none;font-weight: bold;color: #1c94c4;}
+.ui-state-default .ui-icon {
+  background-image: url(../images/ui-icons_ef8c08_256x240.png);
+}
+.ui-state-active .ui-icon {
+  background-image: url(../images/ui-icons_ef8c08_256x240.png);
+}
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #eb8f00;
+}
+.ui-widget-content {
+  border: none;
+  
+  color: #333333;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  -moz-border-radius-bottomright: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -khtml-border-bottom-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #CECECE;
+}
+
+.urgent.ui-accordion-header.ui-helper-reset.ui-state-default.ui-corner-all.ui-accordion-icons,.urgent.ui-accordion-header.ui-helper-reset.ui-state-default.ui-accordion-icons.ui-accordion-header-active.ui-state-active.ui-corner-top {
+  color: #ff8500;  
+}
+
+.ui-accordion .ui-accordion-content {
+  padding: 1em 1em;
+  border-top: 0;
+  line-height: 20px;
+  font-size: 13px;
+  color: #CECECE;
+  background-color: #2f2f2f;
+  overflow: auto;
+  border-bottom: dashed 1px #AAAAAA;
+  zoom: 1;
+}
+ 
+.ui-accordion .ui-accordion-content p.time{ margin-top: 10px; background: none;}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active {
+  border: none;
+  background: none;
+  font-weight: bold;
+  color: #fff;
+ background-color: rgba(0,0,0,.1);
+}
+.ui-accordion .ui-accordion-header:hover{background-color: rgba(0,0,0,.1);}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-left, .ui-corner-bl {
+  -moz-border-radius-bottomleft: 0px;
+  -webkit-border-bottom-left-radius: 0px;
+  -khtml-border-bottom-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+}
+.accordion.ui-accordion.ui-widget.ui-helper-reset{max-height: 90%; overflow: auto;}

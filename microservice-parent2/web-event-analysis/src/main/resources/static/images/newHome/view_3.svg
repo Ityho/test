@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="12px" viewBox="0 0 14 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>钱包面</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#C97FFF" offset="0%"></stop>
+            <stop stop-color="#B042FF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="6我" transform="translate(-30.000000, -324.000000)" fill="url(#linearGradient-1)">
+            <g id="1" transform="translate(0.000000, 204.000000)">
+                <g id="钱包面" transform="translate(30.000000, 120.000000)">
+                    <path d="M13.6810127,9.07500001 C13.7873418,9.07500001 13.8936709,9.0375 14,9.0375 L14,9.60000001 C14,10.9125 12.9721519,12 11.6962025,12 L2.30379746,12 C1.0278481,12 0,10.9125 0,9.5625 L0,2.39999999 C0,1.0875 1.0278481,0 2.30379746,0 L11.6962025,0 C12.9721519,0 14,1.0875 14,2.4375 L14,3 C13.8936709,2.9625 13.7873418,2.9625 13.6810127,2.9625 L10.7037975,2.9625 C9.60506329,2.96250001 8.6835443,3.90000001 8.6835443,5.10000001 L8.6835443,6.9375 C8.6835443,8.10000001 9.56962025,9.07500001 10.7037975,9.07500001 L13.6810127,9.07500001 Z M10.5,5 L13.5,5 C13.75,5 14,5.15584415 14,5.36363636 L14,6.63636363 C14,6.81818182 13.7857143,7 13.5,7 L10.5,7 C10.25,6.99999999 10,6.84415584 10,6.63636363 L10,5.36363636 C10,5.18181818 10.2142857,5 10.5,5 Z" id="合并形状"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

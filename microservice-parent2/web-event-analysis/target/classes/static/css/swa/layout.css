@@ -1,0 +1,149 @@
+@CHARSET "UTF-8";
+/*框架样式*/
+.background{background-color: #b4daef; padding: 20px 0;}
+.wrapper{ width:100%; overflow:hidden;}
+.wrapper980{width: 980px;padding: 20px;background-color: #fff;}
+.wrapCon{width:940px; }
+.wrapCon2{width:940px;}
+.wrapChart{ text-align: center; }
+.wrapChart2{float: right;}
+.wrapChart img{width: 100%;}
+a.invalid{ color: #888;}
+
+.fx-icon{background-image: url(../images/fx-icon.png); background-repeat: no-repeat; background-size: 30px; width: 30px; height: 30px; background-color: rgba(0,0,0,.6); border-radius: 50%; position: fixed; bottom: 20px; right: 20px; z-index: 2;}
+.modal-dialog2{margin-top: 100px; width: 400px;}
+/*主色调 #f8661e, 边框颜色 #c9c9c9*/
+.row-fluid{margin-bottom: 15px; overflow: hidden; position: relative;}
+.loadingMask{width: 100%; height: 100%; background-color: rgba(238,238,238,.6); position: absolute; top: 0; left: 0;z-index: 1;text-align: center;}
+.waiting{padding:20px;display: inline-block; font-size: 16px; background-color: #f8661e; color: #fff; display: block; margin: auto; margin-top: 10%; position: relative;}
+.waiting2{margin-top: 3%;}
+.waiting > .closeBtn {width: 25px;height: 25px;background-color: #fff;text-align: center; line-height: 25px; position: absolute; top: -10px; right: -10px; font-size: 20px;}
+.loadingData{padding:10px 20px;display: inline-block; font-size: 16px; background-color: #f8661e; color: #fff; position: absolute; top: 0; left: 40%;}
+
+/*APP头部*/
+.heard{text-align: center; background-color:#fff; line-height: 20px; margin-top: 5px; padding: 6px 0;height:80px }
+.heard ul{display: inline-block;width: 100%; }
+.heard ul li{ float: left; width: 30%; display: inline-block; border-right: solid 1px #dcdcdc;  cursor: pointer; color: #606161; font-size: 14px; position: relative;}
+.heard ul li:last-child{border: none;}
+.heard ul li:hover{ background-color:transparent;color: #f8661e; }
+.heard ul .active,.heard ul .active:hover{background-color:transparent; color: #f8661e;}
+.heard ul .active:after{content: ""; width: 100%; height: 2px; background-color: #f8661e; position: absolute; bottom: -12px;left: 0;}
+
+.heard2{text-align: center; background-color:#fff; line-height: 20px; margin-top: 5px; padding: 6px 0;height:80px }
+.heard2 ul{display: inline-block;width: 100%; }
+.heard2 ul li{ float: left; width: 50%; display: inline-block; border-right: solid 1px #dcdcdc;  cursor: pointer; color: #606161; font-size: 14px; position: relative;}
+.heard2 ul li:last-child{border: none;}
+.heard2 ul li:hover{ background-color:transparent;color: #f8661e; }
+.heard2 ul .active,.heard ul .active:hover{background-color:transparent; color: #f8661e;}
+.heard2 ul .active:after{content: ""; width: 100%; height: 2px; background-color: #f8661e; position: absolute; bottom: -12px;left: 0;}
+
+.heard3{text-align: center; background-color:#fff; line-height: 20px; margin-top: 5px; padding: 6px 0;height:80px }
+.heard3 ul{display: inline-block;width: 100%; }
+.heard3 ul li{ float: left; width: 33%; display: inline-block; border-right: solid 1px #dcdcdc;  cursor: pointer; color: #606161; font-size: 14px; position: relative;}
+.heard3 ul li:last-child{border: none;}
+.heard3 ul li:hover{ background-color:transparent;color: #f8661e; }
+.heard3 ul .active,.heard ul .active:hover{background-color:transparent; color: #f8661e;}
+.heard3 ul .active:after{content: ""; width: 100%; height: 2px; background-color: #f8661e; position: absolute; bottom: -12px;left: 0;}
+i.icon{display: inline-block; width: 28px; height: 28px; background-image: url(../../images/icon2.png); background-repeat: no-repeat; background-size: 140px;}
+.icon-1{background-position: 0 0;}
+.icon-2{background-position: -28px 0;}
+.icon-3{background-position: -56px 0;}
+.icon-4{background-position: -84px 0;}
+.icon-help{background-position: -112px 0;}
+.col-5{width: 50%; float: left;}
+
+.tools{margin-left: 20px; margin-top: 5px; display: inline-block;}
+.tools a{display: inline-block;}
+/*分析框*/
+.analyze{ width: 100%; display: inline-block;  position: relative;border: solid 0px #e7e7e7; background-color: #fff;}
+.analyze input{width: 100%; line-height: 37px; height: 37px;  background-color: transparent; /* border: none; */}
+.analyze .fxbtn{position: absolute; top: -1px; right: -1px; line-height: 38px; background-color: #f8661e; color: #fff; width: 74px; text-align: center; text-decoration: none; }
+.analyze .empty{width: 18px;height: 18px;border-radius: 50%;background-color: #bababa;color: #FFFFFF;  text-align: center;line-height: 18px; font-size: 18px; font-weight: 600;cursor: pointer; top: 10px;right: 80px;}
+.emCancel,.emCancel:hover{background-color: transparent;border: none; color:#A3A3A3; font-size: 16px;}
+.analyze2 .fxbtn{ width: 100%; display: inline-block;  position: relative;border: solid 0px #e7e7e7; background-color: #f8661e; color: #fff;}
+.promptWell{text-align: center; color: #666; font-size: 14px; padding: 130px 0; background-image: url(../images/icon-ss.png); background-position: center 50px; background-repeat: no-repeat; background-size: 20%;}
+.nav2{ line-height: 30px;}
+.nav2 a{ margin-right: 20px;}
+.nav2 a:last-child{margin: 0;}
+
+.analyze2{ width: 100%; display: inline-block;  position: relative;border: solid 0px #e7e7e7; background-color: #fff;}
+.analyze2 .fxbtn{position: absolute; top: -18px; right: -1px; line-height: 38px; background-color: #f8661e; color: #fff; width: 100%; height:30px;text-align: center; text-decoration: none; }
+
+.Div-list{ max-height: 220px; overflow: hidden; background-color: #eeeeee;}
+.Div-list2{min-height: 100px; background-color: #f2f2f2;}
+.Div-list3{ overflow: hidden; background-color: #eeeeee;}
+/*分享到*/
+.fenxiang{ float: right;}
+.fenxiang span,.fenxiang a{display: block; float: left; line-height: 40px; margin-right: 5px;}
+.fenxiang a.icon{width: 40px; height: 40px; background-repeat: no-repeat; background-image: url(../images/fenxiang.png);}
+.fenxiang a.icon_wb{background-position: -162px -109px;}
+.fenxiang a.icon_wx{background-position: -22px -109px;}
+.fenxiang a.icon_pyq{background-position: -90px -109px;}
+.fenxiang a.icon_qq{background-position: -22px -24px;}
+.fenxiang a.icon_qqkj{background-position: -90px -24px;}
+
+/*操作步骤*/
+.stepList{margin: 10px 0;  margin-left: 38%; padding-left: 20px; font-size: 14px; position: relative;}
+.stepList:after{content: ""; width: 1px; height: 76%; background-color: #bfbfbf; position: absolute; top: 20px; left: 0px; z-index: 0;}
+.stepList li,.stepList li a{line-height: 40px; color: #f87434; position: relative;}
+.stepList li a:hover{ color: #cd0000;}
+.stepList li a em{color: #a2a2a2; font-size: 12px;}
+.stepList li i{width: 10px; height: 10px; border: solid 1px #bfbfbf; background-color: #fff; border-radius: 50%; position: absolute; top: 15px; left: -24px;z-index: 1;}
+
+
+/*帮助页面*/
+.form-help{line-height: 25px;}
+.form-help h1{font-size: 16px; font-weight: 600; margin: 10px 0; padding-bottom: 10px; border-bottom: solid 2px #cfcfcf;}
+.form-help h1 em{padding: 2px 6px; display: inline-block; background-color: #f8661e; color: #fff;}
+.form-help h2{font-size: 14px;margin: 10px 0;}
+.form-help h2 em{color:#f8661e ; width: 22px; height: 22px; padding: 0 6px; border-radius: 50%; background-color: #fff; margin: 0 10px;}
+.form-help p{text-align: center;}
+.form-help .img{margin-bottom: 20px; border: solid 5px #ececec; width: 700px;}
+.form-help .app_text{ background-color: #ececec;padding: 10px; overflow: hidden;}
+.form-help .app_text h2{background-color: #317cc0; line-height: 25px; margin: 0; color: #fff;}
+.form-help .app_text li{ width: 100%;}
+.form-help .app_text li img{width: 100%;}
+.form-help .app_text li:last-child{margin-right: 0;}
+
+.chartMask{width: 20%;height: 100%;background-color: rgba(0,0,0,.0);position: absolute;
+  top: 0; right: 0; display: block; z-index: 1;}
+
+/*demoPlay*/
+.demoPlay{width: 100%; height: 100%; background-color: #fff; position: absolute; top: 0px; left: 0px;z-index: 10;  border: 3px solid #B6B6B6;border-radius: 5px; overflow: hidden;}
+.demoPlay .playBox{position: relative;}
+.demoPlay .playBox .close{position: absolute; top: 2px; right: 5px;}
+@media only screen and (max-width:940px ) {
+	.background{background-color:transparent; padding: 0;}
+	.wrapper980{width: initial;padding: 0; min-height: 600px;}
+}
+@media only screen and (max-width:600px ) {
+	.modal-dialog2{margin-top: 100px; width: 95%;}
+	.linkNone{display: none;}
+	.background {background-color: #f2f2f2; padding:0px;}
+	.row-fluid{ background-color: #fff; margin: 0 0 10px 0; overflow: hidden; position: relative;box-shadow: 1px 0px 1px rgba(0, 0, 0, 0.2);}
+	.row-fluid2{margin-top: 5px;}
+	.wrapCon{ width:100%; overflow: auto;}
+	.wrapper980{width: 100%;  padding: 0px;background-color:transparent;}
+	.wrapCon2 {width: 100%;}
+	.wrapChart img{width: 100%;}
+	.wrapChart2{float: initial;}
+	.linkArrow{display: inline-block; float: right; margin-top: 20px; width: 20px; height: 20px; background-image: url(../images/app-arrow-r.png); background-repeat: no-repeat; background-size: 20px;}
+	/*操作步骤*/
+.stepList{margin: 0; padding:0;  }
+.stepList:after{display: none;}
+.stepList li{border-bottom: solid 1px #eaeaea; padding: 0 10px;}
+.stepList li,.stepList li a{line-height: 60px; color: #f87434; position: relative;}
+.stepList li a:hover{ color: #cd0000;}
+.stepList li a em{color: #a2a2a2; font-size: 12px;}
+.stepList li i{display: none;}
+	
+.waiting{width: 90%; font-size: 14px;}
+.loadingData{padding:5px 10px;font-size: 12px;  top: 0; left: initial; right: 0;}
+.progress2 {display: inline-block; width: 110px; height: 15px; line-height: 15px; font-size: 12px; background-color: #eee; overflow: hidden; margin: 0px -10px; margin-bottom: -10px}
+.progress2 .progressLine {display: inline-block;background-color: #FFA375; color: #333;text-align: center;float: left;}
+}
+@media only screen and (max-width: 320px) {
+	.tools{margin-left: 5px;}
+}
+
+.noData{background-color: #d8d8d8;line-height:2px}

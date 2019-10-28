@@ -1,0 +1,619 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+body {
+  color: #333333;
+  font-size: 0.32rem;
+  font-family: PingFangSC-Regular;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+input {
+  -webkit-user-select: auto;
+}
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  outline: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+.fz10 {
+  font-size: 0.2rem !important;
+}
+.fz11 {
+  font-size: 0.22rem !important;
+}
+.fz12 {
+  font-size: 0.24rem !important;
+}
+.fz13 {
+  font-size: 0.26rem !important;
+}
+.fz14 {
+  font-size: 0.28rem !important;
+}
+.fz15 {
+  font-size: 0.3rem !important;
+}
+.fz16 {
+  font-size: 0.32rem !important;
+}
+.fz18 {
+  font-size: 0.36rem !important;
+}
+.fz20 {
+  font-size: 0.4rem !important;
+}
+.fz24 {
+  font-size: 0.48rem !important;
+}
+.fz30 {
+  font-size: 0.6rem !important;
+}
+/*color*/
+.fc-blue {
+  color: #2bd4f2;
+}
+.fw300 {
+  font-weight: 300;
+}
+.fw500 {
+  font-weight: 500;
+}
+.fw-blod {
+  font-weight: bold;
+}
+.text-center {
+  text-align: center;
+}
+.margin-top-10 {
+  margin-top: 0.2rem;
+}
+.margin-top-30 {
+  margin-top: 0.6rem;
+}
+.margin-top-50 {
+  margin-top: 1rem;
+}
+.margin-top-65 {
+  margin-top: 1.3rem;
+}
+.margin-top-80 {
+  margin-top: 1.6rem;
+}
+.margin-bottom-5 {
+  margin-bottom: 0.1rem;
+}
+.padding10 {
+  padding: 0.2rem !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.bg {
+  background: url(../../images/wxActivity/icon-bg.png) no-repeat center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.panel-body {
+  position: relative;
+  height: 100%;
+}
+.panel-title {
+  width: 6.06rem;
+  height: 5.3rem;
+  margin: 0 auto;
+  margin-top: 1rem;
+}
+.panel-title img {
+  width: 100%;
+  height: 100%;
+}
+.pinel-text {
+  position: relative;
+  text-align: center;
+  width: 3.3rem;
+  margin: 0.5rem auto auto;
+}
+.pinel-text p:before {
+  content: "";
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.04rem;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+}
+.pinel-text p:after {
+  content: "";
+  display: inline-block;
+  width: 0.3rem;
+  height: 0.04rem;
+  background: #FFFFFF;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  right: 0;
+}
+.pinel-text p {
+  position: relative;
+  color: #ffffff;
+  letter-spacing: 5px;
+}
+.panel-footer {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.panel-footer a {
+  display: inline-block;
+  width: 1rem;
+  vertical-align: middle;
+}
+.panel-footer a > img {
+  width: 100%;
+}
+.panel-footer .yqt {
+  width: 1.1rem;
+}
+.panel-footer .wyq {
+  width: 1.2rem;
+}
+.panel-footer span {
+  color: #bab3b3;
+  font-weight: 300;
+  font-size: 0.4rem;
+}
+img {
+  border: 0;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #007aff;
+}
+p {
+  margin: 0;
+}
+section {
+  padding: 0.6rem 0.5rem 0.5rem;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: " ";
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.img2 {
+  display: block;
+  margin-bottom: 0.1rem;
+}
+.img2 img {
+  height: 0.46rem;
+}
+.img3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  width: 4.8rem;
+  height: 3rem;
+}
+.img3 img {
+  width: 100%;
+  height: 100%;
+}
+.img4 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 6.3rem;
+  height: 3.4rem;
+}
+.page2 .title {
+  font-size: 0.34rem;
+  color: #fff;
+}
+.time {
+  background: url(../../images/wxActivity/icon1-bg.png) no-repeat center;
+  background-size: 100% 100%;
+  color: #2bd4f2;
+  padding: 0.4rem 0.5rem;
+  margin-top: 0.6rem;
+}
+.time p {
+  line-height: 0.5rem;
+  color: #ffffff;
+  font-size: 0.24rem;
+}
+.time .q1 {
+  font-weight: bold;
+  color: #2bd4f2;
+  font-size: 0.24rem;
+}
+.time .q_btn {
+  background-color: #fff;
+  border: solid 1px #CCC;
+  padding: 0.12rem 0.2rem;
+  text-align: center;
+  border-radius: 0.06rem;
+  text-decoration: none;
+  font-size: 0.26rem;
+}
+.time .q_btn:hover {
+  background-color: #ff8500;
+  border: solid 1px #ff8500;
+  color: #fff;
+}
+.time.none {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+.time .spotList > li {
+  position: relative;
+  padding-left: 0.46rem;
+}
+.time .spotList > li:after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: url(../../images/wxActivity/spit.png) no-repeat;
+  background-size: cover;
+}
+.time .spotList > li:before {
+  content: "";
+  position: absolute;
+  left: 0.2rem;
+  top: 0.3rem;
+  width: 1px;
+  height: 100%;
+  background-color: #2bd4f2;
+}
+.time .spotList > li:last-child:before {
+  background-color: transparent;
+}
+/*第三页*/
+.item-text {
+  background: url(../../images/wxActivity/icon3-bg.png) no-repeat center;
+  background-size: 100% 100%;
+  padding: 0.4rem 0.9rem;
+  margin-bottom: 0.3rem;
+  font-size: 0.26rem;
+  color: #ffffff;
+}
+.bg-sm-img {
+  background: url(../../images/wxActivity/icon3-sm-bg.png) no-repeat center;
+  background-size: 100% 100%;
+}
+.action {
+  color: #2bd4f2;
+  font-size: 0.22rem;
+  text-indent: 0.56rem;
+}
+.action-footer {
+  color: #2bd4f2;
+  font-size: 0.22rem;
+}
+/*第四页*/
+.group-item {
+  background: url(../../images/wxActivity/icon2-bg.png) no-repeat center;
+  background-size: 100% 100%;
+  padding: 0.24rem 0.3rem;
+  margin-bottom: 0.6rem;
+  font-size: 0.26rem;
+  color: #ffffff;
+  position: relative;
+}
+.group-item .group-lf {
+  width: 1.9rem;
+  height: 1.9rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.group-item .group-lf img {
+  width: 100%;
+  height: 100%;
+}
+.group-item .group-rg {
+  margin-left: 2.4rem;
+}
+.bg-line {
+  background: url(../../images/wxActivity/icon1-bg.png) no-repeat center;
+  background-size: 100% 100%;
+  color: #2bd4f2;
+  padding: 0.3rem 0.2rem;
+}
+.page4_bg {
+  background: url(../../images/wxActivity/icon4-bg.png) no-repeat center;
+  background-size: 100% 100%;
+  color: #ffffff;
+  padding: 0.5rem;
+  font-size: 0.24rem;
+}
+.plan {
+  text-align: center;
+}
+.plan p {
+  color: #FFFFFF;
+}
+.plan p:first-child {
+  color: #2bd4f2;
+  font-size: 0.24rem;
+}
+.table li {
+  color: #FFFFFF;
+  font-size: 0.24rem;
+  padding: 0.1rem 0;
+}
+.table li i {
+  font-size: 0.28rem;
+  margin-right: 0.1rem;
+}
+.table .tab-cell {
+  display: table;
+}
+.table .tab-cell .lf {
+  display: table-cell;
+  vertical-align: top;
+}
+.table .tab-cell .rg {
+  display: table-cell;
+}
+.btn-baoming {
+  width: 2.62rem;
+  height: 0.9rem;
+  display: inline-block;
+}
+.btn-baoming img {
+  width: 100%;
+  height: 100%;
+}
+.table2 {
+  width: 100%;
+}
+.table2 li {
+  display: table;
+  width: 100%;
+  margin-bottom: 0.3rem;
+}
+.table2 li > div {
+  display: table-cell;
+}
+.table2 li:last-child {
+  margin-bottom: 0;
+}
+.table2 input {
+  border: 1px solid #2bd4f2;
+  border-radius: 0.06rem;
+  background: rgba(233, 227, 227, 0.4);
+  width: 100%;
+  padding: 0.04rem 0.1rem;
+  color: #ffffff;
+  font-size: 0.3rem;
+}
+.ddbox {
+  font-size: 0.2rem;
+  color: #2bd4f2;
+  margin-top: 0.3rem;
+}
+.ddbox dd {
+  margin: 0;
+}
+@-webkit-keyframes start {
+  0%,
+  30% {
+    opacity: 0;
+    -webkit-transform: translate(0, 10px);
+  }
+  60% {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate(0, -8px);
+  }
+}
+@-moz-keyframes start {
+  0%,
+  30% {
+    opacity: 0;
+    -moz-transform: translate(0, 10px);
+  }
+  60% {
+    opacity: 1;
+    -moz-transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    -moz-transform: translate(0, -8px);
+  }
+}
+@keyframes start {
+  0%,
+  30% {
+    opacity: 0;
+    transform: translate(0, 10px);
+  }
+  60% {
+    opacity: 1;
+    transform: translate(0, 0);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(0, -8px);
+  }
+}
+.arrow-box {
+  position: absolute;
+  bottom: -0.9rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 50%;
+  height: 1.8rem;
+  border-radius: 100%;
+  background: rgba(255, 255, 255, 0.18);
+  z-index: 900;
+}
+#array {
+  animation: start 1.5s infinite ease-in-out;
+  -webkit-animation: start 1.5s infinite ease-in-out;
+  display: block;
+  margin: 0.3rem auto 0 auto;
+  width: 0.4rem;
+  height: 0.3rem;
+  z-index: 999;
+}
+.model {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  width: 3.6rem;
+  margin: auto;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  z-index: 999;
+  text-align: center;
+  display: none;
+}
+.model .model-header {
+  background: #1f93ad;
+}
+.model .model-header h3 {
+  font-size: 0.36rem;
+  color: #fff;
+  height: 0.6rem;
+  line-height: 0.6rem;
+  font-weight: normal;
+}
+.model .model-body {
+  background: #ffffff;
+}
+.model .model-body p {
+  font-size: 14px;
+  padding: 0.2rem 0;
+  color: #333;
+}
+.model .model-body .btn-true {
+  display: inline-block;
+  font-size: 0.24rem;
+  background: #1f93ad;
+  color: #fff;
+  border-radius: 0.1rem;
+  padding: 0.06rem 0.2rem;
+  margin-bottom: 0.2rem;
+}
+.model-dark {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(1, 1, 1, 0.4);
+  z-index: 998;
+  display: none;
+}
+.peoplebox li {
+  display: inline-block;
+  width: 1.9rem;
+  margin-bottom: 0.2rem;
+  margin-right: 0.2rem;
+}
+.peoplebox li img {
+  width: 100%;
+}
+.peoplebox li:last-child {
+  margin-right: 0;
+}
+.people-top ul,
+.people-bottom ul {
+  display: flex;
+  justify-content: space-between;
+}
+.people-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.people-center .people-lf,
+.people-center .people-rg {
+  width: 1.9rem;
+  margin: 0;
+}
+.people-center .people-lf li,
+.people-center .people-rg li {
+  margin-right: 0;
+}
+.people-center .people-text {
+  width: 0.46rem;
+}
+.people-center .people-text img {
+  width: 100%;
+}
+@media only screen and (min-width: 800px) {
+  html,
+  body {
+    width: 667px;
+    margin: 0px auto!important;
+    font-size: 85px !important;
+  }
+}
+.img5 {
+  padding: 0;
+  height: 10.34rem;
+  width: 6.5rem;
+  position: absolute;
+  top: 5px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}

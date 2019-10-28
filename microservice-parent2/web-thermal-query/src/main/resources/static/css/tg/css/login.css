@@ -1,0 +1,40 @@
+/*登录框样式*/
+.float_l{float: left;}
+.float_r{float: right;}
+.clear{clear: both;}
+:focus {outline: 0px;}
+.login{  z-index: 998;top: 100px;right: 5%; font-size: 12px; text-align: left; color: #444; padding: 20px;}
+.login a{color: #025EF9;}
+.login  textarea:focus,.login  input[type="text"]:focus,.login  input[type="password"]:focus { border: 0px solid #0970ee; background-color:#FFF; }
+.login > h2{font-size: 20px;display: block;line-height: 35px;height: 35px;color: #444; margin: 0; margin-bottom: 10px; text-align: center;}
+.login  .inputText{width: 260px; margin-left: 10px; border-style: none;background-color:#fff; color: #666;}
+
+.login  .inputText{height: 21px; padding:10px 0px;line-height: 21px;margin-top: 0px;}
+*html .login  .inputText { height: 35px;line-height: 35px;margin-top: 6px;} /* ie6 fixed */
+*+html .login  .inputText{ height: 35px;line-height: 35px;margin-top: 6px;} /* ie7 fixed, 注意顺序 */
+.login  .inputYZM{width: 100px; margin-left: 10px; border-style: none;color: #666;}
+.login  .inputYZM{height: 21px; padding:10px 0px;line-height: 21px;}
+*html .login  .inputYZM{height: 35px;	line-height: 35px;}/* ie6 fixed */
+*+html .login  .inputYZM{height: 35px;	line-height: 35px;}/* ie7 fixed, 注意顺序 */
+.login  .input{width: 332px;height: 45px;font-size: 14px;color: #333;line-height: 45px; border-radius: 3px; padding-left: 30px;border: solid 1px #ccc; margin:0; background: #fff;}
+ .login  .input:hover{border: 1px solid #F95302;}
+.login  .phone { background:#fff url(../images/new_ren_03.png) no-repeat 8px 10px;}
+.login  .phone{ margin-bottom:0px;}
+*html .login  .phone{ margin-bottom:5px;}/* ie6 fixed */
+*+html .login  .phone{ margin-bottom:5px;}/* ie7 fixed, 注意顺序 */
+.login .password { background:#fff url(../images/new_sou_07.png) no-repeat 8px 14px;}
+.login .code{background:#fff url(../images/yama.png) no-repeat 8px 14px;width:130px;margin-top: 10px;}
+.login .imgVcode{margin-top:10px; margin-left: 10px; width: 138px;}
+.login .imgVcode img{ width: 100%;}
+.login  .login_forg {width: 260px;height: 30px;line-height: 30px; margin: 5px 20px 5px 20px; font-size:12px; }
+.login .login_forg a {margin-left: 100px;}
+.login .login_btn { width: 100%;height: 45px;line-height: 45px; font-size: 16px; margin:10px 0; background: #F95302; color: #FFF; text-align: center; border-radius: 3px; cursor: pointer;}
+.login  .login_btn:hover { opacity: .8; }
+.forgetpassword{text-decoration: none;}
+.forgetpassword:hover{text-decoration: underline;}
+.login .login_mfzc { width: 260px; height: 25px; line-height: 25px; margin: 0px 0px 5px 0px; text-align: left; font-size:12px;}
+ 
+.login .wy_dl {width: 280px;height: 45px;padding-left: 30px;margin: 0;line-height: 45px;}
+.login .wy_pass { width: 280px;height: 45px; padding-left: 30px; margin-top: 10px;}
+.login .wy_forget {width: 100%; height: 20px; line-height: 20px; margin: 0;}
+.new_mfzc{color: #F90202;}

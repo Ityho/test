@@ -1,0 +1,83 @@
+{
+chart: {
+		height:{height},
+		width:{width},
+		type: "line",
+		style: {
+				fontFamily: 'Microsoft YaHei',
+                fontSize: 13,
+				color:'#000000'
+            }
+},
+title: {
+	text: ''
+},
+credits: {
+     enabled: false
+} ,
+xAxis: [{
+	categories: {lables} ,
+	tickPixelInterval : 150, 
+	rotation: -35,
+	labels: {
+			type:"lables",
+			style:{
+				fontFamily: 'Microsoft YaHei',
+                fontSize: 9,
+				color:'#000000'
+			},
+			formatter: function() {
+	                        return ''+ this.value+'';
+	                },
+			step:3
+		}
+		
+}],
+yAxis: {
+	title: {
+		allowDecimals:false, //是否允许刻度有小数
+		style: {
+				fontFamily: 'Microsoft YaHei',
+				fontSize:12,
+				color:'#000000'
+        },
+        text: '数量'
+	},
+	min:0
+},
+colors:[ 
+		 
+			'#eca282', '#DDDF00',  '#eca282',	'#fc3535', '#00add0', 
+		  ], 
+legend: {
+	enabled: false
+},
+plotOptions: {
+        area: {
+			fillOpacity:0.5,
+            fillColor: {
+			linearGradient: [0, 0, 0, 300],
+            stops: [
+						[0, '#eca282'],
+					    [1, 'rgba(245, 215, 201, 0.01)']
+				   ]
+
+            },
+            lineWidth: 1,
+            marker: {
+                enabled: false
+            },
+            shadow: false,
+            states: {
+                hover: {
+                    lineWidth: 1
+                }
+            },
+            threshold: null
+        }
+},
+series: [{
+		type: 'area',
+		data: {data}    
+	}]
+}

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.user.UserThirdpartyAuthInfoMapper">
+
+    <select id="selectOneUserThirdpartyAuth" resultType="com.miduchina.wrd.po.user.UserThirdpartyAuthInfo">
+        <![CDATA[
+			SELECT
+				thirdparty_user_id as thirdpartyUserId,
+				user_id as userId,
+				access_token as accessToken,
+				refresh_token as refreshToken,
+                auth_time as authTime,
+                expire_time as expireTime,
+                platform_type as platformType,
+                verified_type as verifiedType,
+                application_type as applicationType,
+                status
+			FROM
+				user_thirdparty_auth_info
+			WHERE
+			user_id = #{userId} AND status=1
+
+		]]>
+
+    </select>
+    <select id="selectUserThirdpartyAuthInfoByUid" resultType="com.miduchina.wrd.po.user.UserThirdpartyAuthInfo">
+        <![CDATA[
+			SELECT
+				thirdparty_user_id as thirdpartyUserId,
+				user_id as userId,
+				access_token as accessToken,
+				refresh_token as refreshToken,
+                auth_time as authTime,
+                expire_time as expireTime,
+                platform_type as platformType,
+                verified_type as verifiedType,
+                application_type as applicationType,
+                status
+			FROM
+				user_thirdparty_auth_info
+			WHERE
+			thirdparty_user_id = #{thirdpartyUserId}
+
+		]]>
+
+    </select>
+    <insert id="saveH5ShortUrl" useGeneratedKeys="true" keyProperty="id">
+
+        <![CDATA[
+           INSERT INTO
+				h5_short_url(
+				short_url,
+                source_url,
+                create_time,
+                update_time,
+                status
+				)
+			VALUES(
+			#{shortUrl},
+			#{sourceUrl},
+			now(),
+			#{updateTime},
+			#{status}
+			)
+        ]]>
+    </insert>
+
+    <select id="findH5ShortUrlByShortUrl" resultType="com.miduchina.wrd.po.h5.H5ShortUrl">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				h5_short_url
+			WHERE
+			status = 1
+			AND short_url=#{shortUrl}
+			order by create_time desc
+
+		]]>
+
+    </select>
+
+    <select id="findWeiXinMaterialByOpenIdAndType" resultType="com.miduchina.wrd.po.h5.WeiXinMaterial">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				weixin_material
+			WHERE
+			status = 1
+			AND open_id=#{openId}
+			AND type=#{type}
+
+		]]>
+
+    </select>
+    <insert id="saveWeiXinMaterial" useGeneratedKeys="true" keyProperty="id">
+
+        <![CDATA[
+           INSERT INTO
+				weixin_material(
+				open_id,
+                img_url,
+                status,
+                create_time,
+                update_time,
+                type
+				)
+			VALUES(
+			#{openId},
+			#{imgUrl},
+			#{status},
+			now(),
+			#{updateTime},
+			#{type}
+			)
+        ]]>
+    </insert>
+
+</mapper>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.client.ClientSerialMapper">
+    <insert id="insertSerial" useGeneratedKeys="true" keyProperty="client_serial_id">
+        <![CDATA[
+            INSERT INTO
+                client_serial(
+                user_id,
+                channel,
+                platform,
+                soft_type,
+                version,
+                device_id,
+                device_token,
+                device_os,
+                device_model,
+                device_label,
+                freeze,
+                create_time,
+                update_time,
+                badge,
+                security_key,
+                sub_user_id,
+                sid
+                )
+            VALUES (
+                #{userId},
+                #{channel},
+                #{platform},
+                #{softType},
+                #{version},
+                #{deviceId},
+                #{deviceToken},
+                #{deviceOs},
+                #{deviceModel},
+                #{deviceLabel},
+                #{freeze},
+                #{createTime},
+                #{updateTime},
+                #{badge},
+                #{securityKey},
+                #{subUserId},
+                #{sid}
+            )
+        ]]>
+    </insert>
+
+    <select id="getListSerial" resultType="com.miduchina.wrd.po.user.ClientSerial">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				client_serial
+			where
+			    freeze = 1
+			]]>
+        <if test="userId != null and userId != 0">
+            <![CDATA[
+				and user_id = #{userId}
+			]]>
+        </if>
+        <if test="clientSerialId != null and clientSerialId != '' ">
+            <![CDATA[
+				and client_serial_id = #{clientSerialId}
+			]]>
+        </if>
+	</select>
+
+
+    <update id="updateSerial">
+        UPDATE client_serial
+        SET
+        <if test="freeze != null and  freeze != '' ">
+            freeze = #{freeze},
+        </if>
+        <if test="userId != null and  userId != '' ">
+            user_id = #{userId},
+        </if>
+        <if test="subUserId != null and  subUserId != '' ">
+            sub_user_id = #{subUserId},
+        </if>
+        <if test="deviceLabel != null and  deviceLabel != '' ">
+            device_label = #{deviceLabel},
+        </if>
+        <if test="deviceModel != null and  deviceModel != '' ">
+            device_model = #{deviceModel},
+        </if>
+        <if test="deviceOs != null and  deviceOs != '' ">
+            device_os = #{deviceOs},
+        </if>
+        <if test="deviceOs != null and  deviceOs != '' ">
+            device_os = #{deviceOs},
+        </if>
+        <if test="deviceToken != null and  deviceToken != '' ">
+            device_token = #{deviceToken},
+        </if>
+        <if test="version != null and  version != '' ">
+            version = #{version},
+        </if>
+        update_time=now()
+        WHERE
+        <if test="wClientSerialId != null and  wClientSerialId != '' ">
+            client_serial_id = #{wClientSerialId},
+        </if>
+        <if test="wUserId != null and  wUserId != '' ">
+            user_id = #{wUserId},
+        </if>
+        <if test="wDeviceToken != null and  wDeviceToken != '' ">
+            device_token = #{wDeviceToken},
+        </if>
+        <if test="wFreeze != null and  wFreeze != '' ">
+            wfreeze = #{wFreeze}
+        </if>
+        <if test="wDeviceId != null and  wDeviceId != '' ">
+            device_id = #{wDeviceId},
+        </if>
+        <if test="wSubUserId == 0 ">
+            sub_user_id IS NULL or sub_user_id=0
+        </if>
+    </update>
+
+</mapper>

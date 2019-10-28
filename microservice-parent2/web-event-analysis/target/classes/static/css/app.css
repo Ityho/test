@@ -1,0 +1,81 @@
+/**
+ * Demo Page Styles
+ */
+ 
+.slider {
+    position: relative;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: -moz-none;
+    -o-user-select: none;
+    user-select: none;
+}
+
+.frame {
+    position: relative;
+    margin: 0 auto;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.frame2 p {
+ 
+    white-space: normal;
+}
+.frame2 .weibo_Photo{ float: left;}
+.frame2 .weibo_Photo .img{width: 90px; height: 90px;}
+.frame li {
+    position: relative;
+    display: inline-block;
+   width: 375px;
+    text-align: left;
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.slides {
+    display: inline-block;
+}
+
+ 
+
+.multipleelements li, .multislides li, .ease li {
+    margin-right: 0px;
+}
+
+.simple li:last-child,
+.variablewidth li:last-child,
+.multipleelements li:last-child,
+.multislides li:last-child,
+.ease li:last-child {
+    margin-right: 0;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 40%;
+    margin-top: -25px;
+    display: block;
+    cursor: pointer;
+}
+
+.next {right: 0;}
+
+.prev {left: 0;}
+
+.next svg, .prev svg {
+    width: 25px;
+}
+@media screen and (max-width: 417px) {
+	.frame li {width: 417px;}
+}
+
+@media screen and (max-width: 375px) {
+	.frame li {width: 375px;}
+}
+
+@media screen and (max-width: 320px) {
+	.frame li {width: 320px;}
+	.frame2 .weibo_Photo .img {width: 80px; height: 80px;}
+}

@@ -1,0 +1,168 @@
+@charset "GBK";
+/* CSS Document */
+
+.manual{ color:#3e3e3e;	background-color: #FFF;overflow: hidden;min-height:400px;}
+
+/*填写简报名称和选择样式*/
+.fillReport{ font-size:14px;}
+.fillReport .bottom{width: 100%;}
+.fillReport .leftCon{ width:668px; padding:35px; border-right:solid 1px #c4c4c4;}
+.fillReport .allCon{padding: 10px;  border: solid 1px #eee; background-color: #FBFBFB;  margin-bottom: 10px;}
+.fillReport .allCon>div>p>label>span{display: inline-block; width: 100px; text-align: right; margin-right: 5px; }
+.fillReport .allCon>div>p>label>span.help{  width: auto; color: #969696; font-size: 12px;}
+.fillReport>.allCon  .co3 {padding: 3px;  display: inline-block;}
+.fillReport>.allCon  .co3>p{width: 150px;  padding: 3px; background-color: #fff; display: inline-block;  border: solid 1px #eee;}
+.fillReport>.allCon  .co3 img {width: 100%; height: 110px;}
+.fillReport .leftCon p,.fillReport .allCon p{ margin-bottom:10px; line-height: 35px;}
+.fillReport .rightCon{width:390px; padding:35px; line-height:25px;}
+.fillReport .rightCon h2{ font-size:16px; color:#0689f2; margin-bottom:10px;}
+.fillReport .rightCon .line{ border-bottom:dashed 1px #CCC;}
+.fillReport .rightCon .btn{ display:block; background-color:#ff8500; color:#fff; padding:10px 20px; border-radius:3px; text-align:center; text-decoration:none; margin-top:20px; float:left;}
+.fillReport .rightCon .btn:hover{ background-color:#e76d00;}
+
+/*服务内容*/
+.serviceCon{ width: 300px; background-color: #fff;  border: solid 1px #c9c9c9; -webkit-box-shadow: 0 1px 2px #d3d3d3;  box-shadow: 0 1px 2px #d3d3d3;}
+.serviceCon>.title{height: 35px; line-height: 35px; border-bottom: solid 1px #c9c9c9; background-color: #eee;}
+.serviceCon>.title>h1{font-size: 15px; margin-left: 10px;color: #3289C7;  font-weight: 600;}
+.serviceCon>.con{padding: 10px; color: #888; font-size: 12px; }
+.serviceCon>.con p{line-height: 20px; }
+.serviceCon>.bottom{padding: 0; margin: 0; height: 45px; line-height: 45px; border-top:solid 1px #c9c9c9; text-align: left; font-size: 16px;}
+.serviceCon>.bottom>p{margin-left: 10px;}	
+
+/*简报订制*/
+ .row{margin-top: 5px; display: inline-block; width: 100%;}
+ .stepCustom{background-color: #eee; border-radius: 3px; overflow: hidden; font-size: 14px;}
+ .stepCustom>dl>dd{display: inline-block; width: 23.6%; line-height: 50px; height: 50px;}
+ .stepCustom>dl>dd:nth-child(1){width: 192px; background-color: #ff8500; color: #fff; padding-left: 20px; position: relative; margin-right: 40px;}
+ .stepCustom>dl>dd:nth-child(1):after{content: ""; position: absolute; top: 0; right: -20px;
+ border-bottom: 25px solid transparent; 
+ border-top: 25px solid transparent; 
+ border-left: 20px solid #ff8500; }
+.stepCustom>dl>dd:nth-child(2){width: 29%;}
+.stepCustom>dl>dd>em{display: inline-block; text-align: center; width: 30px; height: 30px; line-height: 30px; font-size: 18px; margin-right: 10px; background-color: #ff8500; color: #fff; border-radius: 50%;}
+
+/*briefProductOne CSS*/
+.briefProductOne >ul>li{display: inline-block; width: 27%; height: 240px; background-color: #eee;  float: left;  margin-right: 0.32%; position: relative;background: url(../images/brief/bg3.jpg) no-repeat; background-size: 100% 100%;}
+.briefProductOne >ul>li:hover{opacity: .8;}
+.briefProductOne >ul>li:last-child{margin-right: 0;}
+.briefProductOne >ul>li:first-child{width: 18%; text-align: center; background: url(../images/brief/bg2.jpg) no-repeat; background-size: 100% 100%;}
+.briefProductOne >ul>li:first-child >i{display: inline-block;  font-size: 70px;  color: #FF5900; margin: auto; width: 70px; height: 70px;  margin-top: 30px;}
+.briefProductOne >ul>li:first-child >h2{ font-size: 20px; margin: 15px 0;}
+.briefProductOne >ul>li>h1{display: block; font-size: 20px; height: 50px; line-height: 50px;  background-color: rgba(35, 122, 203, 0.8); color: #fff; text-indent: 20px;}
+.briefProductOne >ul>li>img{width: 180px; height: 160px; margin: 10px;}
+.briefProductOne >ul>li>span.price{position: absolute; bottom: 10px; right: 10px; }
+.briefProductOne >ul>li>a.buyLink{display: inline-block; text-align: center; font-size: 18px; width: 100%; text-decoration: none; height: 50px; line-height: 50px; background-color:rgba(0,0,0,.5); color: #fff; position: absolute;  left: 0;bottom: 20px; opacity: 0;
+  transition: bottom opacity .3s;
+  -moz-transition: bottom opacity .3s;
+  -webkit-transition: bottom opacity .3s;
+  -o-transition: bottom opacity .3s;
+ }
+.briefProductOne >ul>li:hover a.buyLink{opacity: 1; bottom: 0;}
+span.price {
+    display: inline-block;
+    font-size: 14px;
+    padding: 5px 10px;
+    background-color: #FF8500;
+    color: #fff;
+}
+/*briefProductTwo CSS*/
+.briefProductTwo >ul>li{display: inline-block; overflow: hidden; width: 49.8%; height: 206px; background-color: #444;  float: left;  margin-right: 0.32%; position: relative;}
+.briefProductTwo >ul>li:last-child{margin-right: 0;}
+.briefProductTwo >ul>li:hover{transform: background-size:110%;}
+.briefProductTwo >ul>li .mask{position: absolute; top: 0; left: 0;z-index: 1; width: 100%; height: 100%; background-color: rgba(0,0,0,.2);}
+.briefProductTwo >ul>li .img{position: absolute; top: 0; left: 0;z-index: 0; width: 100%; height: 100%;   transform: scale(1,1); -webkit-transform: scale(1,1);  transition: scale .5s,transform .5s;  -webkit-transition: scale .5s,transform .5s;}
+.briefProductTwo >ul>li:hover .img {transform: scale(1.2,1.2);-webkit-transform: scale(1.2,1.2);}
+
+.briefProductTwo >ul>li .cont{position: absolute;z-index: 2; bottom: 10px; left: 0; width: 100%; padding: 10px 0; background-color: rgba(255,133,0,.6); color: #fff;}
+.briefProductTwo >ul>li .cont .title{ margin-left: 20px;}
+.briefProductTwo >ul>li .cont h1{display: inline-block; font-size: 20px; font-weight: 600;  color: #fff; border-bottom: solid 2px #fff;}
+.briefProductTwo >ul>li .cont .buyLink{display: inline-block; line-height: 64px; float: right; font-size: 16px; position: absolute;  right: 20px;bottom: 0px;}
+.briefProductTwo >ul>li .cont .buyLink >i{display: inline-block; font-size: 25px; margin-left: 10px; margin-top: -2px;}
+.briefProductTwo >ul>li .cont .eng{color:rgba(255,255,255,.6);}
+
+
+/*briefProductThree CSS*/
+.briefProductThree >ul>li{display: inline-block; width: 49.6%; height: 380px; background-color: #fff; border: solid 1px #eee;  float: left;  margin-right: 0.32%; position: relative; margin-bottom: 5px;}
+.briefProductThree >ul>li a{color: #666;} 
+.briefProductThree >ul>li:hover{border: solid 1px #ff8500;}
+.briefProductThree >ul>li:nth-child(even){margin: 0;}
+.briefProductThree >ul>li:hover .left{background-color: #ff8500;}
+.briefProductThree >ul>li .left{width: 30%; text-align: center; height: 100%; float: left; background-color: #eee; border-right:solid 1px #eee ;}
+.briefProductThree >ul>li .left>h2{font-size: 20px; font-weight: 600; margin: 30px 0;}
+.briefProductThree >ul>li .left>i{display: inline-block; width: 80px; height: 80px; font-size: 80px; color: #888; margin-bottom: 10px;}
+.briefProductThree >ul>li:hover .left,.briefProductThree >ul>li:hover .left>i{color: #fff;}
+
+.briefProductThree >ul>li .right{width: 69.4%; float: right; height: 100%;}
+.briefProductThree >ul>li .right .title{  height: 35px;line-height: 35px;padding: 0 10px; border-bottom: solid 1px #eee;}
+.briefProductThree >ul>li .right .title>h1{  font-size: 15px;  margin-left: 10px; display: inline-block;}
+.briefProductThree >ul>li .right .title>.buyLink{ float: right; color: #F05807; text-decoration: none;  padding: 0 10px; margin-right: -10px;}
+.briefProductThree >ul>li:hover .right .title>.buyLink{background-color: #ff8500; color: #fff;}
+.briefProductThree >ul>li .right>.con{display: inline-block; width: 100%; height: 100%;}
+.briefProductThree >ul>li .right>.con >.co1{ width: 200px; font-size: 13px; float: left; margin: 10px; line-height: 20px;}
+
+.briefProductThree >ul>li .right>.con >.co2{ bottom: 48px; left: 10px;}
+.briefProductThree >ul>li .right>.con >.co2>p:first-child{font-size: 18px; margin-bottom: 20px;}
+.briefProductThree >ul>li .right>.con >.co3{top: 10px; right: 20px; width: 160px;}
+.briefProductThree >ul>li .right>.con >.co3>p{padding: 3px; border: solid 1px #eee;margin-bottom: 20px;}
+.briefProductThree >ul>li .right>.con >.co3 img{width: 100%; height: 110px;}
+
+.content.manual-content{border-radius:0; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; background-color: transparent; max-width: initial !important; width: 900px;}
+.manualList{width: 660px; float: left;}
+.manualList>ul>li{display: inline-block; width: 100%; background-color: #fff; border-radius:5px; box-shadow: 3px 3px 1px rgba(0,0,0,.1); margin-bottom: 15px;}
+.manualListBox{margin: 20px;}
+.manualListBox .head{position: relative;}
+.manualListBox .head:before{content: ""; position: absolute; width: 100%; top: 16px; left: 0; z-index: 0; height: 1px; border-bottom: dashed 1px #ff8500;}
+.manualListBox .head h2{display: inline-block; background-color: #fff; color: #ff8500; font-size: 20px; position: relative; z-index: 2; padding-right: 10px;}
+.manualListBox .head h2>i{font-size: 35px; margin-right: 10px;}
+.manualInfo_box {padding: 0px;margin-left: 46px; word-wrap: break-word; word-break: break-all; font-size: 15px;}
+.manualInfo_box .manualInfo_cont {margin: 0 20px 0 0;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list { overflow: hidden; width: 100%;   padding: 10px 0;border-top: 1px dashed #ddd;line-height: 30px;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list:first-child {border-top: none;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list dl {padding-left: 10px; overflow: hidden;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list dt {float: left; width: 100px;  text-align: right; color: #919191;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list dd {margin-left: 110px; color: #666;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list .smTxt{font-size: 12px; line-height: 22px;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list .smTxt>p:first-child{margin-top: 3px;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list .smTxt>p:last-child{margin-bottom: 20px;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list dd h3{font-size: 20px;}
+.manualInfo_box .manualInfo_cont .manInfo_report_list .label{display: inline-block; padding: 1px 10px; background-color: #ff8500; color: #fff;}
+
+.rightCS{ float: left; margin-left: 12px; font-size: 13px; line-height: 22px;}
+.rightfloat{position: fixed; top: 10px; width: 900px; float: right; margin-left: 0;}
+.rightfloat>div{position: relative;}
+.rightfloat>div .contactService{position: absolute; top: 0; right:20px;}
+.contactService{position: relative;width: 206px; padding:15px; background-color: #4c5a65; border-radius: 5px; color: #fff;}
+.contactService:after{content: "";position: absolute; left: -10px; top: 30px; border-bottom: 10px solid transparent; border-top: 10px solid transparent; border-right: 10px solid #4c5a65;}
+.contactService p{margin-bottom: 5px;}
+
+@media only screen and (min-width:1200px ) {
+	.rightfloat,.content.manual-content{width: 1100px;}
+	.manualList{width: 860px;}
+}
+/*需求核算*/
+.demandAcc{display: inline-block; width: 100%; padding: 20px 0;font-size: 16px; border-bottom: dashed 1px #e8eddd;}
+.demandAcc>ul>li{display: inline-block; width: 22%; margin: 0 4%; text-align: center; background-color: #eee; position: relative; cursor: pointer;
+  -moz-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 2px 2px 8px 1px rgba(0, 0, 0, 0.2);
+}
+.demandAcc>ul>li>i{position: absolute; top: 18px; right: 20px; font-size: 40px; display: none; color: #ff8500;}
+.demandAcc>ul>li.active>i{display: block;}
+.demandAcc>ul>li:before{content: "VS"; font-size: 30px; position: absolute; top: 45%; right: -27%;}
+.demandAcc>ul>li:last-child:before{display: none;}
+.demandAcc>ul>li:hover,.demandAcc>ul>li.active{background-color: #FFECD8; -moz-box-shadow: 2px 2px 8px 1px rgba(255, 133, 0, 0.8);
+  -webkit-box-shadow: 2px 2px 8px 1px rgba(255, 133, 0, 0.8);
+  box-shadow: 2px 2px 8px 1px rgba(255, 133, 0, 0.8);}
+ .demandAcc>ul>li:hover:after,.demandAcc>ul>li.active:after{background-color: #ff8500;}
+ .demandAcc>ul>li:hover>.title,.demandAcc>ul>li.active>.title{background-color: #FFD3A3;}
+.demandAcc>ul>li:after{content: ""; position: absolute; width: 100%; top: 0; left: 0; height: 8px; background-color: #CBCBCB;}
+.demandAcc>ul>li:first-child{margin-left: 8%;}
+.demandAcc>ul>li:last-child{margin-right: 0;}
+.demandAcc>ul>li>.title{padding: 20px 0; background-color:#E3E3E3;}
+.demandAcc>ul>li>.title>p:nth-child(2){font-size: 30px;  color: #FF8500; font-weight: 600; margin-top: 10px;}
+.demandAcc>ul>li>.bottom{padding: 20px 0;}
+.demandAcc>ul>li>.bottom>p:first-child{margin-bottom: 20px;}
+.demandAcc2>ul>li>.bottom>p:first-child { font-size: 13px;}
+@media only screen and (max-width: 1280px) { 
+    .fillReport .rightCon {width: 340px;padding: 20px;}
+}

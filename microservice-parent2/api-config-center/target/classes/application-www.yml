@@ -1,0 +1,25 @@
+#服务注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:22000/eureka/,http://${eureka.instance.replicas}:22000/eureka/
+
+#服务名称
+spring:
+  application:
+    name: api-config-center
+  cloud:
+    #配置中心
+    config:
+      server:
+        git:
+          #服务的git仓库地址
+          uri: http://gitlab.miduchina.com/wrd/config-center.git
+          #配置文件所在的目录
+          search-paths: /**
+          username: shuanglong
+          password: shuanglong
+      #配置文件所在的分支
+      label: master

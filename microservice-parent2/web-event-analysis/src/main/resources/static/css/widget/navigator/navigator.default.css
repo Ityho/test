@@ -1,0 +1,52 @@
+/** 一级导航样式 */
+.ui-navigator {
+    width: 100%;
+    position: relative;
+}
+.ui-navigator:after{ content: "";width: 20px;height: 100%;position: absolute;right: 0px;top: 0px;
+background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 1) 98%, #FFFFFF 100%); }
+.ui-navigator:before{ content: "";width: 20px;height: 100%;position: absolute;left: 0px;top: 0px;
+background-image: linear-gradient(to left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0.6) 40%, rgba(255, 255, 255, 0.1) 98%, #FFFFFF 100%); }
+.ui-navigator .ui-navigator-list li a, .ui-navigator .ui-navigator-fix{
+   padding: 0.5em 0px 0.4em 0px;
+    font-size: 15px;
+    color: #747474;
+    text-decoration: none;
+    outline: none;
+    font-family: "微软雅黑" "黑体" ;
+    font-weight: 500;
+    text-align: center;
+    margin: 0px 10px;
+    margin-top: 4px;
+}
+.ui-navigator .ui-navigator-list li a.cur,.ui-navigator .ui-navigator-fix.cur{background: transparent;color:#F02B15;border-bottom: solid 2px #F02B15;}
+
+.topNav{font-size: 12px; color: #222;box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);overflow: hidden;}
+.topNav .ui-navigator .ui-navigator-list li a,.topNav .ui-navigator .ui-navigator-fix{padding:0px 5px;font-size: 15px;  margin:4px;height: 32px;}
+.topNav a.backlink{ height: 40px; line-height: 40px; margin-left: 5px; text-align: center; font-size: 15px;}
+.topNav .ui-navigator:before,.topNav .ui-navigator:after{display: none;}
+
+.topNav .ui-navigator .ui-navigator-list li a.cur,.topNav .ui-navigator .ui-navigator-fix.cur{
+     /* background-color: #F02B15;*/color:#fd8c25;border: none;}
+/*css for pad*/
+@media all and (min-device-width: 768px) and (max-device-width: 1024px){
+    .ui-navigator .ui-navigator-list li a, .ui-navigator .ui-navigator-fix{
+        font-size: 14px;
+    }
+}
+
+@media only screen and (max-width:400px ) {
+	.topNav .ui-navigator .ui-navigator-list li a,.topNav .ui-navigator .ui-navigator-fix{font-size: 14px;}
+}
+@media screen and (max-width: 320px) {
+	
+ .ui-navigator .ui-navigator-list li a, .ui-navigator .ui-navigator-fix{
+        font-size: 12px;
+        margin-top: 8px;
+    }
+    .topNav .ui-navigator .ui-navigator-list li a,.topNav .ui-navigator .ui-navigator-fix{font-size: 12px;}
+ 
+    .topNav a.backlink{font-size: 12px;}
+}
+
+

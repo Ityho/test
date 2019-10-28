@@ -1,0 +1,111 @@
+@CHARSET "BGK";
+/*框架样式*/
+.background{background-color: #b4daef; padding: 20px 0;}
+.wrapper{ width:100%;}
+.wrapper980{width: 980px;padding: 20px;background-color: #fff; margin: auto;}
+.wrapCon{width:100%; }
+.wrapCon2{width:940px;}
+.wrapChart{ text-align: center; }
+.wrapChart2{float: right;}
+.wrapChart img{width: 100%;}
+.wrapper .nav2{
+	  width: inherit;
+  height: 30px;
+  line-height: 30px;
+  background-color: #FFF;
+  box-shadow: none;
+}
+.wrapper .mwbBorder2 > h2 {background-color: #F2F2F2; color: #F97534;}
+a.invalid{ color: #888;}
+/*主色调 #f8661e, 边框颜色 #c9c9c9*/
+.row-fluid{margin-bottom: 15px; overflow: hidden; position: relative;}
+.loadingMask{width: 100%; height: 100%; background-color: rgba(238,238,238,.6); position: absolute; top: 0; left: 0;z-index: 1;text-align: center;}
+.waiting{padding:20px; font-size: 16px; background-color: #f8661e; color: #fff; display: inline-block ; margin: auto; margin-top: 10%; position: relative;}
+.waiting > .closeBtn{width: 25px; height: 25px; background-color: #fff; text-align: center; line-height: 25px; position: absolute; top: -10px; right: -10px; font-size: 20px;}
+.waiting > .closeBtn:hover{text-decoration: none;}
+.noData{background-color: #d8d8d8;}
+.waiting2{margin-top: 3%;}
+.loadingData{padding:10px 20px;display: inline-block; font-size: 16px; background-color: #FF8500; color: #fff; position: absolute; top: 0; left: 40%;}
+
+.heard{ height: 35px; line-height: 35px; background-color: #f2f2f2;}
+.heard ul li{float: left; display: inline-block; padding: 0 13px; cursor: pointer;}
+.heard ul li:hover,.heard .h_r a:hover{ background-color: #dfdfdf;}
+.heard ul .active,.heard ul .active:hover,.heard .h_r a.active{ background-color: #FF8500; color: #fff;}
+.heard .h_r a{color: #FF8500; text-decoration: none;padding: 10px 13px;}
+.col-5{width: 50%; float: left;}
+/*分析框*/
+.analyze{ width: 536px; position: relative; margin: 30px auto;}
+.analyze input{width: 536px; padding: 10px;}
+.analyze .fxbtn{position: absolute; top: 0px; right: -90px; line-height: 38px; background-color: #FF8500; color: #fff; width: 74px; text-align: center; text-decoration: none; border-radius:3px ;}
+.analyze .empty{width: 18px;height: 18px;border-radius: 50%;background-color: #bababa;color: #FFFFFF; float: right; text-align: center;line-height: 18px; font-size: 18px; font-weight: 600;cursor: pointer; top: 9px;right: 10px;}
+.emCancel,.emCancel:hover{background-color: transparent;border: none; color:#A3A3A3; font-size: 16px;}
+.nav2{ line-height: 30px;}
+.nav2 a{ margin-right: 20px;}
+.nav2 a:last-child{margin: 0;}
+
+.Div-list{}
+
+/*分享到*/
+.fenxiang{ float: right;}
+.fenxiang span,.fenxiang a{display: block; float: left; line-height: 40px; margin-right: 5px;}
+.fenxiang a.icon{width: 40px; height: 40px; background-repeat: no-repeat; background-image: url(../images/fenxiang.png);}
+.fenxiang a.icon_wb{background-position: -162px -109px;}
+.fenxiang a.icon_wx{background-position: -22px -109px;}
+.fenxiang a.icon_pyq{background-position: -90px -109px;}
+.fenxiang a.icon_qq{background-position: -22px -24px;}
+.fenxiang a.icon_qqkj{background-position: -90px -24px;}
+
+/*操作步骤*/
+.stepPic{position: absolute; top: 110px; left: 22%; width: 150px;}
+.stepList{margin-left: 47%; padding-left: 20px; font-size: 16px; margin-bottom: 20px; margin-top: 20px; position: relative;}
+.stepList:after{content: ""; width: 1px; height: 76%; background-color: #bfbfbf; position: absolute; top: 29px; left: 0px; z-index: 0;}
+.stepList li,.stepList li a{line-height: 60px; color: #f87434; position: relative;}
+.stepList li a:hover{ color: #cd0000;}
+.stepList li a em{color: #a2a2a2; font-size: 12px;}
+.stepList li i{width: 10px; height: 10px; border: solid 1px #bfbfbf; background-color: #fff; border-radius: 50%; position: absolute; top: 26px; left: -24px;z-index: 1;}
+
+
+/*帮助页面*/
+.form-help{line-height: 25px;}
+.form-help h1{font-size: 16px; font-weight: 600; margin: 10px 0; padding-bottom: 10px; border-bottom: solid 2px #cfcfcf;}
+.form-help h1 em{padding: 2px 6px; display: inline-block; background-color: #f8661e; color: #fff;}
+.form-help h2{font-size: 14px;margin: 10px 0;}
+.form-help h2 em{color:#f8661e ; width: 22px; height: 22px; padding: 0 6px; border-radius: 50%; background-color: #fff; margin: 0 10px;}
+.form-help p{text-align: center;}
+.form-help .img{margin-bottom: 20px; border: solid 5px #ececec; width: 700px;}
+.form-help .app_text{ background-color: #ececec;padding: 10px; overflow: hidden;}
+.form-help .app_text h2{background-color: #317cc0; line-height: 25px; margin: 0; color: #fff;}
+.form-help .app_text li{ width: 300px; float: left; margin-right: 10px;}
+.form-help .app_text li img{width: 100%;}
+.form-help .app_text li:last-child{margin-right: 0;}
+
+/*demoPlay*/
+.demoPlay{width: 100%; height: 100%; background-color: #fff; position: absolute; top: 0px; left: 0px;z-index: 10;  border: 3px solid #B6B6B6;border-radius: 5px; overflow: hidden;}
+.demoPlay .playBox{position: relative;}
+.demoPlay .playBox .close{position: absolute; top: 2px; right: 5px;}
+.row-fluid.foot{display: none;}
+
+
+@media only screen and (max-width:750px ) {
+	.background {background-color: transparent; padding:0px;}
+	.wrapCon{ width:100%; overflow:hidden;}
+	.wrapper980{width: 100%;  padding: 0px;}
+	.wrapCon2 {width: 100%;}
+	.wrapChart img{width: 100%;}
+	.wrapChart2{float: initial;}
+	
+	.mobileStyle #top,.mobileStyle #head nav,.mobileStyle #head .nav{display: none;}
+	.mobileStyle #head{position: fixed; z-index: 100; height: 63px; top: 0; width: 100%;}
+	.mobileStyle #head .logo{left: 10px;}
+	.mobileStyle #head .r_btn{right: 15px;}
+	.mobileStyle .phoneTopHeight{margin-top: 70px;}
+	.mobileStyle #footer,.mobileStyle .h35{display: none;}
+	.mobileStyle #head .logo{border: none;}
+.row-fluid.foot{display: block;}
+.row-fluid.foot img {width: 100%;}
+}
+
+@media only screen and (max-width:320px ) {
+		.mobileStyle #head{position: fixed; z-index: 100; height: 50px; top: 0; width: 100%;}
+		.mobileStyle .phoneTopHeight{margin-top: 56px;}
+}

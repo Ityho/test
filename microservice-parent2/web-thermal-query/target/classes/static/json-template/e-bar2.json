@@ -1,0 +1,59 @@
+{
+	  tooltip : {
+	        trigger: 'axis',
+	        axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+	            type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+	        }
+	       
+	    },
+	    xAxis:[{
+                 type : 'category',
+                 data : {datetime},
+                 axisLabel : {
+                	 formatter: function(value){
+                		 	if(value.length>4){
+                		 		value = value.substring(0,4);
+                		 	}
+                		 	return value;
+                		 },
+                		 textStyle : {
+         	                 decoration: 'none',
+         	                 fontFamily: 'Microsoft YaHei',
+         	                 fontSize: 12,
+         	             }
+	    		
+                	 },
+	            }
+	         ],
+         yAxis : [{
+                 type : 'value',
+               	 axisLabel:{
+	               	  textStyle : {
+     	                 decoration: 'none',
+     	                 fontFamily: 'Microsoft YaHei',
+     	                 fontSize: 12,
+     	             },
+     	             formatter:function(v){
+     	            	 if(v>=1000){
+     	            		 return (v/1000)+"k";
+     	            	 }else{
+     	            		 return v;
+     	            	 }
+     	             }
+               	 },
+         	}],
+         	
+         	grid:{
+         		/* x:30,
+         		y:20,
+         		x2:20,
+         		y2:60 */
+         		x:40,
+         		y:10,
+         		x2:30,
+         		y2:25
+         	},
+     	color:['#87cefa','#ff7f50'],
+	    calculable : false,
+	    series : {data}
+}

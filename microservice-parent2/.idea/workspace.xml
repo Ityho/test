@@ -1,0 +1,2486 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" readonly="true" id="0a26ef00-ae0f-4999-b08a-ca478095f3d9" name="Default" comment="大数据报告">
+      <change beforePath="$PROJECT_DIR$/other/src/main/java/com/miduchina/wrd/other/util/BusinessReuqestUtils.java" afterPath="$PROJECT_DIR$/other/src/main/java/com/miduchina/wrd/other/util/BusinessReuqestUtils.java" />
+      <change beforePath="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/config/WeiboConfig.java" afterPath="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/config/WeiboConfig.java" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/web-thermal-query/target/" />
+    <ignored path="$PROJECT_DIR$/api-ranking-list/target/" />
+    <ignored path="$PROJECT_DIR$/api-server-center/target/" />
+    <ignored path="$PROJECT_DIR$/api-casebase/target/" />
+    <ignored path="$PROJECT_DIR$/api-config-center/target/" />
+    <ignored path="$PROJECT_DIR$/api-gateway/target/" />
+    <ignored path="$PROJECT_DIR$/api-info-monitor/target/" />
+    <ignored path="$PROJECT_DIR$/other/target/" />
+    <ignored path="$PROJECT_DIR$/entity/target/" />
+    <ignored path="$PROJECT_DIR$/commons-redis/target/" />
+    <ignored path="$PROJECT_DIR$/commons-db/target/" />
+    <ignored path="$PROJECT_DIR$/commons/target/" />
+    <ignored path="$PROJECT_DIR$/web-monitor-warning/target/" />
+    <ignored path="$PROJECT_DIR$/web-monitor-report/target/" />
+    <ignored path="$PROJECT_DIR$/web-event-analysis/target/" />
+    <ignored path="$PROJECT_DIR$/../commons/target/" />
+    <ignored path="$PROJECT_DIR$/api-hy-tag/target/" />
+    <ignored path="$PROJECT_DIR$/api-hytag/target/" />
+    <ignored path="$PROJECT_DIR$/api-hot-all/target/" />
+    <ignored path="$PROJECT_DIR$/api-open/target/" />
+    <ignored path="$PROJECT_DIR$/api-research/target/" />
+    <ignored path="$PROJECT_DIR$/web-big-screen/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/microservice_parent2$LoginController.coverage" NAME="LoginController Coverage Results" MODIFIED="1566888060194" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.miduchina.wrd.eventanalysis.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/microservice_parent2$hyTagController.coverage" NAME="hyTagController Coverage Results" MODIFIED="1565261238055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.miduchina.wrd.hytag.apihytag.controller.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/microservice_parent2$ApiResearchApplication.coverage" NAME="ApiResearchApplication Coverage Results" MODIFIED="1566870689974" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.miduchina.wrd.research.apiresearch.*</FILTER>
+    </SUITE>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="microservice-parent2" />
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.53905576">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="BigEventController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/controller/BigEventController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="2280">
+                  <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <marker date="1571378430046" expanded="true" signature="4389:4396" ph="{...}" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bootstrap.yml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/resources/bootstrap.yml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1056">
+                  <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="infoData.ftl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoData.ftl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1176">
+                  <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="63" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="listDetails.ftl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/listDetails.ftl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="infoDataDetailsShare.ftl" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoDataDetailsShare.ftl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="infoDataDetails.ftl" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoDataDetails.ftl">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="24">
+                  <caret line="132" column="68" lean-forward="false" selection-start-line="132" selection-start-column="56" selection-end-line="132" selection-end-column="68" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="WebBigScreenApplication.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/WebBigScreenApplication.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="288">
+                  <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-big-screen/pom.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1032">
+                  <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="navigate.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/navigate.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="10536">
+                  <caret line="439" column="12" lean-forward="false" selection-start-line="439" selection-start-column="12" selection-end-line="439" selection-end-column="12" />
+                  <folding>
+                    <marker date="1569507975911" expanded="true" signature="21116:21123" ph="×" />
+                    <marker date="1569507975911" expanded="true" signature="21169:21174" ph="¥" />
+                    <marker date="1569507975911" expanded="true" signature="21368:21375" ph="×" />
+                    <marker date="1569507975911" expanded="true" signature="21422:21427" ph="¥" />
+                    <marker date="1569507975911" expanded="true" signature="21628:21635" ph="×" />
+                    <marker date="1569507975911" expanded="true" signature="21687:21692" ph="¥" />
+                    <marker date="1569507975911" expanded="true" signature="21893:21900" ph="×" />
+                    <marker date="1569507975911" expanded="true" signature="21944:21949" ph="¥" />
+                    <marker date="1569507975911" expanded="true" signature="22144:22151" ph="×" />
+                    <marker date="1569507975911" expanded="true" signature="22205:22210" ph="¥" />
+                    <marker date="1569507975911" expanded="true" signature="22433:22440" ph="×" />
+                    <marker date="1569507975911" expanded="true" signature="22498:22503" ph="¥" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bigDataDetails.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/bigDataDetails.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1656">
+                  <caret line="69" column="24" lean-forward="false" selection-start-line="69" selection-start-column="24" selection-end-line="70" selection-end-column="47" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="infoDataReport.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/infoDataReport.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1680">
+                  <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="TestUserMapper.xml" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/api-info-monitor/src/main/resources/mapper/TestUserMapper.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="4632">
+                  <caret line="193" column="15" lean-forward="false" selection-start-line="193" selection-start-column="15" selection-end-line="193" selection-end-column="15" />
+                  <folding>
+                    <marker date="1571104716077" expanded="true" signature="324:718" ph="INSERT INTO cs_test_user... " />
+                    <marker date="1571104716077" expanded="true" signature="885:3850" ph="SELECT c.tes... cs_test_user" />
+                    <marker date="1571104716077" expanded="true" signature="3908:4032" ph="UPDATE cs_test_user... " />
+                    <marker date="1571104716077" expanded="true" signature="4203:7121" ph="SELECT c.tes... cs_test_user" />
+                    <marker date="1571104716077" expanded="true" signature="7176:7367" ph="UPDATE user... " />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="AutoAuthInterceptor.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/filter/AutoAuthInterceptor.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="576">
+                  <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LoginUtils.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/utils/LoginUtils.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="26" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="DNSAdapterFilter.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/filter/DNSAdapterFilter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="24">
+                  <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="CaseBaseController.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/casebase/CaseBaseController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="504">
+                  <caret line="42" column="5" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="bigData.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/bigData.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="1608">
+                  <caret line="67" column="15" lean-forward="false" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="package-info" />
+        <option value="FxmlFile" />
+        <option value="JavaScript File" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>csAdminTestUser</find>
+      <find>大数据深度报告</find>
+      <find>baseUrl</find>
+      <find>2</find>
+      <find>update</find>
+      <find>sendPost</find>
+      <find>xiazai</find>
+      <find>img</find>
+      <find>deletReport</find>
+      <find>bList</find>
+      <find>findBigDataByNameTypePage</find>
+      <find>newLike</find>
+      <find>selfProductForm</find>
+      <find>getOrderFeeV2</find>
+      <find>getBigDataList</find>
+      <find>getBigDataShareDetail</find>
+      <find>infoDataReport</find>
+      <find>user</find>
+      <find>queryBuyedBigData</find>
+      <find>d_loading</find>
+      <find>doDelete</find>
+      <find>goBuyed</find>
+      <find>FreemarkerConfig</find>
+      <find>searchRefresh</find>
+      <find>images</find>
+      <find>readBuy</find>
+      <find>moment.js</find>
+      <find>getBignessEventList</find>
+      <find>您的深度报告已经制作成功</find>
+      <find>userLogin</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>${staticResour}cePath}</replace>
+      <replace>${staticResourcePath}</replace>
+      <replace>${staticResourcePath }</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>E:\idea-workspaces\microservice-parent2\web-thermal-query</dir>
+      <dir>E:\idea-workspaces\microservice-parent2\api-open</dir>
+      <dir>E:\idea-workspaces\microservice-parent2\api-info-monitor\src</dir>
+      <dir>E:\idea-workspaces\commons</dir>
+      <dir>E:\idea-workspaces\microservice-parent2\api-info-monitor\src\main\resources\mapper</dir>
+      <dir>E:\idea-workspaces\microservice-parent2</dir>
+      <dir>E:\idea-workspaces\microservice-parent2\api-info-monitor</dir>
+      <dir>E:\idea-workspaces\microservice-parent2\web-event-analysis</dir>
+    </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="PUSH_TAGS">
+      <GitPushTagMode />
+    </option>
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/constant/Constants.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/navigate.js" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/miduchina/wrd/dto/pay/ConfirmOrderDto.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/pay/PayController.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/miduchina/wrd/po/bigdata/BigReportVo.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoData.ftl" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/base/BaseController.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/caseBase/cbdetails.ftl" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/miduchina/wrd/po/h5/AuthJumpRelation.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/miduchina/wrd/po/csadmin/CsTestUser.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/user.ftl" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/bigDataDetail.js" />
+        <option value="$PROJECT_DIR$/api-info-monitor/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/../config-center/commons-db/wrd/commons-db-wrd-beta.yml" />
+        <option value="$PROJECT_DIR$/web-thermal-query/src/main/java/com/miduchina/wrd/webthermalquery/controller/IdentificationController.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/static/caseBase/css/common.css" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/caseBase/cbindex.ftl" />
+        <option value="$PROJECT_DIR$/../commons/src/main/java/com/miduchina/wrd/constant/BusinessConstant.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/casebase/CaseBaseController.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/static/css/newHome/font-icon.css" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/feign/APIInfoClient.java" />
+        <option value="$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/controller/v1/bigdatareport/BigDataController.java" />
+        <option value="$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/service/bigdatareport/BigDataService.java" />
+        <option value="$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/service/bigdatareport/impl/BigDataServiceImpl.java" />
+        <option value="$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/mapper/bigdatareport/BigDataMapper.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/infoDataReport.js" />
+        <option value="$PROJECT_DIR$/api-info-monitor/src/main/resources/mapper/BigDataMapper.xml" />
+        <option value="$PROJECT_DIR$/other/src/main/java/com/miduchina/wrd/other/util/BusinessReuqestUtils.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoDataReport.ftl" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/bigData.js" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/config/FreemarkerConfig.java" />
+        <option value="$PROJECT_DIR$/entity/src/main/java/com/miduchina/wrd/dto/bigdata/BigReportVo.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/constant/SysContent.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/config/WeiboConfig.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/bigDataDetails.js" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/config/FreemarkerConfig.java" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/resources/templates/common/frame_top.ftl" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/resources/bootstrap.yml" />
+        <option value="$PROJECT_DIR$/api-info-monitor/src/main/resources/mapper/TestUserMapper.xml" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/service/HomeService.java" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/service/Impl/HomeServiceImpl.java" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/feign/APIInfoClient.java" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/utils/Utils.java" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/resources/templates/largeScreen/bigEvents.ftl" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/resources/static/js/hotLargeScreenVue/bigEventsSvreen.js" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/controller/BigEventController.java" />
+        <option value="$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/WebBigScreenApplication.java" />
+        <option value="$PROJECT_DIR$/web-big-screen/pom.xml" />
+        <option value="$PROJECT_DIR$/../config-center/commons-db/wrd/commons-db-wrd-local.yml" />
+        <option value="$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoDataDetails.ftl" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="D:/maven/apache-maven-3.2.3" />
+        <option name="userSettingsFile" value="D:\maven\apache-maven-3.2.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="other" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="other" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="78" />
+    <option name="width" value="1260" />
+    <option name="height" value="703" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>BPMN 2.0 configuration errors</id>
+          </State>
+          <State>
+            <id>Bean Validation issues</id>
+          </State>
+          <State>
+            <id>CDI(Contexts and Dependency Injection) issues</id>
+          </State>
+          <State>
+            <id>CSS</id>
+          </State>
+          <State>
+            <id>Class structureJava</id>
+          </State>
+          <State>
+            <id>Code quality toolsCSS</id>
+          </State>
+          <State>
+            <id>Code quality toolsJavaScript</id>
+          </State>
+          <State>
+            <id>Code style issuesJava</id>
+          </State>
+          <State>
+            <id>CodeSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Declaration redundancyJava</id>
+          </State>
+          <State>
+            <id>Dependency issuesJava</id>
+          </State>
+          <State>
+            <id>Faces Model</id>
+          </State>
+          <State>
+            <id>Flow type checkerJavaScript</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>GeneralJavaScript</id>
+          </State>
+          <State>
+            <id>Google Web Toolkit issues</id>
+          </State>
+          <State>
+            <id>Groovy</id>
+          </State>
+          <State>
+            <id>Hibernate Issues</id>
+          </State>
+          <State>
+            <id>Inheritance issuesJava</id>
+          </State>
+          <State>
+            <id>Internationalization issues</id>
+          </State>
+          <State>
+            <id>JPA issues</id>
+          </State>
+          <State>
+            <id>JUnit issuesJava</id>
+          </State>
+          <State>
+            <id>Java</id>
+          </State>
+          <State>
+            <id>Java 5Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 7Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java 8Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>Java EE issues</id>
+          </State>
+          <State>
+            <id>Java language level migration aidsJava</id>
+          </State>
+          <State>
+            <id>JavaScript</id>
+          </State>
+          <State>
+            <id>Javadoc issuesJava</id>
+          </State>
+          <State>
+            <id>Kotlin</id>
+          </State>
+          <State>
+            <id>Numeric issuesJava</id>
+          </State>
+          <State>
+            <id>OSGi</id>
+          </State>
+          <State>
+            <id>Probable bugsJava</id>
+          </State>
+          <State>
+            <id>RESTful Web Service</id>
+          </State>
+          <State>
+            <id>SQL</id>
+          </State>
+          <State>
+            <id>SetupSpring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring</id>
+          </State>
+          <State>
+            <id>Spring BootSpring</id>
+          </State>
+          <State>
+            <id>Spring CloudSpring</id>
+          </State>
+          <State>
+            <id>Spring CoreSpring</id>
+          </State>
+          <State>
+            <id>Spring IntegrationSpring</id>
+          </State>
+          <State>
+            <id>Spring OSGiSpring</id>
+          </State>
+          <State>
+            <id>Spring SecuritySpring</id>
+          </State>
+          <State>
+            <id>Spring Web FlowSpring</id>
+          </State>
+          <State>
+            <id>Spring Web ServicesSpring</id>
+          </State>
+          <State>
+            <id>Spring WebSocketSpring</id>
+          </State>
+          <State>
+            <id>Struts</id>
+          </State>
+          <State>
+            <id>Struts 1Struts</id>
+          </State>
+          <State>
+            <id>Struts 2Struts</id>
+          </State>
+          <State>
+            <id>TestNGJava</id>
+          </State>
+          <State>
+            <id>Threading issuesGroovy</id>
+          </State>
+          <State>
+            <id>TypeScript</id>
+          </State>
+          <State>
+            <id>Web Services</id>
+          </State>
+          <State>
+            <id>WebSocket issues</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>AngularJS</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="config-center" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="config-center" type="462c0819:PsiDirectoryNode" />
+              <item name="commons-db" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="config-center" type="462c0819:PsiDirectoryNode" />
+              <item name="commons-db" type="462c0819:PsiDirectoryNode" />
+              <item name="wrd" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-parent2" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-parent2" type="462c0819:PsiDirectoryNode" />
+              <item name="web-event-analysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-parent2" type="462c0819:PsiDirectoryNode" />
+              <item name="web-event-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-parent2" type="462c0819:PsiDirectoryNode" />
+              <item name="web-event-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-parent2" type="462c0819:PsiDirectoryNode" />
+              <item name="web-event-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-parent2" type="462c0819:PsiDirectoryNode" />
+              <item name="web-event-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eventanalysis" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="microservice-parent2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="microservice-parent2" type="462c0819:PsiDirectoryNode" />
+              <item name="web-event-analysis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eventanalysis" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.37586206" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../wrd-cs" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
+    <property name="SearchEverywhereHistoryKey" value="moment.js&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-event-analysis/src/main/resources/static/js/vue/moment.js&#10;orderDetail&#9;PSI&#9;JAVA://com.miduchina.wrd.constant.BusinessConstant#ORDER_DETAIL&#10;um_liucheng_1&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-event-analysis/src/main/resources/static/images/newHome/um_liucheng_1.png&#10;userUnBlock&#9;PSI&#9;JAVA://com.xd.tools.method.wyq.web.WyqUnBlockV1#userUnBlock&#10;EXPIREDTIME&#9;PSI&#9;JAVA://com.xd.tools.ownutils.RedisUtil#EXPIREDTIME&#10;fetchProductlist&#9;PSI&#9;JAVA://com.miduchina.wrd.eventanalysis.base.BaseController#fetchProductlistV2&#10;requestAcceptFilter&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/api-casebase/src/main/java/com/miduchina/wrd/api/casebase/filter/RequestAcceptFilter.java&#10;saveH5ShortUrl&#9;PSI&#9;JAVA://com.miduchina.wrd.api.controller.v1.user.UserController#saveH5ShortUrl&#10;findHs&#9;PSI&#9;JAVA://com.miduchina.wrd.api.controller.v1.hotevents.HeatShareController#findHs&#10;wui-tabbar-item&#9;null&#9;null&#10;Icon&#9;PSI&#9;JAVA://com.miduchina.wrd.monitor.report.pojos.IContentCommonNet&#10;icc&#9;PSI&#9;JAVA://com.miduchina.wrd.monitor.report.pojos.IContentCommonNet&#10;sendIntraBusinessAPIPOST&#9;PSI&#9;JAVA://com.miduchina.wrd.other.util.BusinessReuqestUtils#sendIntraBusinessAPIPOST&#10;saveWeiXinMaterial&#9;PSI&#9;JAVA://com.miduchina.wrd.api.controller.v1.user.UserController#saveWeiXinMaterial&#10;findWeiXinMaterialByOpenIdAndType&#9;PSI&#9;JAVA://com.miduchina.wrd.api.controller.v1.user.UserController#findWeiXinMaterialByOpenIdAndType&#10;UserInfo&#9;PSI&#9;JAVA://com.miduchina.wrd.po.user.UserExtendInfo&#10;sendGet&#9;PSI&#9;JAVA://com.miduchina.wrd.util.HttpRequestUtils#sendGet&#10;deleteAccessRecords&#9;PSI&#9;JAVA://com.miduchina.wrd.api.controller.v1.user.UserController#deleteAccessRecords&#10;OrderController&#9;PSI&#9;JAVA://com.miduchina.wrd.api.controller.v3.order.OrderController&#10;F_LACK_NECESSARY_ERROR&#9;PSI&#9;JAVA://com.miduchina.wrd.CodeConstant#F_LACK_NECESSARY_ERROR_PARAM&#10;HeatShareServiceImpl&#9;PSI&#9;JAVA://com.miduchina.wrd.api.controller.v1.hotevents.service.impl.HeatShareServiceImpl&#10;BigDataMapper&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/api-info-monitor/src/main/java/com/miduchina/wrd/api/mapper/bigdatareport/BigDataMapper.java&#10;updateNotLoginOperateRecord&#9;PSI&#9;JAVA://com.miduchina.wrd.api.service.user.UserCenterService#saveOrUpdateNotLoginOperateRecord&#10;AuthJumpRelation&#9;PSI&#9;JAVA://com.xd.tools.pojo.db.mysql.wyq.weiyuqing.AuthJumpRelation&#10;BusinessConstant&#9;FILE&#9;jar://D:/maven/apache-maven-3.2.3/repository/com/miduchina/wrd/commons/1.0-SNAPSHOT/commons-1.0-20190730.054115-11.jar!/com/miduchina/wrd/constant/BusinessConstant.class&#10;findProductPackageByType&#9;PSI&#9;JAVA://com.miduchina.wrd.eventanalysis.service.OrderClientService#findProductPackageByType&#10;queryOneUserThirdpartyAuth&#9;PSI&#9;JAVA://com.miduchina.wrd.api.service.user.UserThirdpartyAuthInfoService#queryOneUserThirdpartyAuth&#10;userCreateThirdparty&#9;PSI&#9;JAVA://com.miduchina.wrd.dto.user.UserCreateThirdpartyDto&#10;STATUS_VALID&#9;PSI&#9;JAVA://com.miduchina.wrd.constant.BusinessConstant#STATUS_VALID&#10;addRightsRechargeRecord&#9;PSI&#9;JAVA://com.miduchina.wrd.eventanalysis.feign.UserFeignClient#addRightsRechargeRecord&#10;USER_RIGHTS_RECHARGE_TYPE_ADD&#9;PSI&#9;JAVA://com.miduchina.wrd.constant.BusinessConstant#USER_RIGHTS_RECHARGE_TYPE_ADD&#10;UserRegRewardRecord&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/api-info-monitor/src/main/java/com/miduchina/wrd/api/eventanalysis/mapper/UserRegRewardRecordMapper.java&#10;queryRegisterCreditByMobile&#9;PSI&#9;JAVA://com.miduchina.wrd.eventanalysis.feign.UserFeignClient#queryRegisterCreditByMobile&#10;UpdateUser&#9;PSI&#9;JAVA://com.miduchina.wrd.webthermalquery.controller.MSBaseController#updateUserActivitySendFlag&#10;getRandomStringByLength&#9;PSI&#9;JAVA://com.miduchina.wrd.eventanalysis.utils.CommonUtils#getRandomStringByLength&#10;buy_Plan_v4&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-event-analysis/src/main/resources/templates/view/userCenter/buy_plan_v4.ftl&#10;HotIncidentDto&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/entity/src/main/java/com/miduchina/wrd/dto/ranking/HotIncidentDto.java&#10;CodeConstant&#9;PSI&#9;JAVA://com.miduchina.wrd.CodeConstant&#10;properties&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-event-analysis/src/main/resources/common-api-config.properties&#10;OperateLogObjectDto&#9;PSI&#9;JAVA://com.miduchina.wrd.dto.log.OperateLogObjectDto&#10;OperatLogController&#9;PSI&#9;JAVA://com.miduchina.wrd.api.eventanalysis.controller.v3.OperatLogController&#10;css/emotion/swiper.min.css&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-thermal-query/src/main/resources/static/css/emotion/swiper.min.css&#10;swiper.min&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-event-analysis/src/main/resources/templates/css/swiper.min.css&#10;goOpenTools&#9;null&#9;null&#10;util&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-event-analysis/src/main/resources/static/js/swa/util.js&#10;engine.js&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-event-analysis/src/main/resources/templates/js/engine.js&#10;engine&#9;FILE&#9;file://E:/idea-workspaces/microservice-parent2/web-event-analysis/src/main/resources/static/js/engine.js&#10;CommonUtils&#9;PSI&#9;JAVA://com.miduchina.wrd.other.util.CommonUtils&#10;PAGE_SIZE&#9;PSI&#9;JAVA://com.miduchina.wrd.util.PagerUtils#PAGE_SIZE&#10;SINGLE_WEIBO_ANALYSIS_RETURN_CODE_SUCCESS&#9;PSI&#9;JAVA://com.miduchina.wrd.constant.BusinessConstant#SINGLE_WEIBO_ANALYSIS_RETURN_CODE_SUCCESS" />
+    <property name="ChangesBrowser.SHOW_FLATTEN" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\idea-workspaces\microservice-parent2\api-open" />
+      <recent name="E:\idea-workspaces\microservice-parent2\api-open\src\main\resources" />
+      <recent name="E:\idea-workspaces\microservice-parent2\web-thermal-query\src\main\resources\templates\events" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.miduchina.wrd.utils" />
+      <recent name="com.miduchina.wrd.feign" />
+      <recent name="com.miduchina.wrd.service.Impl" />
+      <recent name="com.miduchina.wrd.service" />
+      <recent name="com.miduchina.wrd.config" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\idea-workspaces\microservice-parent2\web-big-screen\src\main\resources\static\js" />
+      <recent name="E:\idea-workspaces\microservice-parent2\web-big-screen\src\main\resources\templates\common" />
+      <recent name="E:\idea-workspaces\microservice-parent2\web-big-screen\src\main\resources\templates\largeScreen" />
+      <recent name="E:\idea-workspaces\microservice-parent2\web-event-analysis\src\main\resources\static\images\newHome" />
+      <recent name="E:\idea-workspaces\microservice-parent2\web-event-analysis\src\main\resources\static\css\newHome" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+    <option name="contentProportion" value="0.26682135" />
+  </component>
+  <component name="RunManager" selected="Spring Boot.ApiServerCenterApplication">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration name="ApiHytagApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.miduchina.wrd.hytag.apihytag.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.miduchina.wrd.hytag.apihytag.ApiHytagApplication" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="api-hytag" />
+      <envs />
+    </configuration>
+    <configuration name="AutoAuthInterceptor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.miduchina.wrd.eventanalysis.filter.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.miduchina.wrd.eventanalysis.filter.AutoAuthInterceptor" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="web-event-analysis" />
+      <envs />
+    </configuration>
+    <configuration name="LoginController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.miduchina.wrd.eventanalysis.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.miduchina.wrd.eventanalysis.controller.LoginController" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="web-event-analysis" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration name="hyTagController" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.miduchina.wrd.hytag.apihytag.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="com.miduchina.wrd.hytag.apihytag.controller.hyTagController" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="api-hytag" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration name="ApiCasebaseApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.api.casebase.ApiCasebaseApplication" />
+      <module name="api-casebase" />
+      <envs />
+    </configuration>
+    <configuration name="ApiConfigCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.ApiConfigCenterApplication" />
+      <module name="api-config-center" />
+      <envs />
+    </configuration>
+    <configuration name="ApiGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.ApiGatewayApplication" />
+      <module name="api-gateway" />
+      <envs />
+    </configuration>
+    <configuration name="ApiHotAllApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.api.hot.all.ApiHotAllApplication" />
+      <module name="api-hot-all" />
+      <envs />
+    </configuration>
+    <configuration name="ApiInfoMonitorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.api.ApiInfoMonitorApplication" />
+      <module name="api-info-monitor" />
+      <envs />
+    </configuration>
+    <configuration name="ApiOpenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.api.ApiOpenApplication" />
+      <module name="api-open" />
+      <envs />
+    </configuration>
+    <configuration name="ApiRankingListApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.api.rankinglist.ApiRankingListApplication" />
+      <module name="api-ranking-list" />
+      <envs />
+    </configuration>
+    <configuration name="ApiResearchApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.api.research.ApiResearchApplication" />
+      <module name="api-research" />
+      <envs />
+    </configuration>
+    <configuration name="ApiServerCenterApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.ApiServerCenterApplication" />
+      <module name="api-server-center" />
+      <envs />
+    </configuration>
+    <configuration name="WebBigScreenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.WebBigScreenApplication" />
+      <module name="web-big-screen" />
+      <envs />
+    </configuration>
+    <configuration name="WebEventAnalysisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.eventanalysis.WebEventAnalysisApplication" />
+      <module name="web-event-analysis" />
+      <envs />
+    </configuration>
+    <configuration name="WebMonitorReportApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.WebMonitorReportApplication" />
+      <module name="web-monitor-report" />
+      <envs />
+    </configuration>
+    <configuration name="WebMonitorWarningApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.WebMonitorWarningApplication" />
+      <module name="web-monitor-warning" />
+      <envs />
+    </configuration>
+    <configuration name="WebThermalQueryApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.miduchina.wrd.webthermalquery.WebThermalQueryApplication" />
+      <module name="web-thermal-query" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="TomeeConfiguration" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_microservice-parent2_2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5170" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="5171" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <configuration default="true" type="TomeeConfiguration" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" value="" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5176" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="5177" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" ALTERNATIVE_JRE_ENABLED="false">
+      <deployment />
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_microservice-parent2" />
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="Tomcat Catalina" enabled="true" />
+      <predefined_log_file id="Tomcat Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Host Manager" enabled="false" />
+      <predefined_log_file id="Tomcat Localhost Access" enabled="false" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="4718" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="4719" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="JRebel Executor">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <deployment />
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <name>CONTEXT_XML</name>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <name>STAGING</name>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" value="" />
+          <host-id />
+        </data>
+      </server-settings>
+      <predefined_log_file id="Tomcat" enabled="true" />
+      <predefined_log_file id="TOMCAT_LOCALHOST_LOG_ID" enabled="true" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="5038" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <RunnerSettings RunnerId="JRebel Debug">
+        <option name="DEBUG_PORT" value="5039" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+    <list size="18">
+      <item index="0" class="java.lang.String" itemvalue="Spring Boot.WebThermalQueryApplication" />
+      <item index="1" class="java.lang.String" itemvalue="Spring Boot.ApiRankingListApplication" />
+      <item index="2" class="java.lang.String" itemvalue="Spring Boot.ApiServerCenterApplication" />
+      <item index="3" class="java.lang.String" itemvalue="Spring Boot.ApiConfigCenterApplication" />
+      <item index="4" class="java.lang.String" itemvalue="Spring Boot.ApiCasebaseApplication" />
+      <item index="5" class="java.lang.String" itemvalue="Spring Boot.ApiGatewayApplication" />
+      <item index="6" class="java.lang.String" itemvalue="Spring Boot.WebEventAnalysisApplication" />
+      <item index="7" class="java.lang.String" itemvalue="Spring Boot.ApiInfoMonitorApplication" />
+      <item index="8" class="java.lang.String" itemvalue="Spring Boot.WebMonitorWarningApplication" />
+      <item index="9" class="java.lang.String" itemvalue="Spring Boot.WebMonitorReportApplication" />
+      <item index="10" class="java.lang.String" itemvalue="Spring Boot.ApiOpenApplication" />
+      <item index="11" class="java.lang.String" itemvalue="Spring Boot.ApiHotAllApplication" />
+      <item index="12" class="java.lang.String" itemvalue="Spring Boot.ApiResearchApplication (1)" />
+      <item index="13" class="java.lang.String" itemvalue="Spring Boot.WebBigScreenApplication" />
+      <item index="14" class="java.lang.String" itemvalue="Application.ApiHytagApplication" />
+      <item index="15" class="java.lang.String" itemvalue="Application.hyTagController" />
+      <item index="16" class="java.lang.String" itemvalue="Application.LoginController" />
+      <item index="17" class="java.lang.String" itemvalue="Application.AutoAuthInterceptor" />
+    </list>
+    <recent_temporary>
+      <list size="4">
+        <item index="0" class="java.lang.String" itemvalue="Application.LoginController" />
+        <item index="1" class="java.lang.String" itemvalue="Application.AutoAuthInterceptor" />
+        <item index="2" class="java.lang.String" itemvalue="Application.ApiHytagApplication" />
+        <item index="3" class="java.lang.String" itemvalue="Application.hyTagController" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration" cleanupOnStartRun="true">
+    <configuration>C:\Users\Administrator\AppData\Roaming\Subversion</configuration>
+    <supportedVersion>125</supportedVersion>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0a26ef00-ae0f-4999-b08a-ca478095f3d9" name="Default" comment="" />
+      <created>1559198157558</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1559198157558</updated>
+      <workItem from="1559198162141" duration="16322000" />
+      <workItem from="1559214870969" duration="29418000" />
+      <workItem from="1559297998530" duration="37974000" />
+      <workItem from="1559629240033" duration="26415000" />
+      <workItem from="1559704314108" duration="11334000" />
+      <workItem from="1559721113070" duration="2390000" />
+      <workItem from="1559785696187" duration="135000" />
+      <workItem from="1559804101268" duration="4525000" />
+      <workItem from="1560161072134" duration="453000" />
+      <workItem from="1560161784533" duration="19000" />
+      <workItem from="1560161876647" duration="205000" />
+      <workItem from="1560396907054" duration="2764000" />
+      <workItem from="1560914586431" duration="612000" />
+      <workItem from="1560925758010" duration="3889000" />
+      <workItem from="1560995882728" duration="1761000" />
+      <workItem from="1561344822038" duration="1095000" />
+      <workItem from="1561450563684" duration="3183000" />
+      <workItem from="1561458559514" duration="498000" />
+      <workItem from="1561600822780" duration="6025000" />
+      <workItem from="1562120031539" duration="694000" />
+      <workItem from="1562577695222" duration="14979000" />
+      <workItem from="1562743026771" duration="1112000" />
+      <workItem from="1562749200687" duration="644000" />
+      <workItem from="1562826104965" duration="51000" />
+      <workItem from="1562826177170" duration="727000" />
+      <workItem from="1562841103214" duration="6767000" />
+      <workItem from="1562917827030" duration="742000" />
+      <workItem from="1563163469189" duration="72000" />
+      <workItem from="1563789128627" duration="21000" />
+      <workItem from="1563873445574" duration="2253000" />
+      <workItem from="1563959887172" duration="527000" />
+      <workItem from="1563960932701" duration="699000" />
+      <workItem from="1564365573028" duration="3079000" />
+      <workItem from="1564372359317" duration="1471000" />
+      <workItem from="1564452531355" duration="26463000" />
+      <workItem from="1564538674136" duration="15874000" />
+      <workItem from="1564556513439" duration="8361000" />
+      <workItem from="1564623540370" duration="13405000" />
+      <workItem from="1564644258126" duration="9336000" />
+      <workItem from="1564666978238" duration="2242000" />
+      <workItem from="1564710788385" duration="26970000" />
+      <workItem from="1564969936707" duration="100655000" />
+      <workItem from="1565574602463" duration="3666000" />
+      <workItem from="1565701575558" duration="3103000" />
+      <workItem from="1565753519664" duration="28636000" />
+      <workItem from="1566179754026" duration="25784000" />
+      <workItem from="1566270822379" duration="400000" />
+      <workItem from="1566271355259" duration="101692000" />
+      <workItem from="1566528793531" duration="37881000" />
+      <workItem from="1566871412075" duration="43378000" />
+      <workItem from="1567045842513" duration="71205000" />
+      <workItem from="1567582225424" duration="637000" />
+      <workItem from="1567588523025" duration="21888000" />
+      <workItem from="1567673527691" duration="3370000" />
+      <workItem from="1567682007356" duration="794000" />
+      <workItem from="1567683066780" duration="9385000" />
+      <workItem from="1567994368693" duration="39742000" />
+      <workItem from="1568684635333" duration="21538000" />
+      <workItem from="1568944644828" duration="8974000" />
+      <workItem from="1569204170466" duration="11816000" />
+      <workItem from="1569228510898" duration="1544000" />
+      <workItem from="1569230748494" duration="61600000" />
+      <workItem from="1569470564755" duration="23012000" />
+      <workItem from="1569721960694" duration="17525000" />
+      <workItem from="1569748625523" duration="5693000" />
+      <workItem from="1570364711807" duration="31633000" />
+      <workItem from="1570677019132" duration="341000" />
+      <workItem from="1570677553787" duration="1443000" />
+      <workItem from="1570679772372" duration="46679000" />
+      <workItem from="1571104468172" duration="14450000" />
+      <workItem from="1572267289334" duration="93000" />
+    </task>
+    <task id="LOCAL-00124" summary="增加id">
+      <created>1567478368958</created>
+      <option name="number" value="00124" />
+      <option name="presentableId" value="LOCAL-00124" />
+      <option name="project" value="LOCAL" />
+      <updated>1567478368958</updated>
+    </task>
+    <task id="LOCAL-00125" summary="改目录">
+      <created>1567480748743</created>
+      <option name="number" value="00125" />
+      <option name="presentableId" value="LOCAL-00125" />
+      <option name="project" value="LOCAL" />
+      <updated>1567480748744</updated>
+    </task>
+    <task id="LOCAL-00126" summary="改目录">
+      <created>1567590405779</created>
+      <option name="number" value="00126" />
+      <option name="presentableId" value="LOCAL-00126" />
+      <option name="project" value="LOCAL" />
+      <updated>1567590405780</updated>
+    </task>
+    <task id="LOCAL-00127" summary="改目录">
+      <created>1567650690505</created>
+      <option name="number" value="00127" />
+      <option name="presentableId" value="LOCAL-00127" />
+      <option name="project" value="LOCAL" />
+      <updated>1567650690505</updated>
+    </task>
+    <task id="LOCAL-00128" summary="改目录">
+      <created>1567652147706</created>
+      <option name="number" value="00128" />
+      <option name="presentableId" value="LOCAL-00128" />
+      <option name="project" value="LOCAL" />
+      <updated>1567652147706</updated>
+    </task>
+    <task id="LOCAL-00129" summary="改目录">
+      <created>1567662080052</created>
+      <option name="number" value="00129" />
+      <option name="presentableId" value="LOCAL-00129" />
+      <option name="project" value="LOCAL" />
+      <updated>1567662080052</updated>
+    </task>
+    <task id="LOCAL-00130" summary="改目录">
+      <created>1567664644580</created>
+      <option name="number" value="00130" />
+      <option name="presentableId" value="LOCAL-00130" />
+      <option name="project" value="LOCAL" />
+      <updated>1567664644580</updated>
+    </task>
+    <task id="LOCAL-00131" summary="改走势图">
+      <created>1567674815849</created>
+      <option name="number" value="00131" />
+      <option name="presentableId" value="LOCAL-00131" />
+      <option name="project" value="LOCAL" />
+      <updated>1567674815850</updated>
+    </task>
+    <task id="LOCAL-00132" summary="改目录">
+      <created>1568167488438</created>
+      <option name="number" value="00132" />
+      <option name="presentableId" value="LOCAL-00132" />
+      <option name="project" value="LOCAL" />
+      <updated>1568167488439</updated>
+    </task>
+    <task id="LOCAL-00133" summary="改目录">
+      <created>1568197533362</created>
+      <option name="number" value="00133" />
+      <option name="presentableId" value="LOCAL-00133" />
+      <option name="project" value="LOCAL" />
+      <updated>1568197533362</updated>
+    </task>
+    <task id="LOCAL-00134" summary="改目录">
+      <created>1568274175460</created>
+      <option name="number" value="00134" />
+      <option name="presentableId" value="LOCAL-00134" />
+      <option name="project" value="LOCAL" />
+      <updated>1568274175460</updated>
+    </task>
+    <task id="LOCAL-00135" summary="后台cs接口">
+      <created>1568858900236</created>
+      <option name="number" value="00135" />
+      <option name="presentableId" value="LOCAL-00135" />
+      <option name="project" value="LOCAL" />
+      <updated>1568858900238</updated>
+    </task>
+    <task id="LOCAL-00136" summary="改目录">
+      <created>1568955850554</created>
+      <option name="number" value="00136" />
+      <option name="presentableId" value="LOCAL-00136" />
+      <option name="project" value="LOCAL" />
+      <updated>1568955850556</updated>
+    </task>
+    <task id="LOCAL-00137" summary="改目录">
+      <created>1569499535812</created>
+      <option name="number" value="00137" />
+      <option name="presentableId" value="LOCAL-00137" />
+      <option name="project" value="LOCAL" />
+      <updated>1569499535813</updated>
+    </task>
+    <task id="LOCAL-00138" summary="编码">
+      <created>1569506290371</created>
+      <option name="number" value="00138" />
+      <option name="presentableId" value="LOCAL-00138" />
+      <option name="project" value="LOCAL" />
+      <updated>1569506290371</updated>
+    </task>
+    <task id="LOCAL-00139" summary="大数据报告">
+      <created>1569744973751</created>
+      <option name="number" value="00139" />
+      <option name="presentableId" value="LOCAL-00139" />
+      <option name="project" value="LOCAL" />
+      <updated>1569744973763</updated>
+    </task>
+    <task id="LOCAL-00140" summary="大数据报告">
+      <created>1569749451928</created>
+      <option name="number" value="00140" />
+      <option name="presentableId" value="LOCAL-00140" />
+      <option name="project" value="LOCAL" />
+      <updated>1569749451930</updated>
+    </task>
+    <task id="LOCAL-00141" summary="大数据报告">
+      <created>1569749538163</created>
+      <option name="number" value="00141" />
+      <option name="presentableId" value="LOCAL-00141" />
+      <option name="project" value="LOCAL" />
+      <updated>1569749538163</updated>
+    </task>
+    <task id="LOCAL-00142" summary="大数据报告">
+      <created>1569750104601</created>
+      <option name="number" value="00142" />
+      <option name="presentableId" value="LOCAL-00142" />
+      <option name="project" value="LOCAL" />
+      <updated>1569750104601</updated>
+    </task>
+    <task id="LOCAL-00143" summary="local">
+      <created>1569750343608</created>
+      <option name="number" value="00143" />
+      <option name="presentableId" value="LOCAL-00143" />
+      <option name="project" value="LOCAL" />
+      <updated>1569750343608</updated>
+    </task>
+    <task id="LOCAL-00144" summary="大数据报告">
+      <created>1569750644760</created>
+      <option name="number" value="00144" />
+      <option name="presentableId" value="LOCAL-00144" />
+      <option name="project" value="LOCAL" />
+      <updated>1569750644760</updated>
+    </task>
+    <task id="LOCAL-00145" summary="大数据报告">
+      <created>1569751325010</created>
+      <option name="number" value="00145" />
+      <option name="presentableId" value="LOCAL-00145" />
+      <option name="project" value="LOCAL" />
+      <updated>1569751325010</updated>
+    </task>
+    <task id="LOCAL-00146" summary="大数据报告">
+      <created>1570502121333</created>
+      <option name="number" value="00146" />
+      <option name="presentableId" value="LOCAL-00146" />
+      <option name="project" value="LOCAL" />
+      <updated>1570502121334</updated>
+    </task>
+    <task id="LOCAL-00147" summary="大数据报告">
+      <created>1570502347442</created>
+      <option name="number" value="00147" />
+      <option name="presentableId" value="LOCAL-00147" />
+      <option name="project" value="LOCAL" />
+      <updated>1570502347442</updated>
+    </task>
+    <task id="LOCAL-00148" summary="大数据报告">
+      <created>1570529996846</created>
+      <option name="number" value="00148" />
+      <option name="presentableId" value="LOCAL-00148" />
+      <option name="project" value="LOCAL" />
+      <updated>1570529996846</updated>
+    </task>
+    <task id="LOCAL-00149" summary="大数据报告">
+      <created>1570590038829</created>
+      <option name="number" value="00149" />
+      <option name="presentableId" value="LOCAL-00149" />
+      <option name="project" value="LOCAL" />
+      <updated>1570590038829</updated>
+    </task>
+    <task id="LOCAL-00150" summary="大数据报告">
+      <created>1570601761326</created>
+      <option name="number" value="00150" />
+      <option name="presentableId" value="LOCAL-00150" />
+      <option name="project" value="LOCAL" />
+      <updated>1570601761326</updated>
+    </task>
+    <task id="LOCAL-00151" summary="大数据报告">
+      <created>1570605103579</created>
+      <option name="number" value="00151" />
+      <option name="presentableId" value="LOCAL-00151" />
+      <option name="project" value="LOCAL" />
+      <updated>1570605103579</updated>
+    </task>
+    <task id="LOCAL-00152" summary="大数据报告">
+      <created>1570608928632</created>
+      <option name="number" value="00152" />
+      <option name="presentableId" value="LOCAL-00152" />
+      <option name="project" value="LOCAL" />
+      <updated>1570608928632</updated>
+    </task>
+    <task id="LOCAL-00153" summary="大数据报告">
+      <created>1570672139035</created>
+      <option name="number" value="00153" />
+      <option name="presentableId" value="LOCAL-00153" />
+      <option name="project" value="LOCAL" />
+      <updated>1570672139035</updated>
+    </task>
+    <task id="LOCAL-00154" summary="大数据报告">
+      <created>1570672495745</created>
+      <option name="number" value="00154" />
+      <option name="presentableId" value="LOCAL-00154" />
+      <option name="project" value="LOCAL" />
+      <updated>1570672495745</updated>
+    </task>
+    <task id="LOCAL-00155" summary="大数据报告">
+      <created>1570680640617</created>
+      <option name="number" value="00155" />
+      <option name="presentableId" value="LOCAL-00155" />
+      <option name="project" value="LOCAL" />
+      <updated>1570680640621</updated>
+    </task>
+    <task id="LOCAL-00156" summary="大数据报告">
+      <created>1570687451310</created>
+      <option name="number" value="00156" />
+      <option name="presentableId" value="LOCAL-00156" />
+      <option name="project" value="LOCAL" />
+      <updated>1570687451310</updated>
+    </task>
+    <task id="LOCAL-00157" summary="大数据报告">
+      <created>1570688547191</created>
+      <option name="number" value="00157" />
+      <option name="presentableId" value="LOCAL-00157" />
+      <option name="project" value="LOCAL" />
+      <updated>1570688547191</updated>
+    </task>
+    <task id="LOCAL-00158" summary="大数据报告">
+      <created>1570690043805</created>
+      <option name="number" value="00158" />
+      <option name="presentableId" value="LOCAL-00158" />
+      <option name="project" value="LOCAL" />
+      <updated>1570690043805</updated>
+    </task>
+    <task id="LOCAL-00159" summary="大数据报告">
+      <created>1570766070964</created>
+      <option name="number" value="00159" />
+      <option name="presentableId" value="LOCAL-00159" />
+      <option name="project" value="LOCAL" />
+      <updated>1570766070964</updated>
+    </task>
+    <task id="LOCAL-00160" summary="大数据报告">
+      <created>1570773600885</created>
+      <option name="number" value="00160" />
+      <option name="presentableId" value="LOCAL-00160" />
+      <option name="project" value="LOCAL" />
+      <updated>1570773600885</updated>
+    </task>
+    <task id="LOCAL-00161" summary="大数据报告">
+      <created>1570777833590</created>
+      <option name="number" value="00161" />
+      <option name="presentableId" value="LOCAL-00161" />
+      <option name="project" value="LOCAL" />
+      <updated>1570777833591</updated>
+    </task>
+    <task id="LOCAL-00162" summary="大数据报告">
+      <created>1570777894374</created>
+      <option name="number" value="00162" />
+      <option name="presentableId" value="LOCAL-00162" />
+      <option name="project" value="LOCAL" />
+      <updated>1570777894374</updated>
+    </task>
+    <task id="LOCAL-00163" summary="大数据报告">
+      <created>1570786587508</created>
+      <option name="number" value="00163" />
+      <option name="presentableId" value="LOCAL-00163" />
+      <option name="project" value="LOCAL" />
+      <updated>1570786587508</updated>
+    </task>
+    <task id="LOCAL-00164" summary="大数据报告">
+      <created>1570847252122</created>
+      <option name="number" value="00164" />
+      <option name="presentableId" value="LOCAL-00164" />
+      <option name="project" value="LOCAL" />
+      <updated>1570847252122</updated>
+    </task>
+    <task id="LOCAL-00165" summary="大数据报告">
+      <created>1570865747813</created>
+      <option name="number" value="00165" />
+      <option name="presentableId" value="LOCAL-00165" />
+      <option name="project" value="LOCAL" />
+      <updated>1570865747814</updated>
+    </task>
+    <task id="LOCAL-00166" summary="优化">
+      <created>1570866194581</created>
+      <option name="number" value="00166" />
+      <option name="presentableId" value="LOCAL-00166" />
+      <option name="project" value="LOCAL" />
+      <updated>1570866194581</updated>
+    </task>
+    <task id="LOCAL-00167" summary="大数据报告">
+      <created>1571105920817</created>
+      <option name="number" value="00167" />
+      <option name="presentableId" value="LOCAL-00167" />
+      <option name="project" value="LOCAL" />
+      <updated>1571105920818</updated>
+    </task>
+    <task id="LOCAL-00168" summary="大屏">
+      <created>1571106267155</created>
+      <option name="number" value="00168" />
+      <option name="presentableId" value="LOCAL-00168" />
+      <option name="project" value="LOCAL" />
+      <updated>1571106267155</updated>
+    </task>
+    <task id="LOCAL-00169" summary="大屏">
+      <created>1571106364909</created>
+      <option name="number" value="00169" />
+      <option name="presentableId" value="LOCAL-00169" />
+      <option name="project" value="LOCAL" />
+      <updated>1571106364909</updated>
+    </task>
+    <task id="LOCAL-00170" summary="大屏">
+      <created>1571106975047</created>
+      <option name="number" value="00170" />
+      <option name="presentableId" value="LOCAL-00170" />
+      <option name="project" value="LOCAL" />
+      <updated>1571106975048</updated>
+    </task>
+    <task id="LOCAL-00171" summary="大数据报告">
+      <created>1571109216761</created>
+      <option name="number" value="00171" />
+      <option name="presentableId" value="LOCAL-00171" />
+      <option name="project" value="LOCAL" />
+      <updated>1571109216761</updated>
+    </task>
+    <task id="LOCAL-00172" summary="大数据报告">
+      <created>1571109792066</created>
+      <option name="number" value="00172" />
+      <option name="presentableId" value="LOCAL-00172" />
+      <option name="project" value="LOCAL" />
+      <updated>1571109792066</updated>
+    </task>
+    <option name="localTasksCounter" value="173" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1024063000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25342464" sideWeight="0.526475" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41952056" sideWeight="0.47352496" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20034246" sideWeight="0.5173979" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2322239" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.255137" sideWeight="0.4871407" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5770548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66780823" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19667171" sideWeight="0.44583333" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20499243" sideWeight="0.5578231" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29500756" sideWeight="0.54647887" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18381241" sideWeight="0.5541667" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3510274" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37671232" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473525" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31849316" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="SVN Repositories" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25342464" sideWeight="0.526475" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20034246" sideWeight="0.5173979" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2322239" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32829046" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3510274" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6061644" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run Dashboard" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2380137" sideWeight="0.47352496" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5770548" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43150684" sideWeight="0.4871407" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2473525" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.66780823" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08623298" sideWeight="0.45352113" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.20499243" sideWeight="0.5578231" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29500756" sideWeight="0.54647887" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31849316" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24357034" sideWeight="0.5339806" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$/api-casebase" />
+      <path value="$PROJECT_DIR$/api-config-center" />
+      <path value="$PROJECT_DIR$/api-gateway" />
+      <path value="$PROJECT_DIR$/api-info-monitor" />
+      <path value="$PROJECT_DIR$/api-ranking-list" />
+      <path value="$PROJECT_DIR$/api-server-center" />
+      <path value="$PROJECT_DIR$/commons" />
+      <path value="$PROJECT_DIR$/commons-db" />
+      <path value="$PROJECT_DIR$/commons-redis" />
+      <path value="$PROJECT_DIR$/entity" />
+      <path value="$PROJECT_DIR$/other" />
+      <path value="$PROJECT_DIR$/web-thermal-query" />
+      <path value="$PROJECT_DIR$/web-event-analysis" />
+      <path value="$PROJECT_DIR$/web-monitor-report" />
+      <path value="$PROJECT_DIR$/web-monitor-warning" />
+      <path value="$PROJECT_DIR$/../commons/src/main/java" />
+      <path value="$PROJECT_DIR$/../commons/src/main/resources" />
+      <path value="$PROJECT_DIR$/api-hot-all" />
+      <path value="$PROJECT_DIR$/api-hytag" />
+      <path value="$PROJECT_DIR$/api-open" />
+      <path value="$PROJECT_DIR$/web-big-screen" />
+    </ignored-roots>
+    <MESSAGE value="增加参数" />
+    <MESSAGE value="授权接口" />
+    <MESSAGE value="改编码" />
+    <MESSAGE value="改日期" />
+    <MESSAGE value="加日志" />
+    <MESSAGE value="修改图片" />
+    <MESSAGE value="改词云数量" />
+    <MESSAGE value="增加id" />
+    <MESSAGE value="改走势图" />
+    <MESSAGE value="后台cs接口" />
+    <MESSAGE value="改目录" />
+    <MESSAGE value="编码" />
+    <MESSAGE value="local" />
+    <MESSAGE value="优化" />
+    <MESSAGE value="大屏" />
+    <MESSAGE value="大数据报告" />
+    <option name="LAST_COMMIT_MESSAGE" value="大数据报告" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-thermal-query/src/main/java/com/miduchina/wrd/webthermalquery/controller/MSBaseController.java</url>
+          <line>453</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-ranking-list/src/main/java/com/miduchina/wrd/api/rankinglist/controller/HotIncidentV3Controller.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/user/UserController.java</url>
+          <line>368</line>
+          <properties />
+          <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-hy-tag/src/main/java/com/micuchina/wrd/apihytag/controller/hyTagController.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="167" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/LoginController.java</url>
+          <line>524</line>
+          <properties />
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/LoginController.java</url>
+          <line>469</line>
+          <properties />
+          <option name="timeStamp" value="225" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/LoginController.java</url>
+          <line>605</line>
+          <properties />
+          <option name="timeStamp" value="236" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/LoginController.java</url>
+          <line>445</line>
+          <properties />
+          <option name="timeStamp" value="243" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/user/ThirdPartyController.java</url>
+          <line>64</line>
+          <properties />
+          <option name="timeStamp" value="259" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/user/ThirdPartyController.java</url>
+          <line>79</line>
+          <properties />
+          <option name="timeStamp" value="262" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/weibo4j/authorize/Oauth.java</url>
+          <line>89</line>
+          <properties />
+          <option name="timeStamp" value="264" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-open/src/main/java/com/miduchina/wrd/api/controller/WxConfigController.java</url>
+          <line>20</line>
+          <properties />
+          <option name="timeStamp" value="271" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-research/src/main/java/com/miduchina/wrd/api/research/controller/ApplicantController.java</url>
+          <line>34</line>
+          <properties />
+          <option name="timeStamp" value="310" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/LoginController.java</url>
+          <line>774</line>
+          <properties />
+          <option name="timeStamp" value="319" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/controller/v1/csadmin/TestUserController.java</url>
+          <line>84</line>
+          <properties />
+          <option name="timeStamp" value="328" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/controller/BigEventController.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="384" />
+        </line-breakpoint>
+      </breakpoints>
+      <breakpoints-dialog>
+        <breakpoints-dialog />
+      </breakpoints-dialog>
+      <option name="time" value="385" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/frame_top.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="46" column="13" lean-forward="true" selection-start-line="40" selection-start-column="4" selection-end-line="46" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/top.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/app/invitation.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="18" lean-forward="true" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/um/uMedia.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="4" column="118" lean-forward="false" selection-start-line="4" selection-start-column="95" selection-end-line="4" selection-end-column="118" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/resources/templates/common/frame_top.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="34" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/controller/v1/bigdatareport/BigDataController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="137" column="23" lean-forward="false" selection-start-line="137" selection-start-column="23" selection-end-line="137" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.0.11.RELEASE/spring-web-5.0.11.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="61">
+          <caret line="217" column="0" lean-forward="false" selection-start-line="217" selection-start-column="0" selection-end-line="217" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/config/FreemarkerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="52" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/controller/HotEventController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="14" column="31" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="72" column="4" lean-forward="false" selection-start-line="72" selection-start-column="4" selection-end-line="73" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/service/HomeService.java" />
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/service/Impl/HomeServiceImpl.java" />
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="173">
+          <caret line="27" column="8" lean-forward="false" selection-start-line="27" selection-start-column="8" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/service/HomeService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="48" column="11" lean-forward="false" selection-start-line="48" selection-start-column="11" selection-end-line="48" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/utils/Utils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/service/impl/HomeServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9120">
+          <caret line="425" column="23" lean-forward="false" selection-start-line="344" selection-start-column="8" selection-end-line="425" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/service/csadmin/TestUserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="13" column="25" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/service/csadmin/impl/TestUserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="33" column="50" lean-forward="false" selection-start-line="33" selection-start-column="50" selection-end-line="33" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/mapper/csadmin/TestUserMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="16" column="21" lean-forward="false" selection-start-line="16" selection-start-column="21" selection-end-line="16" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-info-monitor/src/main/java/com/miduchina/wrd/api/controller/v1/csadmin/TestUserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="159">
+          <caret line="54" column="60" lean-forward="true" selection-start-line="54" selection-start-column="60" selection-end-line="54" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/WebEventAnalysisApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/bignessEvent.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="328" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-thermal-query/src/main/resources/templates/events/home.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-15055">
+          <caret line="4" column="24" lean-forward="false" selection-start-line="4" selection-start-column="15" selection-end-line="4" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-thermal-query/src/main/resources/templates/events/hotEvents.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-11863">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-thermal-query/src/main/resources/templates/events/test.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30189">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/home.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6769">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/moment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/resources/static/js/moment.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/resources/templates/largeScreen/bigEvents.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="55008">
+          <caret line="2292" column="43" lean-forward="false" selection-start-line="2292" selection-start-column="43" selection-end-line="2292" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/resources/templates/largeScreen/firstView.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7752">
+          <caret line="323" column="0" lean-forward="false" selection-start-line="323" selection-start-column="0" selection-end-line="324" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/resources/static/js/hotLargeScreenVue/bigEventsSvreen.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1704">
+          <caret line="71" column="67" lean-forward="false" selection-start-line="71" selection-start-column="67" selection-end-line="71" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/feign/APIInfoClient.java" />
+    <entry file="file://$PROJECT_DIR$/../config-center/commons-db/wrd/commons-db-wrd-local.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="26" column="48" lean-forward="false" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17760">
+          <caret line="61" column="38" lean-forward="false" selection-start-line="61" selection-start-column="29" selection-end-line="61" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/controller/BigEventController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2280">
+          <caret line="97" column="0" lean-forward="false" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1571378430046" expanded="true" signature="4389:4396" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/resources/bootstrap.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="44" column="12" lean-forward="false" selection-start-line="44" selection-start-column="12" selection-end-line="44" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoData.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1176">
+          <caret line="49" column="63" lean-forward="false" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/listDetails.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoDataDetailsShare.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/src/main/java/com/miduchina/wrd/WebBigScreenApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-big-screen/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/templates/view/home/infoDataDetails.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="132" column="68" lean-forward="false" selection-start-line="132" selection-start-column="56" selection-end-line="132" selection-end-column="68" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/navigate.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10536">
+          <caret line="439" column="12" lean-forward="false" selection-start-line="439" selection-start-column="12" selection-end-line="439" selection-end-column="12" />
+          <folding>
+            <marker date="1569507975911" expanded="true" signature="21116:21123" ph="×" />
+            <marker date="1569507975911" expanded="true" signature="21169:21174" ph="¥" />
+            <marker date="1569507975911" expanded="true" signature="21368:21375" ph="×" />
+            <marker date="1569507975911" expanded="true" signature="21422:21427" ph="¥" />
+            <marker date="1569507975911" expanded="true" signature="21628:21635" ph="×" />
+            <marker date="1569507975911" expanded="true" signature="21687:21692" ph="¥" />
+            <marker date="1569507975911" expanded="true" signature="21893:21900" ph="×" />
+            <marker date="1569507975911" expanded="true" signature="21944:21949" ph="¥" />
+            <marker date="1569507975911" expanded="true" signature="22144:22151" ph="×" />
+            <marker date="1569507975911" expanded="true" signature="22205:22210" ph="¥" />
+            <marker date="1569507975911" expanded="true" signature="22433:22440" ph="×" />
+            <marker date="1569507975911" expanded="true" signature="22498:22503" ph="¥" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/bigDataDetails.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1656">
+          <caret line="69" column="24" lean-forward="false" selection-start-line="69" selection-start-column="24" selection-end-line="70" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/infoDataReport.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1680">
+          <caret line="70" column="0" lean-forward="false" selection-start-line="70" selection-start-column="0" selection-end-line="70" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/api-info-monitor/src/main/resources/mapper/TestUserMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4632">
+          <caret line="193" column="15" lean-forward="false" selection-start-line="193" selection-start-column="15" selection-end-line="193" selection-end-column="15" />
+          <folding>
+            <marker date="1571104716077" expanded="true" signature="324:718" ph="INSERT INTO cs_test_user... " />
+            <marker date="1571104716077" expanded="true" signature="885:3850" ph="SELECT c.tes... cs_test_user" />
+            <marker date="1571104716077" expanded="true" signature="3908:4032" ph="UPDATE cs_test_user... " />
+            <marker date="1571104716077" expanded="true" signature="4203:7121" ph="SELECT c.tes... cs_test_user" />
+            <marker date="1571104716077" expanded="true" signature="7176:7367" ph="UPDATE user... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/filter/AutoAuthInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="576">
+          <caret line="45" column="18" lean-forward="false" selection-start-line="45" selection-start-column="18" selection-end-line="45" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/utils/LoginUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="33" column="26" lean-forward="false" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/controller/casebase/CaseBaseController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="42" column="5" lean-forward="false" selection-start-line="38" selection-start-column="4" selection-end-line="42" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/resources/static/js/vue/home/bigData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1608">
+          <caret line="67" column="15" lean-forward="false" selection-start-line="67" selection-start-column="15" selection-end-line="67" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-event-analysis/src/main/java/com/miduchina/wrd/eventanalysis/filter/DNSAdapterFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37586206" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring (api-casebase)|Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37586206" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37586206" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37586206" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>config-center</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37586206" />
+                <option value="0.6" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: miduchina-dwr:dwr:1.1.1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.37586206" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

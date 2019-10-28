@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.csadmin.TestUserMapper">
+    <insert id="saveTestUser" useGeneratedKeys="true" keyProperty="test_user_id">
+        <![CDATA[
+			INSERT INTO cs_test_user (
+				name,
+				address,
+				phone,
+				password,
+				start_time,
+				end_time,
+				create_time,
+				update_time,
+				status,
+				agent,
+				user_id,
+				is_virtual
+			)
+			VALUES
+				(
+					#{name},
+					#{address},
+					#{phone},
+					#{password},
+					#{startTime},
+					#{endTime},
+					now(),
+					#{updateTime},
+					1,
+					#{agent},
+					#{userId},
+					0
+				)
+		]]>
+    </insert>
+
+    <select id="findAllTestList" parameterType="java.util.HashMap" resultType="com.miduchina.wrd.po.csadmin.CsTestUser">
+        <![CDATA[
+		    SELECT
+                c.test_user_id testUserId,
+                c. NAME userName,
+                c.address address,
+                c.phone phone,
+                c. PASSWORD PASSWORD,
+                c.start_time startTime,
+                c.end_time endTime,
+                c.create_time createTime,
+                c.update_time updateTime,
+                c. STATUS STATUS,
+                c.agent agent,
+                c.user_id userId,
+                c.is_virtual isvirtual,
+                sum(CASE b.product_package_id when 32
+                then b.product_package_count else 0 end) AS weiboAnalysisValidCount,
+                sum(CASE b.product_package_id when 18
+                then b.product_package_count else 0 end) AS analysisValidCount,
+                sum(CASE b.product_package_id when 21
+                then b.product_package_count else 0 end) AS productAnalysisValidCount,
+                sum(CASE b.product_package_id when 37
+                then b.product_package_count else 0 end) AS exportDataCount,
+                sum(CASE b.product_package_id when 22
+                then b.product_package_count else 0 end) AS effects,
+                sum(CASE b.product_package_id when 56
+                then b.product_package_count else 0 end) AS creditAmount1,
+                sum(CASE b.product_package_id when 57
+                then b.product_package_count else 0 end) AS creditAmount2,
+                sum(CASE b.product_package_id when 58
+                then b.product_package_count else 0 end) AS creditAmount3,
+                sum(CASE b.product_package_id when 59
+                then b.product_package_count else 0 end) AS creditAmount4,
+                sum(CASE b.product_package_id when 64
+                then b.product_package_count else 0 end) AS monitorMOnth,
+                sum(CASE b.product_package_id when 65
+                then b.product_package_count else 0 end) AS monitorYear
+            FROM
+                cs_test_user c
+            left JOIN order_record AS e ON c.user_id = e.user_id
+            left JOIN order_cart_relation AS d ON e.order_record_id = d.order_record_id
+            left JOIN cart_record AS b ON d.cart_record_id = b.cart_record_id
+
+            WHERE
+                c. STATUS > 0
+            AND (e.is_real = 0 or e.is_real is null)
+            AND (e.pay_status = 1 or e.pay_status is null)
+		]]>
+        <if test="name!=null and name!=''">
+            <![CDATA[
+				and c.name LIKE '%${name}%'
+			]]>
+        </if>
+        <if test="testUserId!=null and testUserId!=''">
+            <![CDATA[
+				and c.test_user_id = #{testUserId}
+			]]>
+        </if>
+        <if test="phone!=null and phone!=''">
+            <![CDATA[
+				and c.phone = #{phone}
+			]]>
+        </if>
+        <if test="address!=null and address!=''">
+            <![CDATA[
+                and c.address LIKE '%${address}%'
+			]]>
+        </if>
+        <![CDATA[
+			GROUP BY c.test_user_id
+			ORDER BY
+				c.create_time ASC
+		]]>
+    </select>
+
+    <update id="doDelete" >
+        UPDATE cs_test_user
+        SET status=#{status},
+        update_time=now()
+        WHERE
+        test_user_id=#{testUserId}
+    </update>
+
+    <select id="findTestUserByParam" parameterType="java.util.HashMap" resultType="com.miduchina.wrd.po.csadmin.CsTestUser">
+        <![CDATA[
+            SELECT
+                c.test_user_id testUserId,
+                c. NAME userName,
+                c.address address,
+                c.phone phone,
+                c. PASSWORD PASSWORD,
+                c.start_time startTime,
+                c.end_time endTime,
+                c.create_time createTime,
+                c.update_time updateTime,
+                c. STATUS STATUS,
+                c.agent agent,
+                c.user_id userId,
+                c.is_virtual isvirtual,
+                sum(CASE b.product_package_id when 32
+                then b.product_package_count else 0 end) AS weiboAnalysisValidCount,
+                sum(CASE b.product_package_id when 18
+                then b.product_package_count else 0 end) AS analysisValidCount,
+                sum(CASE b.product_package_id when 21
+                then b.product_package_count else 0 end) AS productAnalysisValidCount,
+                sum(CASE b.product_package_id when 37
+                then b.product_package_count else 0 end) AS exportDataCount,
+                sum(CASE b.product_package_id when 22
+                then b.product_package_count else 0 end) AS effects,
+                sum(CASE b.product_package_id when 56
+                then b.product_package_count else 0 end) AS creditAmount1,
+                sum(CASE b.product_package_id when 57
+                then b.product_package_count else 0 end) AS creditAmount2,
+                sum(CASE b.product_package_id when 58
+                then b.product_package_count else 0 end) AS creditAmount3,
+                sum(CASE b.product_package_id when 59
+                then b.product_package_count else 0 end) AS creditAmount4,
+                sum(CASE b.product_package_id when 64
+                then b.product_package_count else 0 end) AS monitorMOnth,
+                sum(CASE b.product_package_id when 65
+                then b.product_package_count else 0 end) AS monitorYear
+            FROM
+                cs_test_user c
+            left JOIN order_record AS e ON c.user_id = e.user_id
+            left JOIN order_cart_relation AS d ON e.order_record_id = d.order_record_id
+            left JOIN cart_record AS b ON d.cart_record_id = b.cart_record_id
+
+            WHERE
+                c. STATUS > 0
+            AND (e.is_real = 0 or e.is_real is null)
+            AND (e.pay_status = 1 or e.pay_status is null)
+		]]>
+        <if test="name!=null and name!=''">
+            <![CDATA[
+				and c.name LIKE '%${name}%'
+			]]>
+        </if>
+        <if test="testUserId!=null and testUserId!=''">
+            <![CDATA[
+				and c.test_user_id = #{testUserId}
+			]]>
+        </if>
+        <if test="phone!=null and phone!=''">
+            <![CDATA[
+				and c.phone = #{phone}
+			]]>
+        </if>
+        <if test="address!=null and address!=''">
+            <![CDATA[
+                and c.address LIKE '%${address}%'
+			]]>
+        </if>
+        GROUP BY c.test_user_id
+    </select>
+    <update id="doDeleteUser" >
+        UPDATE user
+        SET
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        update_time=now()
+        WHERE
+        user_id = #{userId}
+    </update>
+
+</mapper>

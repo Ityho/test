@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.rankinglist.mapper.NationalMediaMapper">
+
+	<select id="findAll" resultType="com.miduchina.wrd.po.ranking.HistoryRanking">
+		SELECT * from history_ranking 
+		
+	</select>
+	
+	<select id="findCount" resultType="java.lang.Integer">
+		<![CDATA[
+			SELECT
+				COUNT(*)
+			FROM
+				(
+					SELECT
+						service_unit
+					FROM
+						base_origin
+					WHERE
+						STATUS = 1
+		]]>
+		<if test="rankingType!=null and rankingType!=''">
+			<![CDATA[
+				AND property != #{rankingType}
+			]]>
+		</if>
+		<![CDATA[
+			GROUP BY
+						service_unit
+				) AS a;
+		]]>
+		
+	</select>
+	<select id="findBaseList" resultType="java.lang.String">
+		<![CDATA[
+			SELECT DISTINCT
+				(service_unit)
+			FROM
+				base_origin
+			WHERE
+				STATUS = 1
+		]]>
+		<if test="rankingType!=null and rankingType!=''">
+			<![CDATA[
+				AND property != #{rankingType}
+			]]>
+		</if>
+		<if test="rankingType==null or rankingType==''">
+			<![CDATA[
+				AND property != '商业网站' and property != '稿源网站'
+			]]>
+		</if>
+		<if test="keyword!=null and keyword!=''">
+			<![CDATA[
+				AND service_unit like '%${keyword}%'
+			]]>
+		</if>
+		<![CDATA[
+			GROUP BY
+				id
+		]]>
+		
+	</select>
+	<select id="findStatisDataList" resultType="com.miduchina.wrd.po.ranking.StatisData" parameterType="java.util.List">
+		<![CDATA[
+			SELECT
+				id,
+				origin_type AS originType,
+				service_unit AS serviceUnit
+			FROM
+				base_origin
+			WHERE
+				STATUS = 1
+		]]>
+		<if test="serviceUnits != null">
+			and service_unit in
+			<foreach collection="serviceUnits" index="index" item="item" open="(" separator="," close=")">
+				#{item}
+			</foreach>
+		</if>
+		<![CDATA[
+			GROUP BY
+				id
+		]]>
+		
+	</select>
+	<select id="findStatisDataList2" resultType="com.miduchina.wrd.po.ranking.StatisData">
+		<![CDATA[
+			SELECT
+				b.`area` AS 'area',
+				b.`origin_type` AS 'originType',
+				b.`name` AS 'name',
+				b.service_unit AS 'serviceUnit',
+				b.property AS 'property',
+				s. MONTH AS 'month',
+				SUM(s.refer_president_num) AS 'referPresidentNum',
+				SUM(
+					s.refer_president_origin_num
+				) AS 'referPresidentOriginNum',
+				SUM(s.president_title_num) AS 'presidentTitleNum',
+				SUM(
+					s.refer_central_leadership_num
+				) AS 'referCentralLeadershipNum',
+				SUM(
+					s.refer_central_leadership_origin_num
+				) AS 'referCentralLeadershipOriginNum',
+				SUM(
+					s.central_leadership_title_num
+				) AS 'centralLeadershipTitleNum',
+				SUM(
+					s.refer_other_standing_sommittee_num
+				) AS 'referOtherStandingSommitteeNum',
+				SUM(
+					s.other_standing_sommittee_title_num
+				) AS 'otherStandingSommitteeTitleNum',
+				SUM(
+					s.refer_other_standing_sommittee_origin_num
+				) AS 'referOtherStandingSommitteeOriginNum',
+				SUM(s.refer_gov_affairs_num) AS 'referGovAffairsNum',
+				SUM(
+					s.society_positive_energy_num
+				) AS 'societyPositiveEnergyNum',
+				SUM(s.policy_unscramble_num) AS 'policyUnscrambleNum',
+				SUM(s.h5_video_caricature_num) AS 'h5VideoCaricatureNum',
+				SUM(s.refer_ent_num) AS 'referEntNum',
+				SUM(s.rumour_num) AS 'rumourNum',
+				SUM(
+					s.distort_history_and_discredit_hero_num
+				) AS 'distortHistoryAndDiscreditHeroNum',
+				SUM(s.total_num) AS 'totalNum',
+				SUM(s.reposts_num) AS 'repostsNum',
+				SUM(s.comments_num) AS 'commentsNum',
+				SUM(s.attitudes_num) AS 'attitudesNum',
+				SUM(s.reads_num) AS 'readsNum',
+				SUM(s.followers_num) AS 'followersNum',
+				SUM(s.origin_num) AS 'originNum',
+				SUM(s.alexa_value) AS 'alexaValue',
+				SUM(s.reprinted_index) AS 'reprintedIndex',
+				SUM(s.total_download_num) AS 'totalDownloadNum',
+				SUM(s.month_download_num) AS 'monthDownloadNum',
+				SUM(s.praised_num) AS 'praisedNum',
+				SUM(s.pushed_num) AS 'pushedNum',
+				SUM(
+					s.directive_implementation_num
+				) AS 'directiveImplementationNum',
+				SUM(s.trust_degree) AS 'trustDegree',
+				SUM(s.punished_num) AS 'punishedNum',
+				SUM(s.reported_num) AS 'reportedNum',
+				SUM(s.right_num) AS 'rightNum'
+			FROM
+				base_origin b,
+				statis_data s
+			WHERE
+				b. STATUS = 1
+			AND b.id = s.base_origin_id
+		]]>
+		<if test="time!=null">
+			<![CDATA[
+				AND s.month=#{time}
+			]]>
+		</if>
+		<if test="lis != null">
+			and s.base_origin_id in
+			<foreach collection="lis" index="index" item="item" open="(" separator="," close=")">
+				#{item}
+			</foreach>
+		</if>
+		<if test="serviceUnit != null">
+			and b.service_unit in
+			<foreach collection="serviceUnit" index="index" item="item2" open="(" separator="," close=")">
+				#{item2}
+			</foreach>
+		</if>
+		<![CDATA[
+			group by b.service_unit, b.origin_type
+		]]>
+		
+	</select>
+	
+	<select id="findMonthList" resultType="java.lang.Integer">
+		<![CDATA[
+			SELECT DISTINCT
+				(`month`)
+			FROM
+				statis_data
+			WHERE
+				STATUS = '1'
+		]]>
+		<![CDATA[
+			ORDER BY
+				`month`+0 desc
+		]]>
+		
+	</select>
+	
+</mapper>

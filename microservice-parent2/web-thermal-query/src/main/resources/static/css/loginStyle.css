@@ -1,0 +1,161 @@
+/*��¼����ʽ*/
+.float_l{float: left;}
+.float_r{float: right;}
+.clear{clear: both;}
+:focus {outline: 0px;}
+.login{  font-size: 12px; text-align: left; color: #444; padding: 20px;}
+.login a{color: #025EF9;}
+.login  textarea:focus,.login  input[type="text"]:focus,.login  input[type="password"]:focus { border: 0px solid #0970ee; background-color:#FFF; }
+.login > h2{font-size: 20px;display: block;line-height: 35px;height: 35px;color: #444; margin: 0; margin-bottom: 10px; text-align: center;}
+.login  .inputText{width: 96%; margin-left: 10px; border-style: none;background-color:#fff; color: #666;}
+
+.login  .inputText{ padding:10px 0px;line-height: 21px;margin-top: 0px;}
+*html .login  .inputText { height: 35px;line-height: 35px;margin-top: 6px;} /* ie6 fixed */
+*+html .login  .inputText{ height: 35px;line-height: 35px;margin-top: 6px;} /* ie7 fixed, ע��˳�� */
+.login  .inputYZM{width: 85%; margin-left: 10px; border-style: none;color: #666;}
+.login  .inputYZM{height: 37px; padding:10px 0px;line-height: 37px;}
+*html .login  .inputYZM{height: 35px;	line-height: 35px;}/* ie6 fixed */
+*+html .login  .inputYZM{height: 35px;	line-height: 35px;}/* ie7 fixed, ע��˳�� */
+.login  .input{width: 332px;height: 55px;font-size: 14px;color: #333;line-height: 35px; border-radius: 3px; padding-left: 30px;border: solid 1px #ccc; margin:0; background: #fff;}
+ .login  .input:hover{border: 1px solid #F95302;}
+.login  .phone { background:#fff url(../images/new_ren_03.png) no-repeat 8px 16px;}
+.login  .phone{ margin-bottom:0px;}
+*html .login  .phone{ margin-bottom:5px;}/* ie6 fixed */
+*+html .login  .phone{ margin-bottom:5px;}/* ie7 fixed, ע��˳�� */
+.login .password { background:#fff url(../images/new_sou_07.png) no-repeat 8px 16px;}
+.login .code{background:#fff url(../images/yama.png) no-repeat 8px 14px;width:310px;margin-top: 10px;}
+.login .imgVcode{margin-top:10px; margin-left: 10px; width: 203px;}
+.login .imgVcode img{ width: 100%;}
+.login  .login_forg {width: 260px;height: 30px;line-height: 30px; margin: 5px 20px 5px 20px; font-size:12px; }
+.login .login_forg a {margin-left: 100px;}
+.login .login_btn { width: 100%;height: 45px;line-height: 45px; font-size: 16px; margin:10px 0; background: #f18d00; color: #FFF; text-align: center; border-radius: 3px; cursor: pointer;}
+.login  .login_btn:hover { opacity: .8; }
+.forgetpassword{text-decoration: none;}
+.forgetpassword:hover{text-decoration: underline;}
+.login .login_mfzc { width: 260px; height: 25px; line-height: 25px; margin: 0px 0px 5px 0px; text-align: left; font-size:12px;}
+ 
+.login .wy_dl {width: 100%;height: 55px;margin: 0;line-height: 35px;}
+.login .wy_pass { width: 100%;height: 55px; margin-top: 10px;}
+.login .wy_forget {width: 100%; height: 20px; line-height: 20px; margin: 0;}
+.new_mfzc{color: #b96830; position: absolute; font-size: 14px; top: 8px; line-height: 20px; right: 2%; display: inline-block; background-color: #ffe5d0; padding: 8px 15px; border-radius: 3px;}
+
+
+.loginBtn{left: 0%;top: 74%; text-align: center; width: 100%; color:#696969;}
+.loginBtn h1{font-size: 16px; display: inline-block; margin-bottom: 10px; width: 100%;}
+ .loginBtn a{color: #a0a0a0; background-color: rgba(255,255,255,.5); display: inline-block; padding: 10px; border: solid 2px #bebebe; border-radius: 35px; margin: 0 10px; text-decoration: none; transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  transform: scale(1);
+ -moz-transform: scale(1);
+ -webkit-transform: scale(1);
+ -o-transform: scale(1);
+ opacity: 1;
+   }
+ .loginBtn a:hover{background-color: rgba(255,255,255,1);
+ transform: scale(1.3);
+ -moz-transform: scale(1.3);
+ -webkit-transform: scale(1.3);
+ -o-transform: scale(1.3);
+ opacity: 1;}
+ .loginBtn a >i{width: 20px; height: 20px; display: inline-block; margin-right: 10px; background-image: url(../images/iconbg1.png); background-repeat: no-repeat; background-size: 100px;  margin-top: -3px; vertical-align: middle; }
+ .loginBtn a.btn1 >i{background-position: 0 0;}
+ .loginBtn a.btn2 >i{background-position: -20px 0;}
+ .loginBtn a.btn3 >i{background-position: -40px 0;}
+ .loginBtn a.btn4 >i{background-position: -80px 0;}
+ .cloud img, .wyq img, .zhiweidata img, .slogan h1 {
+	-moz-transform: scale(0.8);
+	-ms-transform: scale(0.8);
+	-webkit-transform: scale(0.8);
+	transform: scale(0.8)
+}
+/* 登录输入框禁止中文输入法 */
+input#pCode, input#username, input#password{
+	ime-mode:disabled;
+}
+/* 未登录样式---start */
+.head-fixed{
+	position: fixed;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+}
+.notlg-title{
+	margin-top: 40px;
+}
+.notlg-title h3{
+	display: inline-block;
+    font-size: 26px;
+    font-weight: 500;
+    vertical-align: middle;
+}
+.notlg-title ul{
+	display: inline-block;
+	width: 400px;
+	margin-top: 15px;
+}
+    
+.notlg-title ul li{
+	float: left;
+    font-size: 16px;
+    color: #666;
+   	width: 25%;
+}
+.notlg-title ul li .circular{
+	    display: inline-block;
+    width: 8px;
+    height: 8px;
+    background: #f18d00;
+    border-radius: 50%;
+    margin-right: 5px;
+    vertical-align: middle;
+}.head-fixed:hover{
+	background-color: #0b2e49 !important;
+}
+.head-bg{
+	background-color: rgba(255,255,255,0) !important;
+}
+.btn-sign .btn-bging{
+	background-color: rgba(255,255,255,0);
+    color: #ffffff;
+    border: 1px solid rgba(132, 146, 191, 0.8);
+    border-radius: 30px;
+    padding: 3px 15px;
+}
+.btn-sign .btn-bging:hover{
+	background: -webkit-linear-gradient(left, #fe733d , #fe9403);
+    background: -o-linear-gradient(right, #fe733d , #fe9403);
+    background: -moz-linear-gradient(right, #fe733d , #fe9403);
+    background: linear-gradient(to right, #fe733d , #fe9403);
+}
+.head-nav .nav-dropdown-canvas{
+	    background-color: rgba(0,29,51, 0.9);
+}
+.head-nav .text-item-col a{
+	width: initial;
+	    color: #ffffff;
+	        background-color: rgba(0,0,0,0);
+}
+.head-blue .rightNav> ul>li a{
+	position: relative;
+}
+.head-blue .rightNav> ul>li.hover a:after{
+	content: "";
+	display: inline-block;
+	width: 100%;
+	height: 4px;
+	background: -webkit-linear-gradient(left, #fe733d , #fe9403);
+    background: -o-linear-gradient(right, #fe733d , #fe9403);
+    background: -moz-linear-gradient(right, #fe733d , #fe9403);
+    background: linear-gradient(to right, #fe733d , #fe9403);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+	
+}
+/* 未登录样式---end */
+

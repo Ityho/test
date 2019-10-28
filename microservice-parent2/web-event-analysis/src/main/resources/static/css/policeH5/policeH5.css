@@ -1,0 +1,517 @@
+.firstBg {
+	height: 100%;
+	background: url(../../images/policeH5/HomeGuide/bg.png)no-repeat center;
+	background-size: 100% 100%;
+}
+.row-layout{width: 500px; height: 100%; margin: auto; position: relative;}
+		.page{width: 100%; height: 100%; position: absolute; top: 0; left: 0;}
+		.page.page1{background: url(../../images/policeH5/HomeGuide/bg.png) no-repeat center top; background-size: cover;}
+		.page.page2{background: url(../../images/policeH5/SecondPage/bgSecond.jpg) no-repeat center top; background-size: cover;}
+		@media only screen and (max-width:750px ) {
+			.row-layout{width: 100%;}
+		}
+.secondBg {
+	margin-top:-25px;
+
+}
+.webUser{
+	font-family:SimSun;width:25%;float:left;font-size:12px;color:#e2a930;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.webMessage{
+	font-family:SimSun;width:70%;float:left;color:#FFF;font-size:12px;white-space:nowrap; overflow:hidden; text-overflow:ellipsis;
+}
+.zhezhaoShow{width: 100%;height: 100%;top: 0;left: 0;position: fixed;background: url(../../images/policeH5/shareNotice.png) no-repeat center top; background-size: cover;display: none; z-index:50;}
+.imgCss{
+	width:100%;
+}
+.SecondTopbg {
+	background: url(../../images/policeH5/SecondPage/bg2.png)no-repeat center;
+	background-size: 100%;
+}
+.bgTotal {
+    background: #020202 url(../../images/policeH5/SecondPage/bgSecond.jpg)no-repeat top center;
+    background-size: 100% 100%;
+}
+
+.lastBg {
+	height: 120px;
+	width: 95%;
+	margin-top: 50px;
+	background: url(../../images/policeH5/SecondPage/notice.png)no-repeat center;
+	background-size: 100%;
+}
+
+.inputDiv {
+	width: 100%;
+	height:50px;
+}
+
+.banner {
+	width: 100%;
+	/* position: absolute; */
+	overflow: hidden;
+	text-align: center;
+	margin-top:25px;
+}
+
+.banner li {
+	list-style: none;
+	margin-top: 50px;
+	height: 120px;
+}
+
+.banner ul li {
+	float: left;
+}
+
+#callboard {
+	height: 102px;
+	line-height: 24px;
+	overflow: hidden;
+}
+
+.clickButton1 {
+	border-radius: 4px;
+    background-color: #e2a930; 
+	border: solid 1px #e0a016; 
+	font-size: 14px;
+	width: 95%;
+	line-height: 25px;
+	height: 25px;
+/* 	background: url(../../images/policeH5/clickSend.gif)no-repeat center; */
+
+}
+.clickButton2 {
+	border-radius: 4px;
+	background-color: #e2a930;
+	border: solid 1px #e0a016;
+	color: #FFF;
+	font-size: 14px;
+	width: 80%;
+	line-height: 25px;
+	height: 25px;
+}
+
+.noticeLi {
+	width: 100%;
+	height: 30px;
+	padding-top: 10px;
+}
+
+.slShow {
+	position: absolute;
+	top: 20px;
+	right: 17%;
+	display: none;
+	height: 250px;
+	width: 50px;
+	background: url(../../images/policeH5/HomeGuide/sl.png)no-repeat;
+	background-size: 100%;
+}
+
+.xlShow {
+	position: absolute;
+	top: 93px;
+	right: 32%;
+	display: none;
+	height: 250px;
+	width: 50px;
+	background: url(../../images/policeH5/HomeGuide/xl.png)no-repeat;
+	background-size: 100%;
+}
+
+.tlShow {
+	position: absolute;
+	top: 14px;
+	right: 68%;
+	display: none;
+	height: 250px;
+	width: 103px;
+	background-size: 100%;
+	font-size: 14px;
+}
+
+.logo {position: absolute;top: 5%;left: 20px;height: 120px;width: 120px;background: url(../../images/policeH5/HomeGuide/logo.png)  no-repeat;  background-size: cover;}
+.logo:after{content: ""; position: absolute; z-index: 2; top: 0; left: 0; width: 120px; height: 120px; background: url(../../images/policeH5/HomeGuide/logo2.png) no-repeat;  background-size: cover;animation: logoflash 2s alternate infinite; -webkit-animation: logoflash 2s alternate infinite; }
+@keyframes logoflash{from {opacity: 0;}to {opacity: 1;}}
+@-webkit-keyframes logoflash{ from {opacity: 0;}to {opacity: 1;}}
+
+
+.first {
+	display: none;
+	left: 5%;
+	position: absolute;
+	bottom: 32%;
+	width: 90%;
+	height: 30px;
+	background: url(../../images/policeH5/HomeGuide/first_1_2.png)no-repeat center;
+	background-size: 100%;
+}
+.sendButton{
+	height: 28px;
+	width:50px;
+	border:solid 1px #e0a016;
+	color:#FFF;
+	text-align:center;
+	line-height: 28px;
+	font-size: 14px;
+}
+.second {
+	display: none;
+	left: 5%;
+	position: absolute;
+	bottom: 28%;
+	width: 90%;
+	height: 30px;
+	background: url(../../images/policeH5/HomeGuide/second_1_2.png)no-repeat center;
+	background-size: 100%;
+}
+
+.third {
+	display: none;
+	left: 5%;
+	position: absolute;
+	bottom: 24%;
+	width: 90%;
+	height: 30px;
+	background: url(../../images/policeH5/HomeGuide/third_1_2.png)no-repeat center;
+	background-size: 100%;
+}
+
+.last {
+	display: none;
+	left: 5%;
+	position: absolute;
+	bottom: 20%;
+	width: 90%;
+	height: 30px;
+	background: url(../../images/policeH5/HomeGuide/last_1_2.png)no-repeat center;
+	background-size: 100%;
+}
+
+.entrence {
+	display: none;
+	left: 5%;
+	position: absolute;
+	width: 90%;
+	bottom: 0px;
+	height: 150px;
+	background: url(../../images/policeH5/HomeGuide/entrence.png)no-repeat center;
+	background-size: 100%;
+}
+.sz {
+	display: none;
+	left: 45%;
+	position: absolute;
+	width: 15%;
+	bottom: 20px;
+	height: 50px;
+	background: url(../../images/policeH5/sz.gif)no-repeat center;
+	background-size: 100%;
+}
+
+.f_1 {
+	width: 16%;
+	float: left;
+}
+
+.headImg {
+	border-radius: 50%;
+	width: 40px;
+	height: 50px;
+	margin-top:-10px;
+	/* background-position: 20% 10% !important; */
+}
+
+.input {
+	background-color: transparent;
+	height: 30px;
+	line-height: 30px;
+	border: solid 1px #e0a016;
+	font-size: 14px;
+	color: #FFF;
+	width: 100%;
+}
+
+.otherDiv {
+	margin-top: -14px;
+	width: 100%;
+	text-align: center;
+	font-family: SimSun;
+}
+
+.inputText {
+	width: 75%;
+	margin-top: 5px;
+	padding-left: 10px;
+	float: left;
+}
+
+.send {
+	width: 20%;
+	margin-top: 7px;
+	float: right;
+}
+
+@media only screen and  ( max-width: 350px ) and (min-width:320px) {
+	.otherDiv {
+		margin-top: -30px;
+		width: 100%;
+		text-align: center;
+		font-family: SimSun;
+	}
+
+	.secondBg {
+	margin-top:70px;
+
+}
+.imgCss{
+	width:100%;
+}
+	.inputText {
+		width: 75%;
+		margin-top: 23px;
+		padding-left: 5px;
+		float: left;
+	}
+
+	.send {
+		width: 20%;
+		margin-top: 24px;
+		float: right;
+	}
+
+	.lastBg {
+		height: 99px;
+		width: 95%;
+		margin-top: 50px;
+		background: url(../../images/policeH5/SecondPage/notice.png)no-repeat center;
+		background-size: 100%;
+	}
+	.banner {
+	width: 100%;
+	position: absolute;
+	overflow: auto;
+	text-align: center;
+	margin-top:15px;
+}
+}
+
+@media only screen and  ( max-width: 600px ) and (min-width:414px) {
+	.otherDiv {
+		margin-top: 7px;
+		width: 100%;
+		text-align: center;
+		font-family: SimSun;
+	}
+
+	.lastBg {
+		height: 140px;
+		width: 97%;
+		margin-top: 50px;
+		background: url(../../images/policeH5/SecondPage/notice.png)no-repeat center;
+		background-size: 100%;
+	}
+
+	#callboard {
+		height: 82px;
+		line-height: 24px;
+		overflow: hidden;
+		padding-top: 30px;
+	}
+
+	.ulPlus {
+		margin-top: -20px;
+	}
+}
+
+@media only screen and (min-width:800px ) {
+	.firstBg {
+		height: 100%;
+		background: url(../../images/policeH5/HomeGuide/bg.png)no-repeat center;
+		background-size: 70% 100%;
+	}
+
+	.slShow {
+		position: absolute;
+		top: 27px;
+		right: 27%;
+		display: none;
+		height: 30%;
+		width: 50px;
+		background: url(../../images/policeH5/HomeGuide/sl.png)no-repeat center;
+		background-size: 100%;
+	}
+
+	.xlShow {
+		position: absolute;
+		top: 100px;
+		right: 38%;
+		display: none;
+		height: 30%;
+		width: 50px;
+		background: url(../../images/policeH5/HomeGuide/xl.png)no-repeat center;
+		background-size: 100%;
+	}
+	.sz {
+	display: none;
+	left: 45%;
+	position: absolute;
+	width: 15%;
+	bottom: 20px;
+	height: 50px;
+	background: url(../../images/policeH5/sz.gif)no-repeat center;
+	background-size: 100%;
+}
+
+.logo {position: absolute;top: 5%;left: 20%;height: 120px;width: 120px;background: url(../../images/policeH5/HomeGuide/logo.png)  no-repeat;  background-size: cover;}
+.logo:after{content: ""; position: absolute; z-index: 2; top: 0; left: 0; width: 120px; height: 120px; background: url(../../images/policeH5/HomeGuide/logo2.png) no-repeat;  background-size: cover;animation: logoflash 2s alternate infinite; -webkit-animation: logoflash 2s alternate infinite; }
+@keyframes logoflash{from {opacity: 0;}to {opacity: 1;}}
+@-webkit-keyframes logoflash{ from {opacity: 0;}to {opacity: 1;}}
+
+	.first {
+		display: none;
+		left: 15%;
+		position: absolute;
+		bottom: 32%;
+		width: 70%;
+		height: 30px;
+		background: url(../../images/policeH5/HomeGuide/first.png)no-repeat center;
+		background-size: 100%;
+	}
+
+	.second {
+		display: none;
+		left: 15%;
+		position: absolute;
+		bottom: 28%;
+		width: 70%;
+		height: 30px;
+		background: url(../../images/policeH5/HomeGuide/second.png)no-repeat center;
+		background-size: 100%;
+	}
+
+	.third {
+		display: none;
+		left: 15%;
+		position: absolute;
+		bottom: 24%;
+		width: 70%;
+		height: 30px;
+		background: url(../../images/policeH5/HomeGuide/third.png)no-repeat center;
+		background-size: 100%;
+	}
+
+	.last {
+		display: none;
+		left: 15%;
+		position: absolute;
+		bottom: 20%;
+		width: 70%;
+		height: 30px;
+		background: url(../../images/policeH5/HomeGuide/last.png)no-repeat center;
+		background-size: 100%;
+	}
+
+	.entrence {
+		display: none;
+		left: 15%;
+		position: absolute;
+		width: 65%;
+		bottom: 0px;
+		height: 150px;
+		background: url(../../images/policeH5/HomeGuide/entrence.png)no-repeat center;
+		background-size: 100%;
+
+	}
+
+	.SecondTopbg {
+		background: url(../../images/policeH5/SecondPage/bg2.png)no-repeat center;
+		background-size: 70% 100%;
+	}
+
+		.secondBg {
+		margin-top: -1px;
+		height: 77%;
+
+		background-size: 70% 100%;
+	}
+
+
+	.banner {
+		width: 70%;
+		/* position: absolute; */
+		overflow: auto;
+		text-align: center;
+		margin-left:15%;
+		padding-top:50px;
+	}
+
+	.banner li {
+		list-style: none;
+		margin-top: 50px;
+		height: 130px;
+	}
+
+	.banner ul li {
+		float: left;
+	}
+
+	.otherDiv {
+		margin-top: 15px;
+		width: 100%;
+		text-align: center;
+		font-family: SimSun;
+	}
+
+	.location {
+		width: 70%;
+	}
+
+	.lastBg {
+		height: 140px;
+		width: 97%;
+		margin-top: 50px;
+		background: url(../../images/policeH5/SecondPage/notice.png)no-repeat center;
+		background-size: 70% 100%;
+	}
+
+	.noticeLi {
+		width: 70%;
+		height: 30px;
+		padding-top: 10px;
+		margin-left: 15%;
+	}
+
+	#callboard {
+		height: 82px;
+		line-height: 24px;
+		overflow: hidden;
+		padding-top: 40px;
+	}
+
+	.ulPlus {
+		margin-top: -20px;
+	}
+	
+
+	.inputDiv {
+		width: 70%;
+		height:50px;
+	}
+
+	.inputText {
+		width: 75%;
+		margin-top: 16px;
+		padding-left: 5px;
+		float: left;
+
+	}
+
+	.send {
+		width: 20%;
+		margin-top: 15px;
+		float: right;
+	}
+}
+

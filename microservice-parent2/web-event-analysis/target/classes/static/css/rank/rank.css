@@ -1,0 +1,186 @@
+@CHARSET "UTF-8";
+<style type="text/css">
+p.stockTitle 
+{
+	color: #51a6ff;
+	font-size:20px;
+}
+.stockRank{
+	margin-top:50px;
+	width:100%;
+	height:50px;
+}
+.stockRank h1{
+	color:#51a6ff;
+	font-size:25px;
+	font-weight:bold;
+	float:left;
+	margin-left:35%;
+	line-height: 50px;
+
+}
+.stockRank h2{
+	color:#51a6ff;
+	font-size:18px;
+	float:left;
+	line-height: 50px;
+}
+
+.stockList{
+	line-height: 50px;
+	height: 30px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-size:14px;
+	color:#181b1c;
+	font-weight:normal;
+	text-align: center;
+	/* border-bottom:solid 1px #d9d9d9; */
+}
+
+.stockList a{
+	width: 80%;
+    text-align: left;
+    display: block;
+}
+.stockList2{
+	line-height: 50px;
+	height: 30px;
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+	font-size:14px;
+	color:#181b1c;
+	font-weight:normal;
+	text-align: center;
+	/* border-bottom:solid 1px #d9d9d9; */
+}
+
+.stockList2 a{
+	width: 80%;
+    text-align: left;
+    display: block;
+}
+
+.stockList3{
+	line-height: 25px;
+	height:25px;
+}
+.stockList4{
+	line-height: 45px;
+	height:40px;
+	color:#333333;
+	font-size:14px;
+	font-weight:normal;
+}
+.stockList5{
+	line-height: 45px;
+
+	font-size:14px;
+}
+.imgStock{
+	height:30px;
+	vertical-align:middle;
+}
+.moreButton{
+	margin-left:30%;
+	background-color: #fff;
+	color:#666666; 
+	border: solid 0px #db2e25;
+	width:40%;
+	text-align:center;
+	height:45px;
+	line-height:30px;
+	
+}
+.vs{
+	width:35px;
+	height: 39px;
+	bottom: 50px;
+	right: 75px;
+	position: fixed;
+	background-image: url(../../images/vs.png);
+	background-size:35px 35px;
+	background-repeat:no-repeat;
+}
+.vs2{
+	width:35px;height:35px;bottom:59px; right: 75px;position: fixed; background-image: url(../../images/vs.png); background-size:100%;
+}
+.vsText{
+	line-height:20px;text-align:center;color:#fff;font-size:18px;width:20px;margin-top:-8px;height:20px;margin-left:20px;background-color:#ff5001;border-radius: 50%;
+}
+.thbg{
+	background-color:#f2f2f2;
+}
+.subnav{background:#fff;height:120px;margin-top:-10px;width:100%;overflow:hidden}
+.subnav div{width:24%;float:left;text-align:center;margin-top:16px;}
+.subnav span{border-radius:4px;height:28px;line-height:28px;border:solid 1px #d9d9d9;font-size:14px;float:left;width: 80%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#5c5c5c;cursor:pointer;}
+.subnav span:active,.subnav .active{border-radius:4px;background-color:#fd8c25;color:#FFF;border:solid 1px #d9d9d9;}
+
+.subnav2{background:#fff;margin-top:-10px;width:100%;overflow:hidden;height:74px;}
+.subnav2 div{width:19%;float:left;text-align:center;margin-top:16px;}
+.subnav2 span{border-radius:4px;height:28px;line-height:28px;border:solid 1px #d9d9d9;font-size:14px;float:left;width: 80%;text-overflow:ellipsis;white-space:nowrap;overflow:hidden;color:#5c5c5c;cursor:pointer;}
+.subnav2 span:active,.subnav2 .active{border-radius:4px;background-color:#fd8c25;color:#FFF;border:solid 1px #d9d9d9;}
+
+.subnavflex{display:-webkit-box;display:box}
+.subnavflex .item{display:block;float:none;width:auto;-webkit-box-flex:1;box-flex:1}
+
+.prompPOP2 .PromptCon2{ margin: 20px; line-height: 22px;}
+.prompPOP2 .PromptCon2 ul li{ display: inline-block; width: 92%; border: solid 2px #eee; font-size: 16px; padding: 8px 15px; margin-bottom: 5px; cursor: pointer; position: relative;}
+.prompPOP2 .PromptCon2 ul{max-height: 368px; overflow: auto;}
+.prompPOP2 .PromptCon2 ul li{display: inline-block; width: 85%; border: solid 2px #eee; font-size: 16px; padding: 8px 15px; margin-bottom: 5px; cursor: pointer; position: relative;}
+.stockList2 .sort, .stockList .sort{
+    /* border: solid 1px;
+    border-radius:3px;
+    width: 23px;
+    height: 11px;
+    line-height: 11px;
+    margin: 0px auto;
+    background-color: #ff8400;
+    color: #fff;
+    text-align:center;
+    font-size:8px; */
+   /*  float:left;
+    margin-top:11%;
+    margin-left:5px; */
+    }
+    
+    .stockList2 .sort0, .stockList .sort0{
+   		background:url("../../images/rangking/1@3x.png");
+   		width: 20px;
+    	height: 20px;
+    	background-size: 100%;
+    }
+     .stockList2 .sort1, .stockList .sort1{
+   		background:url("../../images/rangking/2@3x.png");
+   		width: 20px;
+    	height: 20px;
+    	background-size: 100%;
+    }
+     .stockList2 .sort2, .stockList .sort2{
+   		background:url("../../images/rangking/3@3x.png");
+   		width: 20px;
+    	height: 20px;
+    	background-size: 100%;
+    }
+.stockList2 .sort-more, .stockList .sort-more{
+	/*   border: solid 1px #d9d9d9;border-radius:3px;
+    width: 23px;
+    height: 11px;
+    line-height: 11px;
+    font-size:8px;
+    background-color:#d9d9d9;
+    margin: 0px auto;text-align:center;color:#fff; */
+	/* float:left;
+    margin-top:11%;
+    margin-left:5px; */
+    width: 15px;
+    height: 15px;
+    line-height: 16px;
+    text-align:center;
+    border: solid 1px #666;
+    color:#666;
+    border-radius:50%;
+     font-size:8px;
+ 	}

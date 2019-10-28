@@ -1,0 +1,158 @@
+.caseBox h3 {
+  margin-top: 30px;
+  font-size: 28px;
+  color: #231815;
+  text-align: center;
+}
+.caseBox .swiper-container-horizontal > .swiper-pagination-bullets,
+.caseBox .swiper-pagination-custom,
+.caseBox .swiper-pagination-fraction {
+  bottom: -65px;
+}
+.caseBox .swiper-pagination-bullet-active {
+  background: #ff6d25;
+  width: 12px;
+  border-radius: 15px;
+}
+.case-wrapper {
+  padding: 30px 50px;
+  position: relative;
+  height: 210px;
+  margin-bottom: 100px;
+}
+.case-wrapper .swiper-container {
+  position: initial;
+}
+.case-item {
+  background: #fff;
+}
+.case-item .case-info {
+  padding: 10px;
+}
+.case-item .case-img a img {
+  width: 100%;
+  height: 150px;
+  vertical-align: middle;
+  object-fit: cover;
+}
+.case-item .case-info-title {
+  margin-bottom: 10px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.case-item .case-info-title a {
+  display: inline-block;
+  font-size: 14px;
+  color: #231815;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.case-item .case-info-time {
+  font-size: 12px;
+  color: #999999;
+}
+.caseListBox {
+  background: url(../../images/manualBrief/case_bg.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+}
+.caseListBox .case-nav {
+  float: left;
+  width: 230px;
+  background: #00121d;
+}
+.caseListBox .case-nav li {
+  width: 100%;
+  padding: 0 15px;
+}
+.caseListBox .case-nav li a {
+  display: inline-block;
+  width: 100%;
+  height: 90px;
+  border-bottom: 1px solid #4b5365;
+  text-decoration: none;
+  padding: 21px 0;
+}
+.caseListBox .case-nav li .case-nav-title {
+  font-size: 16px;
+  color: #FFFFFF;
+  margin-bottom: 10px;
+}
+.caseListBox .case-nav li .case-nav-cate {
+  font-size: 12px;
+  color: #8f8f8f;
+}
+.caseListBox .case-nav li.active {
+  background: url(../../images/manualBrief/case_active_bg.png) no-repeat;
+  background-size: cover;
+}
+.caseListBox .case-nav li.active a {
+  border-bottom: 0;
+}
+.caseListBox .case-nav li.active .case-nav-cate {
+  color: #ffd8b4;
+}
+.caseListBox .case-nav li:last-child a {
+  border-bottom: 0;
+}
+.caseListBox .case-content {
+  float: left;
+  color: #FFFFFF;
+  padding-left: 70px;
+  padding-top: 70px;
+  height: 720px;
+    position: relative;
+}
+.caseListBox .case-content .item {
+  display: none;
+}
+.caseListBox .case-content .item h1 {
+  font-size: 34px;
+}
+.caseListBox .case-content .item h1 .icon-title {
+  font-size: 45px;
+  margin-right: 10px;
+}
+.caseListBox .case-content .item .case-span {
+  background: #FFFFFF;
+  color: #121929;
+  float: none;
+  margin-right: 30px;
+  margin-left: 5px;
+  padding: 3px 10px;
+  font-size: 22px;
+  vertical-align: middle;
+}
+.caseListBox .case-content .item .item-list {
+  margin-left: 16px;
+}
+.caseListBox .case-content .item .item-list ul,
+.caseListBox .case-content .item .item-list li {
+  list-style-type: disc;
+  font-size: 16px;
+}
+.caseListBox .case-content .item .item-list li {
+  margin-bottom: 20px;
+}
+.caseListBox .case-content .item .item-service {
+	width: 600px;
+	position: absolute;
+    bottom: 30px;
+    left: 70px;
+  padding: 20px 25px;
+  border: 1px solid #657799;
+}
+.caseListBox .case-content .item .iconbg {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  background: #f48827;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  line-height: 36px;
+}

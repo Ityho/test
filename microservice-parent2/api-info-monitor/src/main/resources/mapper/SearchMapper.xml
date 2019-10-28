@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.search.SearchMapper">
+    <insert id="saveH5SearchShare">
+
+
+        <![CDATA[
+			INSERT INTO
+				h5_search_share(
+					share_code,
+					status,
+					create_time,
+					update_time,
+					json_data,
+					tab_index
+				)
+			VALUES
+				(
+				#{shareCode},
+				1,
+				now(),
+				now(),
+				#{jsonData},
+				#{tabIndex}
+				)
+		]]>
+
+    </insert>
+    <update id="updateH5SearchShare">
+
+        UPDATE h5_search_share
+        SET
+        tab_index = #{tabIndex},
+        json_data = #{jsonData},
+        update_time=now()
+        WHERE
+        status = 1 and
+        share_code = #{shareCode}
+
+
+    </update>
+
+
+
+
+    <select id="findH5SearchShare" resultType="com.xd.tools.pojo.db.mysql.wyq.weiyuqing.H5SearchShare">
+         <![CDATA[
+            SELECT
+            *
+            FROM
+            h5_search_share
+            WHERE
+            status=1 and
+            share_code = #{shareCode}
+        ]]>
+    </select>
+
+
+
+</mapper>

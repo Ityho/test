@@ -1,0 +1,47 @@
+.rotate180{animation:rotate180 0.4s forwards ;
+-moz-animation:rotate180 0.4s forwards ; /* Firefox */
+-webkit-animation:rotate180 0.4s forwards ; /* Safari and Chrome */
+-o-animation:rotate180 0.4s forwards ; /* Opera */}
+
+  @keyframes rotate180{
+     0% {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+    100% {transform:rotate(-180deg);-webkit-transform:rotate(-180deg);}
+  }
+
+  @-webkit-keyframes rotate180{
+     0% {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+    100% {transform:rotate(-180deg);-webkit-transform:rotate(-180deg);}
+  }
+
+.rotate90{animation:rotate90 0.4s forwards ;
+-moz-animation:rotate90 0.4s forwards ; /* Firefox */
+-webkit-animation:rotate90 0.4s forwards ; /* Safari and Chrome */
+-o-animation:rotate90 0.4s forwards ; /* Opera */}
+
+  @keyframes rotate90{
+     0% {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+    100% {transform:rotate(-90deg);-webkit-transform:rotate(-90deg);}
+  }
+
+  @-webkit-keyframes rotate90{
+     0% {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+    100% {transform:rotate(-90deg);-webkit-transform:rotate(-90deg);}
+  }
+  
+  
+  .rotate0{animation:rotate0 0.4s forwards ;
+-moz-animation:rotate0 0.4s forwards ; /* Firefox */
+-webkit-animation:rotate0 0.4s forwards ; /* Safari and Chrome */
+-o-animation:rotate0 0.4s forwards ; /* Opera */}
+
+    @keyframes rotate0{
+    0% {transform:rotate(-180deg);-webkit-transform:rotate(-180deg);}
+    100% {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+  }
+
+  @-webkit-keyframes rotate0{
+     0% {transform:rotate(-180deg);-webkit-transform:rotate(-180deg);}
+    100% {transform:rotate(0deg);-webkit-transform:rotate(0deg);}
+  }
+  
+ 

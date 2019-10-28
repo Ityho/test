@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.infomonitor.ReportMapper">
+    <update id="closeDailyReport">
+        <![CDATA[
+                UPDATE daily_report
+                SET daily_report_email_switch =0,
+                daily_report_weibo_switch=0,
+                update_time=now(),
+                WHERE
+                user_id = #{userId}
+        ]]>
+    </update>
+    <update id="closeWeeklyReport">
+       <![CDATA[
+                UPDATE weekly_report
+                SET weekly_report_email_switch =0,
+                weekly_report_weibo_switch=0,
+                update_time=now(),
+                WHERE
+                user_id = #{userId}
+        ]]>
+    </update>
+    <update id="closeMonthlyReport">
+        <![CDATA[
+                UPDATE daily_report
+                SET monthly_report_email_switch =0,
+                monthly_report_weibo_switch=0,
+                update_time=now(),
+                WHERE
+                user_id = #{userId}
+        ]]>
+    </update>
+
+
+</mapper>

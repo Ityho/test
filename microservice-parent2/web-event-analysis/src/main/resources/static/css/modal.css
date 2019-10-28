@@ -1,0 +1,54 @@
+.text-center {
+  text-align: center;
+}
+.popModal {
+  width: 16.8125rem;
+  height: 17.125rem;
+  background: #fff;
+  border-radius: 0.625rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 99;
+  display: none;
+}
+.popModal .btn-close {
+  display: inline-block;
+  width: 0.875rem;
+  height: 0.875rem;
+  background: url(../images/lookmore/close.png) no-repeat;
+  background-size: cover;
+  position: absolute;
+  right: 0.3125rem;
+  top: 0.3125rem;
+}
+.popModal .pop-content {
+  padding: 1.25rem;
+}
+.popModal .title-img {
+  width: 3.625rem;
+}
+.popModal .title-img img {
+  width: 100%;
+}
+.popModal .douzi {
+  display: inline-block;
+  width: 2.5rem;
+  height: 2.1875rem;
+  background: url(../images/lookmore/douzi.png) no-repeat;
+  background-size: cover;
+}
+.popModal .btn-modal {
+  width: 9.375rem;
+  height: 2.1875rem;
+  line-height: 2.1875rem;
+  text-align: center;
+  background: #fb860b;
+  display: inline-block;
+  border-radius: 1.875rem;
+  color: #fff;
+  font-size: 0.9375rem;
+}

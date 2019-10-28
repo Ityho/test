@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.user.UserRightRechargeRecordMapper">
+
+    <select id="selectRightsRechargeRecordList" resultType="com.miduchina.wrd.dto.user.UserRightsRechargeRecord">
+        <![CDATA[
+			SELECT
+				recharge_record_id as id,
+				recharge_record_user_id as userId,
+				recharge_record_relation_id as relationId,
+				recharge_record_type as type,
+				recharge_record_count as count,
+				recharge_record_current_count as currentCount,
+				recharge_record_item as item,
+				recharge_record_desc as recordDesc,
+				recharge_record_platform as recharge_record_platform,
+				`status`,
+				create_time as createTime,
+				update_time as updateTime
+			FROM
+				user_rights_recharge_record
+
+			 where `status` = 1
+			]]>
+        <if test="userId!=null and userId!=0">
+            <![CDATA[
+				and recharge_record_user_id = #{userId}
+			]]>
+        </if>
+        <if test="item!=null and item!=0">
+            <![CDATA[
+				and recharge_record_item = #{item}
+			]]>
+        </if>
+        <if test="type!=null and type!=0">
+            <![CDATA[
+				and recharge_record_type = #{type}
+			]]>
+        </if>
+        <if test="relationId!=null and relationId!=0">
+            <![CDATA[
+				and recharge_record_relation_id = #{relationId}
+			]]>
+        </if>
+    </select>
+
+
+
+    <insert id="insertUserRightsRechargeRecordMapper" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[
+           INSERT INTO
+				user_rights_recharge_record(
+					recharge_record_user_id,
+					recharge_record_relation_id,
+					recharge_record_type,
+					recharge_record_count,
+					recharge_record_current_count,
+					recharge_record_item,
+					recharge_record_desc,
+					recharge_record_platform
+					status,
+					create_time,
+					update_time
+				)
+			VALUES
+				(
+				#{userId},
+				#{relationId},
+				#{type},
+				#{count},
+				#{currentCount},
+				#{item},
+				#{recordDesc},
+				#{platform},
+				#{status},
+				now(),
+				now());
+        ]]>
+    </insert>
+
+</mapper>

@@ -1,0 +1,60 @@
+header {
+  position: relative;
+  background: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 2;
+}
+header h3 {
+  height: 44px;
+  width: 100%;
+  text-align: center;
+  line-height: 44px;
+  position: relative;
+  font-weight: normal;
+  color: #FFFFFF;
+}
+header .icon-back {
+  display: inline-block;
+  width: 10px;
+  height: 18px;
+  background-image: url(../../images/app/icon_back_fff.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  bottom: 0;
+  margin: auto;
+}
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.rule {
+  margin-top: 0px;
+}
+.rule ul li {
+  display: flex;
+  padding: 1.5625rem 1rem;
+  justify-content: start;
+  background: #ffffff;
+  margin-bottom: 0.625rem;
+}
+.rule .number span {
+  display: inline-block;
+  background: #fd6f3b;
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 0.8125rem;
+  padding: 0px 0.3125rem;
+  margin-right: 0.3125rem;
+}
+.rule .rule-text {
+  flex: 1;
+}

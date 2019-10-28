@@ -1,0 +1,16 @@
+server:
+  port: 1127
+eureka:
+  instance:
+    hostname: 172.17.134.10
+
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+  #server:
+  #  enable-self-preservation: false #关闭保护机制
+spring:
+  application:
+    name: eureka-registry

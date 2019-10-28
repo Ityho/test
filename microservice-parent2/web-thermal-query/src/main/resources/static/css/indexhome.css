@@ -1,0 +1,171 @@
+﻿article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary {display: block}audio,canvas,progress,video {display: inline-block;vertical-align: baseline}audio:not([controls]) {display: none;height: 0}[hidden],template {display: none;}html {font-family: sans-serif;-webkit-text-size-adjust: 100%;-ms-text-size-adjust: 100%;}body {margin: 0;}a {background: transparent;}ul, ol { list-style:none;}a:active,a:hover {outline: 0;}abbr[title] {border-bottom: 1px dotted;}b,strong {font-weight: bold}dfn {font-style: italic}h1 {font-size: 2em;margin: 0.67em 0}mark {background: #ff0;color: #000}small {font-size: 80%}sub,sup {font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}sup {top: -0.5em}
+sub {bottom: -0.25em}/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */img {border: 0}svg:not(:root) {overflow: hidden;}figure {margin: 1em 40px;}hr {-moz-box-sizing: content-box;box-sizing: content-box;height: 0;}pre {overflow: auto;}
+code,kbd,pre,samp {font-family: monospace, monospace;font-size: 1em;}button,input,optgroup,select,textarea {color: inherit;font: inherit;margin: 0;}
+button {overflow: visible;}button,select {text-transform: none;}button,html input[type="button"],input[type="reset"],input[type="submit"] {-webkit-appearance: button;cursor: pointer;}button[disabled],html input[disabled] {cursor: default;}button::-moz-focus-inner,input::-moz-focus-inner {border: 0;padding: 0;}
+input {line-height: normal}input[type="checkbox"],input[type="radio"] {box-sizing: border-box;padding: 0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button {height: auto}input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+
+input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+fieldset {border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em}
+legend {border: 0;padding: 0}
+textarea {overflow: auto}
+optgroup {font-weight: bold
+}/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */table {
+	border-collapse: collapse;border-spacing: 0}
+
+td,th {padding: 0}
+
+.float_l{float: left;}
+.float_r{float: right;}
+
+.background {background-image: url(../images/home/back.jpg);background-size: 100% 100%;}
+html,body {font-family: "Microsoft Yahei"}
+#fp-nav.right {right: 25px}
+#fp-nav {top: 65%}
+#fp-nav ul li a span {background: #F95302}
+ 
+
+.section {position: relative;padding: 0;margin: 0;height: 100%;width: 100%}
+.section:nth-child(1) {z-index: 99}
+ 
+
+.rotateX{-webkit-animation: rotateX 1.5s both;animation: rotateX 1.5s both;}
+
+@keyframes rotateX{
+	from{transform:rotateX(120deg); opacity: 0;
+-webkit-transform:rotateX(120deg);}
+	to{transform:rotateX(0deg); opacity: 1;
+-webkit-transform:rotateX(0deg);}
+}
+@-webkit-keyframes rotateX{
+	from{transform:rotateX(120deg); opacity: 0;
+-webkit-transform:rotateX(120deg);}
+	to{transform:rotateX(0deg); opacity: 1;
+-webkit-transform:rotateX(0deg);}
+}
+
+.translate{-webkit-animation: translate 1s both;animation: translate 1s both;}
+@keyframes translate{
+	from{transform:translate(50px,100px); opacity: 0;
+-webkit-transform:translate(50px,100px);}
+	to{transform:translate(0px,0px); opacity: 1;
+-webkit-transform:translate(0px,0px);}
+}
+@-webkit-keyframes translate{
+	from{transform:translate(50px,100px); opacity: 0;
+-webkit-transform:translate(50px,100px);}
+	to{transform:translate(0px,0px); opacity: 1;
+-webkit-transform:translate(0px,0px);}
+}
+
+.scaleIn{-webkit-animation: scaleIn .8s both;animation: scaleIn .8s both;}
+@keyframes scaleIn{
+	from{transform:scale(2,2); opacity: 0;
+-webkit-transform:scale(2,2);}
+	to{transform:scale(1,1); opacity: 1;
+-webkit-transform:scale(1,1);}
+}
+@-webkit-keyframes scaleIn{
+	from{transform:scale(2,2); opacity: 0;
+-webkit-transform:scale(2,2);}
+	to{transform:scale(1,1); opacity: 1;
+-webkit-transform:scale(1,1);}
+}
+
+.trtime1{animation-delay:.2s;
+-webkit-animation-delay:.2s;}
+.trtime2{animation-delay:.4s;
+-webkit-animation-delay:.4s;}
+.trtime3{animation-delay:.6s;
+-webkit-animation-delay:.6s;}
+.trtime4{animation-delay:.8s;
+-webkit-animation-delay:.8s;}
+.trtime5{animation-delay:1s;
+-webkit-animation-delay:1s;}
+.trtime6{animation-delay:1.2s;
+-webkit-animation-delay:1.2s;}
+.trtime7{animation-delay:1.4s;
+-webkit-animation-delay:1.4s;}
+.trtime8{animation-delay:1.6s;
+-webkit-animation-delay:1.6s;}
+.trtime9{animation-delay:1.8s;
+-webkit-animation-delay:1.8s;}
+.trtime10{animation-delay:2.0s;
+-webkit-animation-delay:2.0s;}
+.trtime11{animation-delay:2.2s;
+-webkit-animation-delay:2.2s;}
+.trtime12{animation-delay:2.4s;
+-webkit-animation-delay:2.4s;}
+#logo .layer {text-decoration: none;padding: 0;margin: 0;top: 0;position: absolute;z-index: 10000;}
+#logo .text {font-size: 20px;color: #88bcd3;}
+#logo .text p {margin: 0}
+#logo .text p:nth-child(2) {color: #bebebe}
+#logo {width: 100%;height: 100%}
+#logo .one {left: -6%;top: -15%}
+#logo .two {right: -6%;top: 55%;}
+#logo .three {left: -11%;top: 67%}
+#logo .four {right: -4%;top: 10%}
+#logo .five {right: -10%;top: -10%;}
+#logo .logo {top: 2%; text-align: center; width: 100%;}
+
+.choose{ top: 170px !important; width: 870px; left: 50%; margin-left: -430px !important;}
+.choose > ul > li{position: absolute; }
+.choose > ul > li .hexagon{display: inline-block; width: 160px; height: 88px; line-height: 88px; text-align: center; color: #43242d; font-size: 18px; background-color: rgba(255,255,255,.4); position: relative;}
+.choose > ul > li .hexagon:before { content: ""; position: absolute; top: -40px; left: 0; width: 0;   height: 0; border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-bottom: 40px solid rgba(255,255,255,.4);
+}
+.choose > ul > li .hexagon:after {content: ""; position: absolute; bottom: -40px; left: 0;  width: 0; height: 0; border-left: 80px solid transparent;
+    border-right: 80px solid transparent;
+    border-top: 40px solid rgba(255,255,255,.4);
+}
+
+.choose > ul > li .hexagon:hover{background-color: rgba(255,255,255,.8); }
+.choose > ul > li .hexagon:hover:before{border-bottom: 40px solid rgba(255,255,255,.8);}
+.choose > ul > li .hexagon:hover:after{border-top: 40px solid rgba(255,255,255,.8);}
+ 
+.choose > ul > li .cl{position: absolute;}
+.choose > ul > li .cl_1{top: 0; left: 54px;}
+.choose > ul > li .cl_2{top: 0; left: 224px;}
+.choose > ul > li .cl_3{top: 0; left: 394px;}
+.choose > ul > li .cl_4{top: 0; left: 564px;}
+.choose > ul > li .cl_4 .hexagon{line-height: 40px !important;}
+
+.choose > ul > li .cl_5{top: 138px; left: -33px;}
+.choose > ul > li .cl_6{top: 138px; left: 137px;}
+.choose > ul > li .cl_7{top: 138px; left: 307px;}
+.choose > ul > li .cl_8{top: 138px; left: 477px;}
+.choose > ul > li .cl_9{top: 138px; left: 647px;}
+
+.choose > ul > li .cl_10{top: 275px; left: 54px;}
+.choose > ul > li .cl_11{top: 275px; left: 224px;}
+.choose > ul > li .cl_12{top: 275px; left: 394px;}
+.choose > ul > li .cl_13{top: 275px; left: 564px;}
+
+.choose > ul > li .icon{display: inline-block; font-size: 60px; line-height: 90px; width: 90px; height: 90px; background-repeat: no-repeat; position: absolute; z-index: 2; top: 5px; left: 35px; opacity: 0;
+transform: scale(2,2);-webkit-transform: scale(2,2);
+}
+
+.choose > ul > li .icon{transition: scale .5s, opacity .5s, transform .5s;
+	-webkit-transition: scale .5s, opacity .5s, transform .5s;
+}
+
+
+.choose > ul > li:hover span:first-child{ position: absolute; bottom:-50px ; opacity: 0;}
+.choose > ul > li:hover .icon{opacity: 1; transform: scale(1,1);-webkit-transform: scale(1,1); left: 35px;}
+
+.choose > ul > li .icon-13{font-size: 80px;}
+
+.bottomBlock{width: 100%; position: absolute; display: inline-block; bottom: 20px; left: 0; text-align: center; z-index: 111;}
+.bottomBlock .btn{padding: 10px 30px;}
+@media only screen and (max-height: 650px ) {
+	#logo .logo img{height:100px ;}
+	.choose{top: 160px !important;}
+	.choose > ul{transform: scale(.98,.98);-webkit-transform: scale(.98,.98);}
+}

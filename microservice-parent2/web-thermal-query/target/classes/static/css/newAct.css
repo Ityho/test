@@ -1,0 +1,348 @@
+.pageBg1 {
+  width: 100%;
+  background: url(../images/newuser/actbg1.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+.pageBg1 .bannerimg {
+  width: 749px;
+  height: 280px;
+}
+.pageBg1 .bannerimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pageBg1 .pageSubmit {
+  width: 766px;
+  padding-bottom: 70px;
+}
+.pageBg1 .pageSayLeft {
+  float: left;
+  width: 70px;
+  height: 70px;
+}
+.pageBg1 .pageSayLeft img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.pageBg1 .pageSayRight {
+  margin-left: 95px;
+  line-height: 55px;
+  background: #df4135;
+  border-radius: 7px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 8px;
+  position: relative;
+}
+.pageBg1 .pageSayRight .micon-sanjiao {
+  display: inline-block;
+  width: 12px;
+  height: 15px;
+  background-image: url(../images/newuser/icon-daoshanjiao.png);
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  bottom: 0;
+  margin: auto;
+}
+.pageBg1 .getcode {
+  width: 30%;
+  height: 44px;
+  line-height: 44px;
+  background: #df4135;
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  border: 0;
+  border-radius: 0 7px 7px 0;
+  cursor: pointer;
+}
+.pageBg1 .btn-triai {
+  text-align: center;
+  margin: 20px 0;
+}
+.pageBg1 .btn-triai a{
+	display: inline-block;
+    line-height: 45px;
+    text-decoration: none;
+  width: 350px;
+    border: 0;
+    background: #df4135;
+    height: 45px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+}
+.pageBg1 .pageAction > div {
+  color: #6D3628;
+}
+.pageBg1 .pageAction > div a {
+  text-decoration: none;
+  color: #6D3628;
+}
+.pageBg1 .pageAction .txt {
+  color: #E13F2D;
+}
+.pageInput1,
+.pageInput2 {
+  float: left;
+  width: 50%;
+  padding: 0 10px;
+}
+.pageInput1 .inpt,
+.pageInput2 .inpt {
+  width: 100%;
+  border: 1px solid #dcdcdc;
+  border-radius: 7px;
+  height: 44px;
+  line-height: 44px;
+  font-size: 14px;
+  color: #999999;
+  padding: 0 10px;
+  outline: none;
+}
+.pageInput2 .inpt {
+  width: 70%;
+  border-radius: 7px 0 0 7px;
+  float: left;
+}
+.pagebg2 {
+  width: 100%;
+  background: url(../images/newuser/actbg2.png) no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+.pagebg2 .page-section {
+  width: 766px;
+}
+.pagebg2 .section-title {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.pagebg2 .section-con {
+  width: 100%;
+}
+.pagebg2 .section-con-lf,
+.pagebg2 .section-con-rg {
+  float: left;
+  width: 48%;
+  border: 3px solid #6D3628;
+  border-radius: 8px;
+  text-align: center;
+  padding: 20px 0;
+  height: 173px;
+  color: #6D3628;
+}
+.pagebg2 .section-con-rg {
+  float: right;
+}
+.pagebg2 .label-dange {
+  background: #E13F2D;
+  display: inline-block;
+  padding: 2px 5px;
+  color: #FFFFFF;
+}
+.pagebg2 .btn-xiangqing {
+  display: block;
+  text-align: center;
+  color: #E13F2D;
+  margin: 20px 0;
+}
+.pagebg2 .section-item {
+  display: table;
+  width: 100%;
+  padding: 20px;
+  border: 3px solid #6D3628;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.pagebg2 .section-item-lf,
+.pagebg2 .section-item-rg {
+  display: table-cell;
+  vertical-align: middle;
+}
+.pagebg2 .section-item-rg {
+  padding-left: 20px;
+  color: #6D3628;
+}
+.pagebg2 .section-item-rg span {
+  color: #DF4135;
+}
+/*弹框*/
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto 16px;
+  bottom: 0;
+  z-index: 999;
+}
+.popup .popup-wrap {
+  width: 500px;
+  height: 100%;
+  margin: 0 auto;
+  background: #fedfa3;
+  text-align: center;
+  border: 2px solid #5d2622;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -moz-box-orient: vertical;
+  -moz-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.popup .popup-wrap a {
+  font-size: 16px;
+  color: #ffffff;
+  background: #df4135;
+  text-decoration: none;
+  width: 160px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+}
+.popup .delete {
+  position: absolute;
+  bottom: -35%;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.popup .delete img {
+  width: 60px;
+  height: 60px;
+}
+.popup-mask {
+  position: fixed;
+  z-index: 998;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.success {
+  height: 288px;
+  display: none;
+}
+.success .micon {
+  width: 65px;
+  height: 65px;
+}
+.success h3 {
+  font-size: 20px;
+  color: #de4034;
+  margin: 10px 0;
+}
+.success p {
+  font-size: 14px;
+  color: #5d2622;
+}
+.success .btn-click {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -moz-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+.success .btn-click .getuser {
+  margin-right: 10px;
+}
+.check-guize {
+  display: none;
+}
+.check-guize .pop-title h3 {
+  font-size: 20px;
+  color: #de4034;
+  margin-bottom: 20px;
+}
+.isSoscll {
+  overflow: hidden;
+  height: 100%;
+}
+.check-guize {
+  height: 325px;
+}
+.check-guize .check-guize-con {
+  text-align: left;
+}
+.check-guize .check-guize-con p {
+  font-size: 14px;
+  color: #5d2622;
+  margin-bottom: 10px;
+}
+.act-info {
+  padding: 2px 15px;
+  font-size: 12px;
+  color: #DF4135;
+  opacity: 0;
+}
+
+/* 底部样式 */
+#footer {
+	text-align:center;
+	overflow:hidden;
+	padding:30px 0;
+	width:100%;
+	font-size:12px;
+}
+#footer,#footer a,.layoutBody.loginHome #footer,.layoutBody.loginHome #footer a {
+	color:#808080;
+	text-decoration:none
+}
+.layoutBody #footer {
+	padding:10px 0
+}
+.layoutBody #footer,.layoutBody #footer a {
+	color:rgba(255,255,255,.5)
+}
+#footer a {
+	margin-left:20px;
+	margin-right:20px
+}
+#footer a:hover,.layoutBody.loginHome #footer a:hover {
+	color:#e66100;
+	text-decoration:underline
+}
+#footer p {
+	line-height:35px
+}

@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.user.UserMapper">
+
+
+    <select id="selectRegisterCreditByMobile" resultType="com.miduchina.wrd.po.user.UserRegRewardRecord">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				user_reg_reward_record
+			where status = 1
+			]]>
+        <if test="mobile!=null and mobile!=0">
+            <![CDATA[
+				and username = #{mobile}
+			]]>
+        </if>
+    </select>
+
+    <select id="getListUser" resultType="com.miduchina.wrd.po.user.User">
+        <![CDATA[
+			SELECT
+			*
+			FROM
+				user
+			where status = 1
+			]]>
+        <if test="userId!=null and userId!=0">
+            <![CDATA[
+				and user_id = #{userId}
+			]]>
+        </if>
+        <if test="username!=null and username!=''">
+            <![CDATA[
+				and username LIKE '%${username}%'
+			]]>
+        </if>
+        <if test="nickname!=null and nickname!=''">
+            <![CDATA[
+				and nickname LIKE '%${nickname}%'
+			]]>
+        </if>
+        <if test="mobile!=null and mobile!=''">
+            <![CDATA[
+				and mobile LIKE '%${mobile}%'
+			]]>
+        </if>
+    </select>
+
+    <update id="updateUser" parameterType="com.miduchina.wrd.po.user.User">
+        <![CDATA[
+                UPDATE user
+                SET
+                <if test="username != null and  username != '' ">
+                    username = #{username},
+                </if>
+                <if test="nickname != null and  nickname != '' ">
+                    nickname = #{nickname},
+                </if>
+                <if test="email != null and  email != '' ">
+                    email = #{email},
+                </if>
+                <if test="mobile != null and  mobile != '' ">
+                    mobile = #{mobile},
+                </if>
+                <if test="password != null and  password != '' ">
+                    mobile = #{password},
+                </if>
+                <if test="passwordStrength != null and  passwordStrength != 0">
+                    password_strength = #{passwordStrength},
+                </if>
+                <if test="thirdpartyAccount != null and  thirdpartyAccount != '' ">
+                    thirdparty_account = #{thirdpartyAccount},
+                </if>
+                <if test="thirdpartyType != null">
+                    thirdparty_type = #{thirdpartyType},
+                </if>
+                <if test="isVerified != null">
+                    is_verified = #{isVerified},
+                </if>
+                <if test="verifiedTime != null and verifiedTime != '' ">
+                    verified_time = #{verifiedTime},
+                </if>
+                <if test="validSmsCount != null and validSmsCount != '' ">
+                    valid_sms_count = #{validSmsCount},
+                </if>
+                <if test="lastLoginTime != null and lastLoginTime != '' ">
+                    last_login_time = #{lastLoginTime},
+                </if>
+                <if test="remark != null and remark != '' ">
+                    remark = #{remark},
+                </if>
+                <if test="createTime != null and createTime != '' ">
+                    create_time = #{createTime},
+                </if>
+                <if test="smsTotalCount != null and smsTotalCount != '' ">
+                    sms_total_count = #{smsTotalCount},
+                </if>
+                <if test="mailStatus != null and mailStatus != '' ">
+                    mail_status = #{mailStatus},
+                </if>
+                <if test="userHead != null and userHead != '' ">
+                    user_head = #{userHead},
+                </if>
+                <if test="appUserStatus != null and appUserStatus != '' ">
+                    app_user_status = #{appUserStatus},
+                </if>
+                <if test="userType != null and userType != '' ">
+                    user_type = #{userType},
+                </if>
+                <if test="proUserValidEndTime != null and proUserValidEndTime != '' ">
+                    pro_user_valid_end_time = #{proUserValidEndTime},
+                </if>
+                <if test="userChannel != null and userChannel != '' ">
+                    user_channel = #{userChannel},
+                </if>
+                <if test="userAnalysisValidCount != null and userAnalysisValidCount != '' ">
+                    user_analysis_valid_count = #{userAnalysisValidCount},
+                </if>
+                <if test="userWeiboAnalysisValidCount != null and userWeiboAnalysisValidCount != '' ">
+                    user_weibo_analysis_valid_count = #{userWeiboAnalysisValidCount},
+                </if>
+                <if test="userBriefValidCount != null and userBriefValidCount != '' ">
+                    user_brief_valid_count = #{userBriefValidCount},
+                </if>
+                <if test="userReportValidCount != null and userReportValidCount != '' ">
+                    user_report_valid_count = #{userReportValidCount},
+                </if>
+                <if test="userProductAnalysisValidCount != null and userProductAnalysisValidCount != '' ">
+                    user_product_analysis_valid_count = #{userProductAnalysisValidCount},
+                </if>
+                <if test="platform != null and platform != '' ">
+                    platform = #{platform},
+                </if>
+                <if test="userSingleWeiboAnalysisValidCount != null and userSingleWeiboAnalysisValidCount != '' ">
+                    user_single_weibo_analysis_valid_count = #{userSingleWeiboAnalysisValidCount},
+                </if>
+                <if test="exportDataCount != null and exportDataCount != '' ">
+                    export_data_count = #{exportDataCount},
+                </if>
+                <if test="creditAmount != null and creditAmount != '' ">
+                    credit_amount = #{creditAmount},
+                </if>
+                <if test="heatReportCount != null and heatReportCount != '' ">
+                    heat_report_count = #{heatReportCount},
+                </if>
+                <if test="sharePlanAmount != null and sharePlanAmount != '' ">
+                    share_plan_amount = #{sharePlanAmount},
+                </if>
+                <if test="stopEndTime != null and stopEndTime != '' ">
+                    stop_end_time = #{stopEndTime},
+                </if>
+                <if test="wbAccountFansAnalysisCount != null and wbAccountFansAnalysisCount != '' ">
+                    wb_account_fans_analysis_count = #{wbAccountFansAnalysisCount},
+                </if>
+                <if test="wrdNewsMonitorCount != null and wrdNewsMonitorCount != '' ">
+                    wrd_news_monitor_count = #{wrdNewsMonitorCount},
+                </if>
+                update_time=now()
+                WHERE
+                user_id = #{id}
+                ]]>
+    </update>
+
+    <insert id="insertUser" useGeneratedKeys="true" keyProperty="userId">
+        <![CDATA[
+           INSERT INTO
+				user(
+					username,
+					nickname,
+					email,
+					mobile,
+					password,
+					password_strength,
+					thirdparty_account,
+					thirdparty_type,
+					is_verified,
+					verified_time,
+					valid_sms_count,
+					last_login_time,
+					remark,
+					status,
+					sms_total_count,
+					mail_status,
+					user_head,
+					app_user_status,
+					user_type,
+					pro_user_valid_end_time,
+					user_channel,
+					user_analysis_valid_count,
+					user_weibo_analysis_valid_count,
+					user_brief_valid_count,
+					user_report_valid_count,
+					user_product_analysis_valid_count,
+					platform,
+					user_single_weibo_analysis_valid_count,
+					export_data_count,
+					credit_amount,
+					heat_report_count,
+					share_plan_amount,
+					stop_end_time,
+					wb_account_fans_analysis_count,
+					wrd_news_monitor_count,
+					create_time,
+					update_time
+				)
+			VALUES
+				(
+				#{username},
+				#{nickname},
+				#{email},
+				#{mobile},
+				#{password},
+				#{passwordStrength},
+				#{thirdpartyAccount},
+				#{thirdpartyType},
+				#{isVerified},
+				#{verifiedTime},
+				#{validSmsCount},
+				#{lastLoginTime},
+				#{remark},
+				1,
+				#{smsTotalCount},
+				#{mailStatus},
+				#{userHead},
+				#{appUserStatus},
+				#{userType},
+				#{proUserValidEndTime},
+				#{userChannel},
+				#{userAnalysisValidCount},
+				#{userWeiboAnalysisValidCount},
+				#{userBriefValidCount},
+				#{userReportValidCount},
+				#{userProductAnalysisValidCount},
+				#{platform},
+				#{userSingleWeiboAnalysisValidCount},
+				#{exportDataCount},
+				#{creditAmount},
+				#{heatReportCount},
+				#{sharePlanAmount},
+				#{stopEndTime},
+				#{wbAccountFansAnalysisCount},
+				#{wrdNewsMonitorCount},
+				now(),
+				now());
+        ]]>
+    </insert>
+
+    <select id="findUserByThirdpartyccount" resultType="com.miduchina.wrd.po.user.User">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				user
+			where status = 1
+			AND thirdparty_account=#{thirdpartyAccount}
+			]]>
+    </select>
+    <select id="findAccessRecords" resultType="com.miduchina.wrd.po.h5.AuthJumpRelation">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				auth_jump_relation
+			where status = 1
+			AND user_id=#{userId}
+			]]>
+    </select>
+    <update id="deleteAccessRecords" parameterType="com.miduchina.wrd.po.h5.AuthJumpRelation">
+        <![CDATA[
+                UPDATE auth_jump_relation
+                SET
+                status=0,
+                update_time=now()
+                WHERE
+                user_id = #{userId}
+                AND keyword_id=#{keywordId}
+                ]]>
+    </update>
+
+</mapper>

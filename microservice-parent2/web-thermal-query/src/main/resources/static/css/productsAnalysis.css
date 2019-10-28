@@ -1,0 +1,217 @@
+@charset "GBK";
+/* CSS Document */
+/*body{background-color: #fff;}*/
+/*竞品分析样式*/
+.contrastSet{background-color: #f5f5f5; width: 100%; display: inline-block; clear: both; height: 55px;}
+.contrastSet2{height: 100px;}
+
+.contrastSet .keyWord{width: 592px; margin: 10px;}
+.contrastSet .keyWord > div:last-child{margin-top: 10px;}
+.contrastSet .keyWord > div > label >input{width: 31.8%; margin-right: 1%;vertical-align: middle;}
+.contrastSet .keyWord_time{margin: 10px; margin-left: 0;}
+.contrastSet .keyWord_time .input.time{width: 150px;vertical-align: middle;}
+.contrastSet .btn{width: 130px; font-size: 16px; height: 55px; line-height: 55px; padding: 0; border: none;  border-radius: 0; display: block; text-align: center; background-color: #ff8500; color: #fff; text-decoration: none;}
+.contrastSet .btn:hover{background-color: #EA7A00;}
+.contrastSet .more{background: no-repeat center 0px url(../images/more.png);  width: 30px; height: 30px; margin-top: 12px; margin-right: 20px;}
+.contrastSet2 .more{margin-top: 35px;background: no-repeat center -30px url(../images/more.png);}
+.contrastSet2 .keyWord_time{margin-top: 35px;}
+.contrastSet2 .btn{height: 100px; line-height: 100px;}
+.contrastSet .keyWord > div > label{position: relative;}
+.contrastSet .keyWord > div > label .empty {
+    top: 2px;
+    right: 20px;
+    width: 15px;
+    height: 15px;
+    line-height: 13px;
+    font-size: 18px;
+    background-color: #E9E9E9;
+    text-align: center;
+}
+
+.keyWordList{margin-top: 10px; clear: both;}
+.keyWordList > ul > li{display: block; float: left;margin-bottom: 10px; width: 23.3%; margin-right: 1.8%; height: 55px;  text-align: left; font-size: 16px; cursor: pointer; background-color: #f6f6f6;border-left: solid 4px #ff8500; color: #666; position: relative;}
+.keyWordList > ul > li.red{border-left: solid 4px rgba(232,46,60,1);}
+.keyWordList > ul > li.yellow{border-left: solid 4px rgba(255,182,77,1);}
+.keyWordList > ul > li.blue{border-left: solid 4px rgba(112,192,245,1);}
+.keyWordList > ul > li.green{border-left: solid 4px rgba(58, 207, 45, 1);}
+.keyWordList > ul > li.purple{border-left: solid 4px rgba(197, 69, 240, 1);}
+
+.keyWordList > ul > li > p{line-height: 25px; margin-left: 20px; margin-top: 15px;}
+.keyWordList > ul > li > p:first-child{font-size: 16px; color: #333; font-weight: 600;}
+.keyWordList > ul > li > p:nth-child(2){margin-top: 5px;font-size: 26px;font-weight: 600; color: #ff8500;}
+
+.keyWordList > ul > li.red > p:nth-child(2){margin-top: 5px;font-size: 26px;font-weight: 600; color: rgba(232,46,60,1);}
+.keyWordList > ul > li.yellow > p:nth-child(2){margin-top: 5px;font-size: 26px;font-weight: 600; color: rgba(255,182,77,1);}
+.keyWordList > ul > li.blue > p:nth-child(2){margin-top: 5px;font-size: 26px;font-weight: 600; color: rgba(112,192,245,1);}
+.keyWordList > ul > li.green > p:nth-child(2){margin-top: 5px;font-size: 26px;font-weight: 600; color: rgba(58, 207, 45, 1);}
+.keyWordList > ul > li.purple > p:nth-child(2){margin-top: 5px;font-size: 26px;font-weight: 600; color: rgba(197, 69, 240, 1);}
+
+.keyWordList > ul > li.active:after{content: ""; position: absolute; top: 11px; right: 11px;width: 30px; height: 30px; background-image: url(../images/active1.png); background-repeat: no-repeat;}
+.keyWordList > ul > li:hover{ background-color: #EDEDED;
+    /*-webkit-animation: posUp 0.5s both;animation: posUp 0.5s both;*/}
+@-webkit-keyframes posUp {
+    0% {background-position: right 0px;}
+    100% {background-position: right -90px;}
+}
+@keyframes posUp {
+    0% {background-position: right 0px;}
+    100% {background-position: right -90px;}
+
+}
+
+.keyWordList > ul > li.active{ background-position: right -90px;background-color: #EDEDED;}
+.keyWordList > ul > li.active > p:first-child,.keyWordList > ul > li:hover > p:first-child{}
+.keyWordList > ul > li.active > p:last-child,.keyWordList > ul > li:hover > p:last-child{color: #484848;}
+.keyWordList > ul > li:last-child{margin-right: 0;}
+
+.keyWordList > ul > li > dl{width: 90%; border-top: solid 1px #e0e0e0; margin-left: 5%; margin-top: 10px; font-weight: 600;}
+.keyWordList > ul > li > dl > dd{width: 48%; margin-top: 5px; font-size: 14px; display: inline-block; float: left;border-right: solid 1px #e0e0e0; text-align: center; line-height: 25px;}
+.keyWordList > ul > li > dl > dd:last-child{border: none;}
+
+
+.report{margin-top: 10px; clear: both; }
+.report > ul > li{display: block; float: left; margin-bottom: 30px; width: 18.39%; margin-right: 2%; height: 260px; padding-top: 10px; line-height: 25px; text-align: center; font-size: 13px;   background-color: #f6f6f6; border-top: solid 4px #ff8500; position: relative;}
+.report > ul > li .dele{position: absolute; top: 3px; right:3px; z-index: 1;}
+.report > ul > li .dele i{width: 30px; height: 30px; text-align: center; line-height: 30px; display: inline-block; font-size: 20px; color: #fff; cursor: pointer;}
+.report > ul > li .dele i:hover{background-color: #ff8500;}
+.report > ul > li .fenxiang{display: none; background-color: #fff; border-radius: 40px; padding:5px 10px;
+    bottom: -45px; right: 10px; z-index: 2;
+    -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);}
+.report > ul > li .fenxiang	.arrow{position: relative;}
+.report > ul > li .fenxiang	.arrow:after{content: ""; position: absolute; top: -15px; right: 28px;
+    border-left: 10px solid transparent; /* left arrow slant */
+    border-right: 10px solid transparent; /* right arrow slant */
+    border-bottom: 10px solid #fff; /* bottom, add background color here */}
+.loading{width: 100%; height: 4px; background-color: #E7E7E7; position: absolute; top: -4px; left: 0px; z-index: 1; overflow: hidden;}
+
+.report > ul > li.hover .fenxiang{display: block;}
+.loading .loadBox{background-color: #ff8500;width:0px; height: 4px; float: left;}
+.report > ul > li:hover{background-color: #EDEDED;}
+.report > ul > li:last-child{margin-right: 0;}
+.report > ul > li.inProgress{ border-top: solid 4px #E7E7E7;}
+.report > ul > li .t1{ position: absolute; top: 0; left: 0;width: 90%; border-bottom: dashed 2px #E7E7E7; padding: 6px 5%; font-size: 16px; background-color: #FF9F51; color: #fff; text-overflow:ellipsis;white-space:nowrap;overflow:hidden;}
+.report > ul > li.inProgress .t1{background-color: #BABABA;}
+.report > ul > li .t2{position: absolute;font-size: 13px; top: 50px; left: 0;width: 80%;margin-left: 10%; text-align: left; }
+.report > ul > li .t2 >p.t2_tit{font-weight: 400; height: 130px; overflow: hidden;}
+.report > ul > li .t2 >p.t2_time{font-size: 13px; color: #E16000; text-align: center;}
+
+.report > ul > li.inProgress .t2,.report > ul > li.inProgress .t2 >p.t2_time{color: #A3A3A3;}
+
+.report > ul > li .t3{position: absolute; bottom: 20px; left: 0;width: 100%; text-align: center;}
+.report > ul > li .t3 > ul > li {width: 40px; height: 40px; line-height: 40px; border-radius: 50%;  color: #fff;display: inline-block;  margin-left: 10px;cursor: pointer;
+    transition: .1s transform;
+    -webkit-transition: .1s transform;
+    -moz-transition: .1s transform;
+    -o-transition: .1s transform;
+    transform: translateZ(0);
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -o-transform: translateZ(0);
+}
+
+.report > ul > li .t3 > ul > li:hover{opacity: .7;
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transition: .3s transform;
+    -webkit-transition: .3s transform;
+    -moz-transition: .3s transform;
+    -o-transition: .3s transform;
+}
+.report > ul > li .t3 > ul > li:first-child{margin-left: 0;}
+.report > ul > li .t3 > ul > li a{color: #fff; text-decoration: none;}
+.report > ul > li.inProgress .t3 > ul > li.c1,.report > ul > li.inProgress .t3 > ul > li.c2,.report > ul > li.inProgress .t3 > ul > li.c3{background-color: #CACACA;}
+.report > ul > li .t3 > ul > li.c1{background-color: #68e97a;}
+.report > ul > li .t3 > ul > li.c2{background-color: #68cce9;}
+.report > ul > li .t3 > ul > li.c3{background-color: #ffa760;}
+
+.report > ul > li .t4{position: absolute; bottom: 0px; left: 0;width: 100%; text-align: center;background-color: #D9D9D9; color: #6C6C6C;}
+.mapTable{margin: 10px 0; display: inline-block;width: 100%;}
+.mapTable > li{width: 30%; display: inline-block; margin: auto; margin-right: 4%; }
+.mapTable > li:last-child{border: none; margin-right: 0;}
+.mapTable > li tr{ background-color: #FDFBF5;}
+.mapTable > li tr:nth-child(even) {
+    background-color: #fff;
+}
+.mapTable > li td{line-height: 22px; padding:0; text-align: center ;}
+.mapTable > li td{border-bottom:  dashed 1px #DBDBDB;}
+.mapTable > li tr td:first-child{background-color: #F7EFE5;width: 30px; color: #C77F40;}
+.mapTable > li> .tit{ height: 30px; line-height: 30px; font-size: 12px; background-color: #F1AE74; text-align: center; color: #fff;}
+.mapTable2 > li{width: 46%; display: inline-block; margin: auto; margin-right: 4%; }
+.jcdx li{border-bottom: dashed 1px #DADADA;line-height: 35px;  margin-bottom: 3px;}
+.jcdx li:last-child{border: none;}
+
+/*对比分析*/
+.chartData{ margin-left: 50px; margin-top: 10px;}
+.chartData >ul>li{width: 60px; height: 60px; display: inline-block;margin: 10px 0; margin-right: 35px; text-align: center; border: solid 2px #d2d2d2; border-radius: 50%; color: #666; }
+
+.chartData >ul>li p:first-child{font-size: 14px; margin-top: 12px;}
+.chartData >ul>li p{ margin-top: 2px;}
+.chartData >ul>li.big{border: solid 2px #ff8500; background-color: #ff8500; color: #fff;}
+.chartData >ul>li.small{border: solid 2px #60c9ff; background-color: #60c9ff; color: #fff;}
+.chartData >ul>li.noData{border: solid 2px #EBEBEB; background-color: #F5F5F5; color: #B3B3B3;}
+
+/*媒体活跃对比*/
+.triangle{width: 763px; height: 285px; position: relative;}
+.triangle >div{ position: absolute;}
+.triangle >div.st .text{text-align: center;width: 100%; height: 60px;  font-size: 0.9em; margin-top: 60%;}
+.triangle >div.st .text p{margin: 5px;}
+.triangle >div .sc{top: 0; left: 0; width: 100%; height: 100%;position: absolute;}
+.triangle >div.s1{width: 230px; height: 230px;}
+.triangle >div.s1{bottom: 0px; left: -10px;}
+.triangle >div.s2{width: 210px; height: 210px;}
+.triangle >div.s2{bottom: 77px; left: 80px;}
+.triangle >div.s3{width: 170px; height: 170px;}
+.triangle >div.s3{bottom: 62px; left: 188px;}
+.triangle >div.s4{width: 160px; height: 160px;}
+.triangle >div.s4{bottom: 37px; left: 258px;}
+.triangle >div.s5{width: 160px; height: 160px;}
+.triangle >div.s5{bottom: 25px; left: 338px;}
+.triangle >div.s6{width: 170px; height: 170px;}
+.triangle >div.s6{bottom: 67px; left: 412px;}
+.triangle >div.s7{width: 170px; height: 170px;}
+.triangle >div.s7{bottom: 40px; left: 500px;}
+.triangle >div.s8{width: 160px; height: 160px;}
+.triangle >div.s8{bottom: 30px; left: 605px;}
+
+/*高频词汇*/
+.wordsGroup>.wordsHeard{display: block; text-align: center; }
+.wordsGroup>.wordsHeard>h1{font-size: 14px; color: #fff; display: inline-block; padding: 5px 20px; position: relative;}
+.wordsGroup>.wordsHeard>h1:after{content: ""; position: absolute; top: 7px; left: 0; border-bottom: 8px solid transparent;
+border-top: 8px solid transparent; 
+border-left: 8px solid #fff; }
+.wordsGroup>.wordsHeard>h1:before{content: ""; position: absolute; top: 7px; right: 0; border-bottom: 8px solid transparent;
+border-top: 8px solid transparent; 
+border-right: 8px solid #fff; }
+.wordsGroup.blue>.wordsHeard>h1{background-color: #0086ce;}
+.wordsGroup.red>.wordsHeard>h1{background-color: #db421b;}
+
+.wordsGroup .btn{ border:solid 1px #b5bfc9; overflow: hidden;text-overflow: ellipsis; white-space: nowrap;}
+
+
+@media only screen and (max-width:1280px ) {
+    .report > ul > li{width: 18.392%; }
+    .contrastSet .keyWord {width: 566px;}
+    .contrastSet .keyWord > div > label >input{width: 29.7%;}
+    .keyWordList > ul > li{width: 23.275%;}
+
+    .report > ul > li .fenxiang{right: 5px;}
+    .fenxiang span, .fenxiang a{margin-right: 4px;}
+}
+
+@media only screen and (max-width:1024px ) {
+    .contrastSet .btn{width: 80px;}
+    .contrastSet .keyWord > div > label >input {width: 31.7%;}
+    .contrastSet .keyWord{width: 45%;}
+    .keyWordList > ul > li{width: 23.21%;}
+ 
+}
+
+@media only screen and (max-width:750px ) {
+    .mapTable > li{width: 32.5%; margin-right: 0%; float: left;}
+    .mapTable2 > li{width: 49%;}
+    .wordsGroup>dl {margin: 20px;}
+}

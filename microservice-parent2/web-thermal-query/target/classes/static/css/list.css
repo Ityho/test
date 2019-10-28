@@ -1,0 +1,79 @@
+.xx_list ul{
+	padding: 0px;
+	margin: 0px;
+}
+.xx_list ul li{
+	clear: both;
+	border-bottom-width: 1px;
+	border-bottom-style: dashed;
+	border-bottom-color: #CCC;
+	list-style-type: none;
+	padding: 5px 10px 0px 10px;
+}
+.xx_list ul li:hover{
+	background-color: #faf9f9;
+}
+.xx_list ul li:hover .c1,.xx_list ul li:hover .c1 a{
+	color: #66aaf1;	
+}
+.blue{
+	color: #66aaf1;	
+}
+.xx_list ul li .c1{
+	margin: 0px;
+}
+.xx_list ul li .c3{
+	background-color: #f4f4f4;
+	border: 1px solid #d6d6d6;
+	color: #626262;
+	line-height: 25px;
+	font-size: 12px;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-bottom: 10px;
+	padding-left: 15px;
+}
+.xx_list ul li .c4{
+	margin-bottom: 18px;
+}
+/*表格版样式开始*/
+.naDiv{
+	font-size:14px;
+	text-align:center;
+	height:40px;
+	line-height:40px;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	/* background-color: #EEEEEE; */
+	color: #797979;
+	cursor: pointer;
+}
+.nasDiv{
+	font-size:14px;
+	text-align:center;
+	height:40px;
+	line-height:40px;
+	float:left;
+	padding-left:10px;
+	padding-right:10px;
+	color: #08b1ff;
+	cursor: pointer;
+	background-color: #FFF;
+	/* border-right: solid 1px #BEBEBE; */
+}
+.list_tab{
+	line-height: 25px;
+}
+.td_l_r_b {
+	border: 1px solid #e8e7e7;
+	border-top: 0px solid #e8e7e7;
+}
+.td_l_b {
+	border: 0px;
+	border-left: 1px solid #e8e7e7;
+	border-bottom: 1px solid #e8e7e7;
+	
+}
+/*表格版样式结束*/
+.fontHighlight{background-color: rgb(252, 255, 0); font-weight: bold; color:#F00;}

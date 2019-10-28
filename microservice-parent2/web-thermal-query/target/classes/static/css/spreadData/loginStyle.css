@@ -1,0 +1,18 @@
+/*µÇÂ¼¿òÑùÊ½*/
+.login{font-size: 12px; text-align: left; color: #444; padding: 20px 0;}
+.login  textarea:focus,.login  input[type="text"]:focus,.login  input[type="password"]:focus { border: 1px solid #f18d00; background-color:#FFF; }
+.login > h2{font-size: 20px;display: block;line-height: 35px;height: 35px;color: #444; margin: 0; margin-bottom: 10px; text-align: center;}
+.login .inputText{width: 100%; padding:10px 20px;line-height: 1.5; border: solid 1px #dfdfdf; border-radius:30px ; background-color:#fff; color: #666;}
+.login .inputText:focus{border: solid 1px #dfdfdf;}
+.login .imgVcode img{ width: 100%;}
+.login .message .btn{top: 0; right: 0; width: 140px; padding: 9px 12px; border-radius:0 30px 30px 0px !important ;z-index: 1;}
+.loginBtn{text-align: center; width: 100%; color:#696969;}
+.loginBtn h1{font-size: 12px; display: inline-block; margin-bottom: 10px !important; width: 100%; position: relative;}
+.loginBtn h1:after{content: ""; position: absolute; top: 50%; left: 0; z-index: 0; width: 100%; height: 1px; background-color: #dfdfdf;}
+.loginBtn h1>span{position: relative; z-index: 1; display: inline-block; color: #999; background-color: #fff; padding: 5px 10px;}
+.loginBtn .btn-icon{background-color: #fff; border: solid 1px #d4d3d3; color: #d4d3d3; margin-right: 40px;}
+.loginBtn .btn-icon:nth-child(1):hover{color: #f5773b;}
+.loginBtn .btn-icon:nth-child(2):hover{color: #01a50d;}
+.loginBtn .btn-icon:nth-child(3):hover{color: #469df4;}
+.loginBtn .btn-icon:nth-child(4):hover{color: #c90606;}
+.loginBtn .btn-icon:last-child{margin: 0;}

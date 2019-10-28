@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="223px" height="220px" viewBox="0 0 223 220" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 5@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="4.98356217%" y2="69.5396297%" id="linearGradient-1">
+            <stop stop-color="#1AC0FF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#2BA2FA" offset="48.9639756%"></stop>
+            <stop stop-color="#3C83F5" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-2" cx="39" cy="26" r="4"></circle>
+        <filter x="-206.2%" y="-206.2%" width="512.5%" height="512.5%" filterUnits="objectBoundingBox" id="filter-3">
+            <feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="0" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.840770991   0 0 0 0 0.963254844   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="热点发现-重大事件" transform="translate(-399.000000, -427.000000)">
+            <g id="1" transform="translate(379.000000, 405.000000)">
+                <g id="分组-5" transform="translate(23.000000, 22.000000)">
+                    <path d="M36.5516304,27.2845636 C14.1310316,47.161587 0,76.1805539 0,108.5 C0,168.422895 48.5771046,217 108.5,217 C168.422895,217 217,168.422895 217,108.5 C217,48.5771046 168.422895,0 108.5,0" id="路径" stroke="url(#linearGradient-1)" stroke-width="5"></path>
+                    <g id="椭圆形">
+                        <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                        <use fill="#D6F6FF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,113 @@
+@charset "gbk";
+/*遮罩层*/
+#BgDiv{
+	background-color: #222;
+	position: absolute;
+	z-index: 50;
+	left: 0;
+	top: 0;
+	display: none;
+	width: 100%;
+	height: 100%;
+	opacity: 0.5;
+	filter: alpha(opacity = 80);
+	-moz-opacity: 0.5;
+}
+/*系统设置弹出层*/
+#SystemSetDiv{
+	display: none;
+	background-color: #FFF;
+}
+/*消息弹出层*/
+#InfoDiv{
+	background-color: #F7F7F7; 
+	width: 300px;
+	height: 180px;
+	position: fixed;
+	z-index:100;
+	display: none;
+	/* background:url(../images/msg/msg_bg.png) no-repeat; */
+	border: solid 5px #6F6E6E;
+}
+.submitBtn{
+	float:left;
+	height:30px; 
+	width:70px;
+	margin-right:5px;
+	background:url(../images/msg/blue_bg_01.png) no-repeat;
+	color:#FFF; 
+	font-size:14px; 
+	text-align:center; 
+	line-height:30px;
+	cursor: pointer;
+}
+.cancelBtn{
+	float:left;
+	height:30px; 
+	width:70px; 
+	background:#036; 
+	margin-left:5px;
+	background:url(../images/msg/orange_bg_01.png) no-repeat;
+	color:#FFF; 
+	font-size:14px; 
+	text-align:center; 
+	line-height:30px;
+	cursor: pointer;
+}
+.cancelBtn:hover{ 
+	background:url(../images/msg/orange_bg_02.png) no-repeat;
+}
+.submitBtn:hover{ 
+	background:url(../images/msg/blue_bg_02.png) no-repeat;
+}
+.td_title{
+	border-bottom: solid 1px #DEDEDE;
+	height: 30px;
+	width: 100%
+}
+.title_div{
+	width: 100%;
+}
+.info_title{
+	font-size: 14px;
+	float: left;
+	margin-left: 10px
+}
+.info_close{
+	font-size: 14px;
+	float: right;
+	cursor:pointer;
+	margin-right: 10px; 
+}
+.td_msg{
+	text-align: center;
+	width: 100%
+}
+.msg{
+	
+}
+.td_btn{
+	text-align: center;
+	height: 60px;
+	vertical-align: center;
+	width: 100%
+}
+.btn_div{
+	width: 150px;
+	height: 100%;
+	margin: 0 auto;
+	clear:both;
+}
+#SmsDiv{
+	background-color: #f9fcff;
+	width: 760px;
+	height: 450px;
+	border: solid 5px #6F6E6E; 
+	display:none;
+	position: fixed;
+	z-index:100;
+}
+#send_sms_frame{
+	width: 760px;
+	height: 450px;
+}

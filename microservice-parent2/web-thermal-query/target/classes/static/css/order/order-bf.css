@@ -1,0 +1,76 @@
+.size_orange{
+	color: #f18d00;
+}
+.txt-left{
+	padding-left: 10px;
+	font-weight: normal;
+}
+.icon-zhekou{
+	display: inline-block;
+    width: 32px;
+    height: 22px;
+    background: url(../../../images/zhifu/icon_discount.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: -15px;
+    right: -20px;
+}
+.modal{
+	border-top: 0;
+	border-radius: 5px;
+}
+.modalTwo .modal-right {
+    border-left: 1px solid #dcdcdc;
+}
+.payment-num{
+	width: 210px;
+	height: 90px;
+	border: 1px solid #DCDCDC;
+	display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.payment-num .payment-num-txt{
+	margin: 12px 0 12px 0;
+    font-size: 16px;
+}
+.payment-num .num-border a{
+	border: 1px solid #f18d00;
+}
+.payment-num .setcount .number{
+	border: 1px solid #f18d00;
+	border-left: none;
+    border-right: none;
+}
+.pay-title{
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.pay-title .line{
+	height: 1px;
+    width: 72%;
+    background: #DDD;
+    margin-bottom: 15px;
+}
+.discount p:first-child{
+	font-size: 12px;
+    color: #7d8492;
+    margin: 10px 0 10px 20px;
+}
+.discount .agree{
+	font-size: 14px;
+    color: #7d8492;
+}
+.PaymentAmount p:first-child {
+    color: #f18d00;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+/*¶©µ¥Ö§¸¶Ò³Ãæ*/
+.order-page{
+	padding: 20px;
+}
+.order-page .crumb-nav{
+	
+}

@@ -1,0 +1,166 @@
+.activityDis{
+    position: fixed;
+    right: 0;
+    top: 17%;
+    z-index: 98;
+    cursor: pointer;
+}
+.activityDis a{
+    display: inline-block;
+}
+.activityDis .activity-img img{
+    width: 100%;
+}
+.activityDis .activity-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #FFD7A1;
+    cursor: pointer;
+    font-size: 12px;
+}
+.Discount .default-close{
+    color: #6E4837;
+
+}
+.Discount .modal-body{
+    background: url(../../base/images/activity_dis_bg.png) no-repeat;
+    background-size: cover;
+}
+.Discount .activity_dis_title{
+    position: absolute;
+    top: -26px;
+    left: -15px;
+}
+.Discount .activity-time{
+    position: absolute;
+    right: 15px;
+    top: 35px;
+    font-size: 36px;
+    color: #E93B46;
+}
+.Discount .activity-time span:not(.at){
+    background: #F9DCBB;
+    transform: skewX(-5deg);
+    -webkit-transform: skewX(-5deg);
+    -moz-transform: skewX(-5deg);
+    -o-transform: skewX(-5deg);
+    display: inline-block;
+    text-align: center;
+    line-height: 1;
+    width: 60px;
+    padding-right: 8px;
+    vertical-align: middle;
+    font-size: 48px;
+}
+.Discount .activity-time .at{
+    vertical-align: middle;
+    display: inline-block;
+    margin-top: -15px;
+    margin-right: -10px;
+}
+.Discount .activity-time span:nth-child(2){
+    margin-left: -17px;
+}
+.Discount .activity-time span:nth-child(3){
+    margin-left: -17px;
+}
+.Discount .activity-time .time-el{
+    display: inline-block;
+    width: initial !important;
+    padding-right: 0 !important;
+    padding-left: 8px;
+}
+.Discount .tab-content{
+    min-height: 310px;
+}
+.Discount .coupon{
+    display: inline-block;
+    width: 279px;
+    height: 133px;
+    background: url(../../base/images/activity_dis_c.png) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.Discount .coupon p{
+    color: #F2EDD6;
+    font-size: 12px;
+    padding-left: 20px;
+    line-height: 1.5;
+}
+.Discount .coupon .coupon-title{
+    color: #FCE589;
+    font-size: 20px;
+    padding-top: 25px;
+    padding-bottom: 8px;
+}
+.Discount .coupon .coupon-price{
+    position: absolute;
+    top: 13px;
+    right: 13px;
+    width: 110px;
+    height: 100px;
+    text-align: center;
+}
+.Discount .coupon .coupon-num{
+    display: block;
+    color: #DD1929;
+    font-size: 35px;
+    padding-top: 8px;
+    font-weight: 600;
+}
+.Discount .coupon .coupon-btn{
+    display: inline-block;
+    color: #DD1929;
+    font-size: 13px;
+    border: 1px solid #DD1929;
+    padding: 2px 8px;
+    border-radius: 30px;
+    margin-top: 2px;
+}
+.Discount .coupon .coupon-btn-red{
+    display: inline-block;
+    color: #FDF2DF;
+    font-size: 13px;
+    border: 1px solid #E63C45;
+    padding: 2px 8px;
+    border-radius: 30px;
+    margin-top: 2px;
+    background: #E63C45;
+}
+.Discount .notCollect{
+    display: inline-block;
+    width: 125px;
+    height: 49px;
+    background: url(../../base/images/activity_dis_btn.png) no-repeat;
+    background-size: cover;
+    text-align: center;
+    color:rgba(110,72,55,1);
+    font-size: 14px;
+    padding-top: 13px;
+    margin-top: 20px;
+}
+/*功能说明*/
+.explain-feature{
+    border: 1px dashed #DEDEDE;
+    padding: 60px 20px 20px 20px;
+    margin-top: 40px;
+    position: relative;
+}
+.explain-feature .explain-feature-title{
+    display: inline-block;
+    font-size: 18px;
+    color: #333333;
+    font-weight: 600;
+    border: 1px dashed #dedede;
+    padding: 8px 0;
+    position: absolute;
+    top: -22px;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 120px;
+    background: #ffffff;
+    z-index: 2;
+    text-align: center;
+}

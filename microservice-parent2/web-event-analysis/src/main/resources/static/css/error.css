@@ -1,0 +1,85 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+html,body{ margin:0px; padding:0px; font-family:"微软雅黑",Verdana, Geneva, sans-serif; font-size:12px; color:#333; background-color: #f4f4f4;}
+ul,li{margin: 0px;padding: 0px;border: none;list-style-image: none;list-style-type: none;}
+img{margin: 0px;padding: 0px;border: none;}
+div{margin:0px auto;}
+a {color: #666;cursor: pointer;text-decoration: none;}
+a:hover { text-decoration: none; }
+.clear{ clear: both;}
+.h60{ height:60px;}
+.h10{ height:10px;}
+.fxmail{ width:100%;}
+.fxmail .mail_heard{
+	height: 65px;
+	line-height:65px;
+	border-bottom: solid 2px #1974ea;
+	position:relative;
+	position:fixed;
+	top:0px; width:100%; z-index:100; background-color:#fff;
+	-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);
+}
+.fxmail .more{display:none; width:40px; height:40px;   position:absolute; }
+.fxmail .mail_heard h1{ text-align:center; font-size:28px; font-weight:500;}
+.fxmail .mail_heard .logo{ position:absolute; top:10px; left:15px; width:125px;}
+.fxmail .mail_Parameter{ line-height:25px; font-size:16px; margin:10px 0px; padding:5px 15px; background-color:#f4f4f4; border:solid 0px #CCC;}
+.fxmail .mail_Parameter em{color:#72ab00; font-style:normal; font-weight:600; font-size:20px;}
+
+.prompt{text-align: center;}
+.prompt img{ margin-top: 20px;}
+.prompt .text{ font-size: 20px; color: #545352;}
+.fxmail .footer{display: none;}
+.fxmail .footer{font-size: 14px; position:fixed; bottom:0px; width:100%; background-color:rgba(0,0,0,0.8); color: #fff; padding: 2px 0; line-height:20px; border-top: solid 1px #CCC;-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);}
+.fxmail .footer .text{width: 65%; font-size: 14px; float: left; line-height: 25px; margin: 5px;}
+.fxmail .footer .icon_logo{ float: left; margin-right: 10px; display: block; background-image: url(../images/icon-60.png); background-repeat: no-repeat; background-size: 50px; width: 50px; height: 50px; background-color: #fff; border-radius: 10px;}
+.fxmail .footer .btn-download{display: block; padding: 0px 10px; float: right; height: 40px; line-height: 40px; text-align: center;background-color: #d0101f; color: #fff; position: relative;margin-top: 10px; margin-right: 10px; border-radius: 5px; }
+/*.fxmail .footer .btn-download:after{ content: ""; position: absolute;left:-1px; top: 35%; width: 0; 
+height: 0; 
+border-bottom: 10px solid transparent; /* left arrow slant */
+border-top: 10px solid transparent; /* right arrow slant */
+border-left: 10px solid #ff8400; /* bottom, add background color here */
+font-size: 0;
+line-height: 0;}*/
+
+
+.fxmail .back{ width:35px; height:35px; float:left; margin-top:3px; margin-left:10px; position:fixed; bottom:2%; left:2%;}
+.fxmail .back:hover{ opacity:0.6;}
+@media screen and (max-width: 414px) {
+	.fxmail .footer{display: block; font-size: 14px;}
+	.prompt img{width: 80%; margin-top: 20%;}
+.prompt .text{ font-size: 14px;}
+.fxmail .mail_heard{
+	height: 55px;
+	line-height:55px;
+	border-bottom: solid 2px #1974ea;
+ 	-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);
+}
+
+.fxmail .mail_heard .logo{ position:absolute; top:8px; left:15px; width:105px;}
+.fxmail .mail_Parameter{font-size:12px; line-height:20px;}
+.fxmail .mail_Parameter em{ font-size:14px;}
+
+/*.fxmail .footer{height:60px; line-height:60px;}
+*/.fxmail .pageBox li{ font-size:18px; padding:0px 15px; }
+.fxmail .pageNum{ font-size:16px; margin-left:10px;}
+}
+
+@media screen and (max-width: 320px) {
+.fxmail .footer{ font-size: 12px;}
+.fxmail .footer .icon_logo{background-size: 40px; width: 40px; height: 40px;}
+.fxmail .footer .btn-download{ padding: 0 10px;height: 35px; line-height: 35px; }
+.fxmail .footer .btn-download:after{ top: 32%;}
+.fxmail .footer .text{line-height: 20px; margin: 5px;}
+.fxmail .pageBox li{ font-size:16px; padding:0px 10px; }
+.fxmail .pageNum{ font-size:14px; margin-left:10px;}
+
+ 
+}
+

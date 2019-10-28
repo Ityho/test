@@ -1,0 +1,66 @@
+.learning-bg {
+  width: 100%;
+  height: 485px;
+  background: url(../../images/spreadData/learning-bg.png) no-repeat;
+  background-size: cover;
+   background-position: center;
+}
+.page-learning p,.page-learning dt,.page-learning dd{
+	  letter-spacing: 0.03em;
+    line-height: 1.5;
+}
+.page-learning .learning-con {
+  max-width: 1200px;
+}
+.page-learning .learning-title {
+  font-size: 24px;
+  padding-left: 10px;
+  border-left: 6px solid #2bd4f2;
+  margin-bottom: 25px;
+  margin-top: 100px;
+  line-height: 1;
+  color: #333;
+}
+.page-learning .learning-item {
+  box-shadow: 0px 0px 25px 5px #ededed;
+  margin-bottom: 40px;
+  background: #ffffff;
+}
+.page-learning .learn_l {
+  padding: 35px 30px;
+  font-size: 16px;
+  color: #333333;
+ 	width: calc(100% - 330px);
+}
+.page-learning .learn_r {
+  width: 330px;
+  height: 220px;
+}
+.page-learning .learn_r img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.page-learning .learning-info {
+  padding: 40px 30px;
+}
+.page-learning .learning-info dt {
+  float: left;
+  font-size: 16px;
+}
+.page-learning .learning-info dd {
+  margin-left: 30px;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+@media only screen and (min-width: 780px) {
+	body{
+		min-width: 1100px;
+	}
+}
+@media only screen and (max-width: 1280px) {
+	.learning-bg {
+    height: 420px;
+  }
+}

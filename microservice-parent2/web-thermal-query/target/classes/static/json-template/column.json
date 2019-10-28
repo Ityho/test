@@ -1,0 +1,67 @@
+{
+        chart: {
+        	height:{height},
+        	width:{width},
+            type: 'column',
+			style: {
+				fontFamily: 'Microsoft YaHei',
+				fontSize:	12,
+				color:'#000000'
+			},
+            options3d: {
+                enabled: false,
+                alpha: 0,
+                beta: 0,
+                depth: 20,
+                viewDistance: 25
+            }
+        },
+        title: {
+            text: ''
+        },
+        subtitle: {
+            text: ''
+        },
+        credits: {
+     		enabled: false
+		},
+        xAxis: {
+            categories: {lables},
+			labels: {
+                style: {
+					fontFamily: 'Microsoft YaHei',
+                    fontSize: 12,
+					color:'#000000'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+			allowDecimals:false, //是否允许刻度有小数
+            title: {
+				style:{
+					fontFamily: 'Microsoft YaHei',
+					fontSize: 12,
+					color:'#000000'
+				},
+                text: '数量'
+            }
+        },
+        legend:{
+        	enabled:false
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0,
+                colorByPoint: false,
+            }
+           
+        },
+        series:[
+        			{
+        				name:" ",
+        				data:{data}
+        			}
+        		]
+}		

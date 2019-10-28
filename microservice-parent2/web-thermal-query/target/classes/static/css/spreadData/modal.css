@@ -1,0 +1,345 @@
+.setModal {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0px;
+	left: 0px;
+	margin: auto;
+	z-index: 1050;
+}
+
+.setModal .modal-text {
+	position: absolute;
+	top: 92px;
+	left: 104px;
+	color: #FFFFFF;
+}
+
+.setModal .modal-text span {
+	color: #FEFCFB;
+	padding: 0 3px;
+}
+
+.setModal .text-juan {
+	margin-top: 38px;
+	margin-left: 8px;
+	width: 165px;
+}
+
+.setModal .text-juan p {
+	color: #FF5F3C;
+}
+
+.setModal .close {
+	color: #fff;
+	font-weight: 300;
+	text-shadow: none;
+	opacity: .4;
+	font-size: 32px;
+	position: absolute;
+	right: 40px;
+	top: 45px;
+	z-index: 2;
+}
+
+.setModal .btn-receive {
+	display: inline-block;
+	width: 152px;
+	height: 57px;
+	background: url(../images/button_modal.png) no-repeat;
+	-moz-background-size: cover;
+	background-size: cover;
+	position: absolute;
+	bottom: 15px;
+	left: -15px;
+	right: 0;
+	margin: auto;
+	text-align: center;
+	font-size: 18px;
+	color: #E0393E;
+	line-height: 50px;
+	text-decoration: none;
+}
+
+.modal-backdrop,
+.modal-backdrop.fade.in {
+	opacity: .6;
+}
+
+
+/*提醒礼物领取*/
+
+.remind {
+	width: 320px;
+	background: #ffffff;
+	position: fixed;
+	bottom: 0;
+	right: 0;
+	-webkit-box-shadow: 0 0 5px #d9d9d9;
+	-moz-box-shadow: 0 0 5px #d9d9d9;
+	box-shadow: 0 0 5px #d9d9d9;
+	z-index: 1999;
+}
+
+.remind .remind-header .modal-title {
+	height: 30px;
+	line-height: 30px;
+	background: -webkit-gradient(linear, left top, right top, from(#f18d00), to(#ff6e02));
+	background: -webkit-linear-gradient(left, #f18d00, #ff6e02);
+	background: -moz-linear-gradient(left, #f18d00, #ff6e02);
+	background: linear-gradient(to right, #f18d00, #ff6e02);
+	padding-left: 10px;
+	font-size: 14px;
+	color: #FFFFFF;
+}
+
+.remind .close {
+	color: #FFFFFF;
+	opacity: 1;
+	font-size: 16px;
+	margin-top: 6px;
+	margin-right: 10px;
+	position: absolute;
+	right: 0;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.remind .remind-body {
+	position: relative;
+	padding: 20px;
+	width: 100%;
+	display: table;
+}
+
+.remind .remind-lf {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	width: 180px;
+}
+
+.remind .remind-rg {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: right;
+}
+
+.remind .remind-lf .btn-remind {
+	display: inline-block;
+	background: -webkit-gradient(linear, left top, right top, from(#f18d00), to(#ff6e02));
+	background: -webkit-linear-gradient(left, #f18d00, #ff6e02);
+	background: -moz-linear-gradient(left, #f18d00, #ff6e02);
+	background: linear-gradient(to right, #f18d00, #ff6e02);
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+	color: #ffffff;
+	padding: 6px 22px;
+	font-size: 14px;
+	margin-top: 18px;
+}
+
+.remind .remind-lf .btn-remind:hover {
+	text-decoration: none;
+}
+
+.animated {
+	-webkit-animation-duration: 4s;
+	animation-duration: 4s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-delay: -2s;
+	-webkit-animation-delay: -2s;
+}
+
+.animat {
+	-webkit-animation-duration: 3s;
+	animation-duration: 3s;
+	-webkit-animation-fill-mode: both;
+	animation-fill-mode: both;
+	animation-delay: -1s;
+	-webkit-animation-delay: -1s;
+}
+
+@-webkit-keyframes rollOut {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-50px, 700px) rotate(-360deg);
+		transform: translate(-50px, 700px) rotate(-360deg)
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0, 0) rotate(0deg);
+		transform: translate(0, 0) rotate(0deg)
+	}
+}
+
+@keyframes rollOut {
+	0% {
+		opacity: 0;
+		-webkit-transform: translate(-50px, 700px) rotate(-360deg);
+		-ms-transform: translate(-50px, 700px) rotate(-360deg);
+		transform: translate(-50px, 700px) rotate(-360deg);
+	}
+	100% {
+		opacity: 1;
+		-webkit-transform: translate(0, 0) rotate(0deg);
+		-ms-transform: translate(0, 0) rotate(0deg);
+		transform: translate(0, 0) rotate(0deg);
+	}
+}
+
+
+/*优惠券弹框*/
+
+.redPacket {
+	background: url(../images/model-bg.png) no-repeat;
+	background-size: cover;
+}
+
+.redPacket-footer {
+	position: absolute;
+	bottom: 200px;
+	left: 298px;
+	z-index: 2;
+}
+
+.redPacket-content {
+	position: absolute;
+	top: 328px;
+	left: 354px;
+	width: 100%;
+	height: 200px;
+	overflow: hidden;
+}
+
+.redPacket-item a {
+	display: table;
+	width: 290px;
+	height: 93px;
+	text-decoration: none;
+}
+
+.redPacket-item {
+	display: inline-block;
+	margin-bottom: 10px;
+	width: 334px;
+	height: 93px;
+	background: url(../images/model-hongbao.png) no-repeat;
+	background-size: contain;
+}
+
+.redPacket-item a span {
+	display: table-cell;
+	vertical-align: middle;
+	color: #BF321F;
+	width: 140px;
+	text-align: center;
+}
+
+.redPacket-item .redPacket-des {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.redPacket-item .redPacket-des p {
+	color: #BF321F;
+}
+
+.redPacket-content::-webkit-scrollbar {
+	width: 0px;
+	height: 0px;
+}
+
+#wrapperPrize {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 1;
+}
+
+
+/*用户体验调查*/
+
+.diaocha {
+	width: 363px;
+}
+
+.diaocha-img {
+	width: 109px;
+	height: 112px;
+}
+
+.diaocha-img img {
+	width: 100%;
+}
+
+.diaocha-txt {
+	margin-left: 120px;
+}
+
+.diaocha .dc1 {
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.diaocha .dc2 {
+	font-size: 13px;
+	color: #595959;
+}
+
+.diaocha .dc3 {
+	text-align: right;
+}
+
+.diaocha .dc3 a {
+	text-decoration: none;
+}
+
+.diaocha .dc3 a:hover {
+	text-decoration: none;
+}
+
+.invesImg-float {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: auto;
+	height: 55px;
+	width: 53px;
+	bottom: 45px;
+	display: none;
+	z-index: 1999;
+}
+
+
+/*竞赛按钮*/
+
+.fixedActive {
+	position: fixed;
+	right: 0;
+	margin: auto;
+	bottom: 400px;
+	z-index: 1999;
+}
+
+.fixedActive a {
+	display: block;
+	width: 65px;
+}
+
+.fixedActive a img {
+	width: 100%;
+}
+.fixedActive .close{
+	font-size: 20px;
+    color: #ff6307;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+    display: none;
+}
+.fixedActive>div:hover .close{
+	display: block;
+}

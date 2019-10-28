@@ -1,0 +1,212 @@
+#myModal.modal.fade.in {
+  top: 3%;
+}
+.list-unstyle {
+  list-style-type: none !important;
+}
+.exportData .modal-header {
+  padding: 15px 16px;
+}
+.exportData .modal-header h3 {
+  font-size: 20px;
+  line-height: 31px;
+}
+.exportData .modal-body {
+  margin: 5px 40px;
+  padding: 0;
+  border-bottom: 1px solid #dcdcdc;
+}
+.exportData .modal-body .export-con .export-con-lists li {
+  display: inline-block;
+  width: 100%;
+}
+.exportData .modal-body .export-con .export-con-lists li label {
+  float: left;
+  width: 14%;
+  color: #444444;
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr {
+  float: left;
+  width: 86%;
+  color: #444444;
+  font-size: 14px;
+}
+
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-basics {
+  width: 240px;
+  border: 1px solid #D9D9D9;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-upgrade {
+  width: 240px;
+  border: 1px solid #D9D9D9;
+  position: relative;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-upgrade .ex-mask {
+  position: absolute;
+  top: 0;
+  background: rgba(21, 158, 100, 0.8);
+  color: #ffffff;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  font-size: 12px;
+  padding: 40px 16px 0 16px;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-upgrade .ex-mask p {
+  margin-bottom: 10px;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .upgrade-act {
+  display: inline-block;
+  font-size: 12px;
+  color: #666666;
+  margin: 12px 0;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-selected {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  background: url(../images/ex-selected.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .basics-tit {
+  height: 36px;
+  line-height: 36px;
+  background: #FD8C25;
+  text-align: center;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .basics-tit h3 {
+  font-size: 16px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .basics-tit h3 em {
+  font-size: 14px;
+  color: #FFFFFF;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .basics-con {
+  position: relative;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .basics-con .basics-con-ul1 {
+  margin-left: 16px;
+  padding-left: 16px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .basics-con li {
+  display: list-item;
+  margin: 0;
+  list-style-type: disc;
+  font-size: 12px;
+  color: #444444;
+  padding: 1px 0;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .basics-con .basics-con-ul2 {
+  margin-left: 16px;
+  padding-left: 32px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-upgrade.ex-active, .exportData .modal-body .export-con .export-con-lists li .export-cr section.ex-upgrade:hover {
+  border: 2px solid #3fad7e !important;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-basics.ex-active, .exportData .modal-body .export-con .export-con-lists li .export-cr section.ex-basics:hover {
+  border: 2px solid #FD8C25 !important;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-upgrade.ex-active .basics-con.clearfix{
+	background-color: #c7ffe7;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-basics.ex-active .basics-con.clearfix{
+	background-color: #FFDBBA;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-active .ex-selected {
+  display: block !important;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-cr .ex-active .selected-green {
+  background: url(../images/ex-slected-gree.png) !important;
+}
+.exportData .modal-body .export-con .export-con-lists li .export-hg {
+  height: 30px;
+  line-height: 30px;
+}
+.exportData .modal-body .export-con .action-con {
+  height: 58px;
+  line-height: 58px;
+  background: #FDF1E2;
+  padding-left: 20px;
+  border: 1px dashed #fd8c25;
+  font-size: 14px;
+  color: #444444;
+  margin-top: 15px;
+}
+.exportData .modal-body .export-con .downtype {
+  padding: 10px 0 18px 0;
+}
+.exportData .modal-body .export-con .downtype label {
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  color: #444444;
+  display: inline-block;
+  padding: 0 15px !important;
+}
+.exportData .modal-body .export-con .downtype .down-group .type_btn1 {
+  position: relative;
+  border: 1px solid #FD8C25;
+  border-radius: 2px;
+  color: ##FD8C25;
+  background: none;
+}
+.exportData .modal-body .export-con .downtype .down-group .type_btn2 {
+  position: relative;
+  border: 1px solid #49B185;
+  border-radius: 2px;
+  color: ##49B185;
+  background: none;
+}
+.exportData .modal-body .export-con .downtype .down-group .type_btn3 {
+  position: relative;
+  border: 1px solid #0E7DC0;
+  border-radius: 2px;
+  color: ##0E7DC0;
+  background: none;
+}
+.exportData .modal-body .export-con .downtype .down-group .down-selected {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  background: url(../images/ex-selected.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+.exportData .modal-body .export-con .downtype .down-group .down-b .down-selected {
+  display: block;
+}
+.exportData .modal-body .export-con .tab-base tr td {
+  font-size: 14px;
+  color: #444444;
+  border: 1px solid #D9D9D9;
+  padding: 12px;
+  text-align: left;
+}
+.exportData .modal-body .export-con .tab-base tr td .ex-spn-r {
+  width: 80%;
+}
+.exportData .modal-footer button {
+  width: 80px;
+}
+.exportData .modal-footer button:last-child {
+  color: #FFFFFF;
+  background: #abc7bf;
+}

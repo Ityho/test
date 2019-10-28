@@ -1,0 +1,59 @@
+@charset "GBK";
+/* CSS Document */
+
+
+/*µÇÂ¼¿òÑùÊ½*/
+.logon{height: 385px;width: 325px;background-color: #FFF;
+	font-size: 14px;}
+.logon  textarea:focus,.logon  input[type="text"]:focus,.logon  input[type="password"]:focus { border: 0px solid #0970ee; background-color:#FFF; }
+.logon > h2{font-size: 24px;display: block;line-height: 30px;height: 30px;color: #1161c1;text-indent: 25px;margin-top: 10px;margin-bottom: 10px;}
+.logon  .inputText{width: 242px;border-style: none;}
+.logon  .inputText{height: 42px; line-height: 18px;margin-top: 0px;}
+*html .logon  .inputText { height: 35px;line-height: 35px;margin-top: 6px;} /* ie6 fixed */
+*+html .logon  .inputText{ height: 35px;line-height: 35px;margin-top: 6px;} /* ie7 fixed, ×¢ÒâË³Ðò */
+.logon  .inputYZM{width: 110px;border-style: none;}
+.logon  .inputYZM{height: 42px; line-height: 18px;}
+*html .logon  .inputYZM{height: 35px;	line-height: 35px;}/* ie6 fixed */
+*+html .logon  .inputYZM{height: 35px;	line-height: 35px;}/* ie7 fixed, ×¢ÒâË³Ðò */
+.logon  .input{width: 252px;height: 45px;font-size: 14px;color: #666;line-height: 45px;border: 1px solid #dbdbdb;padding-left: 30px;margin: 20px 20px 10px 20px;-moz-border-radius: 4px;-webkit-border-radius: 4px;border-radius: 4px;behavior: url(pie.htc);position: relative;}
+.logon  .phone { background: url(../images/new_ren_03.png) no-repeat 8px 10px;}
+.logon  .phone{ margin-bottom:0px;}
+*html .logon  .phone{ margin-bottom:5px;}/* ie6 fixed */
+*+html .logon  .phone{ margin-bottom:5px;}/* ie7 fixed, ×¢ÒâË³Ðò */
+.logon .password { background: url(../images/new_sou_07.png) no-repeat 8px 14px;}
+.logon .code{background:url(../images/yama.png) no-repeat 8px 14px;width:120px;margin-top: 10px;}
+.logon .imgVcode{margin-top:10px;}
+.logon  .login_forg {width: 260px;height: 30px;color: #555555;line-height: 30px; margin: 0px 20px 0px 20px; font-size:12px;}
+.logon .login_forg a {margin-left: 100px;}
+.logon .login_btn { width: 280px;height: 45px;color: #fff; line-height: 45px; margin: 10px 20px 10px 20px; background: #1c82d2; color: #FFF; text-align: center; border-radius: 4px; cursor: pointer;behavior: url(pie.htc);}
+.logon  .login_btn:hover { background: #1367aa; }
+.forgetpassword{text-decoration: none;}
+.forgetpassword:hover{
+	text-decoration: underline;
+	color: #1367aa;
+}
+.logon .login_mfzc { width: 260px; height: 25px; color: #555555; line-height: 25px; margin: 0px 20px 5px 20px; font-size:12px; text-align: left;}
+.logon .login_mfzc a {color: #1c82d2;text-decoration: none;}
+.logon .login_mfzc a:hover{text-decoration: underline;}
+.logon .wy_dl {width: 252px;height: 45px;padding-left: 30px;margin: 5px 20px 5px 20px;line-height: 45px;}
+.logon .wy_pass { width: 252px;height: 45px; padding-left: 30px; margin: 10px 20px 5px 20px;}
+.logon .wy_forget {width: 260px; height: 20px; line-height: 20px; margin: 0px 20px 0px 20px;}
+.login_other{ font-size:12px; margin-left:20px;}
+.login_other p{ margin-top:8px;}
+.login_other a{ text-decoration:none; padding:5px 0px; margin-right:10px;}
+.login_other a:hover{ color:#06C; text-decoration:underline;}
+.login_other .QQ_icon{
+	background-image: url(../images/QQ_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left:30px;
+}
+.login_other .weibo_icon{background-image: url(../images/weibo_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left:30px;}
+.login_other .weixin_icon{background-image: url(../images/weixin_icon.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left:30px;}
+.new_mfzc{ display:block; float:left; margin-top:10px; margin-left:25px;color: red;font-size: 12px;}

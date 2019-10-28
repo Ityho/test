@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="119px" height="89px" viewBox="0 0 119 89" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>右下角@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="8.0042133%" y1="100%" x2="94.3544962%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1AC0FF" offset="0%"></stop>
+            <stop stop-color="#3C83F5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="热点发现-热门事件" transform="translate(-1208.000000, -937.000000)">
+            <g id="地图" transform="translate(327.000000, 243.000000)">
+                <g id="地图边框">
+                    <g id="右下角" transform="translate(881.000000, 694.000000)">
+                        <polygon id="矩形" fill="url(#linearGradient-1)" points="114.304712 79 119 79 109.695288 88 105 88"></polygon>
+                        <polygon id="矩形-copy-4" fill="url(#linearGradient-1)" points="103.304712 79 108 79 98.6952882 88 94 88"></polygon>
+                        <polygon id="矩形-copy-5" fill="url(#linearGradient-1)" points="93.3047118 79 98 79 88.6952882 88 84 88"></polygon>
+                        <polygon id="矩形-copy-6" fill="url(#linearGradient-1)" points="82.3047118 79 87 79 77.6952882 88 73 88"></polygon>
+                        <polyline id="路径-8" stroke="#008BBF" points="0.71875 88 64.2476095 88 77.7864683 74 117 74.9403449 117 9.76996262e-15"></polyline>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

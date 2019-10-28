@@ -1,0 +1,31 @@
+@charset "GBK";
+/* CSS Document */
+
+
+/*∑÷Œˆ±®∏Ê‘§¿¿*/
+.reportPreview{background-color:#fff;padding:15px;}
+.logo{position:absolute; left:40px; top:40px;}
+.reportCon{ background-color:#fff; border:solid 2px #dadada;}
+.reportCon .reportTit{ padding:20px 0px; text-align:center; border-bottom:solid 2px #dadada; background-color:#F3F3F3;}
+.reportCon .reportTit i{ position:absolute; bottom:-25px; left:48.3333%; font-style:normal; color:#F00; font-size:40px;text-shadow: 6px 0 6px #fff, 0 6px 6px #fff, 0 -6px 6px #fff, -6px 0 6px #fff;
+}
+.reportCon .reportTit h1{ font-size:30px; color:#000; margin-bottom:10px;}
+.reportCon .reportTit .rtime{ color:#5f5f5f; font-size:18px;}
+.reportCon .reportBox{ padding:45px 50px;}
+.reportCon .reportBox .tit{ border-bottom:solid 1px #c4c4c4; height:40px; line-height:40px; color:#333; font-size:20px; margin-bottom:15px;}
+.reportCon .reportBox .tit h2{ display:block; float:left; line-height:38px;border-bottom:solid 3px #008be3; padding:0px 5px; font-weight:bold;}
+.reportCon .reportBox p{ font-size:14px; line-height:25px; margin-bottom:5px;}
+.reportCon .reportBox p em{ font-weight:bold;  color:#000; font-style:normal;}
+.reportCon .reportBox .img{ border:solid 1px #CCC;}
+.reportCon .table{ width:100%; border:solid 1px #CCC; margin:0px;}
+.reportCon .table th,.reportCon .table td{border:solid 1px #CCC; }
+.reportCon .table th{background-color: #DFDFDF;}
+.reportCon .table .tdCon{text-align:left; padding:10px; }
+.reportCon .table .tdCon p{text-indent:25px; margin-bottom:5px; line-height:22px; padding:0px; }
+
+.reportCon2 .line1{ border-bottom:solid 2px #0891ff; margin-bottom:4px; margin-top:20px;}
+.reportCon2 .line2{ border-bottom:solid 4px #0891ff;}
+.reportCon2 .reportTit h1{color:#0891ff;}
+.reportCon2 .reportTit{ margin:0px 70px; background-color:transparent; border-bottom:none;}
+.reportCon2 .reportBox .tit{ border-bottom: none;}
+.reportCon2 .reportBox .tit h2{ border-bottom: none; }

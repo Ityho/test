@@ -1,0 +1,52 @@
+#服务注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://172.17.134.10:10500/eureka/
+
+#服务名称
+spring:
+  application:
+    name: api-gateway
+  zipkin:
+    discovery-client-enabled: true
+    base-url: http://192.168.20.127:9411/
+  sleuth:
+    enabled: true
+    feign:
+      enabled: true
+    sampler:
+      probability: 1.0
+  cloud:
+    config: # spring cloud config 配置
+      discovery:
+        enabled: true #从配置中心读取文件
+        service-id: api-config-center #配置中心的servieId，通过服务名称去Eureka注册中心找
+      name: ${spring.application.name},common-redis-wrd
+      label: master #指明远程仓库的分支
+      profile: dev #beta环境配置文件
+#  rabbitmq:
+#    host: localhost
+#    port: 5672
+#    username: guest
+#    password: guest
+#    virtual-host: /
+#spring 2.X actuator
+#http://ip:port/actuator/refresh
+hystrix:
+  command:
+    default:  #default全局有效，service id指定应用有效
+      execution:
+        timeout:
+          #如果enabled设置为false，则请求超时交给ribbon控制,为true,则超时作为熔断根据
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 30000 #断路器超时时间，默认1000ms
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info

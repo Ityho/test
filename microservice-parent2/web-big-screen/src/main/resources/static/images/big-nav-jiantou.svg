@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="212px" height="34px" viewBox="0 0 212 34" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>分组 6@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="50%" cy="50%" fx="50%" fy="50%" r="59.453524%" gradientTransform="translate(0.500000,0.500000),scale(0.151322,1.000000),rotate(97.384871),translate(-0.500000,-0.500000)" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0" offset="0%"></stop>
+            <stop stop-color="#B2EAFF" stop-opacity="0.337630961" offset="63.5567197%"></stop>
+            <stop stop-color="#1AC0FF" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="热点发现-重大事件" transform="translate(-559.000000, -339.000000)" stroke="#008BBF">
+            <g id="边框" transform="translate(328.000000, 339.000000)">
+                <g id="分组-6">
+                    <g transform="translate(224.000000, 0.000000)">
+                        <path d="M157.514619,1.5 L218.920247,1.5 L218.920247,0.5 L158.913174,0.5 L157.514619,1.5 Z M112.924153,33.3832425 L112.63041,33.5932753 L113.21589,33.5960515 L112.924153,33.3832425 Z M69.2157961,1.5 L67.8449081,0.5 L0.842298334,0.5 L0.842298334,1.5 L69.2157961,1.5 Z" id="路径" fill-opacity="0.04" fill="url(#radialGradient-1)"></path>
+                        <path d="M157.520055,1 L218.708311,1" id="路径-2"></path>
+                        <path d="M7.52005511,1 L68.7083106,1" id="路径-2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

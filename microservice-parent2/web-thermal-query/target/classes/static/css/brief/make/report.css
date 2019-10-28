@@ -1,0 +1,324 @@
+@charset "GBK";
+/* CSS Document */
+.contenteditable{border: solid 1px #DCDCDC; padding: 5px 10px;}
+.contenteditable:hover,.contenteditable:focus{border: solid 1px #008be3;background-color: #fff;}
+.contenteditable:focus{  border-color: rgba(82, 168, 236, 0.8);
+-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px rgba(82, 168, 236, .6);}
+  
+ 
+.row-fluid{display: inline-block; width: 100%;}
+.ui-draggable.ui-draggable-dragging{display: inline-block; background-color: #fff;}
+.noData{ text-align: center; padding: 100px 0; border: dashed 1px #DCDCDC;}
+/*报告左侧浮动导航*/
+#nav2 {  list-style: none; position: fixed;width: 15%; height: 100%; top: 0px; left: 0; z-index:100; background-color: #fff;-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5); 
+  transition: all .5s;
+  -moz-transition: all .5s;
+  -webkit-transition: all .5s;
+  -o-transition: all .5s;
+  }
+#nav2>.title{height: 40px; line-height: 40px; border-bottom: solid 2px #FF7700;}
+#nav2>.title>h1{font-size: 18px;line-height: 40px; margin: 0;margin-left: 10px;}
+#nav2>ul{display: inline-block;width: 100%; height: 92%; overflow: auto;}
+#nav2>ul>li{border-bottom: dashed 1px #eee;}
+#nav2>ul>li:hover,#nav2>ul>li:focus{background-color: #F7F7F7; cursor: move;}
+#nav2 li{background: #fff;color: #666; line-height: 25px; display: block;	font-size: 14px;padding: 2px 10px;  text-decoration: none;}
+
+#nav2 li i{display: inline-block; font-size: 20px; text-align: center; width: 25px; height: 25px;line-height: 25px; vertical-align: middle; margin-right: 10px;}
+#nav2 ul>li .view>.row-fluid{display: none;}
+
+ 
+
+.reportPreview{font-family: "songti";}
+.reportPreview .dropdown-menu{left: auto; right: 0;}
+.reportPreview .dropdown-menu.chart-menu li > a{padding: 10px;}
+.reportPreview .chart-menu{width: 500px;}
+.reportPreview .chart-menu>li>a img{width: 100%; max-width: initial; height: 200px;border: solid 2px #eee;}
+.reportPreview .chart-menu>li>a img:hover{border: solid 2px #008BE3;}
+.reportPreview .chart-menu>li>a h1{text-align: center; font-size: 18px; line-height: 30px; color: #666;}
+.reportPreview .chart-menu>li a:hover{background: none; opacity: .8;}
+.reportPreview .chart-menuThree{width: 600px;}
+.reportPreview .chart-menuThree>li{width: 33%; display: inline-block; float: left;}
+.reportPreview .chart-menuThree>li>a img{ height: 100px;}
+.reportPreview .chart-menuTow{width: 800px;}
+.reportPreview .chart-menuTow>li{width: 49%; display: inline-block;}
+.reportPreview .title-menu{width: 700px;}
+.reportPreview .title-menu>li>a img{height: 80px;}
+/*分析报告预览*/
+.reportPreview .tool{bottom: 0px; right: 5px;}
+.reportPreview .reportBox li .h1{display: none;}
+
+.reportBox >div{
+  background-color: #F5F5F5;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+  box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+  border: 1px solid #DDDDDD;
+  border-radius: 4px 4px 4px 4px;
+  padding: 20px;
+  }
+  .reportBox>div>ul{background-color: #fff; padding:10px;min-height: 500px;}
+.reportPreview{
+    width: 81.5%;
+    margin: 20px 0;
+    float: right;
+    margin-right: 0%;
+    background-color:#fff;
+    position: relative;
+    font-size:12px;
+    -moz-border-radius: 5px !important;
+    -webkit-border-radius: 5px !important;
+    border-radius: 5px !important;
+    -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);
+    overflow: hidden;
+    }
+.row-fluid > .textShow .chart,.row-fluid > .textShow .chart img{display: inline-block; width: 100%; }
+.reportPreview .row-fluid{ overflow: initial; display: inline-block; width: 100%;}
+.reportPreview .tool.toolhover{ display: none;}
+.reportPreview .tool .button4{height: 30px; line-height: 30px; background-color: 
+transparent; color: #008be3; font-weight: 600; border: none;}
+.reportPreview .tool .button4:hover{background-color: #d7efff; }
+.row-fluid > .textShow .btn-group .btn{background: transparent; border: none; margin-top: 5px; color: #008be3;}
+/*.logo{position:absolute; left:40px; top:25px;z-index: 2;}*/
+.reportCon{ /*background-color:#FAF9F9;*/ color: #666; }
+.reportCon .reportTit{ padding: 20px 0 10px;font-size: 14px; text-align:center; border-bottom:solid 3px #F00; background-color:#fff; position: relative; }
+.reportCon .reportTit2{border-bottom:solid 1px #DCDCDC;}
+.reportCon .reportTit .textShow{padding: 20px 0;}
+.reportCon .reportTit > i{ position:absolute; bottom:-25px; left:48.3333%; font-style:normal; color:#F00; font-size:40px;text-shadow: 6px 0 6px #fff, 0 6px 6px #fff, 0 -6px 6px #fff, -6px 0 6px #fff;
+}
+.reportCon .reportTit h1,.reportCon .reportTit .h1{display: inline-block;padding: 5px 
+
+20px; font-size:30px; color:#F00;font-weight: 600; margin: 0; margin-bottom:10px; margin-right: 10px;}
+.reportCon .reportTit .h1{ text-align: left;/*background-color:#F3F3F3;*/}
+.reportCon .reportTit .star{position: absolute; color: #F00; bottom: -12px; background-color: #fff; left: 49.5%;}
+.reportCon .reportTit .star >i{font-size: 16px;}
+
+.reportCon .reportTit .rtime{ color:#5f5f5f; font-size:18px;}
+.reportCon .reportBox{ padding:10px 25px;}
+.reportCon .reportBox .tit{ border-bottom:solid 1px #c4c4c4; min-height:40px; line-height:40px; color:#333; margin-bottom:10px; position: relative;}
+
+
+.reportCon .reportBox .tit>h1,
+.reportCon .reportBox .tit>h2,
+.reportCon .reportBox .tit>h1.h2{ display: inline-block;margin: 0; margin-right: 10px; float:left;font-size:20px; line-height:38px;border-bottom:solid 3px #008be3; padding:0px 5px; font-weight:bold;}
+.reportCon .reportBox .tit>h1.h2{text-indent: 30px;}
+.reportCon .reportBox .tit>h1.h3{text-indent: 0; font-size: 14px; line-height: 25px; font-weight: 400; color: #666; float: none; width: 50%; padding: 5px; border:solid 1px #DCDCDC;}
+.reportCon .reportBox .tit >h2{margin-left: 30px; font-size: 17px;}
+.reportCon .reportBox .tit >h3{ display: inline-block;margin: 0; margin-right: 10px; float:left;font-size:16px; line-height:38px;padding:0px 5px; font-weight:bold;}
+
+.reportCon .reportBox .tit span.small{line-height: 45px; font-size: 14px;}
+.reportCon .reportBox .textShow >.text,.textCon .text2 {font-size:14px; line-height:25px; color: #666; width: 100%;  margin-bottom: 10px; display: inline-block; clear: both;}
+.reportCon .reportBox .textShow >.text .textCon{min-height: 60px;}
+.textCon .text2{ text-indent: 10px;}
+.text_tit1 .textCon,.text_tit2 .textCon{font-size: 20px;font-weight: bold; text-indent: 0; color:#333; }
+.text_tit2 .textCon{text-indent: 40px;}
+.reportCon .reportBox .textShow >.text_tit1 .textCon,
+.reportCon .reportBox .textShow >.text_tit2 .textCon{min-height:30px;}
+.reportCon .reportBox p{ font-size:14px; margin-top: 0; margin-bottom: 0;}
+.reportCon .reportBox p em{ font-weight:bold;  color:#000; font-style:normal;}
+.reportCon .reportBox .img{ border:solid 1px #CCC;}
+.reportCon .table{
+
+/* width:100%; */
+
+border:solid 1px #e7e7e7;
+
+margin:0px;
+
+background-color: 
+
+#fff;
+
+}
+.reportCon .table td{padding: 10px;}
+.reportCon .table th{background-color: #EEEEEE;}
+.reportCon .table .tdCon{text-align:left; padding:10px; }
+.reportCon .table .tdCon p{text-indent:25px; margin-bottom:5px; line-height:22px; padding:0px; }
+
+.reportCon2 .line1{ border-bottom:solid 2px #0891ff; margin-bottom:4px; margin-top:20px;}
+.reportCon2 .line2{ border-bottom:solid 4px #0891ff;}
+.reportCon2 .reportTit h1{color:#0891ff;}
+.reportCon2 .reportTit{ margin:0px 70px; background-color:transparent; border-bottom:none;}
+.reportCon2 .reportBox .tit{ border-bottom: none;}
+.reportCon2 .reportBox .tit h2{ border-bottom: none; }
+.textShow.chart{text-align: center;}
+.textShow.chart div.chartMap>h1{display: none;}
+.textShow.chart div.chartMap img{height: 300px; margin: auto;}
+.bottom{padding: 10px 0;}
+.bottom #previewClose{display: none;}
+
+/*预览效果*/
+.finalDraft .reportPreview{margin-right: 9%;}
+.finalDraft #nav2{left: -15%;}
+.finalDraft .bottom #black,.finalDraft .bottom #previewOpen{display: none;}
+.finalDraft .reportPreview .tool{z-index: -1;}
+.finalDraft .bottom #previewClose{display: inline-block;}
+.finalDraft .reportBox >div{background: none;
+-webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  border-radius: 0;}
+.finalDraft .reportCon .reportBox .tit {
+  border-bottom: none;
+    height: 20px;
+}
+.finalDraft .reportCon .reportBox .tit h1,
+.finalDraft .reportCon .reportBox .tit h2,
+.finalDraft .reportCon .reportBox .tit h3{border-bottom: none; padding: 0;}
+.finalDraft .reportCon .reportBox .textShow >.text .textCon{text-indent: 30px; min-height: 0px;}
+.finalDraft .reportCon .reportBox .textShow .text_tit1 .textCon{ text-indent: 0;}
+.finalDraft .reportCon .reportBox .textShow .text_tit2 .textCon{ text-indent: 30px;}
+.finalDraft .reportCon .reportBox .textShow >.text textarea{border: none;}
+.finalDraft .reportPreview .operation{display: none;}
+.finalDraft .reportCon .reportBox .row-fluid.text div.textShow:first-child{display: none;}
+.finalDraft .reportCon .reportBox .tit>h1.h3{border: none; width: 100%; text-indent: 30px;}
+/*统计图选择*/
+.chartChoice{display: inline-block; width: 90%;margin: 20px 0; margin-left: 5%; }
+.chartChoice > ul >li{display: inline-block; width: 30.6%; margin-right: 2.6%; border: 
+
+solid 2px #dadada; cursor: pointer; position: relative;}
+.chartChoice > ul >li:hover,.chartChoice > ul >li.clicked{border: solid 2px #FF8500;}
+.chartChoice > ul >li:last-child{margin-right: 0%;}
+.chartChoice > ul >li.clicked p:last-child{background-color: #FF8500; color: #fff;}
+.chartChoice > ul >li.clicked:after{content: "√"; width:30px; height: 30px; line-
+
+height: 30px; text-align: center; font-size: 20px; font-weight: 600; background-color: 
+
+#FF8500; color: #fff; position: absolute; top: 0px; right: 0px;}
+.chartChoice > ul >li p:first-child{width: 100%; height: 140px;}
+.chartChoice > ul >li p:first-child img{width: 100%; height: 100%;}
+.chartChoice > ul >li p:last-child{width: 100%; font-size: 16px; text-align: center; 
+
+line-height: 50px;border-top: solid 1px #dadada;}
+ .textShow{display: inline-block; width: 100%;}
+.row-fluid.hover .textShow,.row-fluid.hover .yb .toolhover{display: none;}
+.row-fluid.hover .editBox{display: inline-block;}
+.row-fluid.hover .tit h2{ border-bottom: solid 3px #FF8500; display: inline-block; 
+
+margin-right: 10px;}
+.row-fluid.hover .tit  input{padding: 5px 10px; margin-right: 10px;font-size:20px;line-
+
+height:26px; display: inline-block;}
+/*编辑样式*/
+.editBox{width: 100%;  display: block; font-size: 14px;position: initial;  }
+.yb > .editBox{position: absolute;}
+.reportTit .editBox > div{height: 100%; margin: 0px; padding: 20px 0; }
+.reportTit .editBox{min-height: initial;}
+.editBox > div{ }
+.editBox .inputList{width: 98%; height: 100px;   padding: 10px; line-height: 20px;  
+
+margin-bottom: 10px;overflow-y:hidden;}
+.editBox .tool{display: inline-block; }
+.reportTit .tool{margin-top: 10px;}
+.reportTit .editBox .tool{display: inline-block;}
+.editBox input{background-color: #fff; border: solid 1px #dadada; border-radius: 2px;}
+.row-fluid:hover .tool{display: inline-block;}
+.editBox .table input{padding: 5px 10px;}
+.editBox .table .tool >button{padding: 0 5px;}
+.editBox .table .tool >button > i {
+   margin-top: 0px; 
+   margin-right: 0px; 
+}
+
+/*媒体来源占比*/
+.cat{width: 450px; height: 450px;margin: 0px auto; }
+.circularChart{ width: 100%; height: 410px; position: relative;}
+.circularChart li{display: inline-block; position: absolute;background-color: rgba(34,123,192,.95); color: #fff; text-align: center; border-radius: 50% !important;width: 80px; height: 80px; line-height: 20px;}
+.circularChart li p:first-child{margin-top: 15%;}
+.circularChart li.c1{  width: 200px;height: 200px; top: 121px;left: 143px; }
+.circularChart li.c1 p{font-size: 20px;line-height: 35px;}
+.circularChart li.c1 p:first-child{margin-top: 30%;}
+.circularChart li.c2{width: 90px; height: 90px; top: 110px; left: 57px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c3{width: 85px; height: 85px; top: 46px; left: 128px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c4{width: 85px; height: 85px; top: 31px; left: 222px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c5{width: 85px; height: 85px; top: 73px; left: 306px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c6{width: 80px; height: 80px; top: 155px; left: 348px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c7{width: 70px; height: 70px; top: 239px; left: 339px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c8{width: 70px; height: 70px; top: 299px; left: 293px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c9{width: 60px; height: 60px; top: 326px; left: 231px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c10{width: 60px; height: 60px; top: 319px; left: 163px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c11{width: 55px; height: 55px; top: 285px; left: 113px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c12{width: 55px; height: 55px; top: 232px; left: 85px;background-color: rgba(34,123,192,.95);}
+.circularChart li.c11 p,.circularChart li.c12 p{ line-height: 20px;}
+.circularChart2 li.c7 p,
+.circularChart2 li.c8 p,
+.circularChart2 li.c9 p,
+.circularChart2 li.c10 p,
+.circularChart2 li.c11 p,
+.circularChart2 li.c12 p{font-size: 12px;  line-height: 16px;}
+.circularChart2 li.c11 p,
+.circularChart2 li.c12 p{line-height: 14px;}
+.yb2 .more{position: absolute; bottom: 30px; right: 55px;}
+.yb2 .more a{border: solid 1px #e7e7e7;}
+
+/*舆情导读样式2*/
+.yqddStyle .yqddStyle2,.yqddStyle .style2{display: block;}
+.yqddStyle .yqddStyle1,.yqddStyle .style1{display: none;}
+.style1{display: block;}
+.style2{display: none;}
+.yqddStyle2{margin: 0 3%; display: none;}
+.yqddStyle2>dl{ display: inline-block;  width: 100%; margin: 0;}
+.yqddStyle2>dl:first-child{margin-top: 10px; padding-top: 10px; border-top: solid 1px #D4D4D4;}
+.yqddStyle2>dl:nth-child(2){ padding-bottom: 10px; border-bottom: solid 1px #D4D4D4;}
+.yqddStyle2>dl>dd{display: inline-block;  word-break: break-all;}
+.yqddStyle2 .cont h1{font-size: 16px;  font-weight: bold; margin: 0;}
+
+/*生成简报右侧缩略图*/
+.finalDraft2 .reportPreview{width: 100%; margin: 0;}
+.finalDraft2 .reportCon .reportTit {padding: 10px 0 5px;}
+.finalDraft2 .reportCon .reportTit h1 { padding: 0px 20px; font-size: 25px; margin: 0;}
+.finalDraft2 .reportBox >div{padding: 0;}
+.finalDraft2 .reportCon .reportBox .tit>h1, .reportCon .reportBox .tit>h2{font-size: 16px;  line-height: 28px;}
+.finalDraft2 .reportCon .reportBox .textShow >.text,.finalDraft2 .textCon .text2{font-size: 12px; line-height: 20px;}
+.finalDraft2 .reportBox>div>ul{ min-height: 95px;}
+.finalDraft2 .textShow.chart div.chartMap img {height: 250px;}
+
+.textSele>li>a>i{display: none;}
+.textSele>li.active>a>i{display: inline-block;}
+@media only screen and (max-width:1280px ) {
+    #nav2{font-size: 12px;}
+}
+
+@media only screen and (max-width:1024px ) {
+     #nav2 {width: 15%;}
+     .reportPreview{width: 85%;}
+     .finalDraft .reportPreview {margin-right: 5%;}
+}
+
+
+@media only screen and (max-width:750px ) {
+	.info-section {
+    position: initial;
+    top: initial;
+    right: initial;
+    width: 100%;
+    float: left;
+}
+	.cat{width: 100%;}
+	.circularChart { transform: translate(-60px,0px) scale(.9,.9);}
+     .finalDraft .reportPreview{width:100%;margin: 0;}
+     .finalDraft .reportCon .reportTit{padding: 10px 0 5px; margin: 0 10px;  border-bottom: solid 2px #F00;}
+     .finalDraft .reportCon .reportTit h1{font-size: 26px; margin-bottom: 0px; margin-right: 0px;}
+     .finalDraft .reportCon .reportTit p{margin-bottom: 0px;}
+     .finalDraft .reportCon .reportBox{  padding: 5px;}
+     .reportBox >div{padding: 0;}
+     .reportCon .reportBox .textShow >.text, .textCon .text2{font-size: 16px;}
+     .textShow.chart div.chartMap img{height: auto;}
+     .yqddStyle1{overflow: auto;}
+     .reportCon .reportBox .tit>h1, .reportCon .reportBox .tit>h2, .reportCon .reportBox .tit>h1.h2{font-size: 18px;}
+     .reportPreview {border-radius:0px !important;}
+}
+
+@media only screen and (max-width:320px ) {
+	.reportCon .reportBox .textShow >.text, .textCon .text2{font-size: 13px;line-height: 18px;}
+	.circularChart {transform: translate(-78px,0px) scale(.8,.8);}
+	}

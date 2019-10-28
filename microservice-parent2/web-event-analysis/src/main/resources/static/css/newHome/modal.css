@@ -1,0 +1,62 @@
+.wui-modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1050;
+  display: none;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+  outline: 0;
+}
+.wui-modal .modal-dialog {
+  position: relative;
+  width: 230px;
+  margin: 50% auto;
+}
+.wui-modal .modal-content {
+  position: relative;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid #999;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  outline: 0;
+}
+.wui-modal .close {
+  position: absolute;
+  right: 0px;
+  top: -3px;
+  font-size: 24px;
+  color: #999;
+  font-weight: 300;
+  padding: 10px;
+  line-height: 1;
+}
+.wui-modal .modal-footer {
+  border-top: 1px solid #E3E3E3;
+}
+.wui-modal .modal-footer a {
+  width: 50%;
+  border: 0;
+  position: relative;
+  background: transparent;
+  margin: 0;
+  float: left;
+  padding: 6px 0;
+}
+.wui-modal .modal-footer a:first-child:after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 100%;
+  background: #E3E3E3;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.wui-modal-body {
+  padding: 40px 15px 30px 15px;
+}

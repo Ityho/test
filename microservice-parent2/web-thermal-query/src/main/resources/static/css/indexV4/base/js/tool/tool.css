@@ -1,0 +1,306 @@
+.tool-menu {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    z-index: 100;
+}
+/*reset css*/
+.tool-menu .btn {
+    width: 40px;
+    height: 40px;
+    background-color: #ff890f  !important;
+    border-radius: 0 !important;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    position: relative;
+}
+
+.tool-menu .btn:hover {
+    background-color: #f16108 !important
+}
+.tool-menu .tool-home{
+    display: table;
+}
+.tool-menu .tool-home i{
+    font-size: 22px;
+    color: #ffffff;
+    vertical-align: middle;
+    display: table-cell;
+    margin-right: 0;
+}
+.tool-menu .btn-qq {
+    background: url("../../images/r_icon/r_qq.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-qq:hover {
+    background: url("../../images/r_icon/r_qq2.png") 0 0 no-repeat
+}
+
+.tool-menu a.btn-qq,
+.tool-menu a.btn-qq:visited {
+    background: url("../../images/r_icon/r_qq.png") 0 0 no-repeat;
+    background-color: #6da9de;
+    text-decoration: none;
+    display: block
+}
+
+.tool-menu .btn-qq .pic {
+    padding: 10px 0;
+    position: absolute;
+    left: -141px;
+    top: -30px;
+    display: none;
+    width: 140px;
+    background-color: #717171
+}
+
+.tool-menu .btn-qq .pic:after {
+    content: "";
+    position: absolute;
+    top: 45px;
+    right: -6px;
+    border-bottom: 6px solid transparent;
+    border-top: 6px solid transparent;
+    border-left: 6px solid #717171
+}
+
+.qq_btn {
+    margin-left: 12px;
+    font-size: 14px;
+    width: 118px;
+    height: 32px;
+    line-height: 32px;
+    text-decoration: none;
+    display: block;
+    color: #fff !important;
+    text-indent: 30px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background-image: url("../../images/r_icon/qq_btn1.png");
+    background-repeat: no-repeat;
+    background-position: left center
+}
+
+.qq_btn:hover {
+    color: #fff !important;
+    text-decoration: none;
+    background-image: url("../../images/r_icon/qq_btn2.png");
+    background-repeat: no-repeat;
+    background-position: left center
+}
+
+.tool-menu .btn-wx {
+    background: url("../../images/r_icon/r_wx.png") 0 0 no-repeat;
+    background-color: #fff
+}
+
+.tool-menu .btn-wx:hover {
+    background-color: #C4DBFF
+}
+
+.tool-menu .btn-wx .pic {
+    position: absolute;
+    left: -162px;
+    top: 0;
+    display: none;
+    width: 160px;
+    height: 160px
+}
+
+.tool-menu .btn-download {
+    background: url("../../images/r_icon/r_app.png") 0 0 no-repeat;
+    background-color: #fff
+}
+
+.tool-menu .btn-download:hover {
+    background: url("../../images/r_icon/r_app2.png") 0 0 no-repeat;
+    background-color: #fff8f1
+}
+
+.tool-menu .btn-download .pic {
+    position: absolute;
+    left: -162px;
+    top: 0;
+    display: none;
+    width: 160px;
+    height: 160px;
+    max-width: inherit !important;
+    -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5)
+}
+
+.tool-menu .btn-phone {
+    background: url("../../images/r_icon/r_phone.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-phone:hover {
+    background: url("../../images/r_icon/r_phone2.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-phone .phone {
+    background-color: #fff8f1;
+    position: absolute;
+    width: 160px;
+    left: -160px;
+    top: 0;
+    line-height: 50px;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    display: none
+}
+
+.tool-menu .btn-sucai {
+    background: url("../../images/r_icon/r_sucai.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-sucai:hover {
+    background: url("../../images/r_icon/r_sucai2.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-sucai .sucai {
+    background-color: #fff8f1;
+    position: absolute;
+    width: 160px;
+    left: -160px;
+    top: 0;
+    line-height: 50px;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    display: none
+}
+
+.tool-menu .btn-collector {
+    background: url("../../images/r_icon/r_scj.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-collector:hover {
+    background: url("../../images/r_icon/r_scj2.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-scj .btn-collector {
+    background-color: #fff8f1;
+    position: absolute;
+    width: 160px;
+    left: -160px;
+    top: 0;
+    line-height: 50px;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    display: none
+}
+
+.tool-menu .btn-gwc {
+    background: url("../../images/r_icon/r_gwc.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-gwc:hover {
+    background: url("../../images/r_icon/r_gwc2.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-gwc .gwc {
+    background-color: #fff8f1;
+    position: absolute;
+    width: 160px;
+    left: -160px;
+    top: 0;
+    line-height: 50px;
+    color: #333;
+    font-size: 18px;
+    text-align: center;
+    display: none
+}
+
+.tool-menu .btn-sug {
+    background: url("../../images/r_icon/r_questions.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-sug:hover {
+    background: url("../../images/r_icon/r_questions2.png") 0 0 no-repeat
+}
+.tool-menu .btn-share {
+    background: url("../../images/r_icon/r_share.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-share:hover {
+    background: url("../../images/r_icon/r_share2.png") 0 0 no-repeat
+}
+.tool-menu .btn-analysis {
+    background: url("../../images/r_icon/r_dingzhi.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-analysis:hover {
+    background: url("../../images/r_icon/r_dingzhi2.png") 0 0 no-repeat
+}
+.tool-menu .btn-top {
+    background: url("../../images/r_icon/r_top.png") 0 0 no-repeat;
+    display: none
+}
+
+.tool-menu .btn-top:hover {
+    background: url("../../images/r_icon/r_top2.png") 0 0 no-repeat
+}
+
+.tool-menu .numBox {
+    display: block;
+    background-color: #e66100;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    left: -8px;
+    top: -8px;
+    padding: 1px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    border-radius: 20px;
+    behavior: url("pie.htc");
+    padding: 0 5px
+}
+.tool-menu .btn-fx {
+    background: url("../../images/r_icon/r_share.png") 0 0 no-repeat;
+    background-color: #fff
+}
+
+.tool-menu .btn-fx:hover {
+    background: url("../../images/r_icon/r_share2.png") 0 0 no-repeat;
+    background-color: #fff8f1
+}
+.tool-menu .btn-fx .pic {
+    padding-top: 0;
+    position: absolute;
+    left: -202px;
+    top: 0;
+    display: none;
+    width: 200px;
+    height: 50px;
+    background-color: #fff;
+    -moz-border-radius: 5px;
+    -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5)
+}
+
+.tool-menu .btn-question {
+    background: url("../../images/r_icon/r_question.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-question:hover {
+    background: url("../../images/r_icon/r_question2.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-export {
+    background: url("../../images/r_icon/r_export.png") 0 0 no-repeat
+}
+
+.tool-menu .btn-export:hover {
+    background: url("../../images/r_icon/r_export2.png") 0 0 no-repeat
+}
+/*.tool_hover{*/
+    /*display: none;*/
+/*}*/

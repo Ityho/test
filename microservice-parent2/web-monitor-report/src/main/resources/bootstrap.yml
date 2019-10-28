@@ -1,0 +1,74 @@
+server:
+  port: 1208
+  tomcat:
+    accesslog:
+      directory: /Users/shitao/st/other/logs/info
+
+
+
+#服务注册中心
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:1127/eureka/
+
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000
+
+
+spring:
+  application:
+    name: web-monitor-report
+  servlet:
+    multipart:
+      #文件上传 总数据最大值
+      max-request-size: 1000Mb
+      #文件上传 单个数据最大值
+      max-file-size: 100Mb
+  freemarker:
+    charset: UTF-8
+    content-type: text/html; charset=utf-8
+    expose-request-attributes: false
+    expose-session-attributes: false
+    expose-spring-macro-helpers: false
+    request-context-attribute: request
+    check-template-location: true
+    allow-request-override: false
+    cache: false
+  zipkin:
+    discovery-client-enabled: true
+    base-url: http://localhost:9411/
+  sleuth:
+    enabled: true
+    feign:
+      enabled: true
+      hystrix:
+        enabled: true
+        command:
+          default:
+           execution:
+            isolation:
+             thread:
+              timeoutInMilliseconds: 10000
+    sampler:
+      probability: 1.0
+  cloud:
+    config: # spring cloud config 配置
+      discovery:
+        enabled: true #从配置中心读取文件
+        service-id: api-config-center #配置中心的servieId，通过服务名称去Eureka注册中心找
+      name: commons-db-wrd
+      label: master #指明远程仓库的分支
+      profile: dev #开发环境配置文件
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info,bus-refresh
+
+
+uploadPath: /Users/shitao/st/other/logs/webfiles/files-dev.51wyq.cn/

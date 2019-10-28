@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.eventanalysis.mapper.EventAnalysisMapper">
+    <select id="getListTask" resultType="com.miduchina.wrd.po.analysis.eventanalysis.EventAnalysisTask">
+        <![CDATA[
+			SELECT
+				incident_analysis_task_id as taskId,
+				platform_tag,
+				user_id,
+				content_type,
+				incident_title,
+				keyword,
+				supplement_keyword,
+				filter_keyword,
+				analysis_type,
+				analysis_params,
+				analysis_status,
+				analysis_start_time as startTime,
+				analysis_end_time as endTime,
+				analysis_up_to_time,
+				analysis_schedule,
+				analysis_schedule_tips,
+				analysis_task_ticket as taskTicket,
+				create_time,
+				analysis_wb_content_type,
+				update_num,
+				create_type,
+				options,
+				match_type,
+				origin
+			FROM
+				incident_analysis_task
+			where status = 1
+			]]>
+        <if test="incidentAnalysisTaskId != null and incidentAnalysisTaskId != 0">
+            <![CDATA[
+				and incident_analysis_task_id = #{incidentAnalysisTaskId}
+			]]>
+        </if>
+        <if test="taskTicket != null and taskTicket != '' ">
+            <![CDATA[
+				and analysis_task_ticket = #{taskTicket}
+			]]>
+        </if>
+        <if test="analysisStatus != null and analysisStatus != '' ">
+            <![CDATA[
+				and analysis_status = #{analysisStatus}
+			]]>
+        </if>
+        <if test="userId != null and userId != '' ">
+            <![CDATA[
+				and user_id = #{userId}
+			]]>
+        </if>
+    </select>
+    <select id="getListElement"
+            resultType="com.miduchina.wrd.po.analysis.eventanalysis.EventAnalysisInsertElement">
+        <![CDATA[
+			SELECT
+				element_id ,
+				element_style_id,
+				analysis_report_id,
+				create_time,
+				update_time,
+				seq,
+				name,
+				content,
+				title_column,
+				model_id,
+				tree_time,
+				tree_text,
+				hot_text,
+				analysis_title,
+				pic_style,
+				analysis_task_ticket,
+				create_time
+			FROM
+				analysis_insert_element
+			where status = 1
+			]]>
+        <if test="analysisReportId != null and analysisReportId != 0">
+            <![CDATA[
+				and analysis_report_id = #{analysisReportId}
+			]]>
+        </if>
+        <if test="analysisTaskTicket != null and analysisTaskTicket != '' ">
+            <![CDATA[
+				and analysis_task_ticket = #{analysisTaskTicket}
+			]]>
+        </if>
+    </select>
+    <select id="getListReport" resultType="com.miduchina.wrd.po.analysis.eventanalysis.EventAnalysisReport">
+
+        <![CDATA[
+			SELECT
+				incident_analysis_report_id as  reportId,
+				incident_analysis_task_id as  taskId,
+				analysis_task_ticket as ticket,
+				create_time,
+				update_time,
+				user_id,
+				incident_title,
+				content_type,
+				platform_tag as platform,
+				model_id
+			FROM
+				incident_analysis_report
+			where status = 1
+			]]>
+        <if test="reportId != null and reportId != 0">
+            <![CDATA[
+				and analysis_report_id = #{analysisReportId}
+			]]>
+        </if>
+        <if test="ticket != null and ticket != '' ">
+            <![CDATA[
+				and analysis_task_ticket = #{ticket}
+			]]>
+        </if>
+        <if test="userId != null and userId != '' ">
+            <![CDATA[
+				and user_id = #{userId}
+			]]>
+        </if>
+        <if test="platform != null and platform != '' ">
+            <![CDATA[
+				and platform_tag = #{platform}
+			]]>
+        </if>
+        order by
+        <choose>
+            <when test="sort != null">create_time</when>
+            <otherwise>create_time</otherwise>
+        </choose>
+        <choose>
+            <when test="order != null and order == 2">asc</when>
+            <otherwise>desc</otherwise>
+        </choose>
+
+    </select>
+
+    <update id="updateTask">
+        UPDATE incident_analysis_task
+        SET
+        <if test="startTime != null and  startTime != '' ">
+            analysis_start_time = #{startTime},
+        </if>
+        <if test="endTime != null and  endTime != '' ">
+            analysis_end_time = #{endTime},
+        </if>
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        update_time=now()
+        WHERE
+        incident_analysis_task_id = #{taskId}
+
+    </update>
+    <update id="updateReport">
+        UPDATE incident_analysis_report
+        SET
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        <if test="modelId != null and  modelId != '' ">
+            model_id = #{modelId},
+        </if>
+        update_time=now()
+        WHERE
+        analysis_task_ticket = #{ticket}
+        <if test="reportId != null and  reportId != '' ">
+            and incident_analysis_report_id = #{reportId}
+        </if>
+        <if test="wStatus != null and  wStatus != '' ">
+            and status = #{wStatus}
+        </if>
+    </update>
+    <update id="updateElement">
+        UPDATE analysis_insert_element
+        SET
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        update_time=now()
+        WHERE
+        analysis_task_ticket = #{ticket}
+        <if test="reportId != null and  reportId != '' ">
+            and analysis_report_id = #{reportId}
+        </if>
+        <if test="wStatus != null and  wStatus != '' ">
+            and status = #{wStatus}
+        </if>
+    </update>
+
+    <insert id="insertTask" useGeneratedKeys="true" keyProperty="incident_analysis_task_id">
+
+        <![CDATA[
+           INSERT INTO
+				incident_analysis_task(
+					platform_tag,
+					user_id,
+					content_type,
+					incident_title,
+					keyword,
+					supplement_keyword,
+					filter_keyword,
+					analysis_type,
+					analysis_params,
+					analysis_status,
+					analysis_start_time,
+					analysis_end_time,
+					analysis_up_to_time,
+					analysis_schedule,
+					analysis_schedule_tips,
+					analysis_task_ticket,
+					status,
+					create_time,
+					update_time,
+					analysis_wb_content_type,
+					update_num,
+					create_type,
+					options,
+					match_type,
+					origin
+				)
+			VALUES
+				(#{platformTag},
+				#{userId},
+				#{contentType},
+				#{incidentTitle},
+				#{keyword},
+				#{supplementKeyword},
+				#{filterKeyword},
+				#{analysisType},
+				#{analysisParams},
+				#{analysisStatus},
+				#{startTime},
+				#{endTime},
+				#{analysisUpToTime},
+				#{analysisSchedule},
+				#{analysisScheduleTips},
+				#{taskTicket},
+				1,
+				now(),
+				now(),
+				#{analysisWbContentType},
+				#{updateNum},
+				#{createType},
+				#{options},
+				#{matchType},
+				#{origin});
+        ]]>
+    </insert>
+
+    <insert id="insertReport" useGeneratedKeys="true" keyProperty="incident_analysis_report_id">
+
+        <![CDATA[
+           INSERT INTO
+				incident_analysis_report(
+				incident_analysis_task_id,
+                analysis_task_ticket,
+                status,
+                create_time,
+                update_time,
+                user_id,
+                incident_title,
+                content_type,
+                platform_tag,
+                model_id
+				)
+			VALUES(
+			#{taskId},
+			#{ticket},
+			1,
+			#{createTime},
+			now(),
+			#{userId},
+			#{incidentTitle},
+			#{contentType},
+			#{platform},
+			#{modelId}
+			)
+        ]]>
+    </insert>
+    <insert id="insertElement" useGeneratedKeys="true" keyProperty="id">
+        <![CDATA[
+           INSERT INTO
+				analysis_insert_element(
+				element_id,
+				element_style_id,
+                analysis_report_id,
+                create_time,
+                update_time,
+                status,
+                seq,
+                name,
+                content,
+                title_column,
+                analysis_task_ticket,
+                model_id,
+                tree_time,
+                tree_text,
+                hot_text,
+                analysis_title,
+                pic_style
+				)
+			VALUES(
+			#{elementId},
+			#{elementStyleId},
+			#{analysisReportId},
+			#{createTime},
+			now(),
+			1,
+			#{seq},
+			#{name},
+			#{content},
+			#{titleColumn},
+			#{analysisTaskTicket},
+			#{modelId},
+			#{treeTime},
+			#{treeText},
+			#{hotText},
+			#{analysisTitle},
+			#{picStyle}
+			)
+        ]]>
+    </insert>
+
+
+</mapper>

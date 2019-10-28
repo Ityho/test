@@ -1,0 +1,34 @@
+/*页面风格1*/
+.style1 body{background-color: #eeeeee;}
+.style1 #head{-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);}
+.style1 #navLeft a{background: #fff;}
+.style1 .page-container{margin:auto;  padding: 0px; max-width:1266px;}
+
+.style1 .content,.style1 .page-container2 .content{ background-color: #fff; overflow: hidden;  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);}
+.style1 .content{margin-top: 10px;}
+.style1 .home .content{ background-color: transparent; overflow: initial; -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  -moz-box-shadow: none;
+  -webkit-box-shadow: none;
+  box-shadow:none;} 
+.style1 .page-container .content{margin-left: 190px; margin-right: 20px;}
+.style1 .treefloat {top: 5px;}
+
+/*日周月报*/
+.style1 .tab_menu2 { margin: 0 10px;}
+.style1 .tab_menu2 li{width: 27.9%;}
+
+@media only screen and (max-width:1280px ) {
+	 .style1 .page-container{margin:auto;  padding: 0px; max-width:1186px;}
+	 .style1 .page-container .content {margin-left: 197px;}
+	 .style1 .page-container2 .content {max-width: 1140px;}
+	 .style1 .tab_menu2 li {width: 27.7%;}
+}

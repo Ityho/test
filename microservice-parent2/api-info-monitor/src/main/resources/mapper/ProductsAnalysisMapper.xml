@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.productsanalysis.ProductsAnalysisMapper">
+    <select id="selectCount" resultType="java.lang.Integer">
+        <![CDATA[
+			SELECT
+			 count(*)
+			FROM
+				products_analysis_brief
+			WHERE status = 1
+		]]>
+        <if test="userId != null and  userId != '' ">
+            <![CDATA[
+				and user_id = #{userId}
+			]]>
+        </if>
+    </select>
+
+    <select id="getPABList" resultType="com.miduchina.wrd.po.analysis.ProductsAnalysisBrief">
+        <![CDATA[
+			SELECT
+			 products_analysis_brief_id as id,
+			 user_id,
+			 products_analysis_title as title,
+			 line_img,
+			 gague_img,
+			 map_img,
+			 bar_img,
+			 tend_description,
+			 qg_description,
+			 dy_description,
+			 ly_description,
+			 status,
+			 create_time,
+			 update_time,
+			 start_time,
+			 end_time,
+			 file_path,
+			 products_analysis_id,
+			 negative_description,
+			 negative_img,
+			 wc_img,
+			 hn_img,
+			 hn_description,
+			 tackets,
+			 percentage
+			FROM
+				products_analysis_brief
+			WHERE status = 1
+		]]>
+        <if test="userId != null and  userId != '' ">
+            <![CDATA[
+				and user_id = #{userId}
+			]]>
+        </if>
+        <if test="id != null and  id != '' ">
+            <![CDATA[
+				and products_analysis_brief_id = #{id}
+			]]>
+        </if>
+        order by create_time desc
+    </select>
+    <insert id="insertTask">
+        <![CDATA[
+           INSERT INTO
+				products_analysis(
+					user_id,
+					status,
+					create_time,
+					update_time,
+					type,
+					json_data,
+					keyword_ids,
+					time_domain
+				)
+			VALUES
+				(#{userId},
+				#{status},
+				#{createTime},
+				now(),
+				#{type},
+				#{jsonData},
+				#{keywordIds},
+				#{timeDomain}
+        ]]>
+    </insert>
+    <insert id="insertBrief">
+         <![CDATA[
+           INSERT INTO
+				products_analysis_brief(
+					user_id,
+					products_analysis_title,
+					line_img,
+					gague_img,
+					map_img,
+					bar_img,
+					tend_description,
+					qg_description,
+					dy_description,
+					ly_description,
+					status,
+					create_time,
+					update_time,
+					start_time,
+					end_time,
+					file_path,
+					products_analysis_id,
+					negative_description,
+					negative_img,
+					wc_img,
+					hn_img,
+					hn_description,
+					tackets,
+					percentage
+				)
+			VALUES
+				(#{userId},
+				#{title},
+				#{lineImg},
+				#{gagueImg},
+				#{mapImg},
+				#{barImg},
+				#{tendDesc},
+				#{qgDesc},
+				#{dyDesc},
+				#{lyDesc},
+				#{mtDesc},
+				#{jcDesc},
+				#{status},
+				#{createTime},
+				now(),
+				#{startTime},
+				#{endTime},
+				#{filePath},
+				#{productsAnalysisId},
+				#{negativeDesc},
+				#{negativeImg},
+				#{wcImg},
+				#{hnImg},
+				#{hnDescription},
+				#{tackets},
+				#{percentage}
+        ]]>
+    </insert>
+    <insert id="insertShare">
+        <![CDATA[
+           INSERT INTO
+				products_analysis(
+					share_code,
+					products_analysis_brief_id,
+					status,
+					create_time,
+					update_time
+				)
+			VALUES
+				(#{shareCode},
+				#{productsAnalysisBriefId},
+				#{status},
+				#{createTime},
+				now()
+        ]]>
+    </insert>
+    <update id="updateTask">
+        UPDATE products_analysis
+        SET
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        update_time=now()
+        WHERE
+        products_analysis_id = #{id}
+    </update>
+    <update id="updateBrief">
+        UPDATE products_analysis_brief
+        SET
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        update_time=now()
+        WHERE
+        products_analysis_brief_id = #{id}
+    </update>
+    <update id="updateShare">
+        UPDATE products_analysis_share
+        SET
+        <if test="shareCode != null and  shareCode != '' ">
+            share_code = #{shareCode},
+        </if>
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        update_time=now()
+        WHERE
+        products_analysis_brief_id = #{productsAnalysisBriefId}
+    </update>
+    <select id="getListTask" resultType="com.miduchina.wrd.po.analysis.ProductsAnalysis">
+        <![CDATA[
+			SELECT
+			products_analysis_id as id,
+			user_id,
+			status,
+			create_time,
+			update_time,
+			type,
+			json_data,
+			keyword_ids,
+			time_domain
+			FROM
+				products_analysis
+			WHERE
+			AND status =#{status}
+		]]>
+        <if test="userId != null and userId != 0">
+            <![CDATA[
+				and user_id = #{userId}
+			]]>
+        </if>
+        <if test="id != null and id != 0">
+            <![CDATA[
+				and products_analysis_id = #{id}
+			]]>
+        </if>
+
+
+    </select>
+    <select id="getListBrief" resultType="com.miduchina.wrd.po.analysis.ProductsAnalysisBrief">
+        <![CDATA[
+			SELECT
+			 products_analysis_brief_id as id,
+			 user_id,
+			 products_analysis_title as title,
+			 line_img,
+			 gague_img,
+			 map_img,
+			 bar_img,
+			 tend_description,
+			 qg_description,
+			 dy_description,
+			 ly_description,
+			 status,
+			 create_time,
+			 update_time,
+			 start_time,
+			 end_time,
+			 file_path,
+			 products_analysis_id,
+			 negative_description,
+			 negative_img,
+			 wc_img,
+			 hn_img,
+			 hn_description,
+			 tackets,
+			 percentage
+			FROM
+				products_analysis_brief
+			WHERE
+				user_id = #{userId}
+				and create_time> '2016-06-22 00:00:00'
+				and mod(id,2) = #{type}
+				and (filePath is null or filePath ='')
+		]]>
+        <if test="id != null and id != 0">
+            <![CDATA[
+				and products_analysis_brief_id = #{id}
+			]]>
+        </if>
+        GROUP BY
+        id
+    </select>
+    <select id="getListShare" resultType="com.miduchina.wrd.po.analysis.ProductsAnalysisShare">
+        <![CDATA[
+			SELECT
+			products_analysis_share_id,
+			status,
+			create_time,
+			update_time
+			FROM
+				products_analysis_share
+			where status = 1
+			]]>
+        <if test="productsAnalysisShareId != null and productsAnalysisShareId != 0">
+            <![CDATA[
+				and products_analysis_share_id in (#{productsAnalysisShareId})
+			]]>
+        </if>
+        <if test="productsAnalysisBriefId != null and productsAnalysisBriefId != '' ">
+            <![CDATA[
+				and products_analysis_brief_id in (#{productsAnalysisBriefId})
+			]]>
+        </if>
+    </select>
+</mapper>

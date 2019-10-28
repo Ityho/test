@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.order.OrderMapper">
+    <select id="findOrderCountByProductPackageIds" resultType="java.lang.Integer" >
+        <![CDATA[
+            SELECT count(DISTINCT o.order_record_id) FROM
+            order_record o, user u, cart_record c, order_cart_relation r
+            WHERE o.user_id = u.user_id AND r.order_record_id = o.order_record_id
+            AND r.cart_record_id = c.cart_record_id AND u.user_id = #{userId}
+            AND o.pay_status = 1 AND c.product_package_id IN (#{package_type_report_ids})
+        ]]>
+    </select>
+
+    <select id="findPayRecordByUserIdAndPackageId" resultType="java.lang.Integer" >
+        <![CDATA[
+            SELECT por.pay_record_id from order_record o
+            join order_cart_relation ocr on o.order_record_id = ocr.order_record_id
+            join pay_order_relation por on o.order_record_id = por.order_record_id
+            where o.user_id = #{userId} and ocr.product_package_id = #{packageId} and o.pay_status = 0
+        ]]>
+    </select>
+    <select id="findPayRecordById" resultType="com.miduchina.wrd.po.order.PayRecord">
+
+        <![CDATA[
+			SELECT
+				pay_record_id,
+				user_id,
+				create_time,
+				update_time,
+				total_fee,
+				pay_name,
+				pay_description,
+				pay_status,
+				inner_trade_no,
+				outside_trade_no,
+				pay_channel
+			FROM
+			   pay_record
+			 where
+			   pay_record_id = #{payRecordId}
+			]]>
+
+
+    </select>
+    <select id="findPayRecordByInnerTradeNo" resultType="com.miduchina.wrd.po.order.PayRecord">
+        <![CDATA[
+			SELECT
+				pay_record_id,
+				user_id,
+				create_time,
+				update_time,
+				total_fee,
+				pay_name,
+				pay_description,
+				pay_status,
+				inner_trade_no,
+				outside_trade_no,
+				pay_channel
+			FROM
+			   pay_record
+			 where
+			   inner_trade_no = #{innerTradeNo}
+			]]>
+    </select>
+
+
+    <select id="find5ActivityByPackageId" resultType="com.miduchina.wrd.po.order.H5Activity">
+        <![CDATA[
+			SELECT
+				 h5.*
+			FROM
+			   product_package pp, h5_activity h5
+			 where
+			    pp.product_package_id = h5.activity_package_id
+			    and h5.status = 1
+			    and pp.product_package_id = #{packageId}
+			]]>
+    </select>
+
+
+    <update id="updateUserType" parameterType="com.miduchina.wrd.dto.user.UserDto">
+        <![CDATA[
+                UPDATE user
+                SET incident_seq =
+                <if test="userType != null and  userType != '' ">
+                    user_type = #{userType},
+                </if>
+                 <if test="proUserValidEndTime != null and  proUserValidEndTime != '' ">
+                    pro_user_valid_end_time = #{proUserValidEndTime},
+                </if>
+                update_time=now()
+                WHERE
+                user_id = #{userId}
+                ]]>
+    </update>
+    <insert id="saveCartRecord" useGeneratedKeys="true" keyProperty="cart_record_id">
+        <![CDATA[
+           INSERT INTO
+				cart_record(
+                    user_id,
+                    product_package_id,
+                    product_package_count,
+                    show_switch,
+                    status,
+                    create_time,
+                    update_time
+				)
+			VALUES
+				(
+				#{userId},
+				#{productPackageId},
+				#{productPackageCount},
+				#{showSwitch},
+				#{status},
+				now() ,
+				#{updateTime},
+				)
+        ]]>
+    </insert>
+    <update id="updateCartStatus" parameterType="com.miduchina.wrd.po.order.CartRecord">
+        <![CDATA[
+                UPDATE cart_record
+                SET incident_seq =
+                <if test="userId != null and  userId != '' ">
+                    user_id = #{userId},
+                </if>
+                <if test="productPackageId != null and  productPackageId != '' ">
+                    product_package_id = #{productPackageId},
+                </if>
+                <if test="productPackageCount != null and  productPackageCount != '' ">
+                    product_package_count = #{productPackageCount},
+                </if>
+                <if test="showSwitch != null and  showSwitch != '' ">
+                    show_switch = #{showSwitch},
+                </if>
+                 <if test="status != null and  status != '' ">
+                    status = #{status},
+                </if>
+                <if test="status != null and  status != '' ">
+                    status = #{status},
+                </if>
+                updateTime=now()
+                WHERE
+                cart_record_id = #{cartRecordId}
+                ]]>
+    </update>
+
+</mapper>

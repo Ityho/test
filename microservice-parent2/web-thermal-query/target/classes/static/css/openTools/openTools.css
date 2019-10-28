@@ -1,0 +1,79 @@
+.rgafter:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 70%;
+  background: #DDDDDD;
+  position: absolute;
+  top: 10%;
+  right: -1px;
+  bottom: 0;
+  margin: auto;
+}
+.mr45{
+	margin-right: 45px !important;
+}
+.fc_gray_ot{
+	color: #878d9a !important;
+}
+i.icon-add.more-icon-add-class {
+    margin-top: 0px;
+}
+.addComp .icon-add{
+	margin: 0;
+}
+.btn-group-two {
+    position: relative;
+    display: inline-block;
+    font-size: 0;
+    /* white-space: nowrap; */
+    vertical-align: middle;
+    bottom: 20px;
+}
+
+.counter-lg .counter-number-group, .counter-lg > .counter-number {
+    font-size: 41px !important;
+    font-weight: 600 !important;
+}
+.navbar2 li a {
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  padding: 0 10px;
+  background-color: #6E7584;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.navbar2 li:hover a {
+  background-color: #ef8c24;
+  color: #fff;
+}
+.navbar2 .active a {
+  background-color: #ef8c24;
+  color: #fff;
+}
+/*查看时间切换*/
+.btn-group .ndisabled {
+  opacity: .8;
+  background: rgba(80, 80, 80, 0.8) !important;
+  color: #000000 !important;
+}
+.ndisabled.btn i {
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 20px;
+}

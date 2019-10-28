@@ -1,0 +1,76 @@
+@charset "GBK";
+/* CSS Document */
+.loginCSS .bj{ padding-top: 60px; background-color: #000; background-size: 100% 570px;}
+.download{ width:100%; background-color:#fff; overflow:hidden;font-family: "Î¢ÈíÑÅºÚ"; }
+.main2,.main3,.main4,.main5,.main6{
+	width:1200px;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	overflow:hidden;
+}
+
+.main1{
+	width:1200px;
+	background-repeat: no-repeat;
+	margin-right: auto;
+	margin-left: auto;
+	overflow:hidden;
+	padding-left:;
+}
+.bj{ width:100%;background: url(../images/download/beijingse_03.png)  no-repeat center ; margin-top:0px; padding-top:0px;}
+
+.main1{
+	background-image: ;
+	height: 510px;
+}
+
+.bk { background: url(../images/download/er_07.png);right:30px; top:270px; width:165px; height:177px;}
+.wm{  top:25px; right:21px; }
+
+.mob{right:250px; top:58px;}
+
+.downloadBox{ display:block; bottom:76px; right:600px;}
+.downloadBox2{ display:block; overflow:hidden; bottom:10px; right:960px;}
+
+.btn1{ width:251px; height:67px; line-height:67px; display:block; font-size:22px; color:#ffffff;-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	behavior: url(pie.htc);
+	text-decoration:none; float:left; margin-right:40px;}
+
+.android_btn{
+	background-color: #0b92ff;
+	background-image: url(../images/download/android.png);
+	background-repeat: no-repeat;
+	background-position: 15px center;
+	text-indent:70px;
+}
+.android_btn:hover{ background-color:#0785ea; text-decoration:none;}
+.ios_btn{ background-color:#ff8500;background-image: url(../images/download/ios.png);
+	background-repeat: no-repeat;
+	background-position: 35px center;text-indent:90px;}
+.ios_btn:hover{ background-color:#e36000; text-decoration:none;}
+.btn_g,.btn_g:hover{ background-color:#CCC;}
+.onlineTS{ background-color:#F30; height:20px; line-height:20px; text-align:center; padding:2px 5px; color:#fff; top:-5px; right:-5px; font-size:12px; text-indent:0px;-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(pie.htc);}
+.main2{
+	background-image: url(../images/download/download02.png);
+	height: 464px;
+}
+.main3{
+	background-image: url(../images/download/download03.png);
+	height: 456px;
+}
+.main4{
+	background-image: url(../images/download/download04.png);
+	height: 655px;
+}
+.qiehuan{
+    float:left;overflow: hidden;position: absolute;z-index: 10;top:85px;left:69px;overflow: hidden;
+}
+.width0{
+    width: 0px;
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.hotevents.HeatShareMapper">
+
+
+    <select id="findHs" resultType="com.miduchina.wrd.po.hotspot.HeatShare">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				heat_share
+			where share_code = #{shareCode}
+			]]>
+    </select>
+
+
+</mapper>

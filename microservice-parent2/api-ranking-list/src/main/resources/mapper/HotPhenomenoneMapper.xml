@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.rankinglist.mapper.HotPhenomenoneMapper">
+
+	<select id="findAll" resultType="com.miduchina.wrd.po.ranking.HotPhenomenone">
+		SELECT
+			hp.id,
+			hp.`name`,
+			hp.labels,
+			hp.keyword,
+			hp.keyword1,
+			hp.keyword2,
+			hp.keyword3,
+			hp.keyword4,
+			hp.filter_keyword,
+			hp.summary,
+			hp.show_tag,
+			hp.create_time,
+			hp.update_time,
+			hp.number_day,
+			GROUP_CONCAT(hi.hot_incident_id) hotIncidentIds,
+			GROUP_CONCAT(hi.incident_title) incidentTitles,
+			count((hi.`status` = 1
+			<if test="hotShowTag == null">
+				and hi.show_tag = 1
+			</if>
+			) or null) eventNum
+		FROM
+			hot_phenomenone hp
+		left join hot_incident hi on hp.id = hi.hot_phenomenone_id
+		WHERE hp.status = 1 and (hi.status = 1 or hi.status is null)
+		<if test="name != null and name != ''">
+			<![CDATA[
+				and hp.name LIKE '%${name}%'
+			]]>
+		</if>
+		<if test="labels != null and labels != ''">
+				and
+			<!--<foreach collection="labels" index="index" item="label" open="(" separator="," close=")">-->
+				<!--#{label}-->
+			<!--</foreach>-->
+			<foreach collection="labels" index="index" item="label" open="(" separator="or" close=")">
+				FIND_IN_SET(#{label} ,hp.labels)
+			</foreach>
+		</if>
+		<if test="startTime != null and startTime != ''">
+			<![CDATA[
+				and hp.create_time >= #{startTime}
+			]]>
+		</if>
+		<if test="endTime != null and endTime != ''">
+			<![CDATA[
+				and hp.create_time <= #{endTime}
+			]]>
+		</if>
+		<if test="showTag != null and showTag != ''">
+			<![CDATA[
+				AND hp.show_tag = #{showTag}
+			]]>
+		</if>
+		GROUP BY
+			hp.id
+		order by
+		<choose>
+			<when test="sort == 1">hp.create_time</when>
+			<when test="sort == 2">hp.number_day</when>
+			<otherwise>hp.create_time</otherwise>
+		</choose>
+		<choose>
+			<when test="order != null and order == 2">asc</when>
+			<otherwise>desc</otherwise>
+		</choose>
+	</select>
+
+	<select id="findOne" resultType="com.miduchina.wrd.po.ranking.HotPhenomenone">
+		SELECT
+			hp.id,
+			hp.`name`,
+			hp.labels,
+			hp.keyword,
+			hp.keyword1,
+			hp.keyword2,
+			hp.keyword3,
+			hp.keyword4,
+			hp.filter_keyword,
+			hp.summary,
+			hp.show_tag,
+			hp.create_time,
+			hp.update_time,
+			(select GROUP_CONCAT(hi.hot_incident_id) from hot_incident hi
+		where hi.hot_phenomenone_id = hp.id) hotIncidentIds
+		FROM
+			hot_phenomenone hp
+	  	WHERE hp.id = #{id}
+	</select>
+	
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO 
+				hot_phenomenone(
+					name,
+					labels,
+					keyword,
+					keyword1,
+					keyword2,
+					keyword3,
+					keyword4,
+					filter_keyword,
+					summary,
+					show_tag,
+					status,
+					create_time
+				) 
+			VALUES 
+				(
+				#{name},
+				#{labels},
+				#{keyword},
+				#{keyword1},
+				#{keyword2},
+				#{keyword3},
+				#{keyword4},
+				#{filterKeyword},
+				#{summary},
+				#{showTag},
+				#{status},
+				now());
+		]]>
+	</insert>
+	
+	<update id="update">
+		<![CDATA[
+			update hot_phenomenone 
+			set 
+				name=#{name},
+				labels=#{labels},
+				keyword=#{keyword},
+				keyword1=#{keyword1},
+				keyword2=#{keyword2},
+				keyword3=#{keyword3},
+				keyword4=#{keyword4},
+				filter_keyword=#{filterKeyword},
+				summary=#{summary},
+				show_tag=#{showTag},
+				update_time=now()
+			where id=#{id}
+		]]>
+	</update>
+
+	<update id="delete" parameterType="java.lang.Integer">
+		<![CDATA[
+			update hot_phenomenone
+			set
+				status=0,
+				update_time=now()
+			where id=#{id}
+		]]>
+	</update>
+
+	<select id="findAllHotIncidentRelationId" resultType="java.lang.Integer">
+		select
+			hi.hot_incident_id
+		from hot_incident hi
+		WHERE hi.hot_phenomenone_id = #{id}
+	</select>
+
+	<update id="updateHotIncidentRelation">
+		update hot_incident
+		set
+			hot_phenomenone_id = #{id}
+		where hot_incident_id in
+		<foreach collection="hotIncidentIds" index="index" item="hotIncidentId" open="(" separator="," close=")">
+			#{hotIncidentId}
+		</foreach>
+	</update>
+
+	<update id="deleteHotIncidentRelation">
+		update hot_incident
+		set
+			hot_phenomenone_id = null
+		where hot_phenomenone_id = #{id}
+	</update>
+
+</mapper>

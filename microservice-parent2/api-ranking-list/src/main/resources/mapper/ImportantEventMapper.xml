@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.rankinglist.mapper.ImportantEventMapper">
+	
+	<select id="findAll" resultType="com.miduchina.wrd.po.ranking.ImportantEvent">
+		SELECT
+			ie.id,
+			ie.name,
+			ie.labels,
+			ie.keyword,
+			ie.keyword1,
+			ie.keyword2,
+			ie.keyword3,
+			ie.keyword4,
+			ie.filter_keyword,
+			ie.summary,
+			ie.show_tag,
+			ie.create_time,
+			ie.area_type,
+			ie.province,
+			ie.city,
+			ie.number_day,
+			GROUP_CONCAT(hi.hot_incident_id) hotIncidentIds,
+			GROUP_CONCAT(hi.incident_title) incidentTitles,
+			count((hi.`status` = 1
+			<if test="hotShowTag == null">
+				and hi.show_tag = 1
+			</if>
+			) or null) eventNum
+		FROM
+			`important_event` ie
+		left join hot_incident hi on ie.id = hi.important_event_id
+		WHERE ie.status = 1 and (hi.status = 1 or hi.status is null)
+		<if test="name!=null and name!=''">
+			<![CDATA[
+				and ie.name LIKE '%${name}%'
+			]]>
+		</if>
+		<if test="labels!=null and labels!=''">
+			and
+			<foreach collection="labels" index="index" item="label" open="(" separator="or" close=")">
+				FIND_IN_SET(#{label} ,ie.labels)
+			</foreach>
+		</if>
+		<if test="areaType!=null and areaType!=''">
+			<![CDATA[
+				and ie.area_type = #{areaType}
+			]]>
+		</if>
+		<if test="province!=null and province!=''">
+			<![CDATA[
+				and ie.province = #{province}
+			]]>
+		</if>
+		<if test="city!=null and city!=''">
+			<![CDATA[
+				and ie.city = #{city}
+			]]>
+		</if>
+		<if test="webShow == 1">
+			<if test="startTime!=null and startTime!=''">
+				<![CDATA[
+				and hi.create_time >= #{startTime}
+				]]>
+			</if>
+			<if test="endTime!=null and endTime!=''">
+				<![CDATA[
+				and hi.create_time <= #{endTime}
+				]]>
+			</if>
+		</if>
+		<if test="webShow == null">
+			<if test="startTime!=null and startTime!=''">
+				<![CDATA[
+				and ie.create_time >= #{startTime}
+			]]>
+			</if>
+			<if test="endTime!=null and endTime!=''">
+				<![CDATA[
+				and ie.create_time <= #{endTime}
+			]]>
+			</if>
+		</if>
+
+		<if test="labelShowTag == 0">
+			<![CDATA[
+				and not FIND_IN_SET('101301',ie.labels)
+			]]>
+		</if>
+		<if test="showTag != null and showTag != ''">
+			<![CDATA[
+				and ie.show_tag = #{showTag}
+			]]>
+		</if>
+		GROUP BY
+			ie.id
+		<if test="webShow == 1">
+			HAVING eventNum > 0
+		</if>
+		ORDER BY
+		<choose>
+			<when test="sort == 1">ie.create_time</when>
+			<when test="sort == 2">ie.number_day</when>
+			<otherwise>ie.create_time</otherwise>
+		</choose>
+		<choose>
+			<when test="order != null and order == 2">asc</when>
+			<otherwise>desc</otherwise>
+		</choose>
+	</select>
+
+	<select id="findOne" resultType="com.miduchina.wrd.po.ranking.ImportantEvent">
+		SELECT
+			ie.id,
+			ie.name,
+			ie.labels,
+			ie.keyword,
+			ie.keyword1,
+			ie.keyword2,
+			ie.keyword3,
+			ie.keyword4,
+			ie.filter_keyword,
+			ie.summary,
+			ie.show_tag,
+			ie.create_time,
+			ie.area_type,
+			ie.province,
+			ie.city,
+			ie.number_day,
+			(select GROUP_CONCAT(hi.hot_incident_id) from hot_incident hi
+			where hi.important_event_id = ie.id) hotIncidentIds
+		FROM
+			important_event ie
+		WHERE ie.id = #{id}
+	</select>
+
+	<select id="findOneV2" resultType="com.miduchina.wrd.po.ranking.ImportantEvent">
+		SELECT
+			ie.id,
+			ie.name,
+			ie.labels,
+			ie.keyword,
+			ie.keyword1,
+			ie.keyword2,
+			ie.keyword3,
+			ie.keyword4,
+			ie.filter_keyword,
+			ie.summary,
+			ie.show_tag,
+			ie.create_time,
+			ie.area_type,
+			ie.province,
+			ie.city,
+			ie.number_day,
+			GROUP_CONCAT(hi.hot_incident_id) hotIncidentIds,
+			GROUP_CONCAT(hi.incident_title) incidentTitles,
+			count((hi.`status` = 1
+			<if test="hotShowTag == null">
+				and hi.show_tag = 1
+			</if>
+			) or null) eventNum
+		FROM
+			important_event ie
+		left join hot_incident hi on ie.id = hi.important_event_id
+		WHERE ie.id = #{id} and ie.status = 1 and (hi.status = 1 or hi.status is null)
+		<if test="webShow == 1">
+			<if test="startTime!=null and startTime!=''">
+				<![CDATA[
+				and hi.create_time >= #{startTime}
+				]]>
+			</if>
+			<if test="endTime!=null and endTime!=''">
+				<![CDATA[
+				and hi.create_time <= #{endTime}
+				]]>
+			</if>
+		</if>
+		<if test="webShow == null">
+			<if test="startTime!=null and startTime!=''">
+				<![CDATA[
+				and ie.create_time >= #{startTime}
+			]]>
+			</if>
+			<if test="endTime!=null and endTime!=''">
+				<![CDATA[
+				and ie.create_time <= #{endTime}
+			]]>
+			</if>
+		</if>
+
+		<if test="labelShowTag == 0">
+			<![CDATA[
+				and not FIND_IN_SET('101301',ie.labels)
+			]]>
+		</if>
+		<if test="showTag != null and showTag != ''">
+			<![CDATA[
+				and ie.show_tag = #{showTag}
+			]]>
+		</if>
+		GROUP BY
+			ie.id
+	</select>
+
+	<insert id="insert" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO
+				important_event(
+					name,
+					labels,
+					area_type,
+					province,
+					city,
+					keyword,
+					keyword1,
+					keyword2,
+					keyword3,
+					keyword4,
+					filter_keyword,
+					summary,
+					show_tag,
+					status,
+					create_time
+				)
+			VALUES
+				(
+				#{name},
+				#{labels},
+				#{areaType},
+				#{province},
+				#{city},
+				#{keyword},
+				#{keyword1},
+				#{keyword2},
+				#{keyword3},
+				#{keyword4},
+				#{filterKeyword},
+				#{summary},
+				#{showTag},
+				#{status},
+				now());
+		]]>
+	</insert>
+
+	<update id="update">
+		<![CDATA[
+			update important_event
+			set
+				name=#{name},
+				labels=#{labels},
+				area_type=#{areaType},
+				province=#{province},
+				city=#{city},
+				keyword=#{keyword},
+				keyword1=#{keyword1},
+				keyword2=#{keyword2},
+				keyword3=#{keyword3},
+				keyword4=#{keyword4},
+				filter_keyword=#{filterKeyword},
+				summary=#{summary},
+				show_tag=#{showTag},
+				update_time=now()
+			where id=#{id}
+		]]>
+	</update>
+
+	<update id="delete" parameterType="java.lang.Integer">
+		<![CDATA[
+			update important_event
+			set
+				status=0,
+				update_time=now()
+			where id=#{id}
+		]]>
+	</update>
+
+	<select id="findAllHotIncidentRelationId" resultType="java.lang.Integer">
+		select
+			hi.hot_incident_id
+		from hot_incident hi
+		WHERE hi.important_event_id = #{id}
+	</select>
+
+	<update id="updateHotIncidentRelation">
+		update hot_incident
+		set
+			important_event_id = #{id}
+		where hot_incident_id in
+		<foreach collection="hotIncidentIds" index="index" item="hotIncidentId" open="(" separator="," close=")">
+			#{hotIncidentId}
+		</foreach>
+	</update>
+
+	<update id="deleteHotIncidentRelation">
+		update hot_incident
+		set
+			important_event_id = null
+		where important_event_id = #{id}
+	</update>
+	
+</mapper>

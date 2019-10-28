@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.infomonitor.WarningMapper">
+    <select id="getNotice" resultType="com.miduchina.wrd.po.ranking.Notice" >
+        <![CDATA[
+            SELECT
+            *
+            FROM
+            notice
+            WHERE
+            status=1
+            ORDER BY
+            notice_send_time
+            DESC
+        ]]>
+
+    </select>
+
+
+
+</mapper>

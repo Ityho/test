@@ -1,0 +1,48 @@
+#服务注册中心
+eureka:
+  instance:
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:22000/eureka/,http://${eureka.instance.replicas}:22000/eureka/
+
+#服务名称
+spring:
+  application:
+    name: web-big-screen
+  zipkin:
+    discovery-client-enabled: true
+    base-url: http://192.168.20.127:9411/
+  sleuth:
+    enabled: true
+    feign:
+      enabled: true
+      hystrix:
+        enabled: true
+        command:
+          default:
+           execution:
+            isolation:
+             thread:
+              timeoutInMilliseconds: 10000
+    sampler:
+      probability: 1.0
+  cloud:
+    config: # spring cloud config 配置
+      discovery:
+        enabled: true #从配置中心读取文件
+        service-id: api-config-center #配置中心的servieId，通过服务名称去Eureka注册中心找
+      name: commons-db-ranklist,commons-db-mediasel,common-redis-wrd
+      label: master #指明远程仓库的分支
+      profile: prod #生产环境配置文件
+#spring 2.X actuator
+#http://ip:port/actuator/refresh
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh,health,info
+
+wrdurl: http://www.wrd.cn/goSearch.shtml?hiId=
+
+staticResourcePath: "http://files-bigscreen.wrd.cn"

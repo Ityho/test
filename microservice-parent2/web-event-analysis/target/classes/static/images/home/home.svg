@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="14px" viewBox="0 0 14 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>首页</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="大数据解读-底部标签栏" transform="translate(-51.000000, -10.000000)">
+            <g id="首页-底部标签栏">
+                <g id="1" transform="translate(48.000000, 10.000000)">
+                    <g id="首页" transform="translate(3.000000, 0.000000)">
+                        <path d="M12.7826172,14 L1.21736512,14 C0.545971957,14 0,13.5168892 0,12.9231315 L0,5.66236672 C0.000159930752,5.35610802 0.147563132,5.06436273 0.40540455,4.8599766 L6.19780918,0.274952896 C6.66146019,-0.0921987578 7.35990393,-0.0915406114 7.82297035,0.276269189 L13.5957823,4.86047805 C13.8528615,5.06483159 13.9997867,5.35611456 14,5.6618496 L14,12.9231315 C14,13.5169049 13.4540103,14 12.7826172,14 Z M6.99165,1 L7.00835,1 L6.99165,1 Z" id="形状" fill="#8F9DBA" fill-rule="nonzero"></path>
+                        <polygon id="路径" fill="#8F9DBA" fill-rule="nonzero" points="7.01018295 1 1 5.64470299 1 13 13 13 13 5.64416327 7.00988886 1.00012699"></polygon>
+                        <rect id="矩形" fill="#1B172C" x="6" y="7" width="2" height="5" rx="1"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

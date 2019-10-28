@@ -1,0 +1,70 @@
+@charset "GBK";
+/* CSS Document */
+
+.productIntr{ width:100%; background-color:#fff; overflow:hidden;font-family: "微软雅黑";
+}
+.Products{ top:0px;}
+.ProductsMain01{background-repeat: no-repeat;background-position: center 90px; }
+
+.ProductsMain02,.ProductsMain03,.ProductsMain04,.ProductsMain05{width:100%;background-repeat: no-repeat;background-position: center top; position: relative;}
+.ProductsMain01{background-image: url(../images/productIntr/Productsbg1.jpg); background-position: center top; background-repeat: no-repeat; background-size: 100% 100%;height: 810px; margin-top:0px;}
+.ProductsMain01 .pic{background-image: url(../images/productIntr/ProductsMain01.png); background-repeat: no-repeat; background-position: center; width: 100%; height: 700px; position: absolute; top: 120px;}
+.ProductsMain02{width: 100%;background-color: #f6f6f6; }
+.ProductsMain02bg{background-image: url(../images/productIntr/ProductsMain02.png);height: 780px;margin-top: 0px; background-repeat: no-repeat; background-position: center 100px;}
+.ProductsMain03{width: 100%; background-image: url(../images/productIntr/ProductsMain03.png);height: 798px; background-position: center 140px;}
+.ProductsMain04{background-image: url(../images/productIntr/ProductsMain04.png);height: 599px;}
+.ProductsMain05{width: 100%; background-image: url(../images/productIntr/ProductsMain05.png);height: 500px; background-position: center  }
+.productIntr h1{display: block;  width: 100%;  text-align: center; font-size: 32px;  color: #666; position: absolute; top: 80px;}
+ 
+.ProductsMain01 h1{color: #fff;}
+/*.productIntr h1:after{content: "";width: 100px; height: 100px; background-color: #ff8500; position: absolute; top: 20px; left: 20px;z-index: 0;
+  -moz-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0 0 100px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 100px 1px rgba(153, 153, 153, 0.5);}
+.productIntr h1:before{content: "";width: 100px; height: 100px;background-color: #fff; position: absolute; top: 0px; left: 0px; z-index: 1;}*/
+/*.ProductsMain01 h1:before{content: "功能介绍";}
+.ProductsMain02 h1:before{content: "应用优势";}
+.ProductsMain03 h1:before{content: "产品特性";}
+.ProductsMain05 h1:before{content: "适用行业";}*/
+.RegistrationLink{
+	display:block;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top:596px;
+
+}
+.RegistrationLink a{
+font-family:"微软雅黑";
+	width:250px;
+	display:block;
+	line-height: 30px;
+	padding:8px 0px;
+	text-align: center;
+	color: #1b75ea;
+	font-size: 28px;
+	border: 1px solid #1b75ea;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	behavior: url(pie.htc);
+	margin-right: auto;
+	margin-left: auto;
+	text-decoration: none;
+}
+.RegistrationLink a:hover{ background-color:#1b75ea; color:#fff;}
+.main3 { display:block; overflow:hidden;left:627px;
+	top:250px;}
+.main3 li{ color:#959595; font-size:16px; margin-bottom:60px; margin-top:40px;font-family:"微软雅黑";}
+.main3 li .tit{ font-size:22px; color:#505050; margin-bottom:16px;font-family: "微软雅黑";}
+.main4{ font-size:14px; color:#fff; left:661px; top:162px; overflow:hidden; width:545px; font-family:"微软雅黑";}
+.main4 li{ display:block; width:200px; height:76px; padding-left:20px; padding-top:60px; padding-right:25px; float:left; margin-bottom:20px; margin-right:25px; line-height:22px;text-align:justify;text-justify:inter-ideograph; overflow:hidden;}
+
+/* 主要代码部分 */
+#nav2 {left: 20px;list-style: none;margin: 0;position: fixed;top: 63px; z-index:100;}
+#nav2 li {margin-bottom: 2px;}
+#nav2 a {background: #ededed;color: #666;display: block;	font-size: 14px;padding: 5px 10px;text-decoration: none;text-transform: uppercase;}
+#nav2 a:hover {background: #dedede;}
+#nav2 .current a {background: #FF8500;color: #fff;}
+#container {margin: 0 auto;	width: 800px;}
+.section {border-bottom: 5px solid #ccc;min-height: 60vh;padding: 50px 20px;}
+.section p:last-child {	margin-bottom: 0;}

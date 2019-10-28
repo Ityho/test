@@ -1,0 +1,210 @@
+.b-radius {
+  border-radius: 58px;
+}
+.panel-title .bor {
+  display: inline-block;
+  width: 4px;
+  height: 15px;
+  background: #F18D00;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+/*������*/
+.progressbar .progressbar-txt {
+  text-align: right;
+  margin-bottom: 6px;
+}
+.progressbar .progressbar-txt input {
+  display: inline-block;
+  border: 0;
+  text-align: right;
+  font-size: 16px;
+  vertical-align: middle;
+  color: #ef8c23;
+}
+.progressbar .progressbar-txt span {
+  font-size: 12px;
+  color: #333333;
+  vertical-align: middle;
+}
+.progressbar .slider-box .ui-widget-content {
+  background-color: #fff;
+  border: 1px solid #ef8d23;
+  height: 1.2em;
+  box-shadow: 0px 0px 12px #f7d3ab;
+}
+.progressbar .ui-progressbar .ui-progressbar-value {
+  height: 90%;
+  margin-left: 1px;
+  margin-top: 1px;
+}
+.textArea {
+  padding-top: 8px;
+  padding-bottom: 40px;
+}
+.textArea textarea {
+  width: 100%;
+  height: 336px;
+/*   background: #fff; */
+/*   color: #000; */
+  font-size: 14px;
+  padding: 5px;
+}
+.tools-tit {
+  position: absolute;
+  top: -54px;
+  font-size: 18px;
+  font-weight: bold;
+  height: 54px;
+  line-height: 54px;
+  text-align: center;
+  width: 170px;
+  border: 1px solid #dcdcdc;
+  background: #fff;
+  left: -1px;
+}
+/*�Զ���ģʽ*/
+.setcustom {
+  margin-top: 20px;
+}
+.setcustom ul {
+  overflow: hidden;
+}
+.setcustom ul li {
+  width: 100%;
+  padding-left: 5px;
+  color: #2b2b2b;
+  font-size: 13px;
+  float: left;
+  clear: both;
+  position: relative;
+  padding-bottom: 0;
+}
+.setcustom .setcustom-con {
+  width: 100%;
+  margin-left: 0%;
+}
+.setcustom .setcustom-con .set-title {
+  font-size: 16px;
+}
+.setcustom .setcustom-con .set-title i {
+  margin-left: 10px;
+  vertical-align: middle;
+}
+.setcustom .setcustom-con .set-check {
+  padding: 20px 0;
+}
+.setcustom .setcustom-con .set-check .radio_box {
+  display: inline-block;
+  position: relative;
+  margin-right: 20px;
+}
+.setcustom .setcustom-con .set-check .radio_box input {
+  margin: 0;
+  padding: 0;
+  vertical-align: baseline;
+}
+.setcustom .setcustom-con .set-check .radio_box em {
+  margin-left: 10px;
+}
+.setcustom .setcustom-con .set-check .radio_box label {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 2px solid #f18d00;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+.setcustom .setcustom-con .set-check .radio_box input:checked + label:after {
+  content: '';
+  width: 9px;
+  height: 9px;
+  position: absolute;
+  top: 1px;
+  left: 1px;
+  background: #f18d00;
+  border-radius: 50%;
+}
+.setcustom .setcustom-con .set-input {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.setcustom .setcustom-con .set-input input {
+  width: 100%;
+  height: 30px;
+  padding-left: 10px;
+}
+.setcustom .setcustom-con .set-input input::-webkit-input-placeholder {
+  color: #b6b6b6;
+}
+.setcustom .setcustom-con .set-input input:-moz-placeholder {
+  color: #b6b6b6;
+}
+.setcustom .setcustom-con .set-input input::-moz-placeholder {
+  color: #b6b6b6;
+}
+.setcustom .setcustom-con .set-input input:-ms-input-placeholder {
+  color: #b6b6b6;
+}
+.setcustom .setcustom-con .set-input textarea {
+  width: 100%;
+  height: 70px;
+}
+.setcustom .dis-table {
+  display: table;
+}
+.setcustom .dis-table .dis-cell {
+  display: table-cell;
+  width: 48%;
+}
+.toolstit p {
+  display: inline-block;
+  font-size: 18px;
+  color: #ef8c23;
+  height: 44px;
+  line-height: 44px;
+  border: 1px solid #ef8c23;
+  width: 158px;
+  text-align: center;
+  border-radius: 30px;
+  position: relative;
+}
+.toolstit p:before {
+  content: '';
+  display: inline-block;
+  width: 130%;
+  height: 2px;
+  background: linear-gradient(70deg, #FFFFFF, #ef8c23);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -130%;
+  margin: auto;
+}
+.toolstit p:after {
+  content: '';
+  display: inline-block;
+  width: 130%;
+  height: 2px;
+  background: linear-gradient(70deg, #ef8c23, #FFFFFF);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  margin: auto;
+}
+textarea::-webkit-input-placeholder {
+  color: #b6b6b6;
+}
+textarea:-moz-placeholder {
+  color: #b6b6b6;
+}
+textarea::-moz-placeholder {
+  color: #b6b6b6;
+}
+textarea:-ms-input-placeholder {
+  color: #b6b6b6;
+}

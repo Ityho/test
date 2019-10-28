@@ -1,0 +1,10 @@
+/* Import Some CSS Files */
+@import "animation.css";
+@import "select.css";
+@import "tips.css";
+
+
+body{font-family: "Î¢ÈíÑÅºÚ",arial;}
+.float_l{float: left;}
+.float_r{float: right;}
+a:focus,a:active{text-decoration: none;}

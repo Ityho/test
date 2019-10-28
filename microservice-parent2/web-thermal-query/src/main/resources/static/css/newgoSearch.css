@@ -1,0 +1,261 @@
+/*面包屑*/
+.newCrumbs {
+  float: left;
+  font-size: 14px;
+  height: 58px;
+  line-height: 58px;
+  color: #666;
+}
+.ngSearch-heading .compBox,
+.ngSearch-heading .btn-group {
+  padding: 8px 10px;
+}
+/*全网声量*/
+.whole-body {
+  width: 100%;
+  height: 274px;
+  display: table;
+}
+.whole-body .counter {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.whole-body .counter .counter-number {
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.whole-body .counter p {
+  width: 46%;
+  margin: 0 auto;
+}
+/*导航*/
+.navbar2 li a {
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  padding: 0 10px;
+  background-color: #6E7584;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.navbar2 li:hover a {
+  background-color: #ef8c24;
+  color: #fff;
+}
+.navbar2 .active a {
+  background-color: #ef8c24;
+  color: #fff;
+}
+/*全局*/
+.panel-footer {
+  background-color: #EDEDED;
+}
+/*热点网民*/
+.networkList {
+  margin: 0 10%;
+}
+.networkList ul {
+  border-bottom: 1px solid #dcdcdc;
+}
+.networkList li {
+  text-align: center;
+  padding: 15px 0;
+}
+.networkList li .network-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.networkList li .network-logo img {
+  width: 100%;
+  height: 100%;
+}
+.networkList li .network-txt {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  text-align: left;
+}
+.networkList li .network-txt .gradeV {
+  font-size: 16px;
+  color: #2EB0F8;
+  margin: 2px;
+  font-weight: bold;
+}
+/*高频词*/
+.terms-bg {
+  display: inline-block;
+  width: 90px;
+  height: 25px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  background-image: url(../images/terms_bg_left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.terms-bg2 {
+  background-image: url(../images/terms_bg_right.png);
+}
+.terms {
+  width: 55%;
+  margin: 0 auto;
+}
+.terms li {
+  float: left;
+  width: 30%;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #a09d9d;
+  text-align: center;
+  font-size: 14px;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+.terms li:nth-child(3n+3) {
+  margin-right: 0;
+}
+/*边框icon*/
+.icon-borlf1 {
+  display: inline-block;
+  width: 5px;
+  height: 15px;
+  background: #FBB85D;
+  margin: 0 8px;
+}
+.table2 th {
+  border-top: 0;
+}
+.echartTitle {
+  font-size: 16px;
+}
+.echartTitle em {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #838383;
+  margin: 0 12px;
+}
+.rgafter:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 300px;
+  background: #DDDDDD;
+  position: absolute;
+  top: 10%;
+  right: -1px;
+  bottom: 0;
+  margin: auto;
+}
+/*兴趣情感度*/
+.positive-lf .positive-title,
+.positive-right .positive-title {
+  background: #0E7DC0;
+  display: inline-block;
+  padding: 3px 15px;
+  border-radius: 15px;
+  color: #ffffff;
+}
+.positive-lf .positive-con,
+.positive-right .positive-con {
+  height: 215px;
+  position: relative;
+  width: 90%;
+}
+.positive-lf .positive-con p,
+.positive-right .positive-con p {
+  width: 15%;
+  background: #0E7DC0;
+  padding: 5px 0;
+  color: #fff;
+  white-space: nowrap;
+}
+.positive-lf .positive-con .posiab_1,
+.positive-right .positive-con .posiab_1 {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+.positive-lf .positive-con .posiab_2,
+.positive-right .positive-con .posiab_2 {
+  position: absolute;
+  right: 30%;
+  top: 5%;
+}
+.positive-lf .positive-con .posiab_3,
+.positive-right .positive-con .posiab_3 {
+  position: absolute;
+  left: 12%;
+  top: 18%;
+  background: linear-gradient(70deg, #FFFFFF, #0E7DC0);
+}
+.positive-lf .positive-con .posiab_4,
+.positive-right .positive-con .posiab_4 {
+  position: absolute;
+  right: 12%;
+  top: 18%;
+  background: linear-gradient(70deg, #0E7DC0, #FFFFFF);
+}
+.positive-lf .positive-con .posiab_5,
+.positive-right .positive-con .posiab_5 {
+  position: absolute;
+  left: 0;
+  top: 22%;
+  right: 0;
+  margin: auto;
+}
+.positive-lf .positive-con .posiab_6,
+.positive-right .positive-con .posiab_6 {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+}
+.positive-lf .positive-con .posiab_7,
+.positive-right .positive-con .posiab_7 {
+  position: absolute;
+  right: 25%;
+  top: 35%;
+}
+.positive-lf .positive-con .posiab_8,
+.positive-right .positive-con .posiab_8 {
+  position: absolute;
+  left: 32%;
+  top: 53%;
+}
+.positive-lf .positive-con .posiab_9,
+.positive-right .positive-con .posiab_9 {
+  position: absolute;
+  right: 32%;
+  top: 53%;
+}
+.positive-right .positive-title {
+  background: #D9684B;
+}
+.positive-right .positive-con p {
+  background: #D9684B;
+}
+.positive-right .positive-con .posiab_3 {
+  position: absolute;
+  left: 12%;
+  top: 18%;
+  background: linear-gradient(70deg, #FFFFFF, #D9684B);
+}
+.positive-right .positive-con .posiab_4 {
+  position: absolute;
+  right: 12%;
+  top: 18%;
+  background: linear-gradient(70deg, #D9684B, #FFFFFF);
+}

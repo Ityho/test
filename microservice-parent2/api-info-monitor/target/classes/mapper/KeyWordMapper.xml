@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.infomonitor.KeyWordMapper">
+    <select id="selectKeyWord" resultType="com.miduchina.wrd.po.keyword.KeyWord">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				keyword
+			WHERE
+
+			status != 2
+
+		]]>
+        <if test="keywordId!=null and keywordId!=0">
+            <![CDATA[
+				and keyword_id = #{keywordId}
+			]]>
+        </if>
+        <if test="userId!=null and userId!=0">
+            <![CDATA[
+				and user_id = #{userId} and status<2  order by  status desc, keyword_id asc
+			]]>
+        </if>
+    </select>
+
+    <select id="selectKeyWordByUserTime" resultType="com.miduchina.wrd.po.keyword.KeyWord">
+        <![CDATA[
+			SELECT
+				keyword_id as keywordId,
+				user_id as userId,
+				keyword_name as keywordName,
+				keyword,
+				keyword1,
+				keyword2,
+				keyword3,
+				keyword4,
+				filter_keyword as filterKeyword,
+				product_code as product_code,
+				input_keyword as inputKeyword,
+				input_keyword_match_type as keywordPipeiType,
+				input_filter_keyword as inputFilterKeyword,
+				input_filter_keyword_match_type as filterKeywordPipeiType,
+				valid_end_date as validEndDate,
+				status,
+				create_time as createTime,
+				update_time as updateTime,
+				keyword_sequence as keywordSequence,
+				keyword_type as keywordType,
+				category_type as type,
+				category_reference_id as referenceId,
+				monitor_type as monitorType,
+				modify_num as modifyNum
+
+			FROM
+				keyword
+			WHERE
+			status = 1 AND unix_timestamp(valid_end_date) > unix_timestamp('" + DateUtils.format(new Date()) + "')
+		]]>
+        <if test="userId!=null and userId!=0">
+            <![CDATA[
+				and user_id = #{userId} order by update_time desc
+			]]>
+        </if>
+    </select>
+
+    <select id="selectOneLoginLog" resultType="com.miduchina.wrd.dto.log.LoginLog">
+        <![CDATA[
+			SELECT
+				login_log_id as loginId,
+				login_log_user_id as loginUserId,
+				login_log_platform as loginPlatform,
+				login_log_time as loginTime,
+				login_log_type as loginType,
+				login_log_ip as loginIp
+			FROM
+				login_log
+			WHERE
+
+			login_log_user_id = #{userId} order by login_log_time desc LIMIT 0,10
+
+		]]>
+
+    </select>
+
+    <insert id="saveKeyWordLog" useGeneratedKeys="true" keyProperty="search_history_id">
+        <![CDATA[
+           INSERT INTO
+				search_history(
+                    user_id,
+                    search_content AS keyWord,
+                    total,
+                    status,
+                    create_time,
+                    update_time,
+                    type
+				)
+			VALUES
+				(
+				#{userId},
+				#{keyWord},
+				#{total},
+				#{status},
+				now() ,
+				#{updateTime},
+        ]]>
+    </insert>
+
+    <select id="selectKeyWordLog" resultType="Integer">
+        <![CDATA[
+			SELECT
+			    count(*)
+			FROM
+				search_history
+			WHERE
+			    user_id = #{userId}
+			AND
+			    search_content= #{keyWord}
+			AND
+			    status=1
+			<if test="type ==2 ">
+             And type =2,
+            </if>
+            <if test="type !=2 ">
+             And type <2,
+            </if>
+
+
+		]]>
+
+    </select>
+    <select id="selectRenewKeywordList" resultType="com.miduchina.wrd.po.keyword.KeyWord">
+        <![CDATA[
+			SELECT
+				*
+			FROM
+				keyword
+			WHERE
+			status != 2
+		]]>
+        <if test="userId!=null and userId!=0">
+            <![CDATA[
+				and user_id = #{userId}
+			]]>
+        </if>
+        <if test="expiredCondition!=null and expiredCondition==1">
+            <![CDATA[
+				and  valid_end_date<now()
+			]]>
+        </if>
+
+        <if test="expiredCondition!=null and expiredCondition==0">
+            <![CDATA[
+				and  valid_end_date>=now()
+			]]>
+        </if>
+			  order by status desc , valid_end_date asc
+    </select>
+    <update id="updateKeyWordLog" >
+        UPDATE search_history
+        SET
+            total = #{total}+1,
+            update_time=now()
+        WHERE
+        user_id = #{userId}
+    </update>
+
+</mapper>

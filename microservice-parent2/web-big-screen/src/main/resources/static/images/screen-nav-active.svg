@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="218px" height="143px" viewBox="0 0 218 143" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>当前选项@3x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="8.0042133%" y1="100%" x2="94.3544962%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#1AC0FF" offset="0%"></stop>
+            <stop stop-color="#3C83F5" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="页面-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="热点发现-热门事件" transform="translate(-71.000000, -162.000000)">
+            <g id="左tab" transform="translate(68.000000, 162.000000)">
+                <g id="分组">
+                    <g id="1" transform="translate(4.000000, 0.000000)">
+                        <g id="当前选项">
+                            <path d="M5,29 C5,13.3954045 5,2 5,2 C5,2 13.9458998,2 28,2" id="路径" stroke="url(#linearGradient-1)" stroke-width="0.9921"></path>
+                            <path d="M132,141 C108.818763,141 28.2330771,141 28.2330771,141 L5,117.741761 C5,117.741761 5,84.6794254 5,54" id="路径" stroke="url(#linearGradient-1)" stroke-width="0.9921"></path>
+                            <polygon id="路径" stroke="url(#linearGradient-1)" stroke-width="2.8346" points="15 12 15 113.442623 32.4448052 131 156.712121 131 179.002706 108.565574 214 108.565574 214 33.2422587 192.893939 12"></polygon>
+                            <polygon id="路径" stroke="url(#linearGradient-1)" stroke-width="2.8346" fill="url(#linearGradient-1)" points="200 12 215 12 215 27"></polygon>
+                            <g id="分组-10" transform="translate(0.000000, 43.000000)" stroke="url(#linearGradient-1)" stroke-width="0.9921">
+                                <circle id="椭圆形" cx="5.5" cy="5.5" r="5.5"></circle>
+                                <circle id="椭圆形" cx="5.5" cy="5.5" r="1.5"></circle>
+                            </g>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="132 139 136 141 132 143"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="136 139 140 141 136 143"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="140 139 144 141 140 143"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="28 0 32 2.00194742 28 4"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="32 0 36 2.00194742 32 4"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="36 0 40 2.00194742 36 4"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="190 112 181.896234 112 162 132 170.103766 132"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="201 112 192.896234 112 173 132 181.103766 132"></polygon>
+                            <polygon id="路径" fill="url(#linearGradient-1)" points="211 112 202.896234 112 183 132 191.103766 132"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.rankinglist.mapper.HotWordMapper">
+	
+	<select id="findAll" resultType="com.miduchina.wrd.po.ranking.HotWord">
+		SELECT
+			hw.id,
+			hw.`name`,
+			hw.create_time,
+			hw.ratio_hot_day,
+			hw.number_day,
+			(select GROUP_CONCAT(hi.labels) from hot_incident hi
+			where hi.hot_word_id = hw.id) labels
+		FROM
+			hot_word hw
+		WHERE hw.status = 1
+		<if test="name!=null and name!=''">
+			<![CDATA[
+				and hw.name LIKE '%${name}%'
+			]]>
+		</if>
+		<if test="startTime!=null and startTime!=''">
+			<![CDATA[
+				and hw.create_time >= #{startTime}
+			]]>
+		</if>
+		<if test="endTime!=null and endTime!=''">
+			<![CDATA[
+				and hw.create_time <= #{endTime}
+			]]>
+		</if>
+		<![CDATA[
+			ORDER BY
+				hw.number_day desc
+		]]>
+	</select>
+
+	<insert id="insert" parameterType="com.miduchina.wrd.po.ranking.HotWord" useGeneratedKeys="true" keyProperty="id">
+		<![CDATA[
+			INSERT INTO 
+				hot_word(
+					name,
+					status,
+					create_time
+				) 
+			VALUES 
+				(
+				#{name},
+				#{status},
+				now());
+		]]>
+	</insert>
+
+	<update id="update">
+		<![CDATA[
+			update hot_word
+			set
+			name=#{name},
+			update_time=now()
+			where id=#{id}
+		]]>
+	</update>
+
+	<update id="delete" parameterType="java.lang.Integer">
+		<![CDATA[
+			update hot_word
+			set
+			status=0,
+			update_time=now()
+			where id=#{id}
+		]]>
+	</update>
+
+	<insert id="insertHotWordRelation" parameterType="com.miduchina.wrd.po.ranking.HotWord" useGeneratedKeys="true" keyProperty="id">
+		INSERT INTO 
+			hot_word_relation(
+				hot_word_id,
+				hot_incident_id,
+				status,
+				create_time
+			) 
+		VALUES 
+		<foreach collection="hotIncidentIds" item="item" index="index" separator=",">
+			(#{id},#{item},#{status},now())
+		</foreach>
+	</insert>
+	
+	<select id="findHotWordName" resultType="int">
+		<![CDATA[
+			select id from hot_word where `status` = 1 and name = #{name}
+			]]>
+	</select>
+
+</mapper>

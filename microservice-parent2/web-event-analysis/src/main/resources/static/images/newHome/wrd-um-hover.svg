@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="16px" viewBox="0 0 13 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>分组@3x</title>
+    <desc>Created with Sketch.</desc>
+    <g id="组件" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="U媒-底部标签栏" transform="translate(-260.000000, -9.000000)">
+            <g id="首页-底部标签栏">
+                <g id="4" transform="translate(242.000000, 9.000000)">
+                    <g id="分组" transform="translate(18.000000, 0.000000)">
+                        <polygon id="路径" fill="#FFFFFF" points="3.36596706 4 1 4 1.63403294 1 4 1"></polygon>
+                        <polygon id="路径" fill="#FFFFFF" points="5.57731263 1 4 1 4.42268737 0 6 0"></polygon>
+                        <path d="M13,5.7235935 L10.1789413,5.7235935 L8.05001528,13.4388284 C8.19303249,13.3972495 8.19303249,13.3972495 8.05001528,13.4388284 L8.04427693,13.4598321 C7.85049744,14.1615288 7.12614173,14.7324879 6.40266884,14.768923 L3.16050389,14.768923 L6.1320838,4 L3.31102509,4 L0,16 L8.39475739,16 L8.81277376,16 C9.55964144,16 10.326814,15.4123236 10.5267733,14.6870513 C10.5267733,14.6870513 10.5267733,14.6870513 10.5267733,14.6870513 L13,5.7235935 Z" id="路径" fill="#FF8C35"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

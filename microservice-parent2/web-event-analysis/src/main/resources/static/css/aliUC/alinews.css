@@ -1,0 +1,83 @@
+*,.before,.after{
+	margin: 0;
+	padding: 0;
+	/* [disabled]-webkit-box-sizing:border-box; */
+	box-sizing: border-box;
+	-webkit-tap-highlight-color: transparent;
+	tap-highlight-color: transparent;/*-webkit-appearance:none*/
+}
+html{height:100%}
+body,p,b,dl,dd,table,td,th,input,button,textarea,xmp,pre,img,form,div,ul,ol,li,h1,h2,h3,h4,h5,h6,header,section,nav,footer{margin:0;padding:0;}
+img,iframe,acronym{border:0;}
+ol,ul,li{list-style:none;}
+html , body{width:640px;font-size:12px;font-family:"Î¢ÈíÑÅºÚ";-webkit-touch-callout:none; overflow:hidden;margin:0 auto;}
+.fl{float:left;}
+.fr{float:right;}
+.fix{*zoom:1;}
+.fix:after{
+	display:block;
+	content:"clear"; 
+	height:0; clear:both;
+	overflow:hidden;
+	visibility:hidden;
+}
+.w94{width:94%; margin:0 auto}
+
+.container{background:url(../../images/alinews/bg.jpg) no-repeat top center; background-size:cover;font-size:22px;}
+.ct-top img{ width:100%;}
+.ct-join{padding-bottom:10px;text-align:center;}
+.ct-join a{ display:inline-block;width:7rem;}
+.ct-join a img{ width:100%;}
+.ct-join .joina{display:inline-block;width:4rem;}
+.ct-tit{ width:2.8rem;height:48px; line-height:48px; text-align:center;font-size:20px; color:#fff2ff; background:url(../../images/alinews/tit-bg.png) no-repeat center; background-size:100%;margin-top:35px;}
+.ct-video .ct-tit{ margin-top:28px;}
+.video-con{ width:100%;height:365px; overflow:hidden; background:url(../../images/alinews/video-bg.png) no-repeat center; background-size:100%; padding:20px;}
+
+.news-con{background:url(../../images/alinews/news-bg.png) no-repeat; background-size:cover; padding:15px 0.4rem; height:300px;}
+.news-lists{height:270px;overflow:hidden;}
+.news-con li{line-height:54px;color:#fff2ff;}
+.news-con li a{width:100%;display:block;color:#fff2ff;overflow:hidden; white-space:nowrap;text-overflow:ellipsis; background:url(../../images/alinews/list-img.png) no-repeat left center; padding-left:0.4rem;}
+.video-kuang{ width:100%; height:100%;position:relative; overflow:hidden;border-top:none;}
+
+.custom-con{ background:url(../../images/alinews/pho-bg.png) no-repeat; background-size:cover;padding:20px 0.28rem;}
+.custom-con li{float:left;width:50%; text-align:center;}
+.custom-con li dl{width:4.2rem;margin:0 auto;}
+.custom-con li dt{background:url(../../images/alinews/phone-bg.png) no-repeat center;background-size:100%; width:4.2rem; height:4.1rem;  text-align:center; margin:0 auto; display:table-cell;vertical-align:bottom;}
+.custom-con li dt img{ width:3.3rem;display:block; margin:0 auto;padding-bottom:3px;}
+.custom-con li dd{ text-align:center; color:#fff2ff; font-size:16px; margin-top:10px;}
+.custom-con li dd p{ line-height:24px;}
+.custom-con li dd p:first-child{ font-size:22px;}
+
+.bottom-img{ width:100%; margin:20px 0;}
+/*==============================================================index-end==============================================*/
+.w80{width:80%;margin:0 auto;}
+.container-join{ width:100%; height:100%;background:url(../../images/alinews/join-bg.jpg) no-repeat top center;background-size:cover;padding-top:100px; font-size:20px; color:#FFF;}
+.container-join .mui-content{ background:none;}
+.container-join .mui-input-row{margin-bottom:20px;background:url(../../images/alinews/input-bg.png) repeat;border:1px solid #463271; padding:10px 0;}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #949494; opacity:0.4; 
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+}
+
+input:-ms-input-placeholder{
+    color: #949494;opacity:0.4; 
+}
+
+input::-webkit-input-placeholder{
+    color: #949494;opacity:0.4; 
+}
+select:focus{border:solid 0px;;background:none;}
+
+
+.scaleShow{-webkit-animation: scaleIn 0.8s both; animation:scaleIn 0.8s both;}
+.scaleOut{-webkit-animation: scaleOut 0.4s both; animation:scaleIn 0.4s both;}
+.prompPOP{position: fixed;top: 25%;left: 0px;z-index: 52;}
+.prompPOP .prConBox{ margin: 0px 10%; background-color: #FFF;  font-size: 25px;box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.4);}
+.prompPOP .tit{ height: 30px; line-height: 30px; width: 100%; position: relative;}
+.prompPOP .tit h1{ margin-left: 15px;font-weight:normal;padding:10px;font-size:20px}
+.prompPOP .tit .cancel{ position: absolute; right: 12px;top: 0px; font-size: 25px; cursor: pointer;}
+.prompPOP .PromptCon{ margin: 20px; line-height: 22px;}
+.prompPOP .bottom{ border: none; text-align: center; height: 60px; padding-top: 10px;}
+.prompPOP .bottom a{ padding: 8px 15px; background-color:#fd8c25; color: #FFFFFF; text-align: center; border-radius: 3px;}

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.rankinglist.mapper.HeatStatisticsMapper">
+
+	<select id="findAll" resultType="com.miduchina.wrd.po.ranking.HeatStatistics">
+		select * from heat_statistics_${table} where status = 1 and
+		analysis_task_ticket = (SELECT MAX(analysis_task_ticket) from heat_statistics_${table})
+		order by
+		<choose>
+			<when test="sort == 1">name</when>
+			<when test="sort == 2">heat_value</when>
+			<when test="sort == 3">heat_index_change</when>
+			<when test="sort == 4">data_amount</when>
+			<when test="sort == 5">rank</when>
+			<when test="sort == 6">rank_difference</when>
+			<otherwise>heat_value</otherwise>
+		</choose>
+		<choose>
+			<when test="order != null and order == 2">asc</when>
+			<otherwise>desc</otherwise>
+		</choose>
+	</select>
+
+</mapper>

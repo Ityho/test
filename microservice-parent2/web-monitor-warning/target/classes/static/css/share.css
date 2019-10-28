@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+html,body{ margin:0px; padding:0px; font-family:"微软雅黑",Verdana, Geneva, sans-serif; font-size:12px; color:#333;}
+ul,li{margin: 0px;padding: 0px;border: none;list-style-image: none;list-style-type: none;}
+img{margin: 0px;padding: 0px;border: none;}
+div{margin:0px auto;}
+a {color: #666;cursor: pointer;text-decoration: none;}
+a:hover { text-decoration: none; }
+.h60{ height:60px;}
+.YJmail{ width:100%;   background-color:#fff;}
+.YJmail .mail_heard{
+	height: 65px;
+	line-height:65px;
+	border-bottom: solid 2px #1974ea;
+	position:relative;
+	position:fixed;
+	top:0px; width:100%; z-index:100; background-color:#fff;
+	-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);
+}
+.YJmail .more{display:none; width:40px; height:40px;   position:absolute; }
+.YJmail .mail_heard h1{ text-align:center; font-size:28px; font-weight:500;}
+.YJmail .mail_heard .logo{ position:absolute; top:10px; left:15px; width:125px;}
+.YJmail .mail_heard .top_nav{ position:absolute; top:0px; right:0px;}
+.YJmail .mail_heard .top_nav li{ display:block; border-left:solid 1px #CCC; float:left;}
+.YJmail .mail_heard .top_nav li a{ display:block;text-align:center; font-size:18px; padding:0px 25px;}
+.YJmail .mail_heard .top_nav li a:hover{ background-color:#F9F9F9;color:#C90A26;}
+.YJmail .mail_Parameter{ line-height:25px; font-size:16px; margin:10px 0px; padding:5px 15px; background-color:#f4f4f4; border:solid 0px #CCC;}
+.YJmail .mail_Parameter em{color:#72ab00; font-style:normal; font-weight:600; font-size:20px;}
+
+.YJmail .main_list{  clear:both; margin:2%; margin-bottom:0px;}
+.YJmail .main_list li{ display:block; padding:15px; border:solid 1px #CCC; min-height:60px; margin-bottom:10px; -webkit-box-shadow: 0 2px 5px rgba(125,125,125,0.4);
+	-moz-box-shadow: 0 2px 5px rgba(125,125,125,0.4);
+	box-shadow: 0 2px 5px rgba(125,125,125,0.4); }
+.YJmail .main_list li i{ display:block; float:left; width:40px; line-height:60px;  text-align:center; font-style:normal; border-right:solid 1px #dfdfdf; color:#999; font-size:24px; font-weight:600;   margin-right:5px; margin-top:2px; }
+.YJmail .main_list li:hover{ background-color:#F7F7F7;}
+.YJmail .main_list li .quickLink a{ font-size:22px; color:#008fe6; text-decoration:none;}
+.YJmail .main_list li .quickLink a:hover{ color:#C90A26; text-decoration: underline;}
+.YJmail .main_list li .infor{ font-size:14px; margin-top:10px;}
+.YJmail .main_list li .infor span{ margin-right:20px;}
+.YJmail .footer{font-size: 16px; position:fixed; bottom:0px; width:100%; background-color: #ff8400; color: #fff; height:60px; line-height:20px; border-top: solid 1px #CCC;-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);}
+.YJmail .footer .text{width: 60%; float: left; line-height: 25px; margin: 5px;}
+.YJmail .footer .btn-download{display: block; float: right; padding: 0 20px; text-align: center;background-color: #d0101f; color: #fff; position: relative; }
+.YJmail .footer .btn-download:after{ content: ""; position: absolute;left:-1px; top: 35%; width: 0; 
+height: 0; 
+border-bottom: 10px solid transparent; /* left arrow slant */
+border-top: 10px solid transparent; /* right arrow slant */
+border-left: 10px solid #ff8400; /* bottom, add background color here */
+font-size: 0;
+line-height: 0;}
+.YJmail .pageNum{ font-size:20px; margin-left:20px;}
+.YJmail .pageBox{ float:right;}
+.YJmail .pageBox li{ font-family: Verdana, Geneva, sans-serif; display:block; float:left; border-left:solid 1px #CCC; font-size:24px; padding:0px 20px; text-align:center; cursor:pointer;}
+.YJmail .pageBox .cur,.YJmail .pageBox li:hover{ background-color:#008fe6; color:#fff;}
+.zhezhao{width: 100%;height: 100%;opacity:0.6;top: 0;left: 0;position: fixed;background: black;display: none; }
+.content{width:50%;height:100%;position: fixed;top:0%;right: 0%;background: #005b93;font-size: 14px;font-weight: 500;display: none;margin-top: 46px; }
+.content .rightNav{font-size: 1.3em;}
+.content .rightNav ul{ margin-bottom: 20px; padding-top:20px;}
+.content .rightNav .menu{line-height: 50px;color: #fff;padding-left: 40px; cursor:pointer;}
+.content .rightNav .menu a{ color:#fff;}
+.content .rightNav .menu:hover{ background-color:#000; opacity:0.3;}
+/*详细内容样式*/
+.YJmail .info{padding:30px;}
+.YJmail .info .info_tit{ font-size:24px; display:block; padding-bottom:10px; border-bottom:dashed 1px #CCC;}
+.YJmail .info .info_tit a{ color:#008fe6;}
+.YJmail .info .info_tit a:hover{ color:#C90A26; text-decoration: underline;}
+
+.YJmail .attr{ padding:10px 0px; padding-bottom:0px; border-bottom:dashed 1px #CCC; overflow:hidden;}
+.YJmail .attr li{ display:block; float:left; margin-bottom:10px; font-size:16px; width:49.333%; color:#666;}
+.conBox{padding:20px 0px; font-size:18px; line-height:30px; text-indent:35px;}
+.YJmail .back{ width:35px; height:35px; float:left; margin-top:3px; margin-left:10px; position:fixed; bottom:2%; left:2%;}
+.YJmail .back:hover{ opacity:0.6;}
+@media screen and (max-width: 414px) {
+.YJmail .pageNum{ font-size:16px; margin-left:10px;}
+.h60{ height:50px;}
+.YJmail .mail_heard{
+	height: 55px;
+	line-height:55px;
+	border-bottom: solid 2px #1974ea;
+ 	-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.5);
+	box-shadow: 0 0 4px 1px rgba(153, 153, 153, 0.5);
+}
+.YJmail .more{display:block;top:8px; right:10px;}
+.YJmail .more{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background-image: url(../images/th-list-32.png);
+	background-repeat: no-repeat;
+	background-position: center center;
+	cursor:pointer;
+}
+.YJmail .mail_heard .logo{ position:absolute; top:8px; left:15px; width:105px;}
+.YJmail .mail_heard .top_nav{ position:absolute; top:55px; right:5px; display:none; width:100px; background-color:#fff; border:solid 1px #CCC;}
+.YJmail .mail_heard .top_nav li{ display:block; float:none; font-size:14px; margin-left:10px; line-height:35px;}
+.YJmail .mail_Parameter{font-size:12px; line-height:20px;}
+.YJmail .mail_Parameter em{ font-size:14px;}
+.YJmail .main_list li{ display:block; padding:10px; min-height:50px; }
+.YJmail .main_list li i{width:30px; line-height:50px;  font-size:16px; font-weight:600;   margin-right:5px; margin-top:2px; }
+.YJmail .main_list li .quickLink{width:380px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.YJmail .main_list li .quickLink a{ font-size:16px;}
+.YJmail .main_list li .quickLink a img{ width:20px;}
+.YJmail .main_list li .infor{ font-size:12px; }
+.YJmail .main_list li .infor span{ margin-right:5px;}
+.YJmail .footer{height:60px; line-height:60px;}
+.YJmail .pageBox li{ font-size:18px; padding:0px 15px; }
+.YJmail .pageNum{ font-size:16px; margin-left:10px;}
+
+
+/*详细内容样式*/
+.YJmail .info{padding:20px;}
+.YJmail .info .info_tit{ font-size:20px;}
+.YJmail .attr li{ font-size:16px; width:100%; }
+.conBox{padding:15px 0px;}
+
+}
+@media screen and (max-width: 400px) {
+	.YJmail .main_list li .quickLink{width:350px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+	}
+@media screen and (max-width: 384px) {
+	.YJmail .main_list li .quickLink{width:340px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+	}
+@media screen and (max-width: 375px) {
+
+.YJmail .main_list li .quickLink{width:320px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+}
+@media screen and (max-width: 360px) {
+	.YJmail .main_list li .quickLink{width:330px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+	}
+@media screen and (max-width: 320px) {
+
+.YJmail .main_list li .quickLink{width:290px; white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.YJmail .footer{height:50px; line-height:50px; font-size: 14px;}
+.YJmail .footer .btn-download{ padding: 0 15px; }
+.YJmail .footer .btn-download:after{ top: 32%;}
+.YJmail .footer .text{line-height: 20px; margin: 5px;}
+.YJmail .pageBox li{ font-size:16px; padding:0px 10px; }
+.YJmail .pageNum{ font-size:14px; margin-left:10px;}
+
+/*详细内容样式*/
+.YJmail .info{padding:15px;}
+.YJmail .info .info_tit{ font-size:18px;}
+.YJmail .attr li{ font-size:14px; width:100%; }
+.conBox{padding:10px 0px; font-size:16px; line-height:25px;}
+}
+

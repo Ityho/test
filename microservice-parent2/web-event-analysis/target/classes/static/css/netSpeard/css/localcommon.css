@@ -1,0 +1,39 @@
+.detail-btn {
+  display: inline-block;
+  width: 15.75rem;
+  height: 2.4rem;
+  background: url(../../../images/netSpread/images/detail_btn.png) no-repeat;
+  background-size: cover;
+  line-height: 2.4rem;
+  text-decoration: none;
+  color: #ffffff;
+  margin-top: 1.75rem;
+}
+.content-card2Two .item1 {
+    width: 7.4rem;
+    height: 5.5rem;
+    background: url(../view/netSpread/images/detail_bg_01.png) no-repeat;
+    background-size: cover;
+    font-size: 0.65rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.6rem;
+}
+.content-card2Two .item2 {
+    width: 7.4rem;
+    height: 5.5rem;
+    background: url(../images/detail_bg_02.png) no-repeat;
+    background-size: cover;
+    font-size: 0.65rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-top: 0.6rem;
+}
+.module_coderTwo {
+  display: inline-block;
+  height: 5.7rem;
+  width: 17.25rem;
+  text-align: center;
+  background: url(../../../images/netSpread/images/piiic_er_bg.png) no-repeat;
+  background-size: cover;
+}

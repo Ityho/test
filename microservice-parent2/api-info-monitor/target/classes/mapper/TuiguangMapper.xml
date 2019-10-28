@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.tuiguang.TuiguangMapper">
+    <insert id="insert" useGeneratedKeys="true" keyProperty="tg_id">
+        <![CDATA[
+           INSERT INTO
+				tuiguang(
+                    tg_from,
+                    tg_type,
+                    tg_ip,
+                    status,
+                    create_time,
+                    update_time
+				)
+			VALUES
+				(
+				#{from},
+				#{type},
+				#{ip},
+				#{status},
+				now() ,
+				#{updateTime}
+				)
+        ]]>
+    </insert>
+
+
+</mapper>

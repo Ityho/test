@@ -1,0 +1,41 @@
+@CHARSET "UTF-8";
+/*表格样式*/
+table {border-collapse:collapse;font-size:12px;font-weight: normal;margin-top: -1px;margin-right: -1px;margin-bottom: -1px;margin-left: -1px;}
+.table{border: 0px solid #dbdee1;}
+.table th,td{ text-align:center;}
+.table th{ font-size:13px; line-height:16px; padding:10px 0px; background-color:#f87434;color:#fff; font-weight:normal; border-bottom:solid 0px #dbdee1;}
+.table th,.table td{border:none !important;}
+.table td{ line-height:16px; padding:10px 0px; }
+.table td a{text-decoration: none;color: #333;}
+.table td a:hover{ text-decoration:underline;}
+.table tr{border-bottom: dashed 0px #dbdee1;}
+.table tr:last-child{border: none;}
+.table tr:hover{ background-color: #eeeeee;}
+.table tbody tr:nth-child(even) {
+    background: #f7f7f7 !important;
+}
+ .table2 th {
+ 	color: #666;
+    background-color: #F9F9F9;
+    border-bottom: solid 1px #EAEAEA;
+    border-top: solid 1px #EAEAEA;
+    line-height: 35px;
+    height: 35px;
+}
+
+.info-section {width: 32%; position: absolute; right: 10px; top: 20px;-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);  -webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2); box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.2);}
+.map_table{border: none; background-color: rgba(255,255,255,.8);width: 100%;}
+.map_table th { background-color: #f5f8fd; color: #557fbb; border: none;}
+.map_table2 th { background-color: #F2A418; color: #fff;}
+.map_table2 tr {background-color: #FDFBF5;}
+.map_table2 tr:nth-child(even) {background-color: #fff;}
+.map_table th, .map_table td { padding: 4px 0; height: 18px;}
+.map_table, .map_table th, .map_table td { text-align: center;font-size: 12px;}
+.map_table td {border: none; border-bottom: dashed 1px #e8e8e8;}
+.map_table_pr{text-align: right;   color: #EA8109;font-size: 12px; margin: 10px;}
+.map_table .kw_th{background-color: #557fbb; color: #fff;}
+.map_table .hx_th{background-color: #87aadc; color: #ffffff;}
+
+.map_table-red th{background-color: #fdf8f5;color: #ff7f50;}
+.map_table-red .hx_th {background-color: #ffa583;color: #ffffff;}
+.map_table-red .kw_th {background-color: #ff7f50;color: #fff;}

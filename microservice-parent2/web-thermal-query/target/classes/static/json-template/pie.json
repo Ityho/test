@@ -1,0 +1,58 @@
+{
+        chart: {
+            type: 'pie',
+			height:260,
+			width:420,
+			style: {
+				fontFamily: 'Microsoft YaHei',
+                fontSize: 12,
+				color:'#000000'
+            },
+			
+			plotBackgroundColor: null,
+			plotBorderWidth: null,
+			plotShadow: false,
+            options3d: {
+                enabled: false,
+                alpha: 65,
+                beta: 0
+            }
+        },
+        title: {
+            text: ''
+        },
+        tooltip: {
+            pointFormat: '{series.name}: {point.percentage:.1f}%'
+        },
+        credits: {
+     		enabled: false
+		},
+		colors:{colors},
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                depth: 40,
+                dataLabels: {
+                    enabled: true,
+					style:{
+						fontFamily: 'Microsoft YaHei',
+						fontSize: 12,
+						color:'#000000'
+					},
+                    formatter: function () {  
+                          return '' + this.point.name + ': ' + Highcharts.numberFormat(this.percentage,1) + ' %';  
+                       }
+                       
+                },
+				borderWidth:0
+            }
+        },
+        series: [{
+       		startAngle:95,
+            type: 'pie',
+            name: ' ',
+            data: {data}
+        }]
+
+}			

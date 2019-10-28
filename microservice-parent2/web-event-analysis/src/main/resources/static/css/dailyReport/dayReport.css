@@ -1,0 +1,916 @@
+.dayReport {
+	background: #000 url("../../images/daily/bg3.jpg") no-repeat top center;
+	background-attachment: fixed
+}
+
+.dayReport #footer,.dayReport #footer a {
+	background-color: transparent;
+	color: #fff;
+	border: none
+}
+
+.dayReport .page-container2 .content {
+	width: 750px;
+	background-color: #e9e9e9;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	font-size: 14px;
+	line-height: 22px;
+	-moz-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+	-webkit-box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3);
+	box-shadow: 0 0 4px 1px rgba(0, 0, 0, 0.3)
+}
+
+.dayReport .page-container2 .content a {
+	text-decoration: none
+}
+
+.dayReport .page-container2 .content .row-fluid {
+	margin: 0 0 0;
+	background-color: #fff;
+	
+	-moz-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+	-webkit-box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 3px 1px rgba(0, 0, 0, 0.1)
+}
+.dayReport .page-container2 .content .mtop{
+	margin-top:20px;
+}
+.dayReport .page-container2 .content .row-fluid p {
+	margin: 5px 0;
+	word-wrap: break-word
+}
+
+.dayReport .page-container2 .content .row-fluid .title {
+	text-align: center
+}
+
+.dayReport .page-container2 .content .line {
+	border-bottom: dashed 1px rgba(0,0,0,.4)
+}
+
+.Report-header {
+	padding: 10px;
+	text-align: center;
+	position: relative
+}
+
+.Report-header.backNew {
+	background-image: url("../images/headbgNew.jpg");
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+.Report-header.back {
+	background-image: url("../images/headbg2.png");
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: auto 100%
+}
+
+.Report-header.yellow {
+	background-color: #ff8500;
+	color: #fff
+}
+
+.Report-header.blue {
+	background-image: url(http://files.wyq.cn/yunying/hot/operhot/201702/17/12/1487306521822.jpg);
+	background-repeat: no-repeat;
+	background-size:auto;
+}
+
+.Report-header .header {
+	top: 0;
+	width: 100%
+}
+
+.Report-header .header a {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: #fff;
+	font-size: 25px
+}
+
+.Report-header em {
+	display: inline-block;
+	width: 40px;
+	height: 50px;
+	line-height: 40px;
+	background-color: #00b2f4;
+	color: rgba(0,0,0,.8);
+	position: absolute;
+	top: 0;
+	left: 10px
+}
+
+.Report-header em:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	border-left: 20px solid transparent;
+	border-right: 20px solid transparent;
+	border-bottom: 10px solid #08172c
+}
+
+.Report-header h1 {
+	font-size: 25px;
+	font-weight: 600;
+	width: 90%;
+	margin: auto;
+	line-height: 35px;
+	margin-top: 40px
+}
+
+.Report-header p {
+	margin-top: 20px;
+	font-size: 14px
+}
+
+.Report-header .info {
+	padding: 10px
+}
+
+.Report-header .info p {
+	font-size: 18px
+}
+
+.borderBox {
+	background-color: rgba(33,115,182,.1);
+	color: #2273b6;
+	padding: 5px 20px;
+	border-radius: 20px;
+	display: inline-block
+}
+
+.borderBoxAll {
+	background-color: rgba(33,115,182,.5);
+	color: #fff;
+	display: inline-block;
+	width: 85%
+}
+
+.dayReport .page-container2 .content .row-fluid .con {
+	padding: 0 0
+}
+
+.dayReport .page-container2 .content .row-fluid .title h1 {
+	font-size: 16px;
+	text-align: left;
+
+	width:50%;
+}
+
+.dayReport .page-container2 .content .row-fluid .title h2 {
+	font-size: 15px;
+	margin: 10px 0
+}
+
+.dayReport .page-container2 .content .row-fluid .title h3 {
+	font-size: 20px;
+	margin: 10px 0;
+	color: #217aa9
+}
+
+.dayReport .page-container2 .content a.link {
+	color: #217aa9;
+	text-decoration: underline
+}
+
+.row-fluid.black {
+	background-color: #535353;
+	color: #fff
+}
+
+.row-fluid.gray {
+	background-color: #F6F6F6
+}
+
+.row-fluid.black .borderBox {
+	background-color: rgba(255,255,255,.1);
+	color: #fff
+}
+
+.dot:before {
+	content: "";
+	width: 14px;
+	height: 14px;
+	border-radius: 50%;
+	background-color: #ff8500;
+	display: inline-block;
+	float: left;
+	margin: 5px 10px 0 15px
+}
+
+.dot.red:before {
+	background-color: #db421d
+}
+
+.dot.blue:before {
+	background-color: #5573b6
+}
+
+.arrow:before {
+	content: "";
+	width: 0;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+	vertical-align: middle;
+	margin-right: 10px;
+	border-bottom: 15px solid transparent;
+	border-top: 15px solid transparent;
+	border-left: 15px solid #ff8500
+}
+
+.arrow.red:before {
+	border-left-color: #db421d
+}
+
+.arrow.blue:before {
+	border-left-color: #5573b6
+}
+
+.dayReport .mwbBorder {
+	border: none;
+	background-color: transparent;
+	border-left: none;
+	border-right: none
+}
+
+.dayReport .row-fluid.black .mwbBorder {
+	background-color: transparent;
+	border: none
+}
+
+.mwbBorder.chart img {
+	width: 100%
+}
+
+.dayReport .row-fluid .con .text {
+	margin: 5px 10px;
+	padding: 5px 0;
+	text-align: left;
+	color: #737373
+}
+
+.dayReport .row-fluid.black .con .text {
+	background-color: rgba(255,255,255,.1);
+	color: #fff
+}
+
+.censusBox li {
+	border-radius: 5px;
+	width: 40%;
+	margin: 0 5%;
+	float: left;
+	display: inline-block;
+	text-align: center;
+	background-color: rgba(255,255,255,.1);
+	font-size: 16px
+}
+
+.censusBox li p:last-child {
+	font-size: 20px
+}
+
+.hwBox {
+	padding: 10px 10px 0
+}
+
+.hwBox>div {
+	overflow: hidden;
+	margin-bottom: 10px
+}
+
+.hwBox>div:last-child {
+	margin-bottom: 0
+}
+
+.hwBox .fl {
+	width: 100%;
+	font-size: 18px;
+	margin-bottom: 5px
+}
+
+.hwBox .fl p {
+	display: inline-block;
+	padding-left: 1%;
+	padding-right: 20px
+}
+
+.hwBox .fr {
+	width: 100%
+}
+
+.hwBox .fr>ul>li {
+	display: inline-block;
+	width: 18.5%;
+	border-radius: 4px;
+	text-align: center;
+	margin: 0 0.5% 10px
+}
+
+.hwfm .fl {
+	color: #5573b6
+}
+
+.hwfm .fr>ul>li {
+	background-color: rgba(85,115,182,.15);
+	color: #5573b6
+}
+
+.hwmg .fl {
+	color: #db421d
+}
+
+.hwmg .fr>ul>li {
+	background-color: rgba(219,66,29,.15);
+	color: #db421d
+}
+
+.main_list {
+	clear: both;
+	margin-bottom: 0;
+	position: relative
+}
+
+.main_list li {
+	display: block;
+	padding: 15px;
+	border-bottom: solid 1px rgba(255,255,255,.1);
+	min-height: 60px;
+	position: relative
+}
+
+.main_list li:first-child {
+	min-height: initial
+}
+
+.main_list li:last-child {
+	border: none
+}
+
+.main_list li a {
+	text-decoration: none
+}
+
+.dayReport .row-fluid .main_list li .m_r p:first-child {
+	margin-top: 0
+}
+
+.dayReport .row-fluid .main_list li .m_r p:last-child {
+	margin-bottom: 0
+}
+
+.main_list li >.label {
+	position: absolute;
+	top: 5px;
+	right: 10px
+}
+
+.main_list li .m_r i.num {
+	width: auto;
+	height: 25px;
+	line-height: 25px;
+	padding: 0 10px;
+	text-align: center;
+	background-color: #13c0fc;
+	border: none;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 300;
+	border-radius: 20px;
+	display: inline-block
+}
+
+.main_list li .m_l {
+	width: 50px;
+	float: left
+}
+
+.main_list li .m_l > img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%
+}
+
+.main_list li .m_lx img {
+	width: 30px;
+	height: 30px
+}
+
+.main_list li .m_r {
+	margin-left: 70px;
+	font-size: 14px
+}
+
+.main_list li .m_r2 {
+	margin-left: 0
+}
+
+.main_list li .m_r3 {
+	margin-left: 50px
+}
+
+.main_list li .m_r2 h1 {
+	font-size: 18px;
+	width: 98%;
+	line-height: 28px;
+	display: inline-block;
+	white-space: normal;
+	max-height: 60px;
+	overflow: hidden
+}
+
+.main_list li i {
+	display: block;
+	float: left;
+	width: 40px;
+	line-height: 60px;
+	text-align: center;
+	font-style: normal;
+	border-right: solid 1px #dfdfdf;
+	color: #999;
+	font-size: 24px;
+	font-weight: 600;
+	margin-right: 5px;
+	margin-top: 2px
+}
+
+.main_list li:hover {
+	background-color: rgba(0,0,0,.02)
+}
+
+.main_list li .quickLink a {
+	font-size: 18px;
+	color: #2779AA;
+	text-decoration: none
+}
+
+.main_list li .quickLink a:hover {
+	color: #C90A26;
+	text-decoration: underline
+}
+
+.main_list li .infor {
+	font-size: 12px;
+	margin-top: 10px;
+	color: #B0B0B0
+}
+
+.main_list li .infor span {
+	margin-right: 20px
+}
+
+.main_list li .infor a {
+	color: #E57641
+}
+
+.main_list li .zfCon {
+	background-color: rgba(0,0,0,.05);
+	color: rgba(0,0,0,.5);
+	padding: 10px
+}
+
+.main_list .bottom {
+	width: auto;
+	margin: 0 auto;
+	text-align: center;
+	clear: both;
+	padding-top: 20px;
+	height: 30px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	right: 0
+}
+
+.main_list .bottom a {
+	font-size: 12px;
+	padding: 4px 5px;
+	display: inline-block;
+	width: 100%;
+	text-align: right
+}
+
+.main_list .bottom a img {
+	width: 10px
+}
+
+.dayReport .page-container2 .content .bottom a {
+	background-color: transparent;
+	border: none
+}
+
+.dayReport .page-container2 .content .main_list .bottom {
+	right: 20px
+}
+
+.rotate180 {
+	animation: rotate180 0.4s forwards;
+	-moz-animation: rotate180 0.4s forwards;
+	-webkit-animation: rotate180 0.4s forwards;
+	-o-animation: rotate180 0.4s forwards
+}
+
+@keyframes rotate180 {
+	0% {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg)
+	}
+}
+
+@-webkit-keyframes rotate180 {
+	0% {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg)
+	}
+}
+
+.rotate90 {
+	animation: rotate90 0.4s forwards;
+	-moz-animation: rotate90 0.4s forwards;
+	-webkit-animation: rotate90 0.4s forwards;
+	-o-animation: rotate90 0.4s forwards
+}
+
+@keyframes rotate90 {
+	0% {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg)
+	}
+}
+
+@-webkit-keyframes rotate90 {
+	0% {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg)
+	}
+
+	100% {
+		transform: rotate(-90deg);
+		-webkit-transform: rotate(-90deg)
+	}
+}
+
+.rotate0 {
+	animation: rotate0 0.4s forwards;
+	-moz-animation: rotate0 0.4s forwards;
+	-webkit-animation: rotate0 0.4s forwards;
+	-o-animation: rotate0 0.4s forwards
+}
+
+@keyframes rotate0 {
+	0% {
+		transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg)
+	}
+
+	100% {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg)
+	}
+}
+
+@-webkit-keyframes rotate0 {
+	0% {
+		transform: rotate(-180deg);
+		-webkit-transform: rotate(-180deg)
+	}
+
+	100% {
+		transform: rotate(0deg);
+		-webkit-transform: rotate(0deg)
+	}
+}
+
+.ReportWhite {
+	background-image: url("../images/bg2.jpg");
+	background-size: 100% 100%
+}
+
+.ReportWhite .page-container2 .content .row-fluid {
+	margin: 0 0 10px;
+	background-color: transparent;
+	box-shadow: none
+}
+
+.ReportWhite .page-container2 .content .line {
+	border-bottom: dashed 1px #eee
+}
+
+.ReportWhite .page-container2 .content a {
+	color: #666
+}
+
+.ReportWhite .page-container2 .content {
+	background-color: #fff;
+	color: #666;
+	overflow: inherit;
+	position: relative;
+	z-index: 2
+}
+
+.ReportWhite .page-container2 .content:before {
+	content: "";
+	position: absolute;
+	width: 5px;
+	height: 99.74%;
+	background-color: #fff;
+	top: 5px;
+	right: -5px;
+	z-index: 1;
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.5)
+}
+
+.ReportWhite .page-container2 .content:after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 99.5%;
+	background-color: #fff;
+	top: 10px;
+	right: -10px;
+	z-index: 0;
+	-moz-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+	-webkit-box-shadow: inset 0 2px 4px rgba(0,0,0,.5);
+	box-shadow: inset 0 2px 4px rgba(0,0,0,.5)
+}
+
+.ReportWhite .Report-header {
+	color: #666
+}
+
+.ReportWhite .Report-header em:after {
+	border-bottom: 10px solid #fff
+}
+
+.ReportWhite .Report-header h1 {
+	margin-top: 15px;
+	font-size: 25px;
+	width: 95%
+}
+
+.ReportWhite .Report-header h1 font {
+	color: #ff5e00
+}
+
+.ReportWhite .page-container2 .content .row-fluid .title h1 {
+	padding: 0 10px;
+	text-align: center;
+	position: relative;
+	z-index: 2
+}
+
+.ReportWhite .page-container2 .content .row-fluid .title h1:after {
+	display: none
+}
+
+.dayReport .page-container2 .content .row-fluid .title h3 {
+	font-size: 16px
+}
+
+.ReportWhite .page-container2 .content .row-fluid .title-lc h1 {
+	display: inline-block;
+	background-color: #fff
+}
+
+.ReportWhite .page-container2 .content .row-fluid .title-lc:after {
+	content: "";
+	height: 1px;
+	background-color: #eee;
+	position: absolute;
+	width: 100%;
+	top: 32px;
+	left: 0;
+	z-index: 1
+}
+
+.ReportWhite .main_list li .zfCon {
+	background-color: rgba(195, 195, 195, 0.2);
+	color: rgba(0, 0, 0, 0.6)
+}
+
+.ReportWhite .main_list li:hover {
+	background-color: rgba(0,0,0,.03)
+}
+
+.hot-zs {
+	background-color: #4c5a65
+}
+
+.hot-zs .title h1 {
+	color: #fff
+}
+
+.hotList {
+	background-image: url("../images/dayReport/bg2.png");
+	background-repeat: no-repeat;
+	width: 750px;
+	height: 280px;
+	color: #fff;
+	font-size: 25px
+}
+
+.hotList>ul {
+	display: inline-block;
+	width: 100%;
+	position: relative
+}
+
+.hotList>ul>li {
+	display: inline-block;
+	position: absolute;
+	text-align: center
+}
+
+.hotList>ul>li:nth-child(1) {
+	top: 160px;
+	left: 82px
+}
+
+.hotList>ul>li:nth-child(2) {
+	top: 0;
+	left: 258px
+}
+
+.hotList>ul>li:nth-child(3) {
+	top: 190px;
+	right: 252px
+}
+
+.hotList>ul>li:nth-child(4) {
+	top: 20px;
+	right: 70px
+}
+
+@media only screen and (max-width:750px ) {
+	.dayReport {
+		background: #eeeeee
+	}
+
+
+
+	.bottomContact{width: 100%;height:115px;background-image: url("../../images/daily/contact-bottom.png");background-position: top center;background-repeat: no-repeat;background-size: 100% 100%}
+	.dayReport .page-container2 .content {
+		width: 100%
+	}
+	.dayReport .page-container2 .content .mtop{
+		margin-top:10px;
+	}
+	.ReportWhite .page-container2 .content:before,.ReportWhite .page-container2 .content:after {
+		display: none
+	}
+
+	.hotList>ul>li {
+		display: inline-block;
+		position: absolute;
+		text-align: center;
+		text-shadow: 0 0 8px rgba(0,0,0,1)
+	}
+
+	.main_list li .m_l {
+		width: 30px
+	}
+
+	.main_list li .m_l > img {
+		width: 30px;
+		height: 30px
+	}
+
+	.main_list li .m_r {
+		margin-left: 40px
+	}
+
+	.main_list li .m_r2 {
+		margin-left: 0
+	}
+
+	.main_list li .m_r i.num {
+		height: 22px;
+		line-height: 22px;
+		font-size: 14px
+	}
+
+	.main_list li .m_r2 h1 {
+		font-size: 15px
+	}
+
+	.hot-zs {
+		background-image: url("../images/dayReport/bg2.jpg");
+		background-position: top center;
+		background-repeat: no-repeat;
+		background-size: 100% 100%
+	}
+
+	.Report-header .info {
+		padding: 0 10px
+	}
+
+	.Report-header .info p {
+		font-size: 18px
+	}
+	.Report-header .info span {
+		font-size: 13px
+	}
+
+	.main_list li .infor {
+		font-size: 12px
+	}
+
+	.hwBox .fl,.hwfm .fr>ul>li {
+		font-size: 13px
+	}
+
+	.Report-header h1 {
+		font-size: 20px;
+		margin-top: 9px
+	}
+
+	.hwBox .fr>ul>li {
+		width: 18%
+	}
+	.subscribe{bottom:-12px;left:0;z-index: 50;width: 100%;position: fixed;}
+}
+@media only screen and (min-width:800px ) {
+	.subscribe{bottom:162px;z-index: 50;left:25%;width: 50% !important;position: fixed;}
+}
+@media only screen and (max-width:480px ) {
+	.hot-zs {
+		height: 205px
+	}
+
+	.hotList {
+		transform: scale(.58,.58);
+		position: relative;
+		left: -170px;
+		top: -57px
+	}
+}
+
+@media only screen and (max-width:380px ) {
+	.hot-zs {
+		height: 205px
+	}
+
+	.hotList {
+		transform: scale(.50,.50);
+		position: relative;
+		left: -190px;
+		top: -57px
+	}
+}
+
+@media only screen and (max-width:320px ) {
+	.dayReport .page-container2 .content .row-fluid .con {
+		padding: 5px 0
+	}
+
+	.dayReport .page-container2 .content .row-fluid .title h1 {
+		font-size: 16px
+	}
+
+	.hwBox {
+		padding: 5px 5px 0
+	}
+
+	.hot-zs {
+		height: 185px
+	}
+
+	.hotList {
+		transform: scale(.48,.48);
+		position: relative;
+		left: -220px;
+		top: -67px
+	}
+
+	.hwBox .fr>ul>li {
+		width: 17.9%;
+		font-size: 12px
+	}
+}
+.oper {width: 50px;height:44px; background-image: url(../../images/app-arrow1.png);background-repeat: no-repeat;background-size: 16px;background-position: center center; position: absolute;top: 0px;right: 0px;}
+.closer {width: 50px;height:44px; background-image: url(../../images/app-arrow-r.png);background-repeat: no-repeat;background-size: 16px;background-position: center center; position: absolute;top: 0px;right: 0px;}

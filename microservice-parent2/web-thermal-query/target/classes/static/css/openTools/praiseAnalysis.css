@@ -1,0 +1,413 @@
+
+.ecart_fc_red {
+  color: #D9684B;
+}
+.ecart_fc_blue {
+  color: #0E7DC0;
+}
+.ecart_bg_red {
+  background: #D9684B ;
+}
+.ecart_bg_blue {
+  background: #0E7DC0;
+}
+.square1 i {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+/*面包屑*/
+.newCrumbs {
+  float: left;
+  font-size: 14px;
+  height: 58px;
+  line-height: 58px;
+  color: #666;
+}
+.ngSearch-heading .compBox,
+.ngSearch-heading .btn-group {
+  padding: 8px 10px;
+}
+/*全网声量*/
+.whole-body {
+  width: 100%;
+  height: 274px;
+  display: table;
+}
+.whole-body .counter {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+}
+.whole-body .counter .counter-number {
+  display: inline-block;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.whole-body .counter p {
+  width: 46%;
+  margin: 0 auto;
+}
+/*导航*/
+.navbar2 li a {
+  display: block;
+  height: 58px;
+  line-height: 58px;
+  padding: 0 10px;
+  background-color: #6E7584;
+  text-align: center;
+  cursor: pointer;
+  font-size: 16px;
+  color: #FFFFFF;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.navbar2 li:hover a {
+  background-color: #ef8c24;
+  color: #fff;
+}
+.navbar2 .active a {
+  background-color: #ef8c24;
+  color: #fff;
+}
+/*全局*/
+.panel-footer {
+  background-color: #EDEDED;
+}
+/*热点网民*/
+.networkList {
+  margin: 0 10%;
+}
+.networkList ul {
+  border-bottom: 1px solid #dcdcdc;
+}
+.networkList li {
+  text-align: center;
+  padding: 15px 0;
+}
+.networkList li .network-logo {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  vertical-align: middle;
+}
+.networkList li .network-logo img {
+  width: 100%;
+  height: 100%;
+}
+.networkList li .network-txt {
+  display: inline-block;
+  margin-left: 10px;
+  vertical-align: middle;
+  text-align: left;
+}
+.networkList li .network-txt .gradeV {
+  font-size: 16px;
+  color: #2EB0F8;
+  margin: 2px;
+  font-weight: bold;
+}
+/*高频词*/
+.terms-bg {
+  display: inline-block;
+  width: 90px;
+  height: 25px;
+  line-height: 25px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  background-image: url(../../images/terms_bg_left.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.terms-bg2 {
+  background-image: url(../../images/terms_bg_right.png);
+}
+.terms {
+  width: 55%;
+  margin: 0 auto;
+}
+.terms li {
+  float: left;
+  width: 30%;
+  margin-right: 5%;
+  margin-bottom: 10px;
+}
+.terms li a {
+  display: inline-block;
+  width: 100%;
+  height: 42px;
+  line-height: 42px;
+  border: 1px solid #a09d9d;
+  text-align: center;
+  font-size: 14px;
+  text-decoration: none;
+  color: #2d2d2d;
+}
+.terms li:nth-child(3n+3) {
+  margin-right: 0;
+}
+.square li:hover {
+  background: #0E7DC0;
+}
+.square li:hover a {
+  color: #FFFFFF;
+}
+.conside li:hover {
+  background: #CF421E;
+}
+.conside li:hover a {
+  color: #FFFFFF;
+}
+/*边框icon*/
+.icon-borlf1 {
+  display: inline-block;
+  width: 5px;
+  height: 15px;
+  background: #FBB85D;
+  margin: 0 8px;
+}
+.table2 th {
+  border-top: 0;
+}
+.echartTitle {
+  font-size: 16px;
+}
+.echartTitle em {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #838383;
+  margin: 0 12px;
+}
+.rgafter:after {
+  content: '';
+  display: inline-block;
+  width: 1px;
+  height: 70%;
+  background: #DDDDDD;
+  position: absolute;
+  top: 10%;
+  right: -1px;
+  bottom: 0;
+  margin: auto;
+}
+/*兴趣情感度*/
+.positive-title {
+  display: inline-block;
+  padding: 3px 15px;
+  border-radius: 15px;
+}
+.positive-lf .positive-con,
+.positive-right .positive-con {
+  height: 215px;
+  position: relative;
+  width: 90%;
+}
+.positive-lf .positive-con p,
+.positive-right .positive-con p {
+  width: 15%;
+  background: #0E7DC0;
+  height: 30px;
+  line-height: 30px;
+}
+.positive-lf .positive-con p a,
+.positive-right .positive-con p a {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+  text-decoration: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.positive-con.square p:hover {
+  background: #2DA1E7;
+}
+.positive-con.conside p:hover {
+  background: #F69E87;
+}
+.positive-lf .positive-con .posiab_1,
+.positive-right .positive-con .posiab_1 {
+  position: absolute;
+  left: 30%;
+  top: 5%;
+}
+.positive-lf .positive-con .posiab_2,
+.positive-right .positive-con .posiab_2 {
+  position: absolute;
+  right: 30%;
+  top: 5%;
+}
+.positive-lf .positive-con .posiab_3,
+.positive-right .positive-con .posiab_3 {
+  position: absolute;
+  left: 12%;
+  top: 18%;
+  background: linear-gradient(70deg, #FFFFFF, #0E7DC0);
+}
+.positive-lf .positive-con .posiab_4,
+.positive-right .positive-con .posiab_4 {
+  position: absolute;
+  right: 12%;
+  top: 18%;
+  background: linear-gradient(70deg, #0E7DC0, #FFFFFF);
+}
+.positive-lf .positive-con .posiab_5,
+.positive-right .positive-con .posiab_5 {
+  position: absolute;
+  left: 0;
+  top: 22%;
+  right: 0;
+  margin: auto;
+}
+.positive-lf .positive-con .posiab_6,
+.positive-right .positive-con .posiab_6 {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+}
+.positive-lf .positive-con .posiab_7,
+.positive-right .positive-con .posiab_7 {
+  position: absolute;
+  right: 25%;
+  top: 35%;
+}
+.positive-lf .positive-con .posiab_8,
+.positive-right .positive-con .posiab_8 {
+  position: absolute;
+  left: 32%;
+  top: 53%;
+}
+.positive-lf .positive-con .posiab_9,
+.positive-right .positive-con .posiab_9 {
+  position: absolute;
+  right: 32%;
+  top: 53%;
+}
+.positive-right .positive-con p {
+  background: #D9684B;
+}	
+.positive-right .positive-con .posiab_3 {
+  position: absolute;
+  left: 12%;
+  top: 18%;
+  background: linear-gradient(70deg, #FFFFFF, #D9684B);
+}
+.positive-right .positive-con .posiab_4 {
+  position: absolute;
+  right: 12%;
+  top: 18%;
+  background: linear-gradient(70deg, #D9684B, #FFFFFF);
+}
+.echartSex {
+  position: relative;
+}
+.echartSex .echartSex-line {
+  width: 66%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 1px;
+  background: rgba(206, 206, 206, 0.5);
+  left: -10%;
+  right: 0;
+}
+.echartSex .echartSex-lf,
+.echartSex .echartSex-rg {
+  display: inline-block;
+  height: 60px;
+  text-align: center;
+  position: absolute;
+  left: 2%;
+  top: -70px;
+}
+.echartSex .echartSex-lf img,
+.echartSex .echartSex-rg img {
+  width: 50px;
+}
+.echartSex .echartSex-lf p,
+.echartSex .echartSex-rg p {
+  font-size: 12px;
+  color: #8C9099;
+}
+.echartSex .echartSex-rg {
+  top: 5px;
+}
+.pieChar {
+  position: relative;
+}
+.pieChar ul {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 18%;
+}
+.pieChar ul li {
+  float: left;
+  width: 25%;
+}
+.pieChar ul li p {
+  font-size: 14px;
+  text-align: center;
+}
+.pieChar ul li .pieColor1 {
+  color: #367CB8;
+}
+.pieChar ul li .pieColor1:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #367CB8;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.pieChar ul li .pieColor2 {
+  color: #CA6E58;
+}
+.pieChar ul li .pieColor2:before {
+  content: '';
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #CA6E58;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+/*边框*/
+.borderTop {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+.borderTop .border-rb {
+  border-right: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0 5%;
+}
+.borderTop .border-lb {
+  border-left: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+.borderTop .border-trb {
+  border-top: 1px solid #dcdcdc;
+  border-right: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+  padding: 0 5%;
+}
+.borderTop .border-tlb {
+  border-top: 1px solid #dcdcdc;
+  border-left: 1px solid #dcdcdc;
+  border-bottom: 1px solid #dcdcdc;
+}
+

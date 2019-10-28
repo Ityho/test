@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.user.UserRegRewardRecordMapper">
+
+    <select id="selectRegisterCreditByMobile" resultType="com.miduchina.wrd.po.user.UserRegRewardRecord">
+        <![CDATA[
+			SELECT
+				id,
+				username,
+				credit_amount as creditAmount,
+                status,
+                create_time as createTime,
+                update_time as updateTime
+			FROM
+				user_reg_reward_record
+			where status = 1
+			]]>
+        <if test="mobile!=null and mobile!=0">
+            <![CDATA[
+				and username = #{mobile}
+			]]>
+        </if>
+    </select>
+
+    <update id="updateUserRegRewardRecord" parameterType="com.miduchina.wrd.po.user.UserRegRewardRecord">
+        <![CDATA[
+                UPDATE user_reg_reward_record
+                SET
+                status=0,
+                update_time=now()
+                WHERE
+                username = #{username}
+                ]]>
+    </update>
+
+</mapper>

@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.export.ExportKeywordAnalysisMapper">
+    <update id="updateTask">
+
+        UPDATE export_keyword_analysis_task
+        SET
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        <if test="ticket != null and  ticket != '' ">
+            analysis_task_ticket = #{ticket},
+        </if>
+        update_time=now()
+        WHERE
+        analysis_task_ticket = #{wTicket}
+        <if test="taskId != null and  taskId != '' ">
+            and incident_analysis_task_id = #{taskId}
+        </if>
+
+    </update>
+    <update id="updateCondition">
+
+        UPDATE export_keyword_analysis_condition
+        SET
+        <if test="status != null and  status != '' ">
+            status = #{status},
+        </if>
+        <if test="ticket != null and  ticket != '' ">
+            analysis_task_ticket = #{ticket},
+        </if>
+        update_time=now()
+        WHERE
+        condition_id = #{conditionId}
+        <if test="ticket != null and  ticket != '' ">
+            and analysis_task_ticket = #{wTicket}
+        </if>
+        <if test="wStatus != null and  wStatus != '' ">
+            and status = #{wStatus}
+        </if>
+    </update>
+    <select id="findConditionId" resultType="com.miduchina.wrd.po.keyword.ExportKeywordAnalysisCondition" >
+        <![CDATA[
+            SELECT
+            *
+            FROM
+            export_keyword_analysis_condition
+            WHERE
+            condition_id=#{conditionId}
+        ]]>
+    </select>
+    <select id="getListTask" resultType="com.miduchina.wrd.po.keyword.ExportKeywordAnalysisTask">
+
+        <![CDATA[
+            SELECT
+            incident_analysis_task_id as taskId,
+            platform_tag as platform,
+            user_id ,
+            analysis_status,
+            analysis_schedule as schedule,
+            analysis_schedule_tips as scheduleTips,
+            analysis_task_ticket as taskTicket,
+            status,
+            create_time,
+            update_time,
+            keyword,
+            filter_keyword,
+            incident_title,
+            export_start_time,
+            export_end_time,
+            type,
+            file_path,
+            count,
+            api_type,
+            is_new
+            FROM
+            export_keyword_analysis_task
+            WHERE
+            status = 1
+         ]]>
+        <if test="taskId != null and taskId != 0">
+            <![CDATA[
+				and incident_analysis_task_id = #{taskId}
+			    ]]>
+        </if>
+        <if test="taskTicket != null and taskTicket != 0">
+            <![CDATA[
+				and analysis_task_ticket = #{taskTicket}
+			    ]]>
+        </if>
+
+    </select>
+    <select id="getListCondition" resultType="com.miduchina.wrd.po.keyword.ExportKeywordAnalysisCondition">
+
+        <![CDATA[
+            SELECT
+            condition_id,
+            analysis_task_ticket,
+            user_id,
+            keyword_name,
+            keyword,
+            filter_keyword,
+            match_type,
+            origin,
+            other_attribute,
+            newlst_select,
+            comblineflg,
+            analysis_start_time,
+            analysis_end_time,
+            capture_websit,
+            provinces,
+            export_count,
+            export_type,
+            status,
+            create_time,
+            update_time,
+            checked_ids,
+            favorites_monitoring,
+            titleHs,
+            website,
+            data_type,
+            direct_type,
+            direct_set,
+            keyword_id
+            FROM
+            export_keyword_analysis_condition
+            WHERE
+            status = 1
+        ]]>
+        <if test="conditionId != null and conditionId != 0">
+            <![CDATA[
+				and condition_id = #{conditionId}
+			    ]]>
+        </if>
+        <if test="analysisTaskTicket != null and analysisTaskTicket != 0">
+            <![CDATA[
+				and analysis_task_ticket = #{taskTicket}
+			    ]]>
+        </if>
+    </select>
+
+    <insert id="insertExportKeywordAnalysisCondition" useGeneratedKeys="true" keyProperty="condition_id">
+        <![CDATA[
+           INSERT INTO
+				export_keyword_analysis_condition(
+                    analysis_task_ticket,
+                    user_id,
+                    keyword_name,
+                    keyword,
+                    filter_keyword,
+                    match_type,
+                    origin,
+                    other_attribute,
+                    newlst_select,
+                    comblineflg,
+                    analysis_start_time,
+                    analysis_end_time,
+                    capture_websit,
+                    provinces,
+                    export_count,
+                    export_type,
+                    status,
+                    create_time,
+                    update_time,
+                    checked_ids,
+                    favorites_monitoring,
+                    titleHs,
+                    website,
+                    data_type,
+                    direct_type,
+                    direct_set,
+                    keyword_id
+				)
+			VALUES
+				(
+				#{analysisTaskTicket},
+				#{userId},
+				#{keywordName},
+				#{keyword},
+				#{filterKeyword},
+				#{matchType},
+				#{origin},
+				#{otherAttribute},
+				#{newlstSelect},
+				#{comblineflg},
+				#{analysisStartTime},
+				#{analysisEndTime},
+				#{captureWebsit},
+				#{provinces},
+				#{exportCount},
+				#{exportType},
+				#{status},
+				now() ,
+				#{updateTime},
+				#{checkedIds},
+				#{favoritesOrMonitoring},
+				#{titleHs},
+				#{website},
+				#{dataType},
+				#{directType},
+				#{directSet},
+				#{keywordId}
+				)
+        ]]>
+    </insert>
+    <insert id="insertTask" useGeneratedKeys="true" keyProperty="incident_analysis_task_id">
+        <![CDATA[
+           INSERT INTO
+				export_keyword_analysis_task(
+				platform_tag,
+				user_id,
+				analysis_status,
+				analysis_schedule,
+				analysis_schedule_tips,
+				analysis_task_ticket,
+				status,
+				create_time,
+				update_time,
+				keyword,
+				filter_keyword,
+				incident_title,
+				export_start_time,
+				export_end_time,
+				type,
+				file_path,
+				count,
+				api_type,
+				is_new
+				)
+			VALUES
+				(
+				#{platform},
+				#{userId},
+				#{analysisStatus},
+				#{schedule},
+				#{scheduleTips},
+				#{taskTicket},
+				1,
+				#{createTime},
+				now(),
+				#{keyword},
+				#{filterKeyword},
+				#{incidentTitle},
+				#{exportStartTime},
+				#{exportEndTime},
+				#{type},
+				#{filePath},
+				#{count},
+				#{apiType},
+				#{isNew}
+				)
+        ]]>
+
+    </insert>
+    <insert id="insertCondition" useGeneratedKeys="true" keyProperty="condition_id" >
+        <![CDATA[
+           INSERT INTO
+				export_keyword_analysis_condition(
+                    analysis_task_ticket,
+                    user_id,
+                    keyword_name,
+                    keyword,
+                    filter_keyword,
+                    match_type,
+                    origin,
+                    other_attribute,
+                    newlst_select,
+                    comblineflg,
+                    analysis_start_time,
+                    analysis_end_time,
+                    capture_websit,
+                    provinces,
+                    export_count,
+                    export_type,
+                    status,
+                    create_time,
+                    update_time,
+                    checked_ids,
+                    favorites_monitoring,
+                    titleHs,
+                    website,
+                    data_type,
+                    direct_type,
+                    direct_set,
+                    keyword_id
+				)
+			VALUES
+				(
+				#{analysisTaskTicket},
+				#{userId},
+				#{keywordName},
+				#{keyword},
+				#{filterKeyword},
+				#{matchType},
+				#{origin},
+				#{otherAttribute},
+				#{newlstSelect},
+				#{comblineflg},
+				#{analysisStartTime},
+				#{analysisEndTime},
+				#{captureWebsit},
+				#{provinces},
+				#{exportCount},
+				#{exportType},
+				#{status},
+				now() ,
+				#{updateTime},
+				#{checkedIds},
+				#{favoritesOrMonitoring},
+				#{titleHs},
+				#{website},
+				#{dataType},
+				#{directType},
+				#{directSet},
+				#{keywordId}
+				)
+        ]]>
+    </insert>
+
+
+</mapper>

@@ -1,0 +1,120 @@
+.spiritBox {
+  position: fixed;
+  right: 0;
+  top: 0;
+  bottom: 90px;
+  height: 135px;
+  margin: auto;
+  padding-bottom:200px;
+  z-index: 98;
+}
+.spiritBox a {
+  display: block;
+}
+.spiritBox span {
+  display: inline-block;
+  width: 70px;
+  height: 40px;
+  text-align: right;
+  padding: 5px;
+  color: #d2d2d2;
+  opacity: 0;
+  position: absolute;
+  top: -38px;
+  right: 0px;
+  font-size: 20px;
+  cursor:pointer;
+}
+.spiritBox .bg {
+  display: block;
+  width: 37px;
+  height: 74px;
+  background: url(../images/Robot/icon.png) no-repeat;
+  -moz-background-size: contain;
+       background-size: contain;
+  background-position: right;
+}
+.spiritBox .bg2 {
+  width: 180px;
+  height: 86px;
+  background: url(../images/Robot/hover.png) no-repeat;
+  -moz-background-size: contain;
+       background-size: contain;
+}
+.spiritBox .bey {
+  width: 180px;
+  height: 86px;
+  background: url(../images/Robot/bey5.png) no-repeat;
+  -moz-background-size: cover;
+       background-size: cover;
+  -moz-animation: mymove .8s infinite;
+       animation: mymove .8s infinite;
+  -webkit-animation: mymove .8s infinite;
+}
+@-webkit-keyframes mymove {
+  0% {
+    background: url(../images/Robot/bey5.png) no-repeat;
+    background-size: cover;
+  }
+  100% {
+    background: url(../images/Robot/bey1.png) no-repeat;
+    background-size: cover;
+  }
+}
+@-moz-keyframes mymove {
+  0% {
+    background: url(../images/Robot/bey5.png) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+  }
+  100% {
+    background: url(../images/Robot/bey1.png) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+  }
+}
+@keyframes mymove {
+  0% {
+    background: url(../images/Robot/bey5.png) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+  }
+  100% {
+    background: url(../images/Robot/bey1.png) no-repeat;
+    -moz-background-size: cover;
+         background-size: cover;
+  }
+}
+.animateSpirit {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  left: 50%;
+  width: 206px;
+  height: 146px;
+  margin-left: -103px;
+  z-index: 1701;
+}
+.animateSpirit img {
+  width: 100%;
+  height: 100%;
+}
+.animateTime {
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+       animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+       animation-fill-mode: both;
+}
+.spirit-mask {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background: rgba(0, 0, 0, 0);
+  z-index: 1700;
+}

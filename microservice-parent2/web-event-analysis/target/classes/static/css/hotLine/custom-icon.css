@@ -1,0 +1,15 @@
+.legend-icon{
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 1px solid #f18d00;
+}
+.legend-icon-average{
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 5px;
+    border: 1px dashed #f18d00;
+}
+.legend-blue{border-color: #0086ce}

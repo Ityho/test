@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.miduchina.wrd.api.mapper.ranking.RankingMapper">
+    <insert id="insert"></insert>
+    <update id="update"></update>
+    <select id="list" resultType="com.miduchina.wrd.po.ranking.OperationAdminHotContent" >
+        <![CDATA[
+            SELECT
+            *
+            FROM
+            operation_admin_hot_content
+            WHERE
+            status=1
+        ]]>
+        <if test="hId != null and hId != '' ">
+            <![CDATA[
+				and h_id = #{hId}
+			]]>
+        </if>
+        <if test="id != null and id != '' ">
+            <![CDATA[
+				and id = #{id}
+			]]>
+        </if>
+        order by sort DESC
+
+    </select>
+
+    <select id="hotList" resultType="com.miduchina.wrd.po.ranking.OperationAdminHot">
+        <![CDATA[
+            SELECT
+            *
+            FROM
+            operation_admin_hot
+            WHERE
+            status=1
+        ]]>
+        <if test="shareCode != null and shareCode != '' ">
+            <![CDATA[
+				and share_code = #{shareCode}
+			]]>
+        </if>
+        order by create_time desc
+    </select>
+
+
+</mapper>
